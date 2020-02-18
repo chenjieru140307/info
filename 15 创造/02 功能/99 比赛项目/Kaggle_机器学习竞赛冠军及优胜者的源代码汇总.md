@@ -1,8 +1,11 @@
----
-title: Kaggle_机器学习竞赛冠军及优胜者的源代码汇总
-toc: true
-date: 2019-10-29
----
+
+
+# Kaggle_机器学习竞赛冠军及优胜者的源代码汇总
+
+
+抽取，打散并拆分到功能里。
+
+
 [Kaggle134](http://google.suanfazu.com/search/?q=Kaggle)比赛源代码和讨论的收集整理。
 
 ## [Algorithmic Trading Challenge1.1K](http://www.kaggle.com/c/AlgorithmicTradingChallenge/)
