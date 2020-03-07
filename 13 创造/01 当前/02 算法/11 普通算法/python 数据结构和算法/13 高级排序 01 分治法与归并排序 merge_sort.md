@@ -109,9 +109,9 @@ def merge_sorted_list(sorted_a, sorted_b):
 # 时间复杂度
 我们来简单看下它归并排序的时间复杂度，假设排序 n 个数字时间复杂度是 T(n)，这里为了方便假设 n 是 2 的幂
 
-\begin{align}
+\begin{aligned}
 T(n)= \begin{cases} c, & \text {if $n$ = 1} \\ 2T(n/2)+cn, & \text{if $n$ > 1} \end{cases}
-\end{align}
+\end{aligned}
 
 <center>
 
@@ -123,9 +123,9 @@ T(n)= \begin{cases} c, & \text {if $n$ = 1} \\ 2T(n/2)+cn, & \text{if $n$ > 1} \
 总的代价是 $cnlg(n)+cn$ ，忽略常数项可以认为是  O(nlg(n))。如果这个图看不懂，我们自己求解下也不难，首先我们简化一下，
 把常数系数当成 1，得到以下递归式：
 
-\begin{align}
+\begin{aligned}
 T(n)= \begin{cases} 1, & \text {if $n$ = 1} \\ 2T(n/2)+n, & \text{if $n$ > 1} \end{cases}
-\end{align}
+\end{aligned}
 
 <center>
 

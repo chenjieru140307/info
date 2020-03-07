@@ -158,20 +158,20 @@ L(w)&=\sum\limits^{N}_{i=1}[y_i\log\pi(x_i)+(1-y_i)\log(1-\pi(x_i))]\\&=\sum\lim
 
 关于编号也可以通过行间公式做如下表达
 $$
-\begin{align}
+\begin{aligned}
 L(w)&=\sum\limits^{N}_{i=1}[y_i\log\pi(x_i)+(1-y_i)\log(1-\pi(x_i))]\\
 &=\sum\limits^{N}_{i=1}[y_i\log{\frac{\pi(x_i)}{1-\pi(x_i)}}+\log(1-\pi(x_i))]\nonumber\\
 &=\sum\limits^{N}_{i=1}[y_i(w\cdot x_i)-\log(1+\exp(w\cdot{x_i})]
-\end{align}
+\end{aligned}
 $$
 代码如下
 
 ```latex
-\begin{align}
+\begin{aligned}
 L(w)&=\sum\limits^{N}_{i=1}[y_i\log\pi(x_i)+(1-y_i)\log(1-\pi(x_i))]\\
 &=\sum\limits^{N}_{i=1}[y_i\log{\frac{\pi(x_i)}{1-\pi(x_i)}}+\log(1-\pi(x_i))]\nonumber\\
 &=\sum\limits^{N}_{i=1}[y_i(w\cdot x_i)-\log(1+\exp(w\cdot{x_i})]
-\end{align}
+\end{aligned}
 ```
 
 以上代码有两点需要注意体会：
