@@ -29,7 +29,10 @@ DeepMind开发的系统可以在几秒钟内自动检测眼部疾病的特征，
 
 另外，DeepMind研发的这个系统的卓越性在于，它不仅仅能看某一种疾病，而是能区分除50中不同的眼科疾病。它可以分析3D的扫描图，从而“看到”比2D图更多的信息，给出更靠谱的治疗方案。
 
-﻿![img](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtC0ywIu8o05DzL6G1Io75KtvdpicO9os3R8rN9fAtsnUOZVWic5UzkB6njLPCs9icsLUqFKocick7uwAg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)﻿
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200309/VRDjAnUxeEPY.png?imageslim">
+</p>
+
 
 # 适应性更强
 
