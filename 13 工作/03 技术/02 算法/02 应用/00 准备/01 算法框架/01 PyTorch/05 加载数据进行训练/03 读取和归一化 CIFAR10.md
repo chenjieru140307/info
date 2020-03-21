@@ -295,11 +295,9 @@ horse truck   car   car
 输出图片：
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191205/VHwdc2suS0bE.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191205/VHwdc2suS0bE.png?imageslim">
+</p>
 
 说明：
 
