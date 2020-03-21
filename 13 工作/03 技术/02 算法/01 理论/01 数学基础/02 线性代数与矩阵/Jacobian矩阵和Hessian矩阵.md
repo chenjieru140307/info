@@ -89,12 +89,9 @@ $$
 
 整个过程如下图：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190830/xhtqjLjM796V.png?imageslim)
-
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190830/xhtqjLjM796V.png?imageslim">
+</p>
 
 #### 最优化
 
