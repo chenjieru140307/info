@@ -106,11 +106,9 @@ inf
 - 然后使用 11 bit 来存储指数部分
 - 剩下的 52 bit 用来存储尾数。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191109/qnPub6MMS3y3.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191109/qnPub6MMS3y3.png?imageslim">
+</p>
 
 而且可以指出的是，double 能存储的数的个数是有限的，double 能代表的数必然不超过 2^64 个，那么现实世界上有多少个小数呢？无限个。
 

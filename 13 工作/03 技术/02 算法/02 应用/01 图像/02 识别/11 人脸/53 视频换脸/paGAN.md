@@ -13,11 +13,9 @@ date: 2019-11-17
 
 每秒1000帧扫描，用单幅照片实时生成超逼真动画人物头像。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191104/8bjzQwisWnfc.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191104/8bjzQwisWnfc.png?imageslim">
+</p>
 
 
 

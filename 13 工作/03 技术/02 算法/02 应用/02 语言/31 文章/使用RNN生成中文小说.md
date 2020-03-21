@@ -22,11 +22,9 @@ date: 2019-10-13
 
 首先我从网上下载到了『寒门首辅』的txt版本，打开时候发现有很多空行，还包含了很多不必要的链接，看起来是这样的。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191011/ocPb0nhkV3Cw.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191011/ocPb0nhkV3Cw.png?imageslim">
+</p>
 
 
 预处理一下数据。

@@ -18,10 +18,8 @@ date: 2019-10-11
 
 目前来看，包括DeepCoder在内的现有程序生成算法还不能独立处理较为复杂的问题。但从另一方面看，既然机器已经能够完成简单的编程任务，那么我们就可以利用它来辅助程序员的工作，或者帮助普通计算机用户来自动化一些工作流程。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191010/d7yYpkUV90dF.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191010/d7yYpkUV90dF.png?imageslim">
+</p>
 
 > DeepCoder解题过程示意图：每行代表一个程序，每列代表一种语句。红色越深代表其神经网络给出的预测值越高；绿色代表最终搜索得出的正确结果。

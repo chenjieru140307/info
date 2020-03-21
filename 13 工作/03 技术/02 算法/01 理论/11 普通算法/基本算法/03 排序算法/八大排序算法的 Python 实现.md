@@ -9,11 +9,9 @@ date: 2019-10-19
 
 ## 排序算法
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191019/69Cw2iIOaRpg.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191019/69Cw2iIOaRpg.png?imageslim">
+</p>
 
 
 

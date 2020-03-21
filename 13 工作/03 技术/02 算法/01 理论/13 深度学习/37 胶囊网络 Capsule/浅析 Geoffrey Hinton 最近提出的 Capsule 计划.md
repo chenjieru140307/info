@@ -70,11 +70,9 @@ Hinton 看了看神经网络的一层，其分为可见层（输入层）和隐�
 
 于是 $s=(v, h)$，$P(v, h)=\frac{1}{Z} e^{-E(v, h)}$，RBM示意图如下：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191017/EVeEt22bhIMh.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191017/EVeEt22bhIMh.png?imageslim">
+</p>
 
 
 那么 $E$ 又是什么呢？

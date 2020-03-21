@@ -7,11 +7,9 @@ date: 2019-08-31
 
 TensorRT 是 NVIDIA 推出的深度学习优化加速工具，采用的原理如下图所示，具体可参考[3] [4]：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190829/5IeV8p3ejnJg.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190829/5IeV8p3ejnJg.png?imageslim">
+</p>
 
 TensorRT能够优化重构由不同深度学习框架训练的深度学习模型：
 

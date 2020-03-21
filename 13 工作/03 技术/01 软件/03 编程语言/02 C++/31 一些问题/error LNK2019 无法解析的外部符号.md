@@ -50,37 +50,29 @@ date: 2019-10-19
 我们要找的就是Library：User32.lib，如果想以静态引用的方式使用GetUserObjectInformation API，就需要将 User32.lib 加入链接器输入的附加依赖项，操作方法如下图：
 在解决方案资源管理器中选中对应的项目
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191019/aGkyd47Qxe26.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191019/aGkyd47Qxe26.png?imageslim">
+</p>
 
 
 点击项目菜单》属性，或者是直接在项目上单击鼠标右键》属性
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191019/hXhWyQL38Y1i.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191019/hXhWyQL38Y1i.png?imageslim">
+</p>
 
 展开配置属性》链接器，选中输入，点击附加依赖项右侧的下拉框，在弹出的菜单中点击编辑
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191019/48hlfvFuEpVu.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191019/48hlfvFuEpVu.png?imageslim">
+</p>
 
 输入附加依赖项，点击确定。
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191019/B8OjKF6WlSCk.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191019/B8OjKF6WlSCk.png?imageslim">
+</p>
 
 
 # 相关

@@ -314,11 +314,9 @@ Here are the things I know about London:
 
 我们获得了这么多有用的信息，就可以应用在很多场景下。比如，搜索结果的相关推荐：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191104/LkJE7Dve57KU.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191104/LkJE7Dve57KU.png?imageslim">
+</p>
 
 
 我们可以通过下面这种方法实现上图的效果

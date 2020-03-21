@@ -10,11 +10,9 @@ Hinton一直对 CNN 中的 Pooling 操作意见很大，他曾经吐槽说：“
 那么，MaxPooling有什么问题值得 Hinton 对此深恶痛绝呢？下图所示的例子可以看出其原因。
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/QXxtOdOLOpCW.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/QXxtOdOLOpCW.png?imageslim">
+</p>
 
 
 > CNN图像分类

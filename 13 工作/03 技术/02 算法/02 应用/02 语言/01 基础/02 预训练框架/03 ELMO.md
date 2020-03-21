@@ -15,11 +15,9 @@ ELMO的本质思想是：我事先用语言模型学好一个单词的 Word Embe
 
 ## ELMO 的预训练阶段
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190926/D4UxfouyonHV.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190926/D4UxfouyonHV.png?imageslim">
+</p>
 
 
 
@@ -42,11 +40,9 @@ ELMO采用了典型的两阶段过程：
 
 ## 训练好后如何使用
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/kAyhpsjJCia1.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/kAyhpsjJCia1.png?imageslim">
+</p>
 
 
 上面介绍的是 ELMO 的第一阶段：预训练阶段。那么预训练好网络结构后，如何给下游任务使用呢？
@@ -58,11 +54,9 @@ ELMO采用了典型的两阶段过程：
 至于为何这么做能够达到区分多义词的效果，你可以想一想，其实比较容易想明白原因。
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/Q9Sq17B3EXMp.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/Q9Sq17B3EXMp.png?imageslim">
+</p>
 
 
 上面这个图是 TagLM 采用类似 ELMO 的思路做命名实体识别任务的过程，其步骤基本如上述 ELMO 的思路，所以此处不展开说了。
@@ -71,11 +65,9 @@ TagLM的论文发表在 2017 年的 ACL 会议上，作者就是 AllenAI 里做 
 
 ## ELMO 的多义词问题解决了吗
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/3Fml13mgNE0L.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/3Fml13mgNE0L.png?imageslim">
+</p>
 
 
 前面我们提到静态 Word Embedding无法解决多义词的问题，那么 ELMO 引入上下文动态调整单词的 embedding 后多义词问题解决了吗？
@@ -87,11 +79,9 @@ TagLM的论文发表在 2017 年的 ACL 会议上，作者就是 AllenAI 里做 
 **之所以会这样，是因为我们上面提到过，第一层 LSTM 编码了很多句法信息，这在这里起到了重要作用。**
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/vpS3JbDT4fWQ.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/vpS3JbDT4fWQ.png?imageslim">
+</p>
 
 
 ELMO 经过这般操作，效果如何呢？实验效果见上图，6个 NLP 任务中性能都有幅度不同的提升，最高的提升达到 25%左右，而且这 6 个任务的覆盖范围比较广，包含句子语义关系判断，分类任务，阅读理解等多个领域，这说明其适用范围是非常广的，普适性强，这是一个非常好的优点。<span style="color:red;">厉害！</span>
@@ -100,11 +90,9 @@ ELMO 经过这般操作，效果如何呢？实验效果见上图，6个 NLP 任
 
 ## ELMO 有什么缺点
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/SOYaCHurptxx.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/SOYaCHurptxx.png?imageslim">
+</p>
 
 
 那么站在现在这个时间节点看，ELMO有什么值得改进的缺点呢？

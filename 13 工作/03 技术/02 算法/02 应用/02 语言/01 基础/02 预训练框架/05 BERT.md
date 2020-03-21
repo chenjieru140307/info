@@ -15,11 +15,9 @@ date: 2019-09-29
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/kGvyBqvsyK6n.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/kGvyBqvsyK6n.png?imageslim">
+</p>
 
 
 
@@ -33,21 +31,17 @@ Bert采用和 GPT 完全相同的两阶段模型，首先是语言模型预训�
 
 ## Bert 训练好后如何使用
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/CM9y5hkQtG6l.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/CM9y5hkQtG6l.png?imageslim">
+</p>
 
 
 
 第二阶段，Fine-Tuning阶段，这个阶段的做法和 GPT 是一样的。当然，它也面临着下游任务网络结构改造的问题，在改造任务方面 Bert 和 GPT 有些不同，下面简单介绍一下。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/nkK6N2vUCGcv.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/nkK6N2vUCGcv.png?imageslim">
+</p>
 
 
 在介绍 Bert 如何改造下游任务之前，先大致说下 NLP 的几类问题，说这个是为了强调 Bert 的普适性有多强。
@@ -63,11 +57,9 @@ Bert采用和 GPT 完全相同的两阶段模型，首先是语言模型预训�
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/YcLbfin8qJvr.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/YcLbfin8qJvr.png?imageslim">
+</p>
 
 
 
@@ -87,11 +79,9 @@ Bert采用和 GPT 完全相同的两阶段模型，首先是语言模型预训�
 
 ## Bert 效果如何
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/U9nXnpBnisuY.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/U9nXnpBnisuY.png?imageslim">
+</p>
 
 
 
@@ -103,11 +93,9 @@ Bert采用这种两阶段方式解决各种 NLP 任务效果如何？
 
 ## 从 GPT 和 ELMO 及 Word2Vec 到 Bert ，四者的关系
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/yPyTkvvqWr4j.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/yPyTkvvqWr4j.png?imageslim">
+</p>
 
 到这里我们可以再梳理下几个模型之间的演进关系。从上图可见，Bert其实和 ELMO 及 GPT 存在千丝万缕的关系，比如如果我们把 GPT 预训练阶段换成双向语言模型，那么就得到了 Bert；而如果我们把 ELMO 的特征抽取器换成 Transformer，那么我们也会得到 Bert。
 
@@ -128,11 +116,9 @@ Bert采用这种两阶段方式解决各种 NLP 任务效果如何？
 ## Bert 如何构造双向语言模型
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/dypoe3or9mLA.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/dypoe3or9mLA.png?imageslim">
+</p>
 
 那么 Bert 本身在模型和方法角度有什么创新呢？
 
@@ -140,11 +126,9 @@ Bert采用这种两阶段方式解决各种 NLP 任务效果如何？
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/FAh1x7nb1wTF.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/FAh1x7nb1wTF.png?imageslim">
+</p>
 
 
 
@@ -154,11 +138,9 @@ Masked双向语言模型向上图展示这么做：
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/4K82lPceEiYw.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/4K82lPceEiYw.png?imageslim">
+</p>
 
 
 
@@ -166,21 +148,17 @@ Masked双向语言模型向上图展示这么做：
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/B9bIFv8szXjs.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/B9bIFv8szXjs.png?imageslim">
+</p>
 
 上面这个图给出了一个我们此前利用微博数据和开源的 Bert 做预训练时随机抽出的一个中文训练实例，从中可以体会下上面讲的 masked 语言模型和下句预测任务。训练数据就长这种样子。
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/2q3RcECkiftK.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/2q3RcECkiftK.png?imageslim">
+</p>
 
 顺带讲解下 Bert 的输入部分，也算是有些特色。它的输入部分是个线性序列，两个句子通过分隔符分割，最前面和最后增加两个标识符号。
 
@@ -194,32 +172,26 @@ Masked双向语言模型向上图展示这么做：
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/vcq9vwvjT3DC.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/vcq9vwvjT3DC.png?imageslim">
+</p>
 
 至于 Bert 在预训练的输出部分如何组织，可以参考上图的注释。
 
 ## Bert 的有效因子分析
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/OXRpBQ6NdTKz.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/OXRpBQ6NdTKz.png?imageslim">
+</p>
 
 我们说过 Bert 效果特别好，那么到底是什么因素起作用呢？如上图所示，对比试验可以证明，跟 GPT 相比，双向语言模型起到了最主要的作用，对于那些需要看到下文的任务来说尤其如此。而预测下个句子来说对整体性能来说影响不算太大，跟具体任务关联度比较高。
 
 
 ## Bert 的评价和意义
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/iuXc34zxVKGL.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/iuXc34zxVKGL.png?imageslim">
+</p>
 
 最后，我讲讲我对 Bert 的评价和看法，我觉得 Bert 是 NLP 里里程碑式的工作，对于后面 NLP 的研究和工业应用会产生长久的影响，这点毫无疑问。
 

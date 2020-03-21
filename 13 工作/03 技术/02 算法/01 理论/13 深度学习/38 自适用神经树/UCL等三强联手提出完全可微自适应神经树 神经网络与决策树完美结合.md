@@ -7,11 +7,9 @@ date: 2019-11-17
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191104/5haaGzh8tWoz.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191104/5haaGzh8tWoz.png?imageslim">
+</p>
 
 UCL、帝国理工和微软的研究人员合作，将神经网络与决策树结合在一起，提出了一种新的自适应神经树模型ANT，打破往局限，可以基于BP算法做训练，在MNIST和CIFAR-10数据集上的准确率高达到99%和90%。
 

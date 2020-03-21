@@ -7,11 +7,9 @@ date: 2018-07-30
 
 利用 Landmarks 进行人脸对齐裁剪是人脸检测中重要的一个步骤。效果如下图所示：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190808/zqRhXSeBzC0l.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190808/zqRhXSeBzC0l.png?imageslim">
+</p>
 
 
 基本思路为：
@@ -88,11 +86,9 @@ int main()
 
 效果图：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190808/VxH84cb3gfj3.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190808/VxH84cb3gfj3.png?imageslim">
+</p>
 
 注意以上效果非真实的对齐裁剪的效果。实际的对齐裁剪可以做的很好。
 

@@ -7,11 +7,9 @@ date: 2019-09-30
 
 2D图像的目标检测算法我们已经很熟悉了，物体在2D图像上存在一个2D的bounding box，我们的目标就是把它检测出来。而在3D空间中，物体也存在一个3D bounding box，如果将3D bounding box画在2D图像上，那么长这样子：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190930/PGLf0tnRMU3E.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190930/PGLf0tnRMU3E.png?imageslim">
+</p>
 
 这个3D bounding box可以表示一个物体的姿态。那什么是物体的姿态？实际上就是物体在3D空间中的空间位置xyz，以及物体绕x轴，y轴和z轴旋转的角度。换言之，只要知道了物体在3D空间中的这六个自由度，就可以唯一确定物体的姿态。
 
@@ -19,11 +17,9 @@ date: 2019-09-30
 
 *Real-Time Seamless Single Shot 6D Object Pose Prediction*这篇文章提出了一种使用一张2D图片来预测物体6D姿态的方法。但是，并不是直接预测这个6D姿态，而是通过先预测3D bounding box在2D图像上的投影的1个中心点和8个角点，然后再由这9个点通过PNP算法计算得到6D姿态。我们这里不管怎么由PNP算法得到物体的6D姿态，而只关心怎么预测一个物体的3D bounding box在2D图像上的投影，即9个点的预测。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190930/470NcnamlAM8.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190930/470NcnamlAM8.png?imageslim">
+</p>
 
 ## 1. 思想
 
@@ -33,11 +29,9 @@ date: 2019-09-30
 
 整个网络结构图如下：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190930/gQNgVQC8EcIu.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190930/gQNgVQC8EcIu.png?imageslim">
+</p>
 
 从上图可以看到，整个网络采用的是yolo v2的框架。网络吃一张2D的图片（a），吐出一个SxSx(9x2+1+C)的3D tensor(e)。我们会将原始输入图片划分成SxS个cell（c），物体的中心点落在哪个cell，哪个cell就负责预测这个物体的9个坐标点（9x2），confidence（1）以及类别(C)，这个思路和yolo是一样的。下面分别介绍这些输出的意义。
 
@@ -49,11 +43,9 @@ date: 2019-09-30
 
 confidencel表示cell含有物体的概率以及bbox的准确度(confidence=P(object) *IOU)。我们知道，在yolo v2中，confidence的label实际上就是gt bbox和预测的bbox的IOU。但是在6D姿态估计中，如果要算IOU的话，需要在3D空间中算，这样会非常麻烦，因此本文提出了一种新的IOU计算方法，即定义了一个confidence函数：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190930/CkGIrDppXppC.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190930/CkGIrDppXppC.png?imageslim">
+</p>
 
 其中D(x)是预测的2D点坐标值与真实值之间的欧式距离，dth是提前设定的阈值，比如30pixel， alpha是超参，作者设置为2。从上图可以看出，当预测值与真实值越接近时候，D(x)越小，c(x)值越大，表示置信度越大。反之，表示置信度越小。需要注意的是，这里c(x)只是表示一个坐标点的c(x)，而一个物体有9个点，因此会计算出所有的c(x)然后求平均。
 
@@ -109,11 +101,9 @@ Lpt，Lconf和Lid分别表示坐标点，confidence和分类的损失。前面�
 
 以下展示一些检测结果：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190930/svAa5jB8ovwH.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190930/svAa5jB8ovwH.png?imageslim">
+</p>
 
 可见检测效果还是不错的。
 

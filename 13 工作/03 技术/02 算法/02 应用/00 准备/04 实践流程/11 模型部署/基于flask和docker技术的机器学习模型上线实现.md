@@ -36,11 +36,9 @@ Kitematic (Alpha)
 
 在C盘中出现文件夹：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191105/bl6riNjlpObE.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191105/bl6riNjlpObE.png?imageslim">
+</p>
 
 
 其中，目录
@@ -55,11 +53,9 @@ C:\Users\LiuJiankang\.docker\machine\machines\default
 
 ## 一、Docker Quickstart Terminal
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191105/tciORXlHXYWQ.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191105/tciORXlHXYWQ.png?imageslim">
+</p>
 
 Docker Quickstart Terminal提供了虚拟linux执行环境，可以执行常见的Linux指令，例如，当定位到dockerfile或者docker-compose文件位置时（本机），需要指令有：
 
@@ -85,11 +81,9 @@ docker exec  -it bc2a50a92b21  /bin/bash
 
 当需要对指令进行copy或者粘贴的时候，可以通过以下方式：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191105/vi8C9leu7DQG.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191105/vi8C9leu7DQG.png?imageslim">
+</p>
 
 点击标注的位置-》编辑即可出现相关操作。
 
@@ -104,11 +98,9 @@ docker exec  -it bc2a50a92b21  /bin/bash
 
 下面是Kitematic (Alpha)功能介绍，如图：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191105/Kpg89AS1EbLj.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191105/Kpg89AS1EbLj.png?imageslim">
+</p>
 
 
 1：镜像，现在下载的镜像。

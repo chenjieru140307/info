@@ -9,11 +9,9 @@ date: 2019-09-29
 英伟达采取“渐进式生成”技术路线的 GAN 方案，这项方案的引人之处在于使得计算机可以生成 1024*1024大小的高清图片，它是目前无论图像清晰度还是图片生成质量都达到最好效果的技术，其生成的明星图片几乎可以达到以假乱真的效果。
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/mlLPpyeuQIMw.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/mlLPpyeuQIMw.png?imageslim">
+</p>
 
 > 英伟达提出渐进生成式 GAN 产生的高清头像图片
 

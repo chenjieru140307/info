@@ -15,11 +15,9 @@ date: 2019-09-29
 
 - Capsule的核心目的是希望将“视角不变性”能力引入图像处理系统中。所谓“视角不变性”，指的是当我们给 3D 物体拍照片的时候，镜头所对的一定是物体的某个角度看上去的样子，也就是 2D 照片反映 3D 物体一定是体现出了镜头和 3D 物体的某个视角角度，而不是 360 度的物体全貌。那么，要达到视角不变性，就是希望给定某个物体某个角度的 2D 照片，当看到另外一张同一物体不同视角的 2D 照片时，希望 CNN 也能识别出其实这仍然是那个物体。这就是所谓的“视角不变性”（参照下图，上下对应的图片代表同一物体的不同视角），这是传统的 CNN 模型很难做好的事情。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/MeGRLMO3QYbq.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/MeGRLMO3QYbq.png?imageslim">
+</p>
 
 
 > 视角不变性

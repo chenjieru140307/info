@@ -33,11 +33,9 @@ ENAS 算法强制将所有模型的权重共享，而非从零开始训练模型
 
 下面这张表格表现了 ENAS 的效率，而这只是用单个 1080Ti 的 GPU 训练半天的结果。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190829/YzFqReXiXL62.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190829/YzFqReXiXL62.png?imageslim">
+</p>
 
 > ENAS的表现和效率
 

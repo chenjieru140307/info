@@ -24,11 +24,9 @@ DeepMind 的论文 Emergence of Locomotion Behaviours in Rich Environments 探�
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191024/fg0cj27QtFx4.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191024/fg0cj27QtFx4.png?imageslim">
+</p>
 
 
 
@@ -36,31 +34,25 @@ Planar Walker（左）、Humanoid（中）和MemoryReacher（右）任务中的D
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191024/j4Yw7Of0BBna.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191024/j4Yw7Of0BBna.png?imageslim">
+</p>
 
 网络架构示意图
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191024/cPjmecSnUzJ9.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191024/cPjmecSnUzJ9.png?imageslim">
+</p>
 
 实验中使用的地形类型的示例。
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191024/xjMm7cEKa2h8.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191024/xjMm7cEKa2h8.png?imageslim">
+</p>
 
 
 
@@ -79,21 +71,17 @@ Walker Skill：一个典型的 Planar Walker 策略走过不平整地面、跃�
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191024/QxzAnNAt9ujm.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191024/QxzAnNAt9ujm.png?imageslim">
+</p>
 
 
 
 a）课程培训：对具有不同统计数据的障碍课程培训策略的评估：“regular”课程包含任意交错的高低障碍（蓝色）;“curriculum”课程则随着课程进度逐渐增加障碍的高度（绿色）。在训练期间，我们对低/“容易”障碍（左）和高/“挑战”障碍（右）的验证课程进行评估。在“curriculum”课程上训练的政策进步更快。b）Planar  Walker 策略（左）和Quadruped策略（右）的稳健性：我们评估相比较于在平地的训练（蓝），跨越障碍的的训练（绿）如何增强了策略的稳健性。我们对基于地面摩擦力、地形表面、虚拟人物的身体机能强度和地面倾斜等难以观察的变化对策略的表现进行评估。在某些情况下，在跨越障碍地形中训练的策略存在显著优势。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191024/Pn0t8c36mb5p.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191024/Pn0t8c36mb5p.png?imageslim">
+</p>
 
 这是 Humanoid 根据周围地形运动的一系列延时图像。
 

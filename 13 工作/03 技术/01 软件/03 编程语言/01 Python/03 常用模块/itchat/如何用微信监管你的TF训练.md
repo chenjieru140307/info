@@ -7,11 +7,9 @@ date: 2019-11-17
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191103/CxYY2LN2VtkC.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191103/CxYY2LN2VtkC.png?imageslim">
+</p>
 
 
 

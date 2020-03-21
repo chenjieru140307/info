@@ -13,11 +13,9 @@ http://web.media.mit.edu/~guysatat/fog/materials/TowardsPhotographyThroughRealis
 
 利用水箱和不同浓度的雾来测试系统：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191101/tdHKSObuLnGc.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191101/tdHKSObuLnGc.png?imageslim">
+</p>
 
 
 雾天驾驶一直是自动驾驶汽车导航系统面对的重要问题。麻省理工学院 (MIT) 的研究团队开发了一套基于LIDAR的深度感知系统，就算物体隐藏在人类肉眼难以望穿的浓雾背后，系统也能测定物体的距离和形状。
@@ -28,11 +26,9 @@ http://web.media.mit.edu/~guysatat/fog/materials/TowardsPhotographyThroughRealis
 
 伽马分布，OT=optical thickness：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191101/N6M4BCVtqnft.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191101/N6M4BCVtqnft.png?imageslim">
+</p>
 
 
 
@@ -42,11 +38,9 @@ MIT团队利用统计学来解决这一问题。雾中水滴反射光线的形�
 
 不同浓度雾中的人形成像：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191101/hofwNXkegkQn.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191101/hofwNXkegkQn.png?imageslim">
+</p>
 
 
 

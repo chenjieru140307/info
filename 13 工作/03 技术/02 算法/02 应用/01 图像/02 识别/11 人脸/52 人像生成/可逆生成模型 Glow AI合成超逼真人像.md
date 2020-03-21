@@ -12,11 +12,9 @@ date: 2019-11-17
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191104/JCBAFLOOaNar.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191104/JCBAFLOOaNar.png?imageslim">
+</p>
 
 
 OpenAI最新提出的可逆生成模型Glow，可以使用相对少的数据，快速生成高清的逼真图像，具有GAN和VAE所不具备的精确操作潜在变量、需要内存少等优势。

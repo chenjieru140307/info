@@ -325,11 +325,9 @@ File Encodings> IDE Encoding: UTF-8;Project Encoding: UTF-8;
 11. 代码自动整理设置
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191109/wd9RMfmKw38f.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191109/wd9RMfmKw38f.png?imageslim">
+</p>
 
 这里line breaks去掉√，否则bar, 和baz会分开在不同行，不好看。
 
@@ -494,11 +492,9 @@ Note:Parameters后面的 $FileDir$参数是说，DelPyc是针对当前PyCharm�
 之后可以通过下面的方式直接执行
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191109/q5F8sfnnCso7.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191109/q5F8sfnnCso7.png?imageslim">
+</p>
 
 Note:再添加一个Tools名为DelPycIn
 

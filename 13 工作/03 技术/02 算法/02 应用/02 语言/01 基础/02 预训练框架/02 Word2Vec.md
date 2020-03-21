@@ -9,11 +9,9 @@ date: 2019-09-29
 2013年最火的用语言模型做 Word Embedding的工具是 Word2Vec，后来又出了 Glove，Word2Vec是怎么工作的呢？看下图。
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190926/Yst8BWrYa9Y0.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190926/Yst8BWrYa9Y0.png?imageslim">
+</p>
 
 
 Word2Vec的网络结构其实和 NNLM 是基本类似的，只是这个图长得清晰度差了点，看上去不像，其实它们是亲兄弟。
@@ -31,11 +29,9 @@ Word2Vec有两种训练方法：
 
 为什么要讲 Word2Vec 呢？这里主要是要引出 CBOW 的训练方法，BERT其实跟它有关系，后面会讲它们之间是如何的关系，当然它们的关系 BERT 作者没说，是我猜的，至于我猜的对不对，后面你看后自己判断。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190926/ctU9edpVTcOQ.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190926/ctU9edpVTcOQ.png?imageslim">
+</p>
 
 
 使用 Word2Vec 或者 Glove，通过做语言模型任务，就可以获得每个单词的 Word Embedding，那么这种方法的效果如何呢？上图给了网上找的几个例子，可以看出有些例子效果还是很不错的，一个单词表达成 Word Embedding后，很容易找出语义相近的其它词汇。
@@ -45,11 +41,9 @@ Word2Vec有两种训练方法：
 我们的主题是预训练，那么问题是 Word Embedding这种做法能算是预训练吗？这其实就是标准的预训练过程。要理解这一点要看看学会 Word Embedding后下游任务是怎么用它的。
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190926/0gUVRi03sGdb.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190926/0gUVRi03sGdb.png?imageslim">
+</p>
 
 
 假设如上图所示，我们有个 NLP 的下游任务，比如 QA，就是问答问题，所谓问答问题，指的是给定一个问题 X，给定另外一个句子 Y，要判断句子 Y 是否是问题 X 的正确答案。
@@ -74,11 +68,9 @@ Word2Vec有两种训练方法：
 ## Word Embedding 存在的问题
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190926/kRlmvThCxdKI.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190926/kRlmvThCxdKI.png?imageslim">
+</p>
 
 
 这片在 Word Embedding头上笼罩了好几年的乌云是什么？是多义词问题。我们知道，多义词是自然语言中经常出现的现象，也是语言灵活性和高效性的一种体现。

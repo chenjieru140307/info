@@ -7,11 +7,9 @@ date: 2019-10-18
 
 有时我们在使用文件程序的时候，碰到一些问题，提示dll文件缺失，例如标题中的。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191018/W9DsE3LiW9PF.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191018/W9DsE3LiW9PF.png?imageslim">
+</p>
 
 有些情况下载这些dll文件补上就行，有些则不行，像标题这种情况，则需要安装一个小程序。
 
@@ -25,37 +23,29 @@ date: 2019-10-18
 
 但是对于有些电脑系统，还会出现这些情况，提示安装失败：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191018/vBmvI0clcvXk.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191018/vBmvI0clcvXk.png?imageslim">
+</p>
 
 查看一下日志文件：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191018/oh4SlhktnD50.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191018/oh4SlhktnD50.png?imageslim">
+</p>
 
 可以看到是更新程序出了问题，我们查看一下系统的事件，
 
 右击计算机->管理->左侧的 事件查看器->Windows日志->Setup，如下
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191018/z4UaFMh7jdro.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191018/z4UaFMh7jdro.png?imageslim">
+</p>
 
 我们查看他的详细信息，发现是有一个更新打不上：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191018/eFVnbE4C6gQh.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191018/eFVnbE4C6gQh.png?imageslim">
+</p>
 
 对，就是KB2999226这个补丁程序。
 
@@ -71,11 +61,9 @@ date: 2019-10-18
 
 我们安装的时候可能会发现还是安装不上，查了一下这个补丁程序的系统要求：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191018/0v4j51mLREIz.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191018/0v4j51mLREIz.png?imageslim">
+</p>
 
 系统要求是windows7 SP1。估计大多数的问题就在这了，MSU KB2999226不能安装的原因就是系统不是Win7 SP1，只有更新到SP1才能更新这个补丁。所以把系统更新到SP1即可。
 

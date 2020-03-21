@@ -43,19 +43,15 @@ CTR预估场景有自己独特的应用特点，而想要用深度学习解决 C
 
 下面两张图是两种常见的深度 CTR 网络结构，目前所有模型基本都采用了其中之一种结构。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/Vtzkyqse3Urv.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/Vtzkyqse3Urv.png?imageslim">
+</p>
 
 > 并行深度 CTR 网络结构
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/UezIbnUSQWXO.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/UezIbnUSQWXO.png?imageslim">
+</p>
 
 > 串行深度 CTR 网络结构

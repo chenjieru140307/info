@@ -5,11 +5,9 @@ date: 2019-09-29
 ---
 # 从 Word Embedding到 GPT
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/2k0S6bLfgL7K.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/2k0S6bLfgL7K.png?imageslim">
+</p>
 
 
 GPT是“Generative Pre-Training”的简称，从名字看其含义是指的生成式的预训练。
@@ -33,11 +31,9 @@ GPT也采用两阶段过程：
 
 ## GPT 训练好后如何使用
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/OW7UTxe8GzIz.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/OW7UTxe8GzIz.png?imageslim">
+</p>
 
 
 上图展示了 GPT 在第二阶段如何使用。
@@ -47,11 +43,9 @@ GPT也采用两阶段过程：
 这里引入了一个新问题：对于 NLP 各种花样的不同任务，怎么改造才能靠近 GPT 的网络结构呢？
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/FzmwU5aSxTPa.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/FzmwU5aSxTPa.png?imageslim">
+</p>
 
 
 GPT论文给了一个改造施工图如上，其实也很简单：
@@ -67,11 +61,9 @@ GPT论文给了一个改造施工图如上，其实也很简单：
 
 ## GPT 的效果如何
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/RNGyHDm8QHbv.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/RNGyHDm8QHbv.png?imageslim">
+</p>
 
 
 GPT的效果是非常令人惊艳的，在 12 个任务里，9个达到了最好的效果，有些任务性能提升非常明显。
@@ -79,11 +71,9 @@ GPT的效果是非常令人惊艳的，在 12 个任务里，9个达到了最好
 
 ## GPT 有什么缺点
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190927/l6chAEtKCukE.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190927/l6chAEtKCukE.png?imageslim">
+</p>
 
 
 那么站在现在的时间节点看，GPT有什么值得改进的地方呢？

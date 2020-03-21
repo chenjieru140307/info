@@ -8,11 +8,9 @@ NAS 工作流程，通常从定义一组神经网络可能会用到的 “建筑
 
 比如说 Google Brain那篇 NasNet 论文，就为图像识别网络总结了这些常用模块：
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190829/vHKNRA253LQr.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190829/vHKNRA253LQr.png?imageslim">
+</p>
 
 
 其中包含了多种卷积和池化模块。
@@ -27,11 +25,9 @@ NAS 算法用一个循环神经网络（RNN）作为**控制器**，从这些模
 过程如下图所示：
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190829/uqhlAufSPF2Q.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190829/uqhlAufSPF2Q.png?imageslim">
+</p>
 
 
 这个过程很直观了。简单来说，很有小朋友搭积木的风范：让一个算法挑出一些积木，然后把它们组装在一起，做成一个神经网络。训练、测试，根据这个结果来调整选积木的标准和组装的方式。
@@ -49,11 +45,9 @@ NAS 算法用一个循环神经网络（RNN）作为**控制器**，从这些模
 在图像识别领域，这就意味着用一组模块重复排列，逐步下采样，如下图所示：
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190829/mgdQxc3eB8Ys.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190829/mgdQxc3eB8Ys.png?imageslim">
+</p>
 
 
 这些模块也都是当前研究中常用的。NAS算法在其中所做的新工作，主要是给这些模块换个连接方式。
@@ -61,8 +55,6 @@ NAS 算法用一个循环神经网络（RNN）作为**控制器**，从这些模
 下面，就是它发现的 ImageNet 最佳神经网络架构：
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190829/SebeJqb59Hdo.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190829/SebeJqb59Hdo.png?imageslim">
+</p>
