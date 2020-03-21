@@ -60,10 +60,9 @@ Walker Skill：一个典型的 Planar Walker 策略走过不平整地面、跃�
 
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20191024/oRfKXziO2wO5.png?imageslim)
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191024/oRfKXziO2wO5.png?imageslim">
+</p>
 
 
 

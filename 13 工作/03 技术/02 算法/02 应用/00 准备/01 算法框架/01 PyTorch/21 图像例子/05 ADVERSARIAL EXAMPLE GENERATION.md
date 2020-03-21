@@ -24,10 +24,9 @@ One of the first and most popular adversarial attacks to date is referred to as 
 Before we jump into the code, let’s look at the famous [FGSM](https://arxiv.org/abs/1412.6572) panda example and extract some notation.
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/hHru98EyNAwL.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/hHru98EyNAwL.png?imageslim">
+</p>
 
 From the figure, \mathbf{x} is the original input image correctly classified as a “panda”, y is the ground truth label for \mathbf{x}, \mathbf{\theta} represents the model parameters, and J(\mathbf{\theta}, \mathbf{x}, y) is the loss that is used to train the network. The attack backpropagates the gradient back to the input data to calculate \nabla_{x} J(\mathbf{\theta}, \mathbf{x}, y). Then, it adjusts the input data by a small step (\epsilon or 0.007 in the picture) in the direction (i.e. sign(\nabla_{x} J(\mathbf{\theta}, \mathbf{x}, y))) that will maximize the loss. The resulting perturbed image, x', is then *misclassified* by the target network as a “gibbon” when it is still clearly a “panda”.
 
@@ -256,10 +255,9 @@ plt.ylabel("Accuracy")
 plt.show()
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/ffNt9XErutNP.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/ffNt9XErutNP.png?imageslim">
+</p>
 
 ### Sample Adversarial Examples
 

@@ -11,10 +11,9 @@ In this tutorial, we explore a fun and interesting use-case of recurrent sequenc
 
 Conversational models are a hot topic in artificial intelligence research. Chatbots can be found in a variety of settings, including customer service applications and online helpdesks. These bots are often powered by retrieval-based models, which output predefined responses to questions of certain forms. In a highly restricted domain like a company’s IT helpdesk, these models may be sufficient, however, they are not robust enough for more general use-cases. Teaching a machine to carry out a meaningful conversation with a human in multiple domains is a research question that is far from solved. Recently, the deep learning boom has allowed for powerful generative models like Google’s [Neural Conversational Model](https://arxiv.org/abs/1506.05869), which marks a large step towards multi-domain generative conversational models. In this tutorial, we will implement this kind of model in PyTorch.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/KQ5nOYuQ5dbY.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/KQ5nOYuQ5dbY.png?imageslim">
+</p>
 
 
 
@@ -457,10 +456,9 @@ Using mini-batches also means that we must be mindful of the variation of senten
 
 If we simply convert our English sentences to tensors by converting words to their indexes(`indexesFromSentence`) and zero-pad, our tensor would have shape *(batch_size, max_length)* and indexing the first dimension would return a full sequence across all time-steps. However, we need to be able to index our batch along time, and across all sequences in the batch. Therefore, we transpose our input batch shape to *(max_length, batch_size)*, so that indexing across the first dimension returns a time step across all sentences in the batch. We handle this transpose implicitly in the `zeroPadding` function.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/BMthXeENOmKc.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/BMthXeENOmKc.png?imageslim">
+</p>
 
 The `inputVar` function handles the process of converting sentences to tensor, ultimately creating a correctly shaped zero-padded tensor. It also returns a tensor of `lengths` for each of the sequences in the batch which will be passed to our decoder later.
 
@@ -574,10 +572,9 @@ The brains of our chatbot is a sequence-to-sequence (seq2seq) model. The goal of
 
 [Sutskever et al.](https://arxiv.org/abs/1409.3215) discovered that by using two separate recurrent neural nets together, we can accomplish this task. One RNN acts as an **encoder**, which encodes a variable length input sequence to a fixed-length context vector. In theory, this context vector (the final hidden layer of the RNN) will contain semantic information about the query sentence that is input to the bot. The second RNN is a **decoder**, which takes an input word and the context vector, and returns a guess for the next word in the sequence and a hidden state to use in the next iteration.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/r4hwzLpome23.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/r4hwzLpome23.png?imageslim">
+</p>
 
 Image source: <https://jeddy92.github.io/JEddy92.github.io/ts_seq2seq_intro/>
 
@@ -589,10 +586,9 @@ At the heart of our encoder is a multi-layered Gated Recurrent Unit, invented by
 
 Bidirectional RNN:
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/6S1uSBC0dq1L.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/6S1uSBC0dq1L.png?imageslim">
+</p>
 
 Image source: <https://colah.github.io/posts/2015-09-NN-Types-FP/>
 
@@ -656,10 +652,9 @@ To combat this, [Bahdanau et al.](https://arxiv.org/abs/1409.0473) created an �
 
 At a high level, attention is calculated using the decoder’s current hidden state and the encoder’s outputs. The output attention weights have the same shape as the input sequence, allowing us to multiply them by the encoder outputs, giving us a weighted sum which indicates the parts of encoder output to pay attention to. [Sean Robertson’s](https://github.com/spro) figure describes this very well:
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/kjd5xrPV6FDV.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/kjd5xrPV6FDV.png?imageslim">
+</p>
 
 [Luong et al.](https://arxiv.org/abs/1508.04025) improved upon Bahdanau et al.’s groundwork by creating “Global attention”. The key difference is that with “Global attention”, we consider all of the encoder’s hidden states, as opposed to Bahdanau et al.’s “Local attention”, which only considers the encoder’s hidden state from the current time step. Another difference is that with “Global attention”, we calculate attention weights, or energies, using the hidden state of the decoder from the current time step only. Bahdanau et al.’s attention calculation requires knowledge of the decoder’s state from the previous time step. Also, Luong et al. provides various methods to calculate the attention energies between the encoder output and decoder output which are called “score functions”:
 
@@ -671,10 +666,9 @@ where h_t = current target decoder state and \bar{h}_s = all encoder states.
 
 Overall, the Global attention mechanism can be summarized by the following figure. Note that we will implement the “Attention Layer” as a separate `nn.Module` called `Attn`. The output of this module is a softmax normalized weights tensor of shape *(batch_size, 1, max_length)*.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/UWmFgzHLlNsb.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/UWmFgzHLlNsb.png?imageslim">
+</p>
 
 ```
 # Luong attention layer
@@ -809,10 +803,9 @@ We will use a couple of clever tricks to aid in convergence:
 - The first trick is using **teacher forcing**. This means that at some probability, set by `teacher_forcing_ratio`, we use the current target word as the decoder’s next input rather than using the decoder’s current guess. This technique acts as training wheels for the decoder, aiding in more efficient training. However, teacher forcing can lead to model instability during inference, as the decoder may not have a sufficient chance to truly craft its own output sequences during training. Thus, we must be mindful of how we are setting the `teacher_forcing_ratio`, and not be fooled by fast convergence.
 - The second trick that we implement is **gradient clipping**. This is a commonly used technique for countering the “exploding gradient” problem. In essence, by clipping or thresholding gradients to a maximum value, we prevent the gradients from growing exponentially and either overflow (NaN), or overshoot steep cliffs in the cost function.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/PfGpVoHQu5LV.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/PfGpVoHQu5LV.png?imageslim">
+</p>
 
 Image source: Goodfellow et al. *Deep Learning*. 2016. <https://www.deeplearningbook.org/>
 

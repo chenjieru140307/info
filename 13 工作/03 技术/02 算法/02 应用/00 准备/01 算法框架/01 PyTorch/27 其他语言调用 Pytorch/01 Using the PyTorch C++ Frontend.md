@@ -950,10 +950,9 @@ Saved out.png
 
 Which should look something like this:
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/PbkvEKi1okXS.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/PbkvEKi1okXS.png?imageslim">
+</p>
 
 Digits! Hooray! Now the ball is in your court: can you improve the model to make the digits look even better?
 

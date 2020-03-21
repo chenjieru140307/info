@@ -653,10 +653,9 @@ plt.xticks(np.arange(1, num_epochs+1, 1.0))
 plt.legend()
 plt.show()
 ```
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/LE8BdsVb3SOH.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/LE8BdsVb3SOH.png?imageslim">
+</p>
 
 
 Out:

@@ -80,10 +80,9 @@ Spatial transformer networks boils down to three main components :
 - The sampler uses the parameters of the transformation and applies it to the input image.
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/pMkTvonLAInA.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/pMkTvonLAInA.png?imageslim">
+</p>
 
 
 NOTE
@@ -252,10 +251,9 @@ plt.ioff()
 plt.show()
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/Ki3KvVOzwT86.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/Ki3KvVOzwT86.png?imageslim">
+</p>
 
 Out:
 

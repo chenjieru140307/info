@@ -114,10 +114,9 @@ out = torchvision.utils.make_grid(inputs)
 imshow(out, title=[class_names[x] for x in classes])
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190628/r8LO3rJER27D.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190628/r8LO3rJER27D.png?imageslim">
+</p>
 
 ## Training the model
 
@@ -394,10 +393,9 @@ Best val Acc: 0.941176
 visualize_model(model_ft)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190628/4MY1Q6A9iprR.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190628/4MY1Q6A9iprR.png?imageslim">
+</p>
 
 ## ConvNet as fixed feature extractor
 
@@ -576,10 +574,9 @@ plt.ioff()
 plt.show()
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190628/b0aM3wIbc0IQ.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190628/b0aM3wIbc0IQ.png?imageslim">
+</p>
 
 
 

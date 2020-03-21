@@ -175,10 +175,9 @@ plot([mp_mean, rn_mean],
      'mp_vs_rn.png')
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/yfAPDt4wwLvt.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/yfAPDt4wwLvt.png?imageslim">
+</p>
 
 The result shows that the execution time of model parallel implementation is `4.02/3.75-1=7%` longer than the existing single-GPU implementation. So we can conclude there is roughly 7% overhead in copying tensors back and forth across the GPUs. There are rooms for improvements, as we know one of the two GPUs is sitting idle throughout the execution. One option is to further divide each batch into a pipeline of splits, such that when one split reaches the second sub-network, the following split can be fed into the first sub-network. In this way, two consecutive splits can run concurrently on two GPUs.
 
@@ -225,10 +224,9 @@ plot([mp_mean, rn_mean, pp_mean],
 
 Please note, device-to-device tensor copy operations are synchronized on current streams on the source and the destination devices. If you create multiple streams, you have to make sure that copy operations are properly synchronized. Writing the source tensor or reading/writing the destination tensor before finishing the copy operation can lead to undefined behavior. The above implementation only uses default streams on both source and destination devices, hence it is not necessary to enforce additional synchronizations.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/AAEo2pmrPOJ6.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/AAEo2pmrPOJ6.png?imageslim">
+</p>
 
 The experiment result shows that, pipelining inputs to model parallel ResNet50 speeds up the training process by roughly `3.75/2.51-1=49%`. It is still quite far away from the ideal 100% speedup. As we have introduced a new parameter `split_sizes` in our pipeline parallel implementation, it is unclear how the new parameter affects the overall training time. Intuitively speaking, using small `split_size` leads to many tiny CUDA kernel launch, while using large `split_size` results to relatively long idle times during the first and last splits. Neither are optimal. There might be an optimal `split_size` configuration for this specific experiment. Let us try to find it by running experiments using several different `split_size` values.
 
@@ -256,10 +254,9 @@ plt.savefig("split_size_tradeoff.png")
 plt.close(fig)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/piGVrv3cxKgH.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/piGVrv3cxKgH.png?imageslim">
+</p>
 
 The result shows that setting `split_size` to 12 achieves the fastest training speed, which leads to `3.75/2.43-1=54%` speedup. There are still opportunities to further accelerate the training process. For example, all operations on `cuda:0` is placed on its default stream. It means that computations on the next split cannot overlap with the copy operation of the prev split. However, as prev and next splits are different tensors, there is no problem to overlap one’s computation with the other one’s copy. The implementation need to use multiple streams on both GPUs, and different sub-network structures require different stream management strategies. As no general multi-stream solution works for all model parallel use cases, we will not discuss it in this tutorial.
 

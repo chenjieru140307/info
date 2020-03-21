@@ -320,10 +320,9 @@ plt.figure()
 plt.plot(all_losses)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/8hfWtpm6Xaz2.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/8hfWtpm6Xaz2.png?imageslim">
+</p>
 
 ## Sampling the Network
 

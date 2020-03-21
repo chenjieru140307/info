@@ -33,10 +33,9 @@ In this project we will be teaching a neural network to translate from French to
 
 This is made possible by the simple but powerful idea of the [sequence to sequence network](https://arxiv.org/abs/1409.3215), in which two recurrent neural networks work together to transform one sequence to another. An encoder network condenses an input sequence into a vector, and a decoder network unfolds that vector into a new sequence.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/mw3OIPCYVOu1.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/mw3OIPCYVOu1.png?imageslim">
+</p>
 
 
 
@@ -103,10 +102,9 @@ Download the data from [here](https://download.pytorch.org/tutorial/data.zip) an
 
 Similar to the character encoding used in the character-level RNN tutorials, we will be representing each word in a language as a one-hot vector, or giant vector of zeros except for a single one (at the index of the word). Compared to the dozens of characters that might exist in a language, there are many many more words, so the encoding vector is much larger. We will however cheat a bit and trim the data to only use a few thousand words per language.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/801sT7yJGD9H.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/801sT7yJGD9H.png?imageslim">
+</p>
 
 We’ll need a unique index per word to use as the inputs and targets of the networks later. To keep track of all this we will use a helper class called `Lang` which has word → index (`word2index`) and index → word (`index2word`) dictionaries, as well as a count of each word `word2count` to use to later replace rare words.
 
@@ -253,10 +251,9 @@ A Recurrent Neural Network, or RNN, is a network that operates on a sequence and
 
 A [Sequence to Sequence network](https://arxiv.org/abs/1409.3215), or seq2seq network, or [Encoder Decoder network](https://arxiv.org/pdf/1406.1078v3.pdf), is a model consisting of two RNNs called the encoder and decoder. The encoder reads an input sequence and outputs a single vector, and the decoder reads that vector to produce an output sequence.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/ib2DQAuydwbm.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/ib2DQAuydwbm.png?imageslim">
+</p>
 
 
 Unlike sequence prediction with a single RNN, where every input corresponds to an output, the seq2seq model frees us from sequence length and order, which makes it ideal for translation between two languages.
@@ -270,10 +267,9 @@ With a seq2seq model the encoder creates a single vector which, in the ideal cas
 The encoder of a seq2seq network is a RNN that outputs some value for every word from the input sentence. For every input word the encoder outputs a vector and a hidden state, and uses the hidden state for the next input word.
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/UoENlEj2xzLY.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/UoENlEj2xzLY.png?imageslim">
+</p>
 
 ```
 class EncoderRNN(nn.Module):
@@ -304,10 +300,9 @@ In the simplest seq2seq decoder we use only last output of the encoder. This las
 
 At every step of decoding, the decoder is given an input token and hidden state. The initial input token is the start-of-string `<SOS>` token, and the first hidden state is the context vector (the encoder’s last hidden state).
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/XbO8dcbTeHys.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/XbO8dcbTeHys.png?imageslim">
+</p>
 
 ```
 class DecoderRNN(nn.Module):
@@ -339,10 +334,9 @@ If only the context vector is passed betweeen the encoder and decoder, that sing
 
 Attention allows the decoder network to “focus” on a different part of the encoder’s outputs for every step of the decoder’s own outputs. First we calculate a set of *attention weights*. These will be multiplied by the encoder output vectors to create a weighted combination. The result (called `attn_applied` in the code) should contain information about that specific part of the input sequence, and thus help the decoder choose the right output words.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/IzsgpH6XPq58.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/IzsgpH6XPq58.png?imageslim">
+</p>
 
 Calculating the attention weights is done with another feed-forward layer `attn`, using the decoder’s input and hidden state as inputs. Because there are sentences of all sizes in the training data, to actually create and train this layer we have to choose a maximum sentence length (input length, for encoder outputs) that it can apply to. Sentences of the maximum length will use all the attention weights, while shorter sentences will only use the first few.
 
@@ -639,10 +633,9 @@ attn_decoder1 = AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1).
 trainIters(encoder1, attn_decoder1, 75000, print_every=5000)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/z4v4xJEqnSOA.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/z4v4xJEqnSOA.png?imageslim">
+</p>
 
 Out:
 
@@ -722,10 +715,9 @@ output_words, attentions = evaluate(
 plt.matshow(attentions.numpy())
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/ici3dibOJ99U.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/ici3dibOJ99U.png?imageslim">
+</p>
 
 For a better viewing experience we will do the extra work of adding axes and labels:
 
@@ -767,25 +759,21 @@ evaluateAndShowAttention("c est un jeune directeur plein de talent .")
 ```
 
 
-<center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/FYSMC6YqMUoJ.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/20190629/FYSMC6YqMUoJ.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/8p2D43jxpUQs.png?imageslim">
+</p>
 
-<center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/bLON2TFR4T88.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/20190629/8p2D43jxpUQs.png?imageslim){ width=55% }
-</center>
-
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/bLON2TFR4T88.png?imageslim){ width=55% }
-</center>
-
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/y763TuR63dct.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/y763TuR63dct.png?imageslim">
+</p>
 
 
 Out:

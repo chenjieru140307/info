@@ -132,10 +132,9 @@ We should see that the output of PyTorch and Caffe2 runs match numerically up to
 
 Using the same process as above, we also transferred an interesting new model “SRResNet” for super-resolution presented in [this paper](https://arxiv.org/pdf/1609.04802.pdf) (thanks to the authors at Twitter for providing us code and pretrained parameters for the purpose of this tutorial). The model definition and a pre-trained model can be found [here](https://gist.github.com/prigoyal/b245776903efbac00ee89699e001c9bd). Below is what SRResNet model input, output looks like.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/FCWLoBGGdd4P.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/FCWLoBGGdd4P.png?imageslim">
+</p>
 
 
 ## Running the model on mobile devices
@@ -166,10 +165,9 @@ with open('predict_net.pb', "wb") as fopen:
 
 For this tutorial, we will use a famous cat image used widely which looks like below
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/01YE5jL4DbUy.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/01YE5jL4DbUy.png?imageslim">
+</p>
 
 ```
 # Some standard imports
@@ -301,10 +299,9 @@ final_img.save("./_static/img/cat_superres_mobile.jpg")
 
 Now, you can compare the image `cat_superres.jpg` (model output from pure caffe2 backend execution) and `cat_superres_mobile.jpg` (model output from mobile execution) and see that both the images look same. If they don’t look same, something went wrong with execution on mobile and in that case, please contact Caffe2 community. You should expect to see the output image to look like following:
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/EqpgdXsUeXvX.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/EqpgdXsUeXvX.png?imageslim">
+</p>
 
 Using the above steps, you can deploy your models on mobile easily. Also, for more information on caffe2 mobile backend, checkout [caffe2-android-demo](https://caffe2.ai/docs/AI-Camera-demo-android.html).
 

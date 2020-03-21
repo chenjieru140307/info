@@ -89,10 +89,9 @@ jupyter nbconvert --to pdf notebook.ipynb
 
 转换为 pdf 格式分模板配置与 latex 配置是一样的。但是直接转换为 pdf 格式经常会出现下列错误：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/XmX8LIJgz7Pw.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/XmX8LIJgz7Pw.png?imageslim">
+</p>
 
 该错误提示没有安装 xelatex。所以，我们需要提前安装 xelatex，方法是安装 texLive 套装：
 
@@ -106,10 +105,9 @@ texlive-full 的安装包有点大，约 1G 多。
 
 ipynb 转换为 html、md、pdf 等格式，还有另一种更简单的方法：在 jupyter notebook 中，选择 File->Download as，直接选择需要转换的格式就可以了。需要注意的是，转换为 pdf 格式之前，同样要保证已经安装了 xelatex。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/1vrqX4dsj80H.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/1vrqX4dsj80H.png?imageslim">
+</p>
 
 
 # 相关

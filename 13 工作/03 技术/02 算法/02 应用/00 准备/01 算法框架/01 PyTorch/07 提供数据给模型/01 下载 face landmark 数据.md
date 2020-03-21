@@ -98,10 +98,9 @@ First 4 Landmarks:
 
 显示的图片：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190628/Mtvag7YI6ecW.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190628/Mtvag7YI6ecW.png?imageslim">
+</p>
 
 
 说明：

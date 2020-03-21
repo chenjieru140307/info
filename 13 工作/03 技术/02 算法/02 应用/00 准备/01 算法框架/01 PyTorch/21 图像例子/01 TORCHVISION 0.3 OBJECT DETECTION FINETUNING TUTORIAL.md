@@ -53,14 +53,12 @@ PennFudanPed/
 Here is one example of a pair of images and segmentation masks
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/HqRM3DANb4Ga.png?imageslim){ width=55% }
-</center>
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/KwthqK7xSEs9.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/HqRM3DANb4Ga.png?imageslim">
+</p>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/KwthqK7xSEs9.png?imageslim">
+</p>
 
 
 So each image has a corresponding segmentation mask, where each color correspond to a different instance. Let’s write a `torch.utils.data.Dataset` class for this dataset.
@@ -146,17 +144,15 @@ That’s all for the dataset. Now let’s define a model that can perform predic
 
 In this tutorial, we will be using [Mask R-CNN](https://arxiv.org/abs/1703.06870), which is based on top of [Faster R-CNN](https://arxiv.org/abs/1506.01497). Faster R-CNN is a model that predicts both bounding boxes and class scores for potential objects in the image.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/TA3DvmTCYtsj.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/TA3DvmTCYtsj.png?imageslim">
+</p>
 
 Mask R-CNN adds an extra branch into Faster R-CNN, which also predicts segmentation masks for each instance.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/EvgX4pxrIHz7.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/EvgX4pxrIHz7.png?imageslim">
+</p>
 
 There are two common situations where one might want to modify one of the available models in torchvision modelzoo. The first is when we want to start from a pre-trained model, and just finetune the last layer. The other is when we want to replace the backbone of the model with a different one (for faster predictions, for example).
 
@@ -418,21 +414,18 @@ IoU metric: segm
 
 But what do the predictions look like? Let’s take one image in the dataset and verify
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/JP8jFHVhsLlN.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/JP8jFHVhsLlN.png?imageslim">
+</p>
 
 The trained model predicts 9 instances of person in this image, let’s see a couple of them:
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/tCzBiEvrUgNr.png?imageslim){ width=55% }
-</center>
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/efl752jDCMmt.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/tCzBiEvrUgNr.png?imageslim">
+</p>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/efl752jDCMmt.png?imageslim">
+</p>
 
 
 The results look pretty good!

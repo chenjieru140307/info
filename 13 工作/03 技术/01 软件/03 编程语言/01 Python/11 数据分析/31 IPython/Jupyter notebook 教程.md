@@ -54,10 +54,9 @@ date: 2019-06-27
 主界面
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/T2sxddqw9zFC.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/T2sxddqw9zFC.png?imageslim">
+</p>
 
 试用成功
 
@@ -65,10 +64,9 @@ date: 2019-06-27
 
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/JLl40r0mFOOL.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/JLl40r0mFOOL.png?imageslim">
+</p>
 
 编辑页面
 
@@ -200,10 +198,9 @@ jupyter notebook --no-browser
 此时，将会在终端显示启动的服务器信息，并在服务器启动之后，显示出打开浏览器页面的链接。当你需要启动浏览器页面时，只需要复制链接，并粘贴在浏览器的地址栏中，轻按回车变转到了你的 Jupyter Notebook页面。
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/4YwixFPtuJ8R.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/4YwixFPtuJ8R.png?imageslim">
+</p>
 
 no_browser
 
@@ -216,10 +213,9 @@ no_browser
 当执行完启动命令之后，浏览器将会进入到 Notebook 的主页面，如下图所示。
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/hIwpOWpdR9MM.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/hIwpOWpdR9MM.png?imageslim">
+</p>
 
 Notebook Dashboard
 
@@ -257,10 +253,9 @@ jupyter notebook --generate-config
 
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/p7SowraxQDlS.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/p7SowraxQDlS.png?imageslim">
+</p>
 
 命令
 
@@ -293,10 +288,9 @@ vim ~/.jupyter/jupyter_notebook_config.py
 ```
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/bOLMNTWo0Guk.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/bOLMNTWo0Guk.png?imageslim">
+</p>
 
 vim打开配置文件
 
@@ -318,10 +312,9 @@ vim打开配置文件
 
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/onHGDzlLkjRQ.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/onHGDzlLkjRQ.png?imageslim">
+</p>
 
 config
 
@@ -344,10 +337,9 @@ config
 在终端中输入命令`jupyter notebook`打开 Jupyter Notebook，此时你会看到一个清爽的界面，恭喜！
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/sx309s8xeejc.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/sx309s8xeejc.png?imageslim">
+</p>
 
 modified
 
@@ -364,10 +356,9 @@ modified
 ## 1. Files页面
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/VLWwjiKxoOFB.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/VLWwjiKxoOFB.png?imageslim">
+</p>
 
 Files页面
 
@@ -382,10 +373,9 @@ Files页面是用于管理和创建文件相关的类目。
 ### ① 笔记本的基本操作
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/VE9LQ4NgNrUR.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/VE9LQ4NgNrUR.png?imageslim">
+</p>
 
 笔记本的使用
 
@@ -408,10 +398,9 @@ Files页面是用于管理和创建文件相关的类目。
 #### ⑶ 演示
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/4VB7hhN5AMrq.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/4VB7hhN5AMrq.png?imageslim">
+</p>
 
 重命名
 
@@ -420,10 +409,9 @@ Files页面是用于管理和创建文件相关的类目。
 Running页面主要展示的是当前正在运行当中的终端和“ipynb”格式的笔记本。若想要关闭已经打开的终端和“ipynb”格式的笔记本，仅仅关闭其页面是无法彻底退出程序的，需要在 Running 页面点击其对应的“Shutdown”。更多关闭方法可以查阅“八、关闭和退出”中的“[1.关闭笔记本和终端](#quit)”
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/q8CKpFs6i9eW.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/q8CKpFs6i9eW.png?imageslim">
+</p>
 Running
 
 ## 3. Clusters页面
@@ -439,10 +427,9 @@ Conda页面主要是 Jupyter Notebook与 Conda 关联之后对 Conda 环境和�
 ## 5. Nbextensions页面
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/xC0ERMVtPE3c.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/xC0ERMVtPE3c.png?imageslim">
+</p>
 
 nbextensions
 

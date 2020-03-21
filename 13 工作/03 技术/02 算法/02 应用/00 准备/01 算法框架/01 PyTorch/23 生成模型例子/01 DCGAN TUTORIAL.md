@@ -162,10 +162,9 @@ plt.title("Training Images")
 plt.imshow(np.transpose(vutils.make_grid(real_batch[0].to(device)[:64], padding=2, normalize=True).cpu(),(1,2,0)))
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/fpXM6cNat468.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/fpXM6cNat468.png?imageslim">
+</p>
 
 ## Implementation
 
@@ -190,10 +189,9 @@ def weights_init(m):
 
 The generator, G, is designed to map the latent space vector (z) to data-space. Since our data are images, converting z to data-space means ultimately creating a RGB image with the same size as the training images (i.e. 3x64x64). In practice, this is accomplished through a series of strided two dimensional convolutional transpose layers, each paired with a 2d batch norm layer and a relu activation. The output of the generator is fed through a tanh function to return it to the input data range of [-1,1]. It is worth noting the existence of the batch norm functions after the conv-transpose layers, as this is a critical contribution of the DCGAN paper. These layers help with the flow of gradients during training. An image of the generator from the DCGAN paper is shown below.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/JkLPchvFTN0L.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/JkLPchvFTN0L.png?imageslim">
+</p>
 
 Notice, the how the inputs we set in the input section (*nz*, *ngf*, and *nc*) influence the generator architecture in code. *nz* is the length of the z input vector, *ngf* relates to the size of the feature maps that are propagated through the generator, and *nc* is the number of channels in the output image (set to 3 for RGB images). Below is the code for the generator.
 
@@ -665,10 +663,9 @@ plt.legend()
 plt.show()
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/rjN6OVxY587i.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/rjN6OVxY587i.png?imageslim">
+</p>
 
 **Visualization of G’s progression**
 
@@ -683,10 +680,9 @@ ani = animation.ArtistAnimation(fig, ims, interval=1000, repeat_delay=1000, blit
 
 HTML(ani.to_jshtml())
 ```
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/XDbt4cAaHAeY.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/XDbt4cAaHAeY.png?imageslim">
+</p>
 
 
 **Real Images vs. Fake Images**
@@ -711,10 +707,9 @@ plt.title("Fake Images")
 plt.imshow(np.transpose(img_list[-1],(1,2,0)))
 plt.show()
 ```
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/tpunMJgNwWvE.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/tpunMJgNwWvE.png?imageslim">
+</p>
 
 
 ## Where to Go Next

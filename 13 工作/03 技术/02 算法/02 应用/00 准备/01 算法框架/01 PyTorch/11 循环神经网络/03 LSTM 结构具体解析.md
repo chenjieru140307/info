@@ -41,10 +41,9 @@ LSTM 的关键就是细胞核的状态。细胞核的状态类似于一种传送
 
 衰减系数计算过程：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/FfFGf6lYOVxf.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/FfFGf6lYOVxf.png?imageslim">
+</p>
 
 $$
 f_{t}=\sigma\left(W_{f}\left[h_{t-1}, x_{t}\right]+b_{f}\right)
@@ -73,10 +72,9 @@ $$
 
 $C_{t-1}$ 更新为 $C_{t}$ 过程：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/a1CjADOAkGrx.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/a1CjADOAkGrx.png?imageslim">
+</p>
 
 $$
 C_{t}=f_{t} C_{t-1}+i_{t} \tilde{C}_{t}
@@ -87,10 +85,9 @@ $$
 
 确定输出值：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/Mgv4LzHrDijY.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/Mgv4LzHrDijY.png?imageslim">
+</p>
 
 $$
 o_{t}=\sigma\left(W_{o}\left[h_{t-1}, x_{t}\right]+b_{o}\right)

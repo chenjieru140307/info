@@ -62,10 +62,9 @@ pyplot.imshow(x_train[0].reshape((28, 28)), cmap="gray")
 print(x_train.shape)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190628/WqAiz5P333If.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190628/WqAiz5P333If.png?imageslim">
+</p>
 
 Out:
 

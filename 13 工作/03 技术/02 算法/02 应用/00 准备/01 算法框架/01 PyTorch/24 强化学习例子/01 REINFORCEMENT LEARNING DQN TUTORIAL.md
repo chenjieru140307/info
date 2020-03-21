@@ -13,10 +13,9 @@ This tutorial shows how to use PyTorch to train a Deep Q Learning (DQN) agent on
 
 The agent has to decide between two actions - moving the cart left or right - so that the pole attached to it stays upright. You can find an official leaderboard with various algorithms and visualizations at the [Gym website](https://gym.openai.com/envs/CartPole-v0).
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/epn6Sw9SSAhE.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/epn6Sw9SSAhE.png?imageslim">
+</p>
 
 cartpole
 
@@ -394,10 +393,9 @@ plt.show()
 
 Here is the diagram that illustrates the overall resulting data flow.
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/xf2ypAL79CnN.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/xf2ypAL79CnN.png?imageslim">
+</p>
 
 Actions are chosen either randomly or based on a policy, getting the next step sample from the gym environment. We record the results in the replay memory and also run optimization step on every iteration. Optimization picks a random batch from the replay memory to do training of the new policy. “Older” target_net is also used in optimization to compute the expected Q values; it is updated occasionally to keep it current.
 

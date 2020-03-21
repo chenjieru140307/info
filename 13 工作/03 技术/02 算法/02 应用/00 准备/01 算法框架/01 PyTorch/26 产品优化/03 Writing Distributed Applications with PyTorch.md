@@ -53,10 +53,9 @@ Let’s have a look at the `init_processes` function. It ensures that every proc
 
 ## Point-to-Point Communication
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/4Ny2CdRDMfB5.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/4Ny2CdRDMfB5.png?imageslim">
+</p>
 
 Send and Recv
 

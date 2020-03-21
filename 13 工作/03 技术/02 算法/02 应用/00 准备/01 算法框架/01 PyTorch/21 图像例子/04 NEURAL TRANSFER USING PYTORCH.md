@@ -14,10 +14,9 @@ date: 2019-06-29
 This tutorial explains how to implement the [Neural-Style algorithm](https://arxiv.org/abs/1508.06576) developed by Leon A. Gatys, Alexander S. Ecker and Matthias Bethge. Neural-Style, or Neural-Transfer, allows you to take an image and reproduce it with a new artistic style. The algorithm takes three images, an input image, a content-image, and a style-image, and changes the input to resemble the content of the content-image and the artistic style of the style-image.
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/1mdtuTqgSXiq.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/1mdtuTqgSXiq.png?imageslim">
+</p>
 
 ## Underlying Principle
 
@@ -113,15 +112,13 @@ imshow(content_img, title='Content Image')
 ```
 
 
-<center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/zyI5TD1ig2KN.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/20190629/zyI5TD1ig2KN.png?imageslim){ width=55% }
-</center>
-
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/P7p9XRAlDn7R.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/P7p9XRAlDn7R.png?imageslim">
+</p>
 
 ## Loss Functions
 
@@ -300,10 +297,9 @@ plt.figure()
 imshow(input_img, title='Input Image')
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/D3SjauCOfJxh.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/D3SjauCOfJxh.png?imageslim">
+</p>
 
 ## Gradient Descent
 
@@ -386,10 +382,9 @@ plt.show()
 ```
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/d4BvvO3cQTN8.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/d4BvvO3cQTN8.png?imageslim">
+</p>
 
 Out:
 

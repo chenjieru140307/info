@@ -396,10 +396,9 @@ plt.figure()
 plt.plot(all_losses)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/uCdWJBc8Rb1d.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/uCdWJBc8Rb1d.png?imageslim">
+</p>
 
 ## Evaluating the Results
 
@@ -449,10 +448,9 @@ ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
 plt.show()
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/jguAqtp4rGkS.png?imageslim){ width=55% }
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/jguAqtp4rGkS.png?imageslim">
+</p>
 
 You can pick out bright spots off the main axis that show which languages it guesses incorrectly, e.g. Chinese for Korean, and Spanish for Italian. It seems to do very well with Greek, and very poorly with English (perhaps because of overlap with other languages).
 
