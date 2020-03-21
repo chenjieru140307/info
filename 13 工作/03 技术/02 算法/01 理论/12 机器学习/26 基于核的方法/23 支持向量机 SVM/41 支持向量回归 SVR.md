@@ -19,12 +19,9 @@ date: 2018-07-31 18:06:17
 
 如图 6.6所示，这相当于以为 $f(\boldsymbol{x})$ 中心，构建了一个宽度为 $2\epsilon$ 的间隔带，若训练样本落入此间隔带，则认为是被预测正确的.
 
-<center>
-
-![](http://images.iterate.site/blog/image/180627/eAKlA3BEmJ.png?imageslim){ width=55% }
-
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180627/eAKlA3BEmJ.png?imageslim">
+</p>
 
 于是，SVR 问题可形式化为
 
@@ -46,12 +43,9 @@ $$
 \begin{array}{ll}{\min _{\boldsymbol{w}, b, \xi_{i}, \hat{\xi}_{i}}}& {\frac{1}{2}\|\boldsymbol{w}\|^{2}+C \sum_{i=1}^{m}\left(\xi_{i}+\hat{\xi}_{i}\right)}\\{\text { s.t. }}&{ f\left(\boldsymbol{x}_{i}\right)-y_{i} \leqslant \epsilon+\xi_{i}} \\ {}&{ \begin{array}{l}{y_{i}-f\left(\boldsymbol{x}_{i}\right) \leqslant \epsilon+\hat{\xi}_{i}} \\ {\xi_{i} \geqslant 0, \hat{\xi}_{i} \geqslant 0, i=1,2, \ldots, m}\end{array}}\end{array}\tag{6.45}
 $$
 
-<center>
-
-![](http://images.iterate.site/blog/image/180627/Ke2LHdHL6D.png?imageslim){ width=55% }
-
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180627/Ke2LHdHL6D.png?imageslim">
+</p>
 
 类似式 (6.36)，通过引入拉格朗日乘子 $\mu_{i} \geqslant 0, \hat{\mu}_{i} \geqslant 0, \alpha_{i} \geqslant 0, \hat{\alpha}_{i} \geqslant 0$，由拉格朗日乘子法可得到式子 (6.45) 的拉格朗日函数：
 

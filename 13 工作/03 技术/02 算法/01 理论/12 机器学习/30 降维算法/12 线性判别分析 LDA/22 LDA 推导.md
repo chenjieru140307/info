@@ -19,12 +19,9 @@ LDA 的思想非常朴素：给定训练样例集，设法将样例投影到一�
 示意图如下： LDA 的二维示意图"+"、 "-"分别代表正例和反例，椭圆表示数据簇的外轮廓，虚线表示投影， 红色实心园和实心三角形分别表示两类样本投影后的中心点.
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/180626/ih4CF1e14C.png?imageslim){ width=55% }
-
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180626/ih4CF1e14C.png?imageslim">
+</p>
 
 
 在对新样本进行分类时，将其投影到同样的这条直线上，再根据投影点的位置来确定新样本的类别。

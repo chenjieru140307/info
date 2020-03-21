@@ -13,12 +13,9 @@ Bagging 是并行式集成学习方法最著名的代表。从名字即 可看�
 
 照这样，我们可采样出 $T$ 个含 $m$ 个训练样本的采样集，然后基于每个采样 集训练出一个基学习器，再将这些基学习器进行结合。这就是 Bagging 的基本流程。在对预测输出进行结合时，Bagging通常对分类任务使用简单投票法，对回归任务使用简单平均法。若分类预测时出现两个类收到同样票数的情形，则最简单的做法是随机选择一个，也可进一步考察学习器投票的置信度来确定最终胜者.Bagging的算法描述如图 8.5所示.
 
-<center>
-
-![](http://images.iterate.site/blog/image/180628/eG9glEFeci.png?imageslim){ width=55% }
-
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180628/eG9glEFeci.png?imageslim">
+</p>
 
 
 假定基学习器的计算复杂度为 $O(m)$ 则 Bagging 的复杂度大致为  $T(O(m)+O(s))$ ，考虑到采样与投票/平均过程的复杂度 $O(s)$ 很小，而 T 通常是一个不太大的常数，因此，训练一个 Bagging 集成与直接使用基学习算法训练一个学习器的复杂度同阶，这说明 Bagging 是一个很高效的集成学习算法。另外，与标准 AdaBoost 只适用于二分类任务不同，Bagging 能不经修改地 用于多分类、回归等任务.
@@ -43,12 +40,9 @@ $$
 
 从偏差一方差分解的角度看，Bagging 主要关注降低方差，因此它在不剪枝决策树、神经网络等易受样本扰动的学习器上效用更为明显。我们以基于信息増益划分的决策树为基学习器，在表 4.5 的西瓜数据集 3.0$\alpha$ 上运行 Bagging 算法，不同规模的集成及其基学习器所对应的分类边界如图 8.6所示.
 
-<center>
-
-![](http://images.iterate.site/blog/image/180628/39IfBdI599.png?imageslim){ width=55% }
-
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180628/39IfBdI599.png?imageslim">
+</p>
 
 
 

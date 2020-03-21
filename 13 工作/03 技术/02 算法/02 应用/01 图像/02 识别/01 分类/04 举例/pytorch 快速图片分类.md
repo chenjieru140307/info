@@ -139,12 +139,9 @@ show_batch 显示一些 batch 里的图片。
 
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/Qwby2Htrdjyw.png?imageslim){ width=55% }
-
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/Qwby2Htrdjyw.png?imageslim">
+</p>
 
 
 
@@ -264,12 +261,9 @@ learn.unfreeze()
 learn.fit_one_cycle(4)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/fkWiGnGKFKxr.png?imageslim){ width=55% }
-
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/fkWiGnGKFKxr.png?imageslim">
+</p>
 
 
 **现在的准确度比以前略差。这是为什么？**

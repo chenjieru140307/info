@@ -9,12 +9,9 @@ date: 2018-08-21 18:16:23
 
 Boosting 族算法最著名的代表是 AdaBoost , 其描述如图 8.3所示，其中 $y_i\in\{-1,+1\}$ , $f$ 是真实函数.
 
-<center>
-
-![](http://images.iterate.site/blog/image/180628/L1e4dhGI9J.png?imageslim){ width=55% }
-
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180628/L1e4dhGI9J.png?imageslim">
+</p>
 
 AdaBoost 算法有多种推导方式，比较容易理解的是基于“加性模型”(additive model)，即基学习器的线性组合
 

@@ -183,12 +183,9 @@ $$
 
 SeqGAN 示意图：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190426/wPTVDc3jVwbz.png?imageslim){ width=55% }
-
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190426/wPTVDc3jVwbz.png?imageslim">
+</p>
 
 
 ## 有了生成器的优化目标，怎样求解它对生成器参数的梯度？

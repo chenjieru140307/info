@@ -84,12 +84,9 @@ windows 下安装 Anaconda3 之后再 cmd 下出现 'activate' 不是内部或�
 ![](http://images.iterate.site/blog/image/20190624/57VqcqXEClwf.png?imageslim){ width=55% }
 
 </center>
-<center>
-
-![](http://images.iterate.site/blog/image/20190624/2fIsjvF2BAVK.png?imageslim){ width=55% }
-
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190624/2fIsjvF2BAVK.png?imageslim">
+</p>
 
 <p align="center">
     <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190624/gyFjoHbr20YB.png?imageslim">
