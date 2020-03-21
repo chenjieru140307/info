@@ -88,7 +88,9 @@ date: 2018-08-12 20:04:22
     <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/be1Em9FKGb.png?imageslim">
 </p>这个解释一下：
 
-由全概率公式得：\(p(w_j)=\sum_{k=1}^{K}p(w_j\mid z_k)*p(z_k)\) 而，这里都加了 d 而已，由于给定 z 得时候，d和 w 是 head-to-tail 得关系，也就是说给定 z 的时候，d和 w 是独立的即![](http://images.iterate.site/blog/image/180728/macJe7IHKE.png?imageslim)，因此<p align="center">
+由全概率公式得：\(p(w_j)=\sum_{k=1}^{K}p(w_j\mid z_k)*p(z_k)\) 而，这里都加了 d 而已，由于给定 z 得时候，d和 w 是 head-to-tail 得关系，也就是说给定 z 的时候，d和 w 是独立的即<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/macJe7IHKE.png?imageslim">
+</p>，因此<p align="center">
     <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/5Kc018KG5g.png?imageslim">
 </p>这个里面的 d 就省略的。
 
@@ -175,7 +177,11 @@ OK，我们先做第一步：写隐变量主题\(z_k\) 的后验概率:
     <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/CB2kH0lJlA.png?imageslim">
 </p>
 
-这个地方的![](http://images.iterate.site/blog/image/180728/dl3kAFel7j.png?imageslim)带入到上面的![](http://images.iterate.site/blog/image/180728/jb3m7DL02H.png?imageslim)里面，就得到了：<p align="center">
+这个地方的<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/dl3kAFel7j.png?imageslim">
+</p>带入到上面的<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/jb3m7DL02H.png?imageslim">
+</p>里面，就得到了：<p align="center">
     <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/I3mH6a8K8F.png?imageslim">
 </p>。
 
