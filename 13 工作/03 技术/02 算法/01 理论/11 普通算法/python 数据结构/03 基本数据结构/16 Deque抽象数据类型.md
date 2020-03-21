@@ -17,11 +17,9 @@ deque 抽象数据类型由以下结构和操作定义。如上所述，deque �
 
 例如，我们假设 d 是已经创建并且当前为空的 deque，则 Table 1 展示了一系列 deque 操作的结果。注意，首部的内容列在右边。在将 item 移入和移出时，跟踪前面和后面是非常重要的，因为可能会有点混乱。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/q3nO66qn0Lpk.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/q3nO66qn0Lpk.png?imageslim">
+</p>
 
 
 *Table 1*

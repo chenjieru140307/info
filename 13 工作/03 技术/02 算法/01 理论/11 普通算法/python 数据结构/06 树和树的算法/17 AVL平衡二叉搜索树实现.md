@@ -49,11 +49,9 @@ def updateBalance(self,node):
 
 要理解旋转是什么让我们看一个非常简单的例子。考虑 Figure 3左半部分的树。这棵树平衡因子为 -2，不平衡。为了使这棵树平衡，我们将使用以节点 A 为根的子树的左旋转。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/AOmTzzHNNDBU.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/AOmTzzHNNDBU.png?imageslim">
+</p>
 
 
 *Figure 3*
@@ -73,11 +71,9 @@ def updateBalance(self,node):
 * 将旧根（E）移动为新根的右子树。
 * 如果新根（C）已经有一个正确的孩子（D），那么使它成为新的右孩子（E）的左孩子。注意：由于新根（C）是 E 的左子节点，因此 E 的左子节点在此时保证为空。这允许我们添加一个新节点作为左孩子，不需进一步的考虑。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/RQkLLNamOyvW.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/RQkLLNamOyvW.png?imageslim">
+</p>
 
 *Figure 4*
 
@@ -109,11 +105,9 @@ def rotateLeft(self,rotRoot):
 
 最后，第 16-17行需要一些解释。 在这两行中，我们更新旧根和新根的平衡因子。 由于所有其他移动都是移动整个子树，所以所有其他节点的平衡因子不受旋转的影响。 但是我们如何在不完全重新计算新子树的高度的情况下更新平衡因子呢？ 以下推导应该能说服你这些行是正确的。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/cHbQnvAmD1Hk.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/cHbQnvAmD1Hk.png?imageslim">
+</p>
 
 *Figure 5*
 
@@ -168,20 +162,16 @@ rotRoot.balanceFactor = rotRoot.balanceFactor + 1 - min(0,newRoot.balanceFactor)
 
 现在你可能认为我们已经完成了。 我们知道如何做左右旋转，我们知道什么时候应该做左旋或右旋，但是看看 Figure 6。由于节点 A 的平衡因子为-2，我们应该做左旋转。 但是，当我们围绕 A 做左旋转时会发生什么？
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/9ahCqIXMjW4B.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/9ahCqIXMjW4B.png?imageslim">
+</p>
 
 *Figure 6*
 
 Figure 7 展示了我们在左旋后，我们现在已经在另一方面失去平衡。 如果我们做右旋以纠正这种情况，我们就回到我们开始的地方。
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/CnjrlYwzCDlX.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/CnjrlYwzCDlX.png?imageslim">
+</p>
 
 *Figure 7*
 
@@ -192,11 +182,9 @@ Figure 7 展示了我们在左旋后，我们现在已经在另一方面失去�
 
 Figure 8展示了这些规则如何解决我们在 Figure 6和 Figure 7中遇到的困境。从围绕节点 C的 右旋转开始，将树放置在 A 的左旋转使整个子树恢复平衡的位置。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/8QiTrVmiaLuK.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/8QiTrVmiaLuK.png?imageslim">
+</p>
 
 *Figure 8*
 

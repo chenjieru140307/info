@@ -50,22 +50,18 @@ $$
 
 例如对图 4.5（a）的黄棕两种类别的样本点进行降维时，若按照最大化两类投影中心距离的准则，会将样本点投影到下方的黑线上。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190331/TYnsehnYY3Qn.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190331/TYnsehnYY3Qn.png?imageslim">
+</p>
 
 但是原本可以被线性划分的两类样本，经过投影后有了一定程度的重叠，这显然不能使我们满意。
 
 
 我们希望得到的投影结果如图 4.5（b）所示，虽然两类的中心在投影之后的距离有所减小，但确使投影之后样本的可区分性提高了。<span style="color:red;">是的。</span>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190331/tQSyPCfHdwtM.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190331/tQSyPCfHdwtM.png?imageslim">
+</p>
 
 
 仔细观察两种投影方式的区别，可以发现，在图 4.5（b）中，投影后的样本点似乎在每一类中分布得更为集中了，用数学化的语言描述就是每类内部的方差比左图中更小。

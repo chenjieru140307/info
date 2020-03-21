@@ -7,11 +7,9 @@ date: 2019-06-05
 
 在我们继续之前，我们来看看执行这个新的平衡因子要求的结果。我们的主张是，通过确保树总是具有 -1,0或 1 的平衡因子，我们可以获得更好的操作性能的关键操作。 让我们开始思考这种平衡条件如何改变最坏情况的树。有两种可能性，一个左重树和一个右重树。 如果我们考虑高度 0,1,2和 3 的树，Figure 2 展示了在新规则下可能的最不平衡的左重树。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/FjTe8Hc1UI03.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/FjTe8Hc1UI03.png?imageslim">
+</p>
 
 
 *Figure 2*

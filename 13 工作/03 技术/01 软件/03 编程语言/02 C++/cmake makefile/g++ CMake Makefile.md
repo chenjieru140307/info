@@ -25,11 +25,9 @@ python是脚本语言，而当前大量的 AI 算法都部署在移动端嵌入�
 
 g++ --version
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/yr2uG2bq2uTl.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/yr2uG2bq2uTl.png?imageslim">
+</p>
 
 因为我已经安装了 g++，出现了上面安装的版本号。如果你出现了上面信息，就不需要再安装了，没有的话，用下面的命令即可完成安装。
 
@@ -64,11 +62,9 @@ g++  test.cpp
 
 在终端完成上面的命令后，你发现并没有任何输出，但这时候你去主文件夹下（默认主文件夹）看下会发现有个 a.out文件
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/cXf6eDcjkT1f.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/cXf6eDcjkT1f.png?imageslim">
+</p>
 
 现在你再在终端输入下面命令就能看到结果。
 
@@ -95,19 +91,15 @@ g++ -E test.cpp > test.i
 
 预处理后的文件在 linux下以.i为后缀名，这个过程是用来激活预处理，执行完命令后，你会发现主文件夹下多了一个 test.i文件
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/0IgnWTDd07YA.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/0IgnWTDd07YA.png?imageslim">
+</p>
 
 这一步（预处理）主要做了宏的替换，和注释的消除。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/IImkq6m12cyp.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/IImkq6m12cyp.png?imageslim">
+</p>
 
 上图是 test.i文件的最后部分，可以看见宏的替换和注释的消除。
 
@@ -121,11 +113,9 @@ g++ -S test.cpp
 
 这一步主要就是生成 test.s文件，.s文件表示汇编文件，用编辑器打开就都是汇编指令。下图是 test.s文件的一部分。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/HLcalKdVGv3i.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/HLcalKdVGv3i.png?imageslim">
+</p>
 
 **3.将汇编语言变为目标代码(机器代码)**
 
@@ -137,11 +127,9 @@ g++ -c test.cpp
 
 这一步就是生成目标文件，用编辑器打开就都是二进制机器码。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/xmu9g8R5INTM.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/xmu9g8R5INTM.png?imageslim">
+</p>
 
 **4.链接目标代码，生成可执行程序**
 
@@ -153,19 +141,15 @@ g++ test.o -o test
 
 在这一步中生成的可执行程序名为 test，如果执行命令 g++ test.o 这样默认生成 a.out
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/bQgBXKB4LPDX.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/bQgBXKB4LPDX.png?imageslim">
+</p>
 
 最后我们再看下这个过程中产生的所有文件，如下：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/XnY5ubLhQgiN.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/XnY5ubLhQgiN.png?imageslim">
+</p>
 
 这就是编译的整个过程，你掌握了吗，这个过程对于后面编写 Makefile 非常重要，一定要深刻理解。
 
@@ -228,11 +212,9 @@ Makefile只有行注释 "#", 如果要使用或者输出"#"字符, 需要进行�
 
 我们使用 opencv 对下面这只可爱的猫进行读取显示。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/HlONRiN4xJ23.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/HlONRiN4xJ23.png?imageslim">
+</p>
 
 在这里我们用 C++和 opencv 对图片进行读取和显示，程序保存在 DisplayImage.cpp这个文件里，代码如下：
 
@@ -261,21 +243,17 @@ int main(int argc, char** argv )
 }
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/IQoag1jKQUH5.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/IQoag1jKQUH5.png?imageslim">
+</p>
 
 **2.4.2 Makefile编写**
 
 上面我们已经准备好了.cpp文件，现在我们来编写 Makefile 进而进行编译，程序如下：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/xVswYyj0iySc.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/xVswYyj0iySc.png?imageslim">
+</p>
 
 现在我来解释下应该如何编写这个 Makefile，对于编写 Makefile 我建议从下往上写。步骤如下：
 
@@ -289,11 +267,9 @@ int main(int argc, char** argv )
 
 目标文件就是你想得到的文件，依赖文件就是你目前所拥有的东西。在本实例中我们现在拥有 DisplayImage.cpp，所以 DisplayImage.cpp是依赖文件，我们想得到 DisplayImage.o，所以它是目标文件。代码如下：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/uCfuWrqp8fpS.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/uCfuWrqp8fpS.png?imageslim">
+</p>
 
 **3.编写目标文件 2：依赖文件 2**
 
@@ -303,21 +279,17 @@ int main(int argc, char** argv )
 
 **4.应用 opencv 库和头文件**
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/fTSPj8e7pxL4.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/fTSPj8e7pxL4.png?imageslim">
+</p>
 
 这一步就需要根据自己计算机来配置了，对于我们初学者来说挺麻烦的，可以自己尝试下。有问题可以联系我们。
 
 编写完 makefile 后，我们在终端 make 下就行了。下面编译后的文件：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/CsDdrrmMjLoA.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/CsDdrrmMjLoA.png?imageslim">
+</p>
 
 最后在终端输入下面代码即可显示图片。
 
@@ -347,11 +319,9 @@ cmake --version
 
 如果你的界面如下图所示即说明安装成功。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/hpIIQ51QqEQi.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/hpIIQ51QqEQi.png?imageslim">
+</p>
 
 **3.2 CMake编译流程**
 
@@ -471,11 +441,9 @@ make
 
 首先我们在命令行输入**cmake .**(注意 cmake 和。之间有空格)，表明 Cmakelist.txt文件在当前目录下。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/e75Im3VFdK6R.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/e75Im3VFdK6R.png?imageslim">
+</p>
 
 接下来在命令行输入**make**
 
@@ -487,11 +455,9 @@ make
 
 解释下这个 build 文件夹，由于 cmake 后会生成很多编译的中间文件以及 makefile 文件，所以一般建议新建一个新的目录，专门用来编译，这就是这里的 build，打开 build 后，里面的文件如下：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190712/d5kED1okfhGh.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190712/d5kED1okfhGh.png?imageslim">
+</p>
 
 到这里，我们不禁要问怎么没有图片显示呢，别急，在 build 目录下的命令行输入下面命令即可显示图片，这就是生产的 DisplayImage 可执行文件。
 

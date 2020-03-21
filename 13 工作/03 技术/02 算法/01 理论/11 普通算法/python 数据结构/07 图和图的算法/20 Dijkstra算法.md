@@ -38,23 +38,17 @@ Dijkstra的算法使用优先级队列。你可能还记得，优先级队列是
 
 下一步是查看邻近 v 的顶点（参见 Figure 5）。此步骤不会对图形进行任何更改，因此我们继续前进到节点 y。在节点 y（见 Figure 6），我们发现到 w 和 z 都更小，因此我们相应地调整距离和前导链接。最后，我们检查节点 w 和 z（参见 Figure 6 和 Figure 8）。但是，没有发现额外的更改，因此优先级队列为空，Dijkstra的算法退出。
 
-<center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/dlI27gpz08qT.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/20190702/dlI27gpz08qT.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/b8MBgKu29WIC.png?imageslim">
+</p>
 
-</center>
-
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/b8MBgKu29WIC.png?imageslim){ width=55% }
-
-</center>
-
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/EHxuFw3uurRM.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/EHxuFw3uurRM.png?imageslim">
+</p>
 
 重要的是要注意，Dijkstra的算法只有当权重都是正数时才起作用。 如果你在图的边引入一个负权重，算法永远不会退出。
 

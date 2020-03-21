@@ -7,11 +7,9 @@ date: 2019-06-29
 
 **Author**: [Ghassen HAMROUNI](https://github.com/GHamrouni)
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190629/px4676kTAAG6.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/px4676kTAAG6.png?imageslim">
+</p>
 
 In this tutorial, you will learn how to augment your network using a visual attention mechanism called spatial transformer networks. You can read more about the spatial transformer networks in the [DeepMind paper](https://arxiv.org/abs/1506.02025)
 

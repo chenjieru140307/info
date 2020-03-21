@@ -9,17 +9,13 @@ deque（也称为双端队列）是与队列类似的项的有序集合。它有
 
 要注意，即使 deque 可以拥有栈和队列的许多特性，它不需要由那些数据结构强制的 LIFO 和 FIFO 排序。这取决于你如何持续添加和删除操作。
 
-<center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/EJH0XUdXXffH.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/20190702/EJH0XUdXXffH.png?imageslim){ width=55% }
-
-</center>
-
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/ls8rBVxsT5pt.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/ls8rBVxsT5pt.png?imageslim">
+</p>
 
 
 *Figure 1*

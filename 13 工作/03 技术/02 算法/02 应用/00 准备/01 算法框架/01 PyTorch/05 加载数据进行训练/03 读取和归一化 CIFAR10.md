@@ -12,11 +12,9 @@ date: 2019-12-06
 
 CIFAR-10的图像都是 3x32x32 大小的，即，3 颜色通道，32x32 像素。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/zKmNnFxcGchF.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/zKmNnFxcGchF.png?imageslim">
+</p>
 
 
 

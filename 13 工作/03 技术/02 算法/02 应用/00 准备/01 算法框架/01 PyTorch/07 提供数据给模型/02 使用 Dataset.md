@@ -159,11 +159,9 @@ for i in range(len(face_dataset)):
 
 显示的画面，是在动态变动的：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190628/SFytGXw4E01w.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190628/SFytGXw4E01w.png?imageslim">
+</p>
 
 
 <span style="color:red;">`plt.ion()` 这个还是不错的。以前没用过这个，只看到过一次。</span>

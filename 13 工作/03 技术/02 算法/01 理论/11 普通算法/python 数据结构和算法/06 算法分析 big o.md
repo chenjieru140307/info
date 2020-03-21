@@ -103,11 +103,9 @@ $n!$      | 阶乘         | 旅行商问题         |
 
 函数增长趋势图：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190701/pAqODs8Tpyzo.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190701/pAqODs8Tpyzo.png?imageslim">
+</p>
 
 
 # 时间换空间，空间换时间

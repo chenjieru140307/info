@@ -54,20 +54,16 @@ ResNet 的核心思想是引入一个所谓的「恒等快捷连接」（identit
 ## 残差块：
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/180728/DkA7eJ4ll7.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/DkA7eJ4ll7.png?imageslim">
+</p>
 
 ## ResNet 架构：
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/180728/5iLbgjJ9a2.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/5iLbgjJ9a2.png?imageslim">
+</p>
 
 
  [2] 的作者认为，堆叠层不应降低网络性能，因为我们可以简单地在当前网络上堆叠恒等映射（该层不做任何事情），得到的架构将执行相同的操作。这表明较深的模型所产生的训练误差不应该比较浅的模型高。他们假设让堆叠层适应残差映射比使它们直接适应所需的底层映射要容易一些。上图中的残差块明确表明，它可以做到这一点。
@@ -261,11 +257,9 @@ ResNet 的提出背景是解决或缓解深层的神经网络训练中的梯度�
 
 在 CIFAR-10 数据集上的一个结果如图 9.22所示，56 层的网络反而比 20 层的网络训练误差更大，这很大程度上归结于深度神经网络的梯度消失问题[21]。<span style="color:red;">哎？很大程度上？不全归结于吗？还有什么原因？</span>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190414/D5hRUapG2aVX.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190414/D5hRUapG2aVX.png?imageslim">
+</p>
 
 为了解释梯度消失问题是如何产生的。我们回顾下第 3 节推导出的误差传播公式
 
@@ -286,11 +280,9 @@ $$
 可以看到误差传播可以写成参数 $W_{i j}^{(l)}$、$W_{j k}^{(l+1)}$ 以及导数 $f^{\prime}\left(z_{j}^{(l+1)}\right)$ 、$f^{\prime}\left(z_{i}^{(l)}\right)$ 连乘的形式。当误差由第 $L$ 层（记为 $\delta_{i}^{(L)}$ ）传播到除输入以外的第一个隐含层（记为 $\delta_{i}^{(1)}$）的时候，会涉及非常多的参数和导数的连乘，这时误差很容易产生消失或者膨胀，影响对该层参数的正确学习。因此深度神经网络的拟合和泛化能力较差，有时甚至不如浅层的神经网络模型精度更高。<span style="color:red;">嗯，好像是这样？感觉有点不轻不痒。</span>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190414/C1egYg1SDkOP.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190414/C1egYg1SDkOP.png?imageslim">
+</p>
 
 ResNet 通过调整网络结构来解决上述问题。
 
@@ -299,11 +291,9 @@ ResNet 通过调整网络结构来解决上述问题。
 
 如果某一层的输出已经较好的拟合了期望结果，那么多加入一层不会使得模型变得更差，因为该层的输出将直接被短接到两层之后，相当于直接学习了一个恒等映射，而跳过的两层只需要拟合上层输出和目标之间的残差即可。<span style="color:red;">嗯，好像是的。那么一定要是跳两层吗？三层？四层呢？这个两层是怎么定的？</span>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190414/UENnfxASenum.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190414/UENnfxASenum.png?imageslim">
+</p>
 
 <span style="color:red;">哇塞，从图像上看起来很明显呀！很好。</span>
 

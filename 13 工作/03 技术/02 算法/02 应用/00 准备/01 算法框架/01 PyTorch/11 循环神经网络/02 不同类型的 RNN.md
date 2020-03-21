@@ -21,11 +21,9 @@ Bidirectional RNN 是一个相对较简单的 RNN，是由两个 RNN 上下叠�
 
 Bidirectional RNN模型如图所示。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/Rnmg03O3EORh.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/Rnmg03O3EORh.png?imageslim">
+</p>
 
 <span style="color:red;">感觉也是啥都没讲。。</span>
 
@@ -34,11 +32,9 @@ Bidirectional RNN模型如图所示。
 深层双向 RNN 和双向 RNN 比较类似，区别只是每一步/每个时间点设定为多层结构，如图所示：
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/C5S4yABsG8du.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/C5S4yABsG8du.png?imageslim">
+</p>
 
 <span style="color:red;">没明白。</span>
 
@@ -53,20 +49,16 @@ Long Short Term 网络叫作 LSTM，是一种 RNN 特殊的类型。LSTM 由 Hoc
 
 结构如图所示：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/SCQUWXg7Ds3t.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/SCQUWXg7Ds3t.png?imageslim">
+</p>
 
 
 它与一般的 RNN 结构在本质上并没有什么不同，只是使用了不同的函数去计算隐藏层的状态，如图所示：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/bbDTaLKDsvJS.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/bbDTaLKDsvJS.png?imageslim">
+</p>
 
 在 LSTM 中，i 结构被称为 cells，可以把 cells 看作是黑盒，用以保存当前输入 $x_t$ 之前保存的状态 $h_{t-1}$，这些 cells 以一定的条件决定哪些 cell 抑制，哪些 cell 兴奋。它们可以结合前面的状态、当前的记忆与当前的输入。该网络结构在对长序列依赖问题中非常有效。
 
@@ -76,11 +68,9 @@ LSTM神经元的输出除了与当前输入有关外，还与自身记忆有关�
 
 LSTM 元素的图标：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/q3Op1neMBFs5.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/q3Op1neMBFs5.png?imageslim">
+</p>
 
 介绍如下：
 

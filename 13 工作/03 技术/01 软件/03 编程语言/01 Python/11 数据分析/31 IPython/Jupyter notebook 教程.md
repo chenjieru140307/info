@@ -43,11 +43,9 @@ date: 2019-06-27
 
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/twKu5Y8rBi3m.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/twKu5Y8rBi3m.png?imageslim">
+</p>
 
 试用失败
 
@@ -171,11 +169,9 @@ $ jupyter notebook
 
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/Uzt1bGVp7txn.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/Uzt1bGVp7txn.png?imageslim">
+</p>
 
 URL
 

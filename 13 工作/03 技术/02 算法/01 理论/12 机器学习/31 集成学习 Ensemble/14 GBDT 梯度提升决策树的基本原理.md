@@ -42,11 +42,9 @@ Gradient Boosting 是 Boosting 中的一大类算法，其基本思想是根据�
 
 Gradient Boosting 算法的伪代码如图 12.6所示：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190420/2FcjhsdHVeHR.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190420/2FcjhsdHVeHR.png?imageslim">
+</p>
 
 算法 1 描述了 Gradient Boosting 算法的基本流程，在每一轮迭代中，首先计算出当前模型在所有样本上的负梯度，然后以该值为目标训练一个新的弱分类器进行拟合并计算出该弱分类器的权重，最终实现对模型的更新。
 
@@ -57,11 +55,9 @@ Gradient Boosting 算法的伪代码如图 12.6所示：
 
 用一个很简单的例子来解释一下 GBDT 训练的过程，如图 12.7所示：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190420/Q8PY5tJfVzMc.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190420/Q8PY5tJfVzMc.png?imageslim">
+</p>
 
 模型的任务是预测一个人的年龄，训练集只有 A、B、C、D 4个人，他们的年龄分别是 14、16、24、26，特征包括了 “月购物金额” “上网时长” “上网历史” 等。
 

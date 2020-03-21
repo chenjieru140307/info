@@ -32,11 +32,9 @@ https://github.com/SalChem/Fastai-iNotes-iTutorials/blob/master/Image_Recognitio
 加载依赖库
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/L8OXjlV0zxAk.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/L8OXjlV0zxAk.png?imageslim">
+</p>
 
 初始化
 
@@ -116,11 +114,9 @@ normalize 使用 ImageNet 图像的标准偏差和平均值对数据进行标准
 
 Image里是 RGB 数值，Category 是图像标签。对应的图像如下：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/sTBRzDSWjYyq.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/sTBRzDSWjYyq.png?imageslim">
+</p>
 
 
 len（data.train_ds）和 len（data.valid_ds）分别输出训练样本 5912 和验证样本数量 1478。
@@ -171,11 +167,9 @@ ResNet34后面的数字可以随意更改，比如改成 ResNet50。数字越大
 让我们继续，现在可以在数据集上训练模型了！
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/tsClUBEXzHEA.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/tsClUBEXzHEA.png?imageslim">
+</p>
 
 
 **fit_one_cycle**会按预设 epoch 数训练模型，比如 4 个 epoch。
@@ -224,11 +218,9 @@ interp.plot_top_losses(9,figsize=(15,11),heatmap=False)
 
 高损失意味着对错误答案出现的高信度。绘制最高损失是可视化和解释分类结果的好方法。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/AE8RS505P4vm.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/AE8RS505P4vm.png?imageslim">
+</p>
 
 
 具有最高损失的错误分类图像
@@ -240,11 +232,9 @@ interp.plot_confusion_matrix(figsize=(12,12),dpi=60)
 ```
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/RzQ5XymKb01p.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/RzQ5XymKb01p.png?imageslim">
+</p>
 
 
 在混淆矩阵中，对角线元素表示预测标签与真实标签相同的图像的数量，而非对角线元素是由分类器错误标记的元素。
@@ -331,11 +321,9 @@ learn.lr_find();
 learn.recorder.plot()
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/lf9m5YqiDvQU.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/lf9m5YqiDvQU.png?imageslim">
+</p>
 
 
 从得到的图中，我们一致认为适当的学习率约为 1e-4或更小，超过这个范围，损失就开始增大并失去控制。我们将最后一层的学习速率设为 1e-4，更早期的层设为 1e-6。同样，这是因为早期的层已经训练得很好了，用来捕获通用特征，不需要那么频繁的更新。
@@ -366,11 +354,9 @@ learn.recorder.plot()
 
 在微调深度神经网络时，良好的学习率超参数是至关重要的。使用较高的学习率可以让网络更快地学习，但是学习率太高可能使模型无法收敛。另一方面，学习率太小会使训练速度过于缓慢。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/DHhHzAHkT11N.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/DHhHzAHkT11N.png?imageslim">
+</p>
 
 不同水平的学习率对模型收敛性的影响
 
@@ -388,11 +374,9 @@ learn.recorder.plot()
 
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/TDnrE6LchG9r.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/TDnrE6LchG9r.png?imageslim">
+</p>
 
 1cycle的一个周期长度
 
@@ -402,11 +386,9 @@ learn.recorder.plot()
 
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/JliJH0zflvPC.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/JliJH0zflvPC.png?imageslim">
+</p>
 
 超收敛精度测试与 Cifar-10上具有相同架构模型的典型训练机制
 
@@ -423,11 +405,9 @@ learn.unfreeze()
 learn.fit_one_cycle(2,max_lr=slice(1e-6,1e-4))
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/In6yTQxJ2839.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/In6yTQxJ2839.png?imageslim">
+</p>
 
 Slice函数将网络的最后一层学习率设为 1e-4，将第一层学习率设为 1e-6。中间各层在此范围内以相等的增量设定学习率。
 
@@ -439,11 +419,9 @@ Slice函数将网络的最后一层学习率设为 1e-4，将第一层学习率�
 
 下图说明了使用和微调预训练模型的三种合理方法。在本教程中，我们尝试了第一个和第三个策略。第二个策略在数据集较小，但与预训练模型的数据集不同，或者数据集较大，但与预训练模型的数据集相似的情况下也很常见。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190711/F8TDSEncNhdi.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/F8TDSEncNhdi.png?imageslim">
+</p>
 
 在预训练模型上微调策略
 

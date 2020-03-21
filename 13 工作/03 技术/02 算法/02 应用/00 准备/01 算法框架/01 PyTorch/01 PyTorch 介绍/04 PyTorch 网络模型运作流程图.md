@@ -11,11 +11,9 @@ date: 2019-12-06
 如下：
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190525/s5imfa5sQlyk.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190525/s5imfa5sQlyk.png?imageslim">
+</p>
 
 不明白的：
 

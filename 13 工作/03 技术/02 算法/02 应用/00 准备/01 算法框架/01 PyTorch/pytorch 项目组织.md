@@ -846,11 +846,9 @@ def train(**kwargs):
 这里用到了 [PyTorchNet](https://github.com/pytorch/tnt)里面的一个工具: *`meter`*。*`meter`*提供了一些轻量级的工具，用于帮助用户快速统计训练过程中的一些指标。*`AverageValueMeter`*能够计算所有数的平均值和标准差，这里用来统计一个 epoch 中损失的平均值。*`confusionmeter`*用来统计分类问题中的分类情况，是一个比准确率更详细的统计指标。例如对于表格 6-1，共有 50 张狗的图片，其中有 35 张被正确分类成了狗，还有 15 张被误判成猫；共有 100 张猫的图片，其中有 91 张被正确判为了猫，剩下 9 张被误判成狗。相比于准确率等统计信息，混淆矩阵更能体现分类的结果，尤其是在样本比例不均衡的情况下。<span style="color:red;">嗯。这个 meter 还是要总结下。</span>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/x7MUt3mHGeuX.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/x7MUt3mHGeuX.png?imageslim">
+</p>
 
 
 

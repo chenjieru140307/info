@@ -17,11 +17,9 @@ date: 2019-06-30
 
 确认了下环境变量，果然，anaconda 的地址没有了，因此添加下面三条：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190630/Bt6WOkxK0s86.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190630/Bt6WOkxK0s86.png?imageslim">
+</p>
 
 添加完之后就可以了。
 

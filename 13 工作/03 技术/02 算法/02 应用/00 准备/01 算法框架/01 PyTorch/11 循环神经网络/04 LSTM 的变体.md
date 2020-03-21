@@ -19,11 +19,9 @@ Gated Recurrent Unit，也称为 GRU，由 Cho 等人（2014）提出，是 LSTM
 GRU 的结构如图：
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/Mp0GAYolBRXg.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/Mp0GAYolBRXg.png?imageslim">
+</p>
 
 GRU 首先根据当前输入单词向量 word vector 在前一个隐藏层的状态中计算出 update gate 和 reset gate。再根据 reset gate、当前 word vector 以及前一个隐藏层计算新的记忆单元内容（New Memory Content）。当 reset gate 为 1 的时候，前一个隐藏层计算新的记忆单元内容忽略之前的所有记忆单元内容，最终的记忆是之前的隐藏层与新的记忆单元内容的结合。<span style="color:red;">嗯。</span>
 
@@ -57,11 +55,9 @@ CW-RNN 包括输入层、隐藏层、输出层。输入层到隐藏层的连接�
 
 <span style="color:red;">想更多的知道这个</span>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/wQ7S2JKsJMVy.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/wQ7S2JKsJMVy.png?imageslim">
+</p>
 
 
 

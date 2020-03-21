@@ -18,11 +18,9 @@ Stacking 先从初始数据集训练出初级学习器，然后 “生成” 一
 
 Stacking 的算法描述如图 8.9 所示，这里我们假定初级学习器使用不同学习算法产生，即初级集成是异质的。
 
-<center>
-
-![](http://images.iterate.site/blog/image/180628/JkghECbEbb.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180628/JkghECbEbb.png?imageslim">
+</p>
 
 
 在训练阶段，次级训练集是利用初级学习器产生的，若直接用初级学习器的训练集来产生次级训练集，则过拟合风险会比较大。因此，一般是通过使用交叉验证或留一法这样的方式，用训练初级学习器未使用的样本来生次级学习器的训练样本。以 $k$ 折交叉验证为例，初始训练集 D 被隨机划分为 $k$ 个大小相 似的集合 $D_{1}, D_{2}, \dots, D_{k}$ 。令 $D_j$ 和 $\overline{D}_{j}=D \backslash D_{j}$ 分别表示第 $j$ 折的测试集和训练集。给定 $T$ 个初级学习算法，初级学习器 $h_{t}^{(j)}$ 通过在 $\overline{D}_{j}$ 上使用第 $t$ 个学习算法而得。对于 $D_j$ 中每个样本 $\boldsymbol{x}_{i}$ ，令 $z_{i t}=h_{t}^{(j)}\left(\boldsymbol{x}_{i}\right)$ ，则由 $\boldsymbol{x}_{i}$ 所产生的次级训练样例的示例部分为 $\boldsymbol{z}_{i}=\left(z_{i 1} ; z_{i 2} ; \ldots ; z_{i T}\right)$ ，标记部分为 $y_i$ 。于是，在整个交叉验证过程结束后，从这 $T$ 个初级学习器产生的次级训练集是 $D^{\prime}=\left\{\left(\boldsymbol{z}_{i}, y_{i}\right)\right\}_{i=1}^{m}$ ，然后 $D^{\prime}$ 将用于训练次级学习器。

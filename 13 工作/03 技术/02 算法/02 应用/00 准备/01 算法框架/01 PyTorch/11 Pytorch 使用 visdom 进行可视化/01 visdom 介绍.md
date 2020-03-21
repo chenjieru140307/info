@@ -13,11 +13,9 @@ Visdom 是一个灵活的可视化工具（如图 6.1所示），可以实时显
 
 https://github.com/facebookresearch/visdom
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190615/KFVMsoL48gF2.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190615/KFVMsoL48gF2.png?imageslim">
+</p>
 
 Visdom 的目的是促进远程数据的可视化，支持科学实验。可以发送可视化图像和文本。通过 UI 为实时数据创建 dashboards，检查实验的结果。<span style="color:red;">哇塞，就想要这个 dashboards 效果。</span>
 

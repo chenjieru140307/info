@@ -50,11 +50,9 @@ date: 2019-04-21
 
 关于泛化误差、偏差、方差和模型复杂度的关系如图 12.5 所示：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190420/IsuLA5xXOksk.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190420/IsuLA5xXOksk.png?imageslim">
+</p>
 
 不难看出，方差和偏差是相辅相成，矛盾又统一的，二者并不能完全独立的存在。对于给定的学习任务和训练数据集，我们需要对模型的复杂度做合理的假设。如果模型复杂度过低，虽然方差很小，但是偏差会很高；如果模型复杂度过高，虽然偏差降低了，但是方差会很高。所以需要综合考虑偏差和方差选择合适复杂度的模型进行训练。<span style="color:red;">是的是的，但是要怎么综合考虑呢？嗯，还是要结合例子来看。</span>
 

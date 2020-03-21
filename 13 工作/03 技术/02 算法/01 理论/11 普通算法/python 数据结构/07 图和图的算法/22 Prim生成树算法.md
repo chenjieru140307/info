@@ -7,11 +7,9 @@ date: 2019-06-05
 
 对于我们最后的图算法，让我们考虑一个在线游戏设计师和网络收音机提供商面临的问题。 问题是他们想有效地将一条信息传递给任何人和每个可能在听的人。 这在游戏中是重要的，使得所有玩家知道每个其他玩家的最新位置。 对于网络收音机是重要的，以便所有该调频的收听者获得他们需要的所有数据来刷新他们正在收听的歌曲。 Figure 9 说明了广播问题。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/bgLjn1v12bxw.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/bgLjn1v12bxw.png?imageslim">
+</p>
 
 *Figure 9*
 
@@ -25,11 +23,9 @@ date: 2019-06-05
 
 Figure 10 展示了广播图的简化版本并突出了生成图的最小生成树的边。现在为了解决我们的广播问题，广播主机简单地将广播消息的单个副本发送到网络中。每个路由器将消息转发到作为生成树的一部分邻居，排除刚刚向其发送消息的邻居。在这个例子中 A 将消息转发到 B，B 将消息转发到 D 和 C。D 将消息转发到 E，E将它转发到 F，F 转发到 G。没有路由器看到任何消息的多个副本，所有感兴趣的收听者都会看到消息的副本。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/xUeI4FHQ7uK9.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/xUeI4FHQ7uK9.png?imageslim">
+</p>
 
 *Figure 10*
 
@@ -75,29 +71,21 @@ def prim(G,start):
 
 现在我们检查与节点 D 相邻的顶点。我们发现可以更新 E 并​​且将从距离 6 减小到 4。当我们这样做时，我们将 E 上的前趋链接改变为指向 D，从而准备移植到生成树中不同的位置。算法的其余部分按照预期进行，将每个新节点添加到树中。
 
-<center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/QnnELhgkqcQz.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/20190702/QnnELhgkqcQz.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/NUH4AxntF6oD.png?imageslim">
+</p>
 
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/Y4ijhfSUUC6t.png?imageslim">
+</p>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/NUH4AxntF6oD.png?imageslim){ width=55% }
-
-</center>
-
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/Y4ijhfSUUC6t.png?imageslim){ width=55% }
-
-</center>
-
-<center>
-
-![](http://images.iterate.site/blog/image/20190702/OzxXJDJsalVy.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190702/OzxXJDJsalVy.png?imageslim">
+</p>
 
 
 

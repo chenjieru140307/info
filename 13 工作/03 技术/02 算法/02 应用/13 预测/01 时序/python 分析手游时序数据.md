@@ -89,20 +89,16 @@ plt.show()
 
 广告观看：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/LHs0pqVvvUrr.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/LHs0pqVvvUrr.png?imageslim">
+</p>
 
 
 游戏币花费：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/angUg95DTtXC.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/angUg95DTtXC.png?imageslim">
+</p>
 
 
 **预测质量指标**
@@ -195,11 +191,9 @@ plt.grid(True)
 plotMovingAverage(ads, 4)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/lYdSBFfMdEq7.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/lYdSBFfMdEq7.png?imageslim">
+</p>
 
 
 平滑（窗口大小为 12 小时）：
@@ -208,11 +202,9 @@ plotMovingAverage(ads, 4)
 plotMovingAverage(ads, 12)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/yB51llw0shv1.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/yB51llw0shv1.png?imageslim">
+</p>
 
 
 平滑（窗口大小为 24 小时）：
@@ -221,11 +213,9 @@ plotMovingAverage(ads, 12)
 plotMovingAverage(ads, 24)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/uoDYcHIT02E7.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/uoDYcHIT02E7.png?imageslim">
+</p>
 
 
 如你所见，在小时数据上按日平滑让我们可以清楚地看到浏览广告的趋势。周末数值较高（周末是[娱乐](https://www.jqr.com/service/company?business=12)时间），工作日一般数值较低。
@@ -236,11 +226,9 @@ plotMovingAverage(ads, 24)
 plotMovingAverage(ads, 4, plot_intervals=True)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/bO5qRf1K1VK8.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/bO5qRf1K1VK8.png?imageslim">
+</p>
 
 
 现在让我们在移动平均的帮助下创建一个简单的异常检测系统。不幸的是，在这段时序数据中，一切都比较正常，所以让我们故意弄出点异常来：
@@ -257,11 +245,9 @@ ads_anomaly.iloc[-20] = ads_anomaly.iloc[-20] * 0.2
 plotMovingAverage(ads_anomaly, 4, plot_intervals=True, plot_anomalies=True)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/cwAV39bVcLzu.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/cwAV39bVcLzu.png?imageslim">
+</p>
 
 
 酷！按周平滑呢？
@@ -270,11 +256,9 @@ plotMovingAverage(ads_anomaly, 4, plot_intervals=True, plot_anomalies=True)
 plotMovingAverage(currency, 7, plot_intervals=True, plot_anomalies=True)
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/ACbnPW8b0l3S.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/ACbnPW8b0l3S.png?imageslim">
+</p>
 
 
 不好！这是简单方法的缺陷——它没能捕捉月度数据的季节性，几乎将所有 30 天出现一次的峰值当作异常值。如果你不想有这么多虚假警报，最好考虑更复杂的模型。
@@ -336,18 +320,14 @@ plotExponentialSmoothing(ads.Ads, [0.3, 0.05])
 plotExponentialSmoothing(currency.GEMS_GEMS_SPENT, [0.3, 0.05])
 ```
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/ULfUfknuFQtL.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/ULfUfknuFQtL.png?imageslim">
+</p>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/0gJ9pV3QI2pq.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/0gJ9pV3QI2pq.png?imageslim">
+</p>
 
 
 **双指数平滑**
@@ -409,11 +389,9 @@ plotDoubleExponentialSmoothing(currency.GEMS_GEMS_SPENT, alphas=[0.9, 0.02], bet
 
 </center>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/agA78IXhdSNN.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/agA78IXhdSNN.png?imageslim">
+</p>
 
 
 现在我们有两个可供调节的参数——α和β。前者根据趋势平滑序列，后者平滑趋势本身。这两个参数越大，最新的观测的权重就越高，建模的序列就越不平滑。这两个参数的组合可能产生非常怪异的结果，特别是手工设置时。我们很快将查看自动选择参数的方法，在介绍三次指数平滑之后。
@@ -587,11 +565,9 @@ self.Season.append(seasonals[i%self.slen])
 
 滚动式交叉验证：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/2t8fjUpAgW0V.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/2t8fjUpAgW0V.png?imageslim">
+</p>
 
 
 了解了如何设置交叉验证，我们将找出 Holt-Winters模型的最优参数，回忆一下，我们的广告数据有按日季节性，所以我们有`slen=24`。
@@ -697,20 +673,16 @@ plotHoltWinters(ads.Ads, plot_intervals=True, plot_anomalies=True)
 
 Holt-Winters模型预测
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/pUGROxafawaW.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/pUGROxafawaW.png?imageslim">
+</p>
 
 Holt-Winters模型预测及置信区间、异常：
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/I13kDeLiKonX.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/I13kDeLiKonX.png?imageslim">
+</p>
 
 
 上面的图形表明，我们的模型能够很好地逼近初始时序，捕捉每日季节性，总体的下降趋势，甚至一些异常。如果我们查看下建模偏差（见下图），我们将很明显地看到，模型对序列结构的改变反应相当鲜明，但接着很快偏差就回归正常值，“遗忘”了过去。模型的这一特性让我们甚至可以为相当噪杂的序列快速构建异常检测系统，而无需花费过多时间和金钱准备数据和训练模型。
@@ -725,11 +697,9 @@ plt.title("Brutlag's predicted deviation");
 
 Holt-Winters模型偏差
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/GtypGHDwJ5Nb.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/GtypGHDwJ5Nb.png?imageslim">
+</p>
 
 
 
@@ -761,11 +731,9 @@ model.triple_exponential_smoothing()
 
 Holt-Winters模型应用于第二序列
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/tcYYoFhOTXBp.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/tcYYoFhOTXBp.png?imageslim">
+</p>
 
 
 看起来很不错，模型捕捉了向上的趋势和季节性尖峰，总体而言很好地拟合了数据。
@@ -773,11 +741,9 @@ Holt-Winters模型应用于第二序列
 Holt-Winters模型在第二序列上检测异常
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/LWlwNsPDP5xd.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/LWlwNsPDP5xd.png?imageslim">
+</p>
 
 
 
@@ -786,11 +752,9 @@ Holt-Winters模型在第二序列上检测异常
 
 Holt-Winters模型在第二序列上的偏差
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/pJ5bNa3UpfPA.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/pJ5bNa3UpfPA.png?imageslim">
+</p>
 
 
 
@@ -830,11 +794,9 @@ plt.plot(white_noise)
 
 白噪声
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/fp8PPsKqH49N.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/fp8PPsKqH49N.png?imageslim">
+</p>
 
 这一通过标准正态分布生成的过程是平稳的，以 0 为中心振荡，偏差为 1. 现在我们将基于这一过程生成一个新过程，其中相邻值之间的关系为：xt = ρxt-1 + et
 
@@ -901,11 +863,9 @@ tsplot(ads.Ads, lags=60)
 
 时序及其 ACF、PACF
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/NYOhq0p9fRch.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/NYOhq0p9fRch.png?imageslim">
+</p>
 
 
 
@@ -921,11 +881,9 @@ tsplot(ads_diff[24:], lags=60)
 
 季节差分：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/QFPo0HhJMieb.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/QFPo0HhJMieb.png?imageslim">
+</p>
 
 
 好多了，可见的季节性消失了，然而自相关函数仍然有过多显著的时差。为了移除它们，我们将取一阶差分：从序列中减去自身（时差为 1）
@@ -937,11 +895,9 @@ tsplot(ads_diff[24+1:], lags=60)
 
 一阶差分
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/imkSXF401bba.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/imkSXF401bba.png?imageslim">
+</p>
 
 
 完美！我们的序列看上去是难以用笔墨形容的完美！在零周围振荡，迪基-福勒检验表明它是平稳的，ACF中显著的尖峰不见了。我们终于可以开始建模了！
@@ -975,11 +931,9 @@ tsplot(ads_diff[24+1:], lags=60)
 
 一阶差分:
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/9fmi7XB0kNEN.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/9fmi7XB0kNEN.png?imageslim">
+</p>
 
 
 - **p**最有可能是 4，因为这是 PACF 上最后一个显著的时差，之后大多数时差变得不显著。
@@ -1056,11 +1010,9 @@ print(best_model.summary())
 
 最佳 SARIMA 模型：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/dSqH9EJe6zcM.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/dSqH9EJe6zcM.png?imageslim">
+</p>
 
 
 让我们查看下这一模型的残余分量（residual）：
@@ -1071,11 +1023,9 @@ tsplot(best_model.resid[24+1:], lags=60)
 
 最佳 SARIMA 模型残余：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/vTbskYHKkXWc.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/vTbskYHKkXWc.png?imageslim">
+</p>
 
 
 很明显，残余是平稳的，没有明显的自相关性。
@@ -1116,11 +1066,9 @@ plotSARIMA(ads, best_model, 50)
 
 最佳 SARIMA 模型预测值：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/lKgtrEPvyPVz.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/lKgtrEPvyPVz.png?imageslim">
+</p>
 
 
 最终我们得到了相当不错的预测，模型的平均误差率是 4.01%，这非常非常好。但是为了达到这一精确度，在准备数据、使序列平稳化、暴力搜索参数上付出了太多。
@@ -1247,11 +1195,9 @@ plotCoefficients(lr)
 
 线性模型预测值
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/TQ9k1nxi4wI9.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/TQ9k1nxi4wI9.png?imageslim">
+</p>
 
 
 
@@ -1260,11 +1206,9 @@ plotCoefficients(lr)
 
 线性模型系数：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/cTGeoHnosW7o.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/cTGeoHnosW7o.png?imageslim">
+</p>
 
 
 
@@ -1295,11 +1239,9 @@ plt.grid(True);
 
 可视化编码特征：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/BunsOw70yqdi.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/BunsOw70yqdi.png?imageslim">
+</p>
 
 
 
@@ -1328,20 +1270,16 @@ plotCoefficients(lr)
 
 特征工程后的回归模型预测值：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/MTPdyREebRpI.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/MTPdyREebRpI.png?imageslim">
+</p>
 
 
 特征工程后的回归模型参数：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/8UuPRezIYWpj.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/8UuPRezIYWpj.png?imageslim">
+</p>
 
 
 测试误差略有下降。从上面的系数图像我们可以得出结论，`weekday`和`is_weekend`是非常有用的特征。
@@ -1372,11 +1310,9 @@ plt.grid(True);
 目标编码小时平均：
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/O40hsjwRYa1R.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/O40hsjwRYa1R.png?imageslim">
+</p>
 
 
 最后，让我们定义一个函数完成所有的转换：
@@ -1427,20 +1363,16 @@ plotCoefficients(lr)
 
 结果出现过拟合
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/RcGkOqMUs96w.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/RcGkOqMUs96w.png?imageslim">
+</p>
 
 
 过拟合模型参数：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/i0GsFhvTE5sf.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/i0GsFhvTE5sf.png?imageslim">
+</p>
 
 
 这里出现了**过拟合**！`Hour_average`变量在训练数据集上表现如此优异，模型决定集中全力在这个变量上——这导致预测质量下降。处理这一问题有多种方法，比如，我们可以不在整个训练集上计算目标编码，而是在某个窗口上计算，从最后观测到的窗口得到的编码大概能够更好地描述序列的当前状态。或者我们可以直接手工移除这一特征，反正我们已经确定它只会带来坏处。
@@ -1472,11 +1404,9 @@ sns.heatmap(X_train.corr());
 
 系数相关性热力图：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/MaElcE9vuQlH.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/MaElcE9vuQlH.png?imageslim">
+</p>
 
 
 
@@ -1498,20 +1428,16 @@ plotCoefficients(ridge)
 
 岭回归预测值：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/ocv2IjwHRabb.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/ocv2IjwHRabb.png?imageslim">
+</p>
 
 
 岭回归系数:
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/eOWYPccOCRPs.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/eOWYPccOCRPs.png?imageslim">
+</p>
 
 
 我们可以很清楚地看到，随着特征在模型中的重要性的降低，系数越来越接近零（不过从未达到零）：
@@ -1529,20 +1455,16 @@ plotCoefficients(lasso)
 
 Lasso回归预测值:
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/BD7NRo2xqUiV.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/BD7NRo2xqUiV.png?imageslim">
+</p>
 
 
 Lasso回归系数
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/KlrMdXeEepnC.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/KlrMdXeEepnC.png?imageslim">
+</p>
 
 
 Lasso回归看起来更保守一点，没有将第 23 时差作为最重要特征，同时完全移除了 5 项特征，这提升了预测质量。
@@ -1566,11 +1488,9 @@ plot_intervals=True, plot_anomalies=True)
 
 XGBoost预测值
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/dOjqK1DkFWiP.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/dOjqK1DkFWiP.png?imageslim">
+</p>
 
 
 我们的赢家出现了！在我们目前为止尝试过的模型中，XGBoost在测试集上的误差是最小的。

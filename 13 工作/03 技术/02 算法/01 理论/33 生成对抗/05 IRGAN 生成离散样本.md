@@ -19,11 +19,9 @@ Reddit 论坛上有一篇 Goodfellow 发表的帖子：“GANs have not been app
 
 但是，从买苹果转到买橙子，你不能说买橙子一些，一点或者一点点（见图 13.17）。<span style="color:red;">是的。</span>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190426/zdl9PLiggThl.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190426/zdl9PLiggThl.png?imageslim">
+</p>
 
 将 GANs 用来生成离散数据，不是一件简单的事情，但是生活中很多时候，我们遇到的就是各型各色的离散型数据。
 

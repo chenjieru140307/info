@@ -25,20 +25,16 @@ date: 2019-07-01
 
 考虑我们排序这个数组：[10,23,51,18,4,31,13,5] ，我们递归地将数组进行分解
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190701/9Xbb1JsvS6Ad.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190701/9Xbb1JsvS6Ad.png?imageslim">
+</p>
 
 
 当数组被完全分隔成只有单个元素的数组时，我们需要把它们合并回去，每次两两合并成一个有序的序列。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190701/Yzu7ahHuiUC6.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190701/Yzu7ahHuiUC6.png?imageslim">
+</p>
 
 
 用递归代码来描述这个问题：
@@ -60,18 +56,14 @@ def merge_sort(seq):
 注意我们这里有一个函数没实现，就是如何合并两个有序数组 merge_sorted_list。其实你在纸上画一画，
 合并两个有序数组并不难实现。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190701/1btcVA66yLO0.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190701/1btcVA66yLO0.png?imageslim">
+</p>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190701/dkiGlmWqUIu2.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190701/dkiGlmWqUIu2.png?imageslim">
+</p>
 
 
 
@@ -113,11 +105,9 @@ def merge_sorted_list(sorted_a, sorted_b):
 T(n)= \begin{cases} c, & \text {if $n$ = 1} \\ 2T(n/2)+cn, & \text{if $n$ > 1} \end{cases}
 \end{aligned}
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190701/I8pmfSofMwau.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190701/I8pmfSofMwau.png?imageslim">
+</p>
 
 
 总的代价是 $cnlg(n)+cn$ ，忽略常数项可以认为是  O(nlg(n))。如果这个图看不懂，我们自己求解下也不难，首先我们简化一下，
@@ -127,11 +117,9 @@ T(n)= \begin{cases} c, & \text {if $n$ = 1} \\ 2T(n/2)+cn, & \text{if $n$ > 1} \
 T(n)= \begin{cases} 1, & \text {if $n$ = 1} \\ 2T(n/2)+n, & \text{if $n$ > 1} \end{cases}
 \end{aligned}
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190701/hcs2mvJVHDYM.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190701/hcs2mvJVHDYM.png?imageslim">
+</p>
 
 
 

@@ -20,25 +20,19 @@ https://blog.csdn.net/xh_hit/article/details/79769599
 
   (3) 对于网络结构的水平组合，水平组合是指将输入为相同张量和执行相同操作的层融合一起，例如图 2 向图 3 的转化。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/uDHxHbEuLcW9.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/uDHxHbEuLcW9.png?imageslim">
+</p>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/6HnqYP2wTzEI.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/6HnqYP2wTzEI.png?imageslim">
+</p>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/DokxJcd2ClPQ.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/DokxJcd2ClPQ.png?imageslim">
+</p>
 
 
 以上 3 步即是 TensorRT 对于所部署的深度学习网络的优化和重构，根据其优化和重构策略，第一和第二步适用于所有的网络架构，但是第三步则对于含有 Inception 结构的神经网络加速效果最为明显。

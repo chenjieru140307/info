@@ -14,11 +14,9 @@ date: 2019-04-26
 
 原来这幅画上根本没有寺，只见崇山峻岭间，一股清泉飞流直下，一位老和尚俯身在泉边，背后是挑水的木桶，木桶后弯弯曲曲远去的小路，消失在丛林深处（见图 13.15）。寺虽不见于画，却定“藏”于山，比起寺的一角或一段墙垣，更切合考题。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190426/EF1iqqGk1zTX.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190426/EF1iqqGk1zTX.png?imageslim">
+</p>
 
 人们看画，看的不仅是画家的画技，还有所表达的主题。同一主题，表现的手法很多，不同人会画出不同画。反过来，观者在看到这些不同画时，都能联想到同一主题或相似主题。
 

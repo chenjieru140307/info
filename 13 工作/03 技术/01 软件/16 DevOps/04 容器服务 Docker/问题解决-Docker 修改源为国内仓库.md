@@ -47,11 +47,9 @@ See '/usr/bin/docker-current run --help'.
 登录阿里云，访问 [https://cr.console.aliyun.com/#/accelerator](https://link.zhihu.com/?target=https%3A//cr.console.aliyun.com/%23/accelerator) 获取专属 Docker 加速器地址：
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/180727/124jm53mj7.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/124jm53mj7.png?imageslim">
+</p>
 
 直接把他给你的代码运行一下，就可以了。
 

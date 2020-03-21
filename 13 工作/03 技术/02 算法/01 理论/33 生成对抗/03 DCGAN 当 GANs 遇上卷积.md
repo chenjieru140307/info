@@ -25,11 +25,9 @@ date: 2019-04-24
 
 比如识别狗的图片，模型关心的是狗，不是狗的大小、颜色和品种，如图 13.9所示，图像分类：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190424/wJLhbyqENIn6.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190424/wJLhbyqENIn6.png?imageslim">
+</p>
 
 
 **再看看图像分割**
@@ -43,22 +41,18 @@ date: 2019-04-24
 
 如图所示，图像分割。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190424/TcUMdgypkhsX.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190424/TcUMdgypkhsX.png?imageslim">
+</p>
 
 
 **OK，我们再来看看图像生成**
 
 图像生成不是图像分割（见图 13.11）：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190424/qMphAjmYfAJO.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190424/qMphAjmYfAJO.png?imageslim">
+</p>
 
 图像分割的输出端虽然与原图同尺寸，但是像素级别的细节信息依然大量丢掉，难以生成高分辨率的图片。<span style="color:red;">是的。</span>
 
@@ -95,11 +89,9 @@ date: 2019-04-24
 
 我们可以把 100 维随机向量，理解成要事先确定一些信息，除了类别还要有细节，它们各项独立并可以相互组合，比如一只装在茶杯里的呆萌茶杯犬：<span style="color:red;">什么叫除了类别还有细节？感觉这句话有点不通顺。。</span>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190424/CT2yFtfQmnhp.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190424/CT2yFtfQmnhp.png?imageslim">
+</p>
 
 用随机向量的每维刻画不同的细节，然后生成一张图片。
 
@@ -141,11 +133,9 @@ date: 2019-04-24
 
 步长大于 1 的传统卷积层会把输入图缩成一张高宽更小的图，5×5 的图经过核 3×3步长 2×2 的卷积层得到一个 2×2 的图，如图 13.14（a）所示：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190426/42jPklgT2Yqd.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190426/42jPklgT2Yqd.png?imageslim">
+</p>
 
 
 如果这个过程可逆，则由输入 2×2 图可得 5×5图。严格意义上的逆过程是数学上的求逆操作，这太复杂。分数步进卷积层只是象征性地保证输入 2×2 图输出 5×5 图，同时仍满足卷积操作的定义。

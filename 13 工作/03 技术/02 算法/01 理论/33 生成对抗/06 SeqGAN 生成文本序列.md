@@ -36,11 +36,9 @@ date: 2019-04-26
 一般地，序列建模采用 RNN 框架（见图 13.18），具体单元可以是 LSTM 或 GRU，甚至带上注意力机制。
 
 序列建模 LSTM 框架：
-<center>
-
-![](http://images.iterate.site/blog/image/20190426/RB6dySnh2BGi.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190426/RB6dySnh2BGi.png?imageslim">
+</p>
 
 
 $$

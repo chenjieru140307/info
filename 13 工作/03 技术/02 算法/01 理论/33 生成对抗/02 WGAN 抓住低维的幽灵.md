@@ -21,11 +21,9 @@ date: 2019-04-21
 
 二维画面与三维空间：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190421/5KW3NMHBxItm.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190421/5KW3NMHBxItm.png?imageslim">
+</p>
 
 拓展到高维空间，这个体积叫测度，无论 $N$ 维空间的 $N$ 有多大，在 $N+1$ 维空间中测度就是零，就像二维平面在三维空间中一样。<span style="color:red;">嗯，测度。</span>
 
@@ -73,11 +71,9 @@ $$
 
 高维空间中的生成器样本网点与低维流形上的真实分布：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190421/mmX9hK4dY9tq.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190421/mmX9hK4dY9tq.png?imageslim">
+</p>
 
 回到公式，看第一个 KL 距离：
 
@@ -113,11 +109,9 @@ $$
 W\left(\mathbb{P}_{r}, \mathbb{P}_{g}\right)=\inf _{\gamma \sim \Pi\left(\mathbb{P}_{r}, \mathbb{P}_{g}\right)} \mathbb{E}_{(x, y) \sim \gamma}[\|x-y\|]\tag{13.15}
 $$
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190421/3P1C9v4LkEze.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190421/3P1C9v4LkEze.png?imageslim">
+</p>
 
 怎么理解这个公式？想象你有一个很大的院子，院子里有几处坑坑洼洼需要填平，四个墙角都有一堆沙子，沙子总量正好填平所有坑。
 
@@ -178,11 +172,9 @@ WGAN 的思路很巧妙，在一个前向神经网络里，输入经过多次线
 
 判别器在这里换了一个名字，叫评分器（Critic），目标函数由 “区分样本来源” 变成 “为样本打分” ：越像真实样本分数越高，否则越低，有点类似支持向量机里 margin 的概念（见图 13.8）。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190421/ajFqEmj8osbN.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190421/ajFqEmj8osbN.png?imageslim">
+</p>
 
 打个龟兔赛跑的比方，评分器是兔子，生成器是乌龟。评分器的目标是甩掉乌龟，让二者的距离（或 margin）越来越大；生成器的目标是追上兔子。严肃一点讲，训练评分器就是计算生成器分布与真实分布的 Wasserstein 距离；给定评分器，训练生成器就是在缩小这个距离，算法中要计算 Wasserstein 距离对生成器参数 $\theta$ 的梯度，$\nabla_{\theta} W\left(\mathbb{P}_{r}, \mathbb{P}_{g}\right)=-\mathbb{E}_{z \sim p(z)}\left[\nabla_{\theta} f_{w}\left(g_{\theta}(z)\right)\right]$ ，再通过梯度下降法更新参数，让 Wasserstein 距离变小。
 

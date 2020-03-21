@@ -19,11 +19,9 @@ date: 2019-06-16
 
 ## LSTM 的遗忘门
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/8Pzsh7S3LnwT.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/8Pzsh7S3LnwT.png?imageslim">
+</p>
 
 
 LSTM 的关键就是细胞核的状态。细胞核的状态类似于一种传送带。它直接在整个链上穿过，附带一些少量的线性交互，让信息在上面流传而保持不变。
@@ -32,11 +30,9 @@ LSTM 的关键就是细胞核的状态。细胞核的状态类似于一种传送
 
 遗忘门的内部结构：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/tzdYyXgg5slP.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/tzdYyXgg5slP.png?imageslim">
+</p>
 
 ## 步骤
 
@@ -58,11 +54,9 @@ $$
 
 $t$ 时刻的记忆计算过程：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190616/Wt2h8AGXEtN0.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190616/Wt2h8AGXEtN0.png?imageslim">
+</p>
 
 
 $$

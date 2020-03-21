@@ -125,11 +125,9 @@ pyplot.show()
 
 运行上述代码，并对 7 个变量在 5 年的范围内绘图。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/iosBOtT9H2e5.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/iosBOtT9H2e5.png?imageslim">
+</p>
 
 
 
@@ -404,11 +402,9 @@ print('Test RMSE: %.3f' % rmse)
 
 运行以上代码，首先将会绘制训练过程中的训练和测试损失图。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/8wzoPVmNrpGE.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/8wzoPVmNrpGE.png?imageslim">
+</p>
 
 训练中的每个 epoch 都会记录和绘制训练集和测试集的损失，并在整个训练结束后绘制模型最终的 RMSE。
 

@@ -12,11 +12,9 @@ date: 2019-07-04
 下图是官方文档中给出的 LSTM 输出结构描述，初次查看时我的内心是这样的
 经过一番奋勇搏斗，终于将其撕开，下面来跟大家聊一聊。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/THXKodBNlX7C.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/THXKodBNlX7C.png?imageslim">
+</p>
 
 
 **先上结论：**
@@ -30,11 +28,9 @@ date: 2019-07-04
 
 1. output是一个三维的张量，第一维表示序列长度，第二维表示一批的样本数(batch)，第三维是 hidden_size(隐藏层大小) * num_directions ，这里是我遇到的第一个不理解的地方，hidden_sizes由我们自己定义，num_directions这是个什么鬼？翻看源码才明白，先贴出代码，从代码中可以发现 num_directions根据是“否为双向”取值为 1 或 2。因此，我们可以知道，output第三个维度的尺寸根据是否为双向而变化，如果不是双向，第三个维度等于我们定义的隐藏层大小；如果是双向的，第三个维度的大小等于 2 倍的隐藏层大小。为什么使用 2 倍的隐藏层大小？因为它把每个 time step的前向和后向的输出连接起来了，后面会有一个实验，方便我们记忆。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/4rL51pJ19q1o.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/4rL51pJ19q1o.png?imageslim">
+</p>
 
 2. h_n是一个三维的张量，第一维是 num_layers*num_directions，num_layers是我们定义的神经网络的层数，num_directions在上面介绍过，取值为 1 或 2，表示是否为双向 LSTM。第二维表示一批的样本数量(batch)。第三维表示隐藏层的大小。第一个维度是 h_n难理解的地方。首先我们定义当前的 LSTM 为单向 LSTM，则第一维的大小是 num_layers，该维度表示第 n 层最后一个 time step的输出。如果是双向 LSTM，则第一维的大小是 2 * num_layers，此时，该维度依旧表示每一层最后一个 time step的输出，同时前向和后向的运算时最后一个 time step的输出用了一个该维度。
 
@@ -46,11 +42,9 @@ date: 2019-07-04
 
 **给出一个样例图（画工太差，如有错误请指正），对比前面的例子自己分析下**
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190704/4Khx1cd99BB7.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/4Khx1cd99BB7.png?imageslim">
+</p>
 
 
 **最后上一段代码结束战斗**

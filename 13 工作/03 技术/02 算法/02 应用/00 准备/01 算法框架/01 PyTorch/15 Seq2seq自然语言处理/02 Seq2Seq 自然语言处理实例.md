@@ -570,46 +570,34 @@ output = he s a young young player . <EOS>
 
 误差效果图：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190621/fIcXGrXbOcma.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190621/fIcXGrXbOcma.png?imageslim">
+</p>
 
 注意力的权重可视化：
 
-<center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190621/vCXizL0YDukA.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/20190621/vCXizL0YDukA.png?imageslim){ width=55% }
-
-</center>
-
-<center>
-
-![](http://images.iterate.site/blog/image/20190621/gKsel8SPXzDM.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190621/gKsel8SPXzDM.png?imageslim">
+</p>
 
 
-<center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190621/RGhwV1kVTEob.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/20190621/RGhwV1kVTEob.png?imageslim){ width=55% }
-
-</center>
-
-<center>
-
-![](http://images.iterate.site/blog/image/20190621/Hfmw5CT42tac.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190621/Hfmw5CT42tac.png?imageslim">
+</p>
 
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190621/UAxgDBaibsn4.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190621/UAxgDBaibsn4.png?imageslim">
+</p>
 
 
 
@@ -632,11 +620,9 @@ Attention 机制把源句子中对生成句子重要的关键词的权重进行�
 
 采用注意力集中机制能够让网络在解码的时候着重输出某些重要的部分。如图表示编码输入到解码输出：<span style="color:red;">没明白。</span>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190621/iFuScM9bn6pI.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190621/iFuScM9bn6pI.png?imageslim">
+</p>
 
 
 我们可以通过注意力权重可视化来观察每个单词的权重，来确定编码输出的重点部分，有利于我们理解网络的注意力在哪部分。

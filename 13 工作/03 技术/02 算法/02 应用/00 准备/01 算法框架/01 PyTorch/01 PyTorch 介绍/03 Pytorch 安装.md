@@ -56,11 +56,9 @@ torch.__version__
 
 打开快捷方式，看看快捷方式是否跟这个截图一样，如果是则删除 `%USERPROFILE%` ，该参数会覆盖掉 notebook_dir 设置，导致配置不起效：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190627/2rnFMX0s8e0f.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/2rnFMX0s8e0f.png?imageslim">
+</p>
 
 
 

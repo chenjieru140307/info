@@ -4,11 +4,9 @@ toc: true
 date: 2019-08-27
 ---
 
-<center>
-
-![](http://images.iterate.site/blog/image/180701/ikfEl45aL5.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180701/ikfEl45aL5.png?imageslim">
+</p>
 
 形象地说，如图 14.11所示，一个话题就像是一个箱子，里面装着在这个概念下出现概率较高的那些词。不妨假定数据集中一共包含 $K$ 个话题和 $T$ 篇文档，文档中的词来自一个包含 $N$ 个词的词典。我们用 $T$ 个 $N$ 维向量 $\mathbf{W}=\left\{\boldsymbol{w}_{1}, \boldsymbol{w}_{2}, \ldots, \boldsymbol{w}_{T}\right\}$ 表示数据集(即文档集合)，$K$ 个 $N$ 维向量典 $\boldsymbol{\beta}_{k}(k=1,2,\cdots,K)$ 表示话题，其中 $\boldsymbol{w}_{t} \in \mathbb{R}^{N}$ 的第 $n$ 个分量 $w_{t,n}$ 表示文档 $t$ 中词 $n$ 的词频，$\boldsymbol{\beta}_{k} \in \mathbb{R}^{N}$ 的第 $n$ 个分量 $\beta_{k,n}$ 表示话题 $k$ 中词 $n$ 的词频.
 
@@ -26,11 +24,9 @@ date: 2019-08-27
 图 14.12描述了 LDA 的变量关系，其中文档中的词频 $w_{t,n}$ 是唯一的已观测变量，它依赖于对这个词进行的话题指派 $z_{t,n}$ ，以及话题所对应的词频 $\boldsymbol{\beta}_{k}$ ；同时，话题指派 $z_{t,n}$ 依赖于话题分布 $\Theta_t$,$\Theta_t$ 依赖于狄利克雷分布的参数 $\boldsymbol{\alpha}$ ，而话题词频则依赖于参数 $\boldsymbol{\eta}$ .
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/180701/49mBjh6KDL.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180701/49mBjh6KDL.png?imageslim">
+</p>
 
 于是,LDA模型对应的概率分布为
 

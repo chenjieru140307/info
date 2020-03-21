@@ -10,27 +10,21 @@ date: 2019-05-28
 2017年 1 月份，Facebook开源了 PyTorch。PyTorch 由 Adam Paszke、Sam Gross与 Soumith Chintala 等人牵头开发，其成员来自 Facebook FAIR 和其他多家实验室。PyTorch 的前身是 Torch。Torch是一个科学计算框架，支持机器学习算法，易用而且提供高效的算法实现，这得益于 LuaJIT 和一个底层的 C 实现。Torch由卷积神经网络之父杨乐昆领导开发的框架，是 Facebook 的深度学习开发工具，于 2014 年开源后，迅速传播开来。由于 Torch 由 Lua 语言编写，Torch 在神经网络方面一直表现得很优异，但是 Lua 语言不怎么流行，从而开发者把 Torch 移植到 python 语言中，形成了 PyTorch。所以，也可以说 PyTorch 是 Torch 在 python 上的移植。其图标如图 1.3所示。<span style="color:red;">嗯嗯。</span>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190525/ufzEDgalWII4.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190525/ufzEDgalWII4.png?imageslim">
+</p>
 
 目前 PyTorch 仅支持 Linux,Mac 平台的操作系统，截至 2017年 12 月 PyTorch 最新的版本是 PyTorch 0.2。其应用版本环境如图 1.4所示。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190525/9BS98dCIa5Fw.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190525/9BS98dCIa5Fw.png?imageslim">
+</p>
 
 PyTorch 的官网地址：http://pytorch.org/，其官网界面如图 1.5所示。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190525/YotmSq81ol5G.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190525/YotmSq81ol5G.png?imageslim">
+</p>
 
 python 作为功能十分强大的高级语言，擅长处理数据分析，拥有众多模块包，是众多数据分析爱好者的选择。PyTorch 支持动态图的创建。
 
@@ -60,32 +54,26 @@ PyTorch 支持卷积神经网络、循环神经网络以及长短期记忆网络
 
 cifar10内置的图像数据：<span style="color:red;">这个是 PyTorch 内置的数据吗？不是吧？</span>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190525/SLjIAylgeMOR.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190525/SLjIAylgeMOR.png?imageslim">
+</p>
 
 我们来看一下 PyTorch 的模型运作流程图（如图 1.8所示）：从输入 input 到输出 output 很简洁，也很直观。
 
 PyTorch的网络模型运作流程图：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190525/s5imfa5sQlyk.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190525/s5imfa5sQlyk.png?imageslim">
+</p>
 
 <span style="color:red;">上面这个图中的 i2o 和 i2h 是什么？而且，为什么 hidden 是这样连接的？是表征一个 LSTM 吗？</span>
 
 图 1.9是 PyTorch 与 Torch 训练 RNN 模型按流程的对比图，PyTorch 相比于 Torch 而言更加简洁，如果你想创建一个递归网络，只需多次使用相同的线性层，无须考虑共享权重。<span style="color:red;">没有很明白？</span>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190525/so0YC5nMDtu2.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190525/so0YC5nMDtu2.png?imageslim">
+</p>
 
 
 

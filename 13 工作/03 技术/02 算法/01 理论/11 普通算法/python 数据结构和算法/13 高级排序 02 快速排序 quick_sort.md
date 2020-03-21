@@ -17,11 +17,9 @@ date: 2019-07-01
 
 - 合并结果
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190701/M44D0fVFks0R.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190701/M44D0fVFks0R.png?imageslim">
+</p>
 
 
 根据这个想法我们可以快速写出快排的代码，简直就是在翻译上边的描述：
@@ -60,11 +58,9 @@ def quicksort_inplace(array, beg, end):    # 注意这里我们都用左闭右�
 
 能否实现只遍历一次数组就可以完成 partition 操作呢？实际上是可以的。我们设置首位俩个指针 left, right，两个指针不断向中间收拢。如果遇到 left 位置的元素大于 pivot 并且 right 指向的元素小于 pivot，我们就交换这俩元素，当 left > right 的时候退出就行了，这样实现了一次遍历就完成了 partition。如果你感觉懵逼，纸上画画就立马明白了。我们来撸代码实现：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190701/AyrnbCl7JFxf.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190701/AyrnbCl7JFxf.png?imageslim">
+</p>
 
 
 ```py
@@ -109,11 +105,9 @@ T(n) = 2T(n/2) + n
 
 上一节我们讲过通过递归树得到它的时间复杂度是 O(nlog(n))。即便是很坏的情况，比如 pivot 每次都把数组按照 1:9 划分，依然是 O(nlog(n))，感兴趣请阅读算法导论相关章节。
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190701/BYgCoOBhfBEw.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190701/BYgCoOBhfBEw.png?imageslim">
+</p>
 
 
 ```py

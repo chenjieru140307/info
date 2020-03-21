@@ -14,11 +14,9 @@ date: 2019-06-20
 
 DCGAN 的基本架构就是使用几层 “反卷积”（Deconvolution）网络，如图所示：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/7u2QThS0bDzF.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/7u2QThS0bDzF.png?imageslim">
+</p>
 
 
 “反卷积” 类似于一种反向卷积，这跟用反向传播算法训练监督的卷积神经网络（CNN）是类似的操作。
@@ -43,29 +41,23 @@ Generative networks 的架构参数：
 
 DCGAN 模型：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/XKDV2o3zat7p.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/XKDV2o3zat7p.png?imageslim">
+</p>
 
 下图等式左边都是噪声 z（一般为均匀噪声）经过 G（z）产生的人脸图片：<span style="color:red;">真的假的？是通过均匀噪声生成的吗？配错图了吧？？</span>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/5y39vgvob490.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/5y39vgvob490.png?imageslim">
+</p>
 
 
 使用 GAN 作为特征提取器分类 CIFAR-10，如图 10.6所示。虽然 2015 年 Dosovitskiy 等提出 DCGAN 的性能仍然比不上典型的 CNN，但仍然取得较好的效果：<span style="color:red;">有点想知道，为什么 DCGAN 的性能比不上典型 CNN 呢？</span>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/VAnMpHiwklwX.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/VAnMpHiwklwX.png?imageslim">
+</p>
 
 ## CGAN
 
@@ -73,11 +65,9 @@ DCGAN 模型：
 
 CGAN模型：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/if4auKxLtm5c.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/if4auKxLtm5c.png?imageslim">
+</p>
 
 
 就是 G 网络的输入在 z 的基础上连接一个输入 y，然后在 D 网络的输入在 x 的基础上也连接一个 y。
@@ -87,39 +77,31 @@ CGAN模型：
 我们来看看 CGAN 的应用，如图所示，利用 CGAN 进行文字和位置约束来生成图片。在图片的特定位置约束，同时加上相应的标签文字，作为随机输入，生成图片，然后与真实图片做对比，进行判断图片真假。利用 CGAN 进行文字和位置约束来生成图片：<span style="color:red;">怎么进行文字和位置的约束的？</span>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/LnFQmSAhcWcm.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/LnFQmSAhcWcm.png?imageslim">
+</p>
 
 下面是利用 CGAN 进行文字和位置约束来生成图片效果图：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/AtGfBmVT1YYC.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/AtGfBmVT1YYC.png?imageslim">
+</p>
 
 <span style="color:red;">擦嘞，真的假的，这么厉害吗？</span>
 
 
 利用 CGAN 生成关键点多层次参与图片生成模型流程：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/wqUldGNUkwza.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/wqUldGNUkwza.png?imageslim">
+</p>
 
 
 比如说我们要在图片的具体位置进行图片的伸缩、平移、扩张等。下图所示是对框架里面的鸟儿进行缩小、平移、伸缩的案例：<span style="color:red;">这么厉害吗？震惊了。</span>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/jq8gfFnsMeKs.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/jq8gfFnsMeKs.png?imageslim">
+</p>
 
 
 Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network 这篇文章将对抗学习用于基于单幅图像的高分辨重建。

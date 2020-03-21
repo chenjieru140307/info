@@ -161,35 +161,27 @@ Epoch [199/200], Step[600/600], d_loss: 0.7669, g_loss: 1.7857, D(x): 0.70, D(G(
 fake_images-1.png：
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/dOBXpXrks8hW.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/dOBXpXrks8hW.png?imageslim">
+</p>
 
 fake_images-100.png：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/ilbaCA4KWVhc.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/ilbaCA4KWVhc.png?imageslim">
+</p>
 
 fake_images-200.png：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/52xkcGws9sl1.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/52xkcGws9sl1.png?imageslim">
+</p>
 
 real_images.png
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/MSzitJA09zyV.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/MSzitJA09zyV.png?imageslim">
+</p>
 
 <span style="color:red;">挺好的，但是感觉距离真实图片还是有差距呀？是因为模型还不够好吗？还是说训练的 epoch 不够？</span>
 
@@ -229,11 +221,9 @@ GAN启发自博弈论中的二人零和博弈（Two-player Game）,GAN模型中�
 
 风格迁移（Style Transfer）是深度学习众多应用中非常有趣的一种，如图所示，我们可以使用这种方法把一张图片的风格“迁移”到另一张图片上：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190620/7WxjKC5dpSug.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190620/7WxjKC5dpSug.png?imageslim">
+</p>
 
 
 原始的风格迁移速度是非常慢的。在 GPU 上，生成一张图片都需要 10 分钟左右，而如果只使用 CPU 而不使用 GPU 运行程序，甚至需要几个小时。这个时间还会随着图片尺寸的增大而迅速增大。

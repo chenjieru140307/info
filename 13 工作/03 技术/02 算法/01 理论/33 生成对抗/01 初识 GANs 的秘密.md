@@ -26,11 +26,9 @@ MiniMax游戏，值函数（Value Function），JS距离（Jensen- Shannon Diver
 
 GANs的主要框架如图 13.1所示：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190421/0IUR0IjMzgJO.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190421/0IUR0IjMzgJO.png?imageslim">
+</p>
 
 包括两个部分：
 
@@ -59,20 +57,16 @@ GANs 采用对抗策略进行模型训练：
 
 （1）在训练判别器时，先固定生成器 $G(\cdot)$；然后利用生成器随机模拟产生样本 $G(z)$ 作为负样本（ $z$ 是一个随机向量），并从真实数据集中采样获得正样本 $X$ ；将这些正负样本输入到判别器 $G(\cdot)$ 中，根据判别器的输出（即 $D(X)$ 或 $D(G(z))$ ）和样本标签来计算误差；最后利用误差反向传播算法来更新判别器 $G(\cdot)$ 的参数，如图 13.2所示。<span style="color:red;">是的，还是很好理解的，生成器生成的不管有多像，都是负样本。</span>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190421/kRSaymHrvbP4.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190421/kRSaymHrvbP4.png?imageslim">
+</p>
 
 
 （2）在训练生成器时，先固定判别器 $D(\cdot)$ ；然后利用当前生成器 $G(\cdot)$ 随机模拟产生样本 $G(z)$ ，并输入到判别器 $D(\cdot)$ 中；根据判别器的输出 $D(G(z))$ 和样本标签来计算误差，最后利用误差反向传播算法来更新生成器 $G(\cdot)$ 的参数，如图 13.3所示：<span style="color:red;">嗯。</span>
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190421/F16eyi6twi55.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190421/F16eyi6twi55.png?imageslim">
+</p>
 
 
 ## GANs 的值函数。
