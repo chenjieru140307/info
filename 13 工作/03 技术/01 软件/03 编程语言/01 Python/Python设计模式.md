@@ -26,11 +26,9 @@ date: 2018-07-30
 
 ## 生成器 Builder
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190729/NTCeE2hvmNEO.png?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190729/NTCeE2hvmNEO.png?imageslim">
+</p>
 
 
 Builder模式主要用于构建一个复杂的对象，但这个对象构建的算法是稳定的，对象中的各个部分经常变化。Builder模式主要在于应对复杂对象各个部分的频繁需求变动。但是难以应对算法的需求变动。这点一定要注意，如果用错了，会带来很多不必要的麻烦。

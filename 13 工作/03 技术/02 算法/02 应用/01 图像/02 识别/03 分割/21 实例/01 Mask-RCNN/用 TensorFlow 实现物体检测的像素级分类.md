@@ -9,11 +9,9 @@ date: 2019-11-17
 实例分割的方法有很多，TensorFlow 进行实例分割使用的是 Mask RCNN 算法。
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20191029014401.gif?imageslim)
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20191029014401.gif?imageslim">
+</p>
 
 
 ##   **Mask R-CNN 算法概述**
