@@ -43,7 +43,9 @@ date: 2018-08-21 18:16:23
 content_image + style_image=> output image
 
 
-![](http://images.iterate.site/blog/image/180727/GHg4ILl86F.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/GHg4ILl86F.png?imageslim">
+</p>
 
 文章地址：https://arxiv.org/abs/1508.06576
 
@@ -55,15 +57,21 @@ content_image + style_image=> output image
 
 
 
-![](http://images.iterate.site/blog/image/180727/3I0E5Eak1f.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/3I0E5Eak1f.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180727/aAjG9Gl1cF.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/aAjG9Gl1cF.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180727/eCg5BGEBga.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/eCg5BGEBga.png?imageslim">
+</p>
 
 
 
@@ -75,9 +83,13 @@ content_image + style_image=> output image
 
 网络结构：
 
-![](http://images.iterate.site/blog/image/180727/Jj6jgJb6bI.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/Jj6jgJb6bI.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180727/1iJ0al7meJ.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/1iJ0al7meJ.png?imageslim">
+</p>
 
 
 在本文中，只使用了前 5 层的网络 'conv1_1'(a)，'conv2_1'(b)，'conv3_1'(c)，'conv4_1'(d)，'conv5_1'(e)。VGG网络主要用来做内容识别，在实践中作者发现，使用前三层 1，2，3已经能达到比较好的内容重建工作，4、5两层保留了一些比较高层的特征，丢失了一些细节。
@@ -90,7 +102,9 @@ content_image + style_image=> output image
 
 
 
-![](http://images.iterate.site/blog/image/180727/90c4G755aF.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/90c4G755aF.png?imageslim">
+</p>
 
 
 
@@ -152,9 +166,13 @@ To generate the images that mix the content of a photograph withe the style of a
 1.对于同一张 content 对象，给 style 风格图片不同时，输出的图像不同。
 
 
-![](http://images.iterate.site/blog/image/180727/IhbD3lGifb.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/IhbD3lGifb.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180727/CaGgE9ab35.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/CaGgE9ab35.png?imageslim">
+</p>
 
 2.Total loss 中的\(\alpha /\beta \)不同。
 
@@ -162,9 +180,13 @@ To generate the images that mix the content of a photograph withe the style of a
 
 * 从左导游表示的时不同的\(\alpha /\beta \)的比例，\(10^{-5}->10^{-2}\)是指更注重 style 还是更强调 content。**厉害**
 
-![](http://images.iterate.site/blog/image/180727/mkDiab7gba.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/mkDiab7gba.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180727/fL40DD470K.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/fL40DD470K.png?imageslim">
+</p>
 
 
 

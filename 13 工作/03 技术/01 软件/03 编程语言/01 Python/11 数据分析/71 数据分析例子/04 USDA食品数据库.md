@@ -846,7 +846,9 @@ result['Zinc, Zn'].sort_values().plot(kind='barh', figsize=(10, 8))
 
 
 
-![](http://images.iterate.site/blog/image/180708/kI15iIhCjG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/kI15iIhCjG.png?imageslim">
+</p>
 
 我们还可以找到每一种营养成分含量最多的食物是什么：
 

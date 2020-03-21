@@ -24,7 +24,9 @@ date: 2018-07-27 15:02:53
 GAN中包含两个模型：生成模型（Generative Model）和判别模型（Discriminative Model）。
 
 
-![](http://images.iterate.site/blog/image/180727/90F7bgE4I1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/90F7bgE4I1.png?imageslim">
+</p>
 
 判别模型是一个分类器，它判断给定的图片到底是来自数据集的真实图像，还是人工创建的假图像。这基本上就是一个表现为卷积神经网络（CNN）形式的二元分类器。
 
@@ -41,7 +43,9 @@ GAN中包含两个模型：生成模型（Generative Model）和判别模型（D
 
 
 
-![](http://images.iterate.site/blog/image/180727/k6AgHf5fAm.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/k6AgHf5fAm.png?imageslim">
+</p>
 
 判别器的结构与 TensorFlow 的样例 CNN 分类模型密切相关。它有两层特征为 5×5像素特征的卷积层，还有两个全连接层按图像中每个像素计算增加权重的层。
 
@@ -52,7 +56,9 @@ tf.nn.conv2d()是 TensorFlow 中的标准卷积函数，它包含四个参数：
 其实上面这些就是一个普通简单的二进制分类器，如果你不是初次接触 CNN，应该对此并不陌生。
 
 
-![](http://images.iterate.site/blog/image/180727/m02KeE07Fa.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/m02KeE07Fa.png?imageslim">
+</p>
 
 定义了判别器之后，我们需要回头看看生成模型。我们将以 Tim O’Shea编写的简单生成器代码为基础构建模型的整体结构。
 

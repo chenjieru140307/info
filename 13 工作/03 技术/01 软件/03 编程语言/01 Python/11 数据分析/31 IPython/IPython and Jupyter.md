@@ -54,7 +54,9 @@ IPython是 Python 科学计算标准工具集的组成部分，它将其他所�
 
 Python是一门解释性语言。Python的解释器一次只能运行一个命令。标准的 Python 解释器环境可以用通过输入 Python 进入（在 terminal 中输入 Python 后，就能进入解释器）：
 
-![](http://images.iterate.site/blog/image/180722/idHm83GeIB.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180722/idHm83GeIB.png?imageslim">
+</p>
 
 `>>>`是提示符（prompt），告诉你可以输入指令。如果想要退出，可以输入`exit()`或者按 Ctrl-D。
 
@@ -66,13 +68,17 @@ print('Hello world')
 
 可以通过下面的命令来运行（我们需要先 cd 到 hello_world.py 所在的文件夹）：
 
-![](http://images.iterate.site/blog/image/180722/CAD0Gd0ilC.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180722/CAD0Gd0ilC.png?imageslim">
+</p>
 
 # 我们再看看 IPython
 
 在做科学计算和数据分析的时候，我们通常使用 IPython，这是一个强化版的 Python 解释器，当我们使用`%run`命令的时候，IPython会按执行代码的方式来执行文件，可以让我们直观地看到交互的结果：
 
-![](http://images.iterate.site/blog/image/180722/G2DlE7hJH5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180722/G2DlE7hJH5.png?imageslim">
+</p>
 
 默认的 IPython 提示符会显示数字，比如图片中的`In [2]:`，而不是普通的`>>>`提示符。
 
@@ -384,7 +390,9 @@ Pasting code; enter '--' alone on the line to stop or use Ctrl-D.
 
 这个还没怎么用过。==在实际中真的会使用这个吗？应该是都是用 Jupyternotebook了吧？==
 
-![](http://images.iterate.site/blog/image/180722/F2F4HiEd02.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180722/F2F4HiEd02.jpg?imageslim">
+</p>
 
 
 异常和跟踪
@@ -440,7 +448,9 @@ File:      e:\11.programfiles\anaconda3\lib\site-packages\iPython\core\magics\na
 
 实际上，魔术命令默认是可以不带百分号使用的，只要没有定义与其同名的变量即可。这个技术叫做 automagic，可以通过 %automagic 打开或关闭。
 
-![](http://images.iterate.site/blog/image/180722/eL7l2g3ea0.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180722/eL7l2g3ea0.jpg?imageslim">
+</p>
 
 ==真不知道什么时候会使用这些。==
 
@@ -462,7 +472,9 @@ plt.plot(np.random.randn(50).cumsum())
 
 同时在 block 内输出了一个图：
 
-![](http://images.iterate.site/blog/image/180722/CiIEH2DeL7.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180722/CiIEH2DeL7.png?imageslim">
+</p>
 
 
 

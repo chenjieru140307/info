@@ -320,7 +320,9 @@ http://你的服务器 IP
 1
 ```
 
-![](http://images.iterate.site/blog/image/20190102/eCqyFhvGVGQj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190102/eCqyFhvGVGQj.png?imageslim">
+</p>
 
 
 正如我们所看到的，刚才提交的代码已经自动部署到 Web 服务器的文件根目录下啦。再来更新点内容试试：
@@ -334,7 +336,9 @@ git commit -m "First change"
 
 刷新浏览器页面，看看变更生效没：
 
-![](http://images.iterate.site/blog/image/20190102/Hqubul1XpwhM.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190102/Hqubul1XpwhM.png?imageslim">
+</p>
 
 
 你看，这让本地测试变得方便了很多。当然正如我们前面说的，生产环境上是不能这么用的。要上生产环境的代码一定要仔细的测试验证过才行。
@@ -497,7 +501,9 @@ To demo@107.170.14.32:proj
 
 我们在这里能够看到刚才在`post-receive` hook里面写的信息了。如果我们从浏览器里访问远程服务器的 IP 或者域名，则应该能看到最新版的页面：
 
-![](http://images.iterate.site/blog/image/20190102/naWTy82KaJJs.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190102/naWTy82KaJJs.png?imageslim">
+</p>
 
 
 看起来，这个 hook 已经成功的把我们的代码部署到生产环境啦。
@@ -520,7 +526,9 @@ git commit -m "Trying out new feature"
 
 这样 commit 之后，在浏览器里输入开发机的 IP，你应该能看到这个变更：
 
-![](http://images.iterate.site/blog/image/20190102/oIjxXpnXamCM.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190102/oIjxXpnXamCM.png?imageslim">
+</p>
 
 
 正如我们所需要的那样，开发机上的 Web 服务器内容更新了。这样进行本地测试再方便不过。
@@ -565,7 +573,9 @@ git push production master
 
 现在再到浏览器里输入生产服务器的 IP 看看，变更被成功部署了：
 
-![](http://images.iterate.site/blog/image/20190102/RWCgfRyyxClD.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190102/RWCgfRyyxClD.png?imageslim">
+</p>
 
 这样的工作流，在开发机上实现了实时部署，在生产环境上实现了推送 master 就部署，皆大欢喜。
 

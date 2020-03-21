@@ -162,11 +162,15 @@ int readFlippedInteger(FILE *fp) {
 60000 train + 10000 test 96.88%
 K = 5
 
-![](http://images.iterate.site/blog/image/180806/FfaCDFLk6F.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180806/FfaCDFLk6F.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180806/6Hk6JA871g.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180806/6Hk6JA871g.png?imageslim">
+</p>
 
 
 

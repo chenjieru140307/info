@@ -33,7 +33,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/CKBIllId5A.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/CKBIllId5A.png?imageslim">
+</p>
 
 
 
@@ -64,12 +66,16 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/EE29AhCJgL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/EE29AhCJgL.png?imageslim">
+</p>
 
 
 
 
-![](http://images.iterate.site/blog/image/180728/0EeDiIb9fa.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/0EeDiIb9fa.png?imageslim">
+</p>
 
 
 
@@ -122,7 +128,9 @@ date: 2018-07-28 08:38:52
 
 
 
-![](http://images.iterate.site/blog/image/180728/HH5ce6AbfK.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/HH5ce6AbfK.png?imageslim">
+</p>
 
 
 
@@ -181,7 +189,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/e7lKJIkJBF.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/e7lKJIkJBF.png?imageslim">
+</p>
 
 
 
@@ -237,7 +247,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/c8J5k7ALlB.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/c8J5k7ALlB.png?imageslim">
+</p>
 
 
 
@@ -293,7 +305,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/hlcG9F18K7.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/hlcG9F18K7.png?imageslim">
+</p>
 
 
 
@@ -337,7 +351,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/J8eeF6ihIA.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/J8eeF6ihIA.png?imageslim">
+</p>
 
 
 
@@ -370,7 +386,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/5Ih63dfBiG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/5Ih63dfBiG.png?imageslim">
+</p>
 
 
 
@@ -414,7 +432,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/GiL9jkfdEL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/GiL9jkfdEL.png?imageslim">
+</p>
 
 
 
@@ -457,7 +477,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/l7dB0c9CdE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/l7dB0c9CdE.png?imageslim">
+</p>
 
 
 
@@ -495,7 +517,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/5GHCaDEd53.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/5GHCaDEd53.png?imageslim">
+</p>
 
 
 
@@ -535,7 +559,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/GKDIB8II0g.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/GKDIB8II0g.png?imageslim">
+</p>
 
 
 
@@ -589,18 +615,26 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/BJk2fJCl28.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/BJk2fJCl28.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180728/7K6j6Hg4D0.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/7K6j6Hg4D0.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180728/mKd4l62EGC.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/mKd4l62EGC.png?imageslim">
+</p>
 
 
-![](http://images.iterate.site/blog/image/180728/607fGFD51h.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/607fGFD51h.png?imageslim">
+</p>
 
 
 
@@ -649,7 +683,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/21a2HK4dhJ.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/21a2HK4dhJ.png?imageslim">
+</p>
 
 
 
@@ -692,7 +728,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/gAb08hC4k5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/gAb08hC4k5.png?imageslim">
+</p>
 
 
 
@@ -742,7 +780,9 @@ date: 2018-07-28 08:38:52
 输出：
 
 
-![](http://images.iterate.site/blog/image/180728/lCGA9c5ilI.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/lCGA9c5ilI.png?imageslim">
+</p>
 
 
 

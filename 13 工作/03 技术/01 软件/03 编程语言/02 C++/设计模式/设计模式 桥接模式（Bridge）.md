@@ -90,7 +90,9 @@ Bridge模式则正是解决了这类问题。**是这样吗？怎么解决的？
 Bridge 模式的结构图为：
 
 
-![](http://images.iterate.site/blog/image/180727/lECJF29fEK.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/lECJF29fEK.png?imageslim">
+</p>
 
 从结构图我们可以看到，系统被分为两个相对独立的部分，左边是抽象部分，右边是实现部分，这两个部分可以互相独立地进行修改。
 
@@ -113,17 +115,23 @@ Bridge 模式的结构图为：
 比如说，我现在想开发一些手机软件，我们可以按手机品牌来实现：
 
 
-![](http://images.iterate.site/blog/image/180727/HAECF29clG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/HAECF29clG.png?imageslim">
+</p>
 
 也可以按软件分类来实现：
 
 
-![](http://images.iterate.site/blog/image/180727/AA2mcB1iF1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/AA2mcB1iF1.png?imageslim">
+</p>
 
 由于实现的方式有多种，桥接模式的核心意图就是把这些实现独立出来，让它们各自地变化。这就可以使每种实现的变化不会影响其他实现，从而达到应对变化的目的：
 
 
-![](http://images.iterate.site/blog/image/180727/JehDDCkFCf.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/JehDDCkFCf.png?imageslim">
+</p>
 
 
 

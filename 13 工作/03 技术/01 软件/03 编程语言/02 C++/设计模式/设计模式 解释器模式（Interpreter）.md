@@ -73,7 +73,9 @@ Interpreter 模式提供了这样的一个实现语法解释器的框架，笔�
 Interpreter模式典型的结构图为:
 
 
-![](http://images.iterate.site/blog/image/180727/EGHh6J9e1D.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/EGHh6J9e1D.png?imageslim">
+</p>
 
 图 2-1: Interpreter Pattern 结构图
 

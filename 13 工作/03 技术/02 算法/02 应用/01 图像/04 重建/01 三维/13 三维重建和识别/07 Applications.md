@@ -11,7 +11,9 @@ date: 2018-08-18 16:35:01
 
 根据一些图，构建一个教堂场景
 
-![](http://images.iterate.site/blog/image/180817/24dbIGIHcF.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/24dbIGIHcF.png?imageslim">
+</p>
 
 第二章图是他们拼出来的，第三张图是图库里面的。
 
@@ -29,42 +31,60 @@ http://phototour.cs.washington.edu/
 <span style="color:red;">基本没讲</span>
 
 
-![](http://images.iterate.site/blog/image/180817/7hfLlFDl46.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/7hfLlFDl46.png?imageslim">
+</p>
 
 
 Projector-Camera calibration
 
-![](http://images.iterate.site/blog/image/180817/BbadfkJ2bE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/BbadfkJ2bE.png?imageslim">
+</p>
 
 http://www.youtube.com/watch?v=YHhQSglmuqY&feature=channel_page
 
 Our setup
 
-![](http://images.iterate.site/blog/image/180817/759Ag5iGgh.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/759Ag5iGgh.png?imageslim">
+</p>
 
 Calibration procedure
 
-![](http://images.iterate.site/blog/image/180817/jFmBIe5K6e.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/jFmBIe5K6e.png?imageslim">
+</p>
 
 
 Quadrangle tracking
-![](http://images.iterate.site/blog/image/180817/GCkJbBKC1l.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/GCkJbBKC1l.png?imageslim">
+</p>
 
 Experiments
 
-![](http://images.iterate.site/blog/image/180817/7jI8ic4dkI.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/7jI8ic4dkI.png?imageslim">
+</p>
 
 Projection result
 
-![](http://images.iterate.site/blog/image/180817/BFaLg81heC.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/BFaLg81heC.png?imageslim">
+</p>
 
 Results
 
-![](http://images.iterate.site/blog/image/180817/aa2l87jKkH.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/aa2l87jKkH.png?imageslim">
+</p>
 
 Hand held direct manipulation 3D Display
 
-![](http://images.iterate.site/blog/image/180817/LEH6j8i78B.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/LEH6j8i78B.png?imageslim">
+</p>
 
 http://www.youtube.com/watch?v=vVW9QXuKfoQ&feature=relmfu
 
@@ -72,14 +92,18 @@ Keystone correction
 
 Configuration
 
-![](http://images.iterate.site/blog/image/180817/k7EjfFCLBj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/k7EjfFCLBj.png?imageslim">
+</p>
 
 
 Aim of this work
 
 Desired Results
 
-![](http://images.iterate.site/blog/image/180817/l06cehej4d.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/l06cehej4d.png?imageslim">
+</p>
 
 
 
@@ -93,13 +117,17 @@ Overview
     - Projection region detection and tracking
     - Automatic keystone correction
 
-![](http://images.iterate.site/blog/image/180817/73E7h3iebk.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/73E7h3iebk.png?imageslim">
+</p>
 
 
 Pre-warp projection image
 
 
-![](http://images.iterate.site/blog/image/180817/aK75dI575m.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/aK75dI575m.png?imageslim">
+</p>
 
 
 http://www.youtube.com/watch?v=y5XYdeh8Bno&list=UUfy2EumiHMeoUorMFR0woZA&index=1&feature=plcp
@@ -112,7 +140,9 @@ Keystone correction
 Some real correction results
 
 
-![](http://images.iterate.site/blog/image/180817/GCCKEb2gea.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/GCCKEb2gea.png?imageslim">
+</p>
 
 
 

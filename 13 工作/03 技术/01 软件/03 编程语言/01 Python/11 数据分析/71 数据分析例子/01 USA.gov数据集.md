@@ -446,7 +446,9 @@ tz_counts[:10].plot(kind='barh', rot=0)
 
 
 
-![](http://images.iterate.site/blog/image/180708/mmaEAdgb7e.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/mmaEAdgb7e.png?imageslim">
+</p>
 
 
 当然，我们也可以使用之前介绍的 seaborn 来画一个水平条形图（horizontal bar plot）：
@@ -470,7 +472,9 @@ sns.barplot(y=subset.index, x=subset.values)
 
 
 
-![](http://images.iterate.site/blog/image/180708/mhKAlb5cIg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/mhKAlb5cIg.png?imageslim">
+</p>
 
 
 我们还可以对这种数据进行更多的处理。比如 a 字段含有执行 URL 操作的浏览器、设备、应用程序的相关信息：
@@ -1251,7 +1255,9 @@ sns.barplot(x='total', y='tz', hue='os', data=count_subset)
 
 
 
-![](http://images.iterate.site/blog/image/180708/l2KldJfKc9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/l2KldJfKc9.png?imageslim">
+</p>
 
 
 由于这张图中不太容易看清楚较小分组中 windows 用户的相对比例，因此我们可以将各行规范化为“总计为 1”并重新绘图：
@@ -1278,7 +1284,9 @@ sns.barplot(x='normed_total', y='tz', hue='os', data=results)
 
 
 
-![](http://images.iterate.site/blog/image/180708/48fk352Hj3.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/48fk352Hj3.png?imageslim">
+</p>
 
 
 我们还可以使用 transform 和 groupby，来更有效率地计算规范化的和：
@@ -1399,7 +1407,9 @@ count_subset.plot(kind='barh', stacked=True)
 
 
 
-![](http://images.iterate.site/blog/image/180708/gmi02075fj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/gmi02075fj.png?imageslim">
+</p>
 
 
 由于这张图中不太容易看清楚较小分组中 windows 用户的相对比例，因此我们可以将各行规范化为“总计为 1”并重新绘图：
@@ -1422,4 +1432,6 @@ normed_subset.plot(kind='barh', stacked=True)
 
 
 
-![](http://images.iterate.site/blog/image/180708/C7kg4BhI4e.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/C7kg4BhI4e.png?imageslim">
+</p>

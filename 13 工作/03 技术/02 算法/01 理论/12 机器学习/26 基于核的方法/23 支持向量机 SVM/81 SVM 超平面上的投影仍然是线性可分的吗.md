@@ -12,11 +12,15 @@ date: 2019-08-27
 
 首先明确下题目中的概念，线性可分的两类点，即通过一个超平面可以将两类点完全分开，如图所示：
 
-![](http://images.iterate.site/blog/image/20190330/dyAGeQyT2aTL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190330/dyAGeQyT2aTL.png?imageslim">
+</p>
 
 假设绿色的超平面（对于二维空间来说，分类超平面退化为一维直线）为 SVM 算法计算得出的分类面，那么两类点就被完全分开。我们想探讨的是：将这两类点向绿色平面上做投影，在分类直线上得到的黄棕两类投影点是否仍然线性可分，如图所示：<span style="color:red;">嗯。</span>
 
-![](http://images.iterate.site/blog/image/20190330/tpKg3QjsTTKj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190330/tpKg3QjsTTKj.png?imageslim">
+</p>
 
 
 
@@ -28,7 +32,9 @@ date: 2019-08-27
 
 由于 SVM 的分类超平面仅由支持向量决定（之后会证明这一结论），我们可以考虑一个只含支持向量 SVM 模型场景。使用反证法来证明。假设存在一个 SVM 分类超平面使所有支持向量在该超平面上的投影依然线性可分，如图 3.11所示。根据简单的初等几何知识不难发现，图中 AB 两点连线的中垂线所组成的超平面（绿色虚线）是相较于绿色实线超平面更优的解，这与之前假设绿色实线超平面为最优的解相矛盾。考虑最优解对应的绿色虚线，两组点经过投影后，并不是线性可分的。<span style="color:red;">是的，这个也是一个反证法，如果是线性可分的，那么对于这条分界线来说，他们实际上是要比原先的分界线更好的，也就是说，支持点到这条直线的更远，分的更合理。</span>
 
-![](http://images.iterate.site/blog/image/20190330/W8L7j5SylDrh.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190330/W8L7j5SylDrh.png?imageslim">
+</p>
 
 
 我们的证明目前还有不严谨之处，即我们假设了仅有支持向量的情况，会不会在超平面的变换过程中支持向量发生了改变，原先的非支持向量和支持向量发生了转化呢？下面我们证明 SVM 的分类结果仅依赖于支持向量。考虑 SVM 推导中的 KKT 条件要求，<span style="color:red;">这些没看懂，要从头推导下。</span>
@@ -70,7 +76,9 @@ $$g_i(\omega^*)=-y_i(\omega^*\cdot x_i+\beta^*)+1 \tag{3.7}$$
 
 两个凸包上距离最短的两个点对应的三种情况：
 
-![](http://images.iterate.site/blog/image/20190330/PVLDpWpYuhE0.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190330/PVLDpWpYuhE0.png?imageslim">
+</p>
 
 从几何上分析即可知道，无论哪种情况两类点的投影均是线性不可分的。
 

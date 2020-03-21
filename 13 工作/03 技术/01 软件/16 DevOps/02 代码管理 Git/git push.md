@@ -12,7 +12,9 @@ date: 2018-08-20 20:38:45
 如下图所示
 我在 github 库中对某个文件进行了在线的编辑，并且没有同步到本地库，之后我在本地库添加了文件 test.txt，并想提交到 github，出现以下错误：error：failed to push some refs to。
 
-![](http://images.iterate.site/blog/image/180820/g5kDfcAfIk.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180820/g5kDfcAfIk.png?imageslim">
+</p>
 
 
 # **解决方案**
@@ -28,23 +30,31 @@ git pull --rebase origin master1
 
 如图：
 
-![](http://images.iterate.site/blog/image/180820/jE2CfFC3l0.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180820/jE2CfFC3l0.png?imageslim">
+</p>
 
 
 ## **下面我用图形象的解释下错误情况的发生和解决**
 
-![](http://images.iterate.site/blog/image/180820/1DDc8BhFbA.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180820/1DDc8BhFbA.png?imageslim">
+</p>
 
 
 git pull –rebase origin master意为先取消 commit 记录，并且把它们临时 保存为补丁(patch)(这些补丁放到”.git/rebase”目录中)，之后同步远程库到本地，最后合并补丁到本地库之中。
 
 
-![](http://images.iterate.site/blog/image/180820/Ejl9hIHhIE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180820/Ejl9hIHhIE.png?imageslim">
+</p>
 
 接下来就可以把本地库 push 到远程库当中了。
 
 
-![](http://images.iterate.site/blog/image/180820/Jhkli1586m.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180820/Jhkli1586m.png?imageslim">
+</p>
 
 
 

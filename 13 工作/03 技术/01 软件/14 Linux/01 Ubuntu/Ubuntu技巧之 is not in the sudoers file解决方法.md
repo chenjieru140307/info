@@ -18,7 +18,9 @@ www_linuxidc_com@linuxidc-Aspire-3680:~$ sudo add-apt-repository ppa:stk/dev
 www_linuxidc_com is not in the sudoers file.  This incident will be reported.
 www_linuxidc_com@linuxidc-Aspire-3680:~$
 
-![](http://images.iterate.site/blog/image/20181206/RElyBKucuyM9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181206/RElyBKucuyM9.png?imageslim">
+</p>
 
 
 下面是解决方法：
@@ -26,13 +28,17 @@ www_linuxidc_com@linuxidc-Aspire-3680:~$
 1）进入超级用户模式。也就是输入"su -"，系统会让你输入超级用户密码，输入密码后就进入了超级用户模式。（当然，你也可以直接用 root 用）
 (注意有- ，这和 su 是不同的，在用命令”su”的时候只是切换到 root，但没有把 root 的环境变量传过去，还是当前用户的环境变量，用”su -”命令将环境变量也一起带过去，就象和 root 登录一样)
 
-![](http://images.iterate.site/blog/image/20181206/ktsJfM6QtW1n.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181206/ktsJfM6QtW1n.png?imageslim">
+</p>
 
 
 2）添加文件的写权限。也就是输入命令"chmod u+w /etc/sudoers"。
 3）编辑/etc/sudoers文件。也就是输入命令"gedit /etc/sudoers"，进入编辑模式，找到这一 行："root ALL=(ALL) ALL"在起下面添加"www_linuxidc_com ALL=(ALL) ALL"(这里的 xxx 是你的用户名)，然后保存退出。
 
-![](http://images.iterate.site/blog/image/20181206/aqdHr6PvSgjr.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181206/aqdHr6PvSgjr.png?imageslim">
+</p>
 
 4）撤销文件的写权限。也就是输入命令"chmod u-w /etc/sudoers"。
 

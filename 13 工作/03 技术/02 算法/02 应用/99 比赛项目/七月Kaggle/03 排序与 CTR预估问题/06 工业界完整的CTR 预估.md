@@ -718,7 +718,9 @@ pass
 ```
 
 
-![](http://images.iterate.site/blog/image/180726/KdCIAEAJFL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180726/KdCIAEAJFL.png?imageslim">
+</p>
 
 #### **(3e) Handling unseen features **
 #### We naturally would like to repeat the process from Part (3d), e.g., to compute OHE features for the validation and test datasets.  However, we must be careful, as some categorical values will likely appear in new data that did not exist in the training data. To deal with this situation, update the `oneHotEncoding()` function from Part (1d) to ignore previously unseen categories, and then compute OHE features for the validation data.
@@ -1063,7 +1065,9 @@ pass
 ```
 
 
-![](http://images.iterate.site/blog/image/180726/770geb47Ee.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180726/770geb47Ee.png?imageslim">
+</p>
 
 ### **Part 5: Reduce feature dimension via feature hashing**
 
@@ -1358,7 +1362,9 @@ pass
 ```
 
 
-![](http://images.iterate.site/blog/image/180726/GkhmhkKE4m.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180726/GkhmhkKE4m.png?imageslim">
+</p>
 
 #### ** (5e) Evaluate on the test set **
 

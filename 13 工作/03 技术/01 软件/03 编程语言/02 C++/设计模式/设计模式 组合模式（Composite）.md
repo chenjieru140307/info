@@ -30,7 +30,9 @@ date: 2018-07-27 19:46:01
 Composite模式的典型结构图为：
 
 
-![](http://images.iterate.site/blog/image/180727/587D9CBh1G.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/587D9CBh1G.png?imageslim">
+</p>
 
 -实现
 ♦完整代码示例(code)

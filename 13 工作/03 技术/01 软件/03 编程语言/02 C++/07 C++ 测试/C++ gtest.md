@@ -64,7 +64,9 @@ TEST_F(CommandFixture, command_test) {
 然后他的路径是这样的：
 
 
-![](http://images.iterate.site/blog/image/180727/7h21C6mc6c.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/7h21C6mc6c.png?imageslim">
+</p>
 
 他用的是 make 不是 vs ，看来 make 还是一定要掌握的，不然连一些东西都不好用。
 

@@ -16,7 +16,9 @@ Word2Vec实际是一种浅层的神经网络模型，它有两种网络结构，
 - CBOW 的目标是根据上下文出现的词语来预测当前词的生成概率。如下图 (a) 所示。<span style="color:red;">CBOW 是什么的缩写？</span><span style="color:blue;">哦，上面写了，是 Continues Bag of Words。 </span>
 - Skip-gram 是根据当前词来预测上下文中各词的生成概率，如下图 (b) 所示。
 
-![](http://images.iterate.site/blog/image/20190323/B6MFg7oOTHeS.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190323/B6MFg7oOTHeS.png?imageslim">
+</p>
 
 <span style="color:red;">以前看过，不过没怎么认真看，现在看到真的有些厉害。</span>
 

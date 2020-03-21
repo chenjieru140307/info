@@ -134,19 +134,27 @@ if __name__=="__main__":
 
 1.jpg：
 
-![](http://images.iterate.site/blog/image/20181215/w6nxktnasA4u.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181215/w6nxktnasA4u.jpg?imageslim">
+</p>
 
 1_gray.jpg：
 
-![](http://images.iterate.site/blog/image/20181215/rrpcbooPehRr.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181215/rrpcbooPehRr.jpg?imageslim">
+</p>
 
 1_gaussian.jpg：
 
-![](http://images.iterate.site/blog/image/20181215/ieaRThsJqKNX.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181215/ieaRThsJqKNX.jpg?imageslim">
+</p>
 
 1_pepper_and_salt.jpg：
 
-![](http://images.iterate.site/blog/image/20181215/mnKBDrD3EWIA.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181215/mnKBDrD3EWIA.jpg?imageslim">
+</p>
 
 
 

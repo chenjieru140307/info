@@ -43,7 +43,9 @@ GAN的主要灵感来源于博弈论中**零和博弈**的思想。
 
 举个例子：用在图片生成上，我们想让最后的 G 可以从一段随机数中生成逼真的图像：
 
-![](http://images.iterate.site/blog/image/180727/k410K0HBcC.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/k410K0HBcC.png?imageslim">
+</p>
 
 上图中：
 

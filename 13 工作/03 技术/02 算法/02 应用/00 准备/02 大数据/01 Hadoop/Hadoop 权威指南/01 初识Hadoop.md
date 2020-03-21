@@ -103,7 +103,9 @@ Hadoop不是历史上第一个用于数据存储和分析的分布式系统，�
 - MapReduce 比较适合解决需要以批处理方式分析整个数据集的问题，尤其是一些特定目的的分析。RDBMS 适用于索引后数据集的点查询（point query）和更新，建立索引的数据库系统能够提供对小规模数据的低延迟数据检索和快速更新。
 - MapReduce 适合一次写入、多次读取数据的应用，关系型据库则更适合持续更新的数据集。
 
-![](http://images.iterate.site/blog/image/180625/62B45bF8Hj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/62B45bF8Hj.png?imageslim">
+</p>
 <span style="color:red;">到底什么是批处理？为什么 MapReduce 没有事务？什么是读时模式和写时模式？完整性是什么？为什么横向扩展是现行的和非线性的？</span>
 
 
@@ -194,7 +196,9 @@ Eric Baldeschwieler（即 EricM）组建了 一个小团队，于是我们开始
 
 本书分为五大部分：第一部分~第三部分讲解 Hadoop 核心，第 IV 部分主要讲述 Hadoop生态系统中的相关项目，第 V 部分包含 Hadoop 实例学习。读者可以按照章节顺序阅读，也可以根据自己的需求选择阅读顺序，如图 1-1所示。
 
-![](http://images.iterate.site/blog/image/180625/E22LI168gi.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/E22LI168gi.png?imageslim">
+</p>
 
 
 第一部分由 5 章内容组成，阐述的是 Hadoop 基础组件，应该在后续章节之前率先 阅读。第 1 章是对 Hadoop 的宏观介绍。第 2 章简要介绍 MapReduce。第 3 章深入 剖析 Hadoop 文件系统，特别是 HDFS。第 4 章讨论 Hadoop 集群资源管理系统

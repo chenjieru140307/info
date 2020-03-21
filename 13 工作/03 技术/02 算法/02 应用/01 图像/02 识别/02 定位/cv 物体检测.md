@@ -14,7 +14,9 @@ date: 2018-08-16 19:00:26
 物体识别
 
 
-![](http://images.iterate.site/blog/image/180727/lg976294Cl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/lg976294Cl.png?imageslim">
+</p>
 
 下面这四张图片分别对应的四种不同的要求：越来越难**  ****厉害  想知道这些都是怎么做到的。**
 
@@ -22,7 +24,9 @@ date: 2018-08-16 19:00:26
 
 Classification                  Localization                         Object Detection            Instance Segmentation
 
-![](http://images.iterate.site/blog/image/180727/7bAh7g3A9E.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/7bAh7g3A9E.png?imageslim">
+</p>
 
 左边两种应用的场景特点：
 
@@ -76,7 +80,9 @@ Classification                  Localization                  
 # 比较关键的几个 Deep Models：
 
 
-![](http://images.iterate.site/blog/image/180727/J3fHGd4EhD.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/J3fHGd4EhD.png?imageslim">
+</p>
 
 
 
@@ -90,11 +96,17 @@ Deformable Parts Model
 **这个方法到底是怎么做的？现在还这么做吗？**
 
 
-![](http://images.iterate.site/blog/image/180727/IdmiKAf367.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/IdmiKAf367.png?imageslim">
+</p>
 
 
-![](http://images.iterate.site/blog/image/180727/km3mIBkH3b.png?imageslim){ width=55% }
-![](http://images.iterate.site/blog/image/180727/kB8fa28CId.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/km3mIBkH3b.png?imageslim">
+</p>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/kB8fa28CId.png?imageslim">
+</p>
 
 
 涉及到两篇论文：
@@ -109,7 +121,9 @@ Deformable Parts Model
 
 
 
-![](http://images.iterate.site/blog/image/180727/0gH5gFfmd0.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/0gH5gFfmd0.png?imageslim">
+</p>
 
 提出了一系列非常经典的做法，包括：
 1. 如何应用 stochastic gradient descent (SGD) 到 training 里。
@@ -137,21 +151,27 @@ Deformable Parts Model
 
 
 
-![](http://images.iterate.site/blog/image/180727/53741a1gJ3.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/53741a1gJ3.png?imageslim">
+</p>
 
 以前，怕纯 CNN 不带好，因此最后总是加上 FC，但是现在很多都是纯 CNN 的 model 了，只不过最后的 CNN 用的是 1*1的卷积。1*1的卷积有什么意义呢？1*1不会减少参数的，**不知道。**
 
 Loss over the whole dataset:
 
 
-![](http://images.iterate.site/blog/image/180727/G770EhJlbH.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/G770EhJlbH.png?imageslim">
+</p>
 
 后面的是为了防止过拟合
 
 In each solver iteration, we use a stochastic approximation of this objective, drawing a mini-batch of N << |D| instances:
 
 
-![](http://images.iterate.site/blog/image/180727/g8Ec2HgihI.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/g8Ec2HgihI.png?imageslim">
+</p>
 
 
 
@@ -161,7 +181,9 @@ In each solver iteration, we use a stochastic approximation of this objective, d
 
 
 
-![](http://images.iterate.site/blog/image/180727/Imd9ea31A7.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/Imd9ea31A7.png?imageslim">
+</p>
 
 Data term: error averagedover instances
 
@@ -170,17 +192,23 @@ Regularizationterm: penalizelarge weights to improve generalization
 Stochastic Gradient Descent (known as Solver)
 
 
-![](http://images.iterate.site/blog/image/180727/e0B1DddII5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/e0B1DddII5.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180727/CbcDL8CBlk.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/CbcDL8CBlk.png?imageslim">
+</p>
 
 对于一个 AlexNet 来说，
 solver.prototxt里的设计如下：
 
 
-![](http://images.iterate.site/blog/image/180727/33e2AjH4d1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/33e2AjH4d1.png?imageslim">
+</p>
 
 http://caffe.berkeleyvision.org/doxygen/classcaffe_1_1HingeLossLayer.html
 
@@ -229,11 +257,15 @@ http://caffe.berkeleyvision.org/doxygen/classcaffe_1_1HingeLossLayer.html
 问题：给出一张图，识别图中的物体类别及位置。**提示：用分类做检测？**
 
 
-![](http://images.iterate.site/blog/image/180727/dKciGl8gEa.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/dKciGl8gEa.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180727/fD9BH1GC44.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/fD9BH1GC44.png?imageslim">
+</p>
 
 
 
@@ -273,7 +305,9 @@ http://caffe.berkeleyvision.org/doxygen/classcaffe_1_1HingeLossLayer.html
 computer vision 最大的哲学理念就是 multiple scale 这个，即多尺度。它能解决很多问题，一个是看到一个物体在不同的视角；一个是把 data **tation做的非常好了，就是一张图变成很多张图。**这个还想再了解下。**
 
 
-![](http://images.iterate.site/blog/image/180727/6ggIJa51C0.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/6ggIJa51C0.png?imageslim">
+</p>
 
 Uijlingset al, “Selective Search for Object Recognition”, IJCV 2013
 
@@ -288,7 +322,9 @@ Uijlingset al, “Selective Search for Object Recognition”, IJCV 2013
 而 DL 的方法，就比如 fast RCNN 等很多。
 
 
-![](http://images.iterate.site/blog/image/180727/0JD5afFhc8.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/0JD5afFhc8.png?imageslim">
+</p>
 
 
 这个表在下面这个文档中：
@@ -306,12 +342,16 @@ Region Proposasl Network
 这是一个 feature map，有一个中间点，有 9 个 anchor，anchor box rpn **什么是 rpn？没明白这张图。**
 
 
-![](http://images.iterate.site/blog/image/180727/1bH370ik44.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/1bH370ik44.png?imageslim">
+</p>
 
 其实就是 iteratively/ recursively 做一遍 sliding window, 把 feature map上的每一个点，遍历搜索，设计出两种 loss： **没有很明白**
 
 
-![](http://images.iterate.site/blog/image/180727/LcK4jhC5Ii.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/LcK4jhC5Ii.png?imageslim">
+</p>
 
 DL 的重要方法：RCNN，Fast-RCNN，Faster-RCNN：
 
@@ -326,7 +366,9 @@ pipeline 就是整体的流程
 R是 region 的意思。为什么要 warped 一下？因为当时大家的网络最后一层都是一个 FC，它的输入是 fixed 的，由于要求这最后的输入是一样的，所以最前面的输入也需要一样。后面发展到全卷积网络就不需要这个 warped 的操作。由于当时全都是加一个 FC，因此加了 warped。**这也就是为什么 1*1的卷积有他自己的用处，因为它虽然等于 FC，但是允许你输入任意变化。****利害**
 
 
-![](http://images.iterate.site/blog/image/180727/4JeGj6L7KE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/4JeGj6L7KE.png?imageslim">
+</p>
 
 当时它只把 DL 作为特征提取，然后做 SVM，而且 forward 2000遍，
 
@@ -334,7 +376,9 @@ R是 region 的意思。为什么要 warped 一下？因为当时大家的网络
 ## Step 1: Train (or download) a classification model for ImageNet (ResNet-101)
 
 
-![](http://images.iterate.site/blog/image/180727/738G9lIcE9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/738G9lIcE9.png?imageslim">
+</p>
 
 
 ## Step 2: Fine-tune model for detection
@@ -355,7 +399,9 @@ R是 region 的意思。为什么要 warped 一下？因为当时大家的网络
 
 
 
-![](http://images.iterate.site/blog/image/180727/0BLB89ifhi.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/0BLB89ifhi.png?imageslim">
+</p>
 
 
 
@@ -379,7 +425,9 @@ R是 region 的意思。为什么要 warped 一下？因为当时大家的网络
 虽然有些比较笨重的缺点，但是当时是第一个用 DL 的方法来做 object detection 的。
 
 
-![](http://images.iterate.site/blog/image/180727/99feB6AGDF.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/99feB6AGDF.png?imageslim">
+</p>
 
 
 
@@ -390,7 +438,9 @@ R是 region 的意思。为什么要 warped 一下？因为当时大家的网络
 相当于把 softmax 用 SVM 来做
 
 
-![](http://images.iterate.site/blog/image/180727/6DjkgJ7hj7.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/6DjkgJ7hj7.png?imageslim">
+</p>
 
 
 
@@ -403,12 +453,16 @@ For each class, train a linear regression model to map from cached features to o
 即只要有 offset，他就把框动一动
 
 
-![](http://images.iterate.site/blog/image/180727/1Hm0aE9beB.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/1Hm0aE9beB.png?imageslim">
+</p>
 
 RCNN results：
 
 
-![](http://images.iterate.site/blog/image/180727/jd6C9315b4.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/jd6C9315b4.png?imageslim">
+</p>
 
 两个结论：
 
@@ -467,7 +521,9 @@ RCNN results：
 **而且对于 RoI 的 BP 是怎么做的？**
 
 
-![](http://images.iterate.site/blog/image/180727/JLcAab532E.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/JLcAab532E.png?imageslim">
+</p>
 
 Solution：Share computation of convolutional layers between proposals.
 
@@ -478,7 +534,9 @@ Solution：Share computation of convolutional layers between proposals.
 loss 是 smooth L1 和 softmax 加起来的。
 
 
-![](http://images.iterate.site/blog/image/180727/mDg3B4JlG9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/mDg3B4JlG9.png?imageslim">
+</p>
 
 Train end-to-end：
 
@@ -491,10 +549,14 @@ Train end-to-end：
 **这一节没看懂，很重要**
 
 
-![](http://images.iterate.site/blog/image/180727/fjJLb1Eha1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/fjJLb1Eha1.png?imageslim">
+</p>
 
 
-![](http://images.iterate.site/blog/image/180727/kFiebCa9h2.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/kFiebCa9h2.png?imageslim">
+</p>
 
 
 为什么又两项求和呢？原来是 28*28 的，
@@ -504,24 +566,32 @@ i是上一层的位置，j是这一层的位置 ，虽然是二维的，但是�
 回顾一下深度学习课程中，如何计算层与层之间的梯度的？
 
 
-![](http://images.iterate.site/blog/image/180727/E6gieII954.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/E6gieII954.png?imageslim">
+</p>
 
 
 ## Fast-RCNN bbox regression loss
 
-![](http://images.iterate.site/blog/image/180727/EK8f0j70hg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/EK8f0j70hg.png?imageslim">
+</p>
 
 t是 target v是 prediction，**没明白**
 
 
-![](http://images.iterate.site/blog/image/180727/G7K3JA6iAB.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/G7K3JA6iAB.png?imageslim">
+</p>
 
 https://github.com/ShaoqingRen/caffe/blob/062f2431162165c658a42d717baf8b74918aa18e/src/caffe/layers/smooth_L1_loss_layer.cu
 
 那么具体的 target (Ground Truth)坐标怎么算呢？
 
 
-![](http://images.iterate.site/blog/image/180727/lDjl5chEff.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/lDjl5chEff.png?imageslim">
+</p>
 
 真实坐标减去已经有的坐标，然后除以宽度。我们预测的就是这个宽度
 
@@ -535,7 +605,9 @@ https://github.com/ShaoqingRen/caffe/blob/062f2431162165c658a42d717baf8b74918aa1
 
 
 
-![](http://images.iterate.site/blog/image/180727/JH71CJEbGE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/JH71CJEbGE.png?imageslim">
+</p>
 
 又 4 个 loss，rpn里面两个，一个是 regression 一个是 classification 然后 classificer 里面又两个 loss，也是一个 regression 和一个 classification。
 
@@ -580,9 +652,13 @@ rpn只有两类 前景和后景？ **什么？**
 找到这四步骤对应的函数，对于理解整个算法非常重要。
 
 
-![](http://images.iterate.site/blog/image/180727/7F03EkdeEG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/7F03EkdeEG.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180727/1K13Im20Ch.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/1K13Im20Ch.png?imageslim">
+</p>
 
 
 ### Test 过程
@@ -599,16 +675,22 @@ rpn只有两类 前景和后景？ **什么？**
   3. NMS等后续过程，凝练出 top_k个置信度很高的 box, 计算 recall, 得出结论。
 
 
-![](http://images.iterate.site/blog/image/180727/GhkiBfjI83.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/GhkiBfjI83.png?imageslim">
+</p>
 
 
 
 
 ## RPN实验结果
 
-![](http://images.iterate.site/blog/image/180727/E157Ch0iFJ.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/E157Ch0iFJ.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180727/dmHJF8774D.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/dmHJF8774D.png?imageslim">
+</p>
 
 
 
@@ -652,7 +734,9 @@ Region-based Fully Convolutional Networks
 Code available: [https://github.com/daijifengoo1/r-fcn](https://github.com/daijifeng001/r-fcn)
 
 
-![](http://images.iterate.site/blog/image/180727/15Fc5ei52b.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/15Fc5ei52b.png?imageslim">
+</p>
 
 每个颜色代表不同的位置选择区域。
 The bank of kxk score maps correspond to a kxk spatial grid describing relative positions.
@@ -660,7 +744,9 @@ The bank of kxk score maps correspond to a kxk spatial grid describing relative 
 The loss of training:
 
 
-![](http://images.iterate.site/blog/image/180727/I1hmGAhG26.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/I1hmGAhG26.png?imageslim">
+</p>
 
 
 
@@ -669,32 +755,44 @@ In particular, the classification loss:
 
 
 
-![](http://images.iterate.site/blog/image/180727/mEg1aFJE5F.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/mEg1aFJE5F.png?imageslim">
+</p>
 
 问题 1: RFCN跟 DPM 的关系，如何理解？
 
 Position-sensitive score maps and ROI pooling
 
 
-![](http://images.iterate.site/blog/image/180727/CHFKJK34eL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/CHFKJK34eL.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180727/EE3kJaHI4I.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/EE3kJaHI4I.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180727/HFkEK7JE1F.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/HFkEK7JE1F.png?imageslim">
+</p>
 
 Figure 1: a positive box of person class
 
 
-![](http://images.iterate.site/blog/image/180727/KGmK5FllH5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/KGmK5FllH5.png?imageslim">
+</p>
 
 Figure 2: a negative box of person class
 
 
-![](http://images.iterate.site/blog/image/180727/AiJB7aL5eB.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/AiJB7aL5eB.png?imageslim">
+</p>
 
 问题 2: RCNN, Fast-RCNN, RFCN 在 feature-map 层面是如何联系起来的？
 
@@ -706,7 +804,9 @@ Figure 2: a negative box of person class
 
 
 
-![](http://images.iterate.site/blog/image/180727/HGie3a24kg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/HGie3a24kg.png?imageslim">
+</p>
 
 
 
@@ -722,7 +822,9 @@ Figure 2: a negative box of person class
 
 ### Joint Training
 
-![](http://images.iterate.site/blog/image/180727/e5E6DDjH3E.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/e5E6DDjH3E.png?imageslim">
+</p>
 
 能不能一下把 4 个 loss 一起 train？这样 train 好像效果不好。
 
@@ -741,7 +843,9 @@ Figure 2: a negative box of person class
 * 中继监督训练
 
 
-![](http://images.iterate.site/blog/image/180727/6CFDEgfI8g.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/6CFDEgfI8g.png?imageslim">
+</p>
 
 能不能用高层信息来弥补低层的信息？先训练 RCNN，后训练 Fast-RCNN
 

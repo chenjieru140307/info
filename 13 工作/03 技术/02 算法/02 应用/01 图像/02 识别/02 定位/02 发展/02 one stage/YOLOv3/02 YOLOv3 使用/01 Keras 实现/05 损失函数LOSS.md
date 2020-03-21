@@ -152,7 +152,9 @@ box_class_probs = K.sigmoid(feats[..., 5:])
 
 其中，xywh的计算公式，tx、ty、tw和 th 是 feats 值，而 bx、by、bw和 bh 是输出值，如下：
 
-![](http://images.iterate.site/blog/image/180925/E2Kgb34GCI.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180925/E2Kgb34GCI.png?imageslim">
+</p>
 
 框的 4 个值
 
@@ -282,7 +284,9 @@ loss += xy_loss + wh_loss + confidence_loss + class_loss
 
 YOLO v1的损失函数公式，与 v3 略有不同，作为参考：
 
-![](http://images.iterate.site/blog/image/180925/J8K5ijBI3D.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180925/J8K5ijBI3D.png?imageslim">
+</p>
 
 Loss
 

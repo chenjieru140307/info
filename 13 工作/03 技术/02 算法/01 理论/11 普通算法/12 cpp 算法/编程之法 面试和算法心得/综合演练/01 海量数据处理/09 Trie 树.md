@@ -31,7 +31,9 @@ Trie的核心思想是空间换时间，利用字符串的公共前缀来降低�
 
 即如果现在有 b，abc，abd，bcd，abcd，efg，hii 这 6 个单词，我们可以构建一棵如下图所示的树：
 
-![](http://images.iterate.site/blog/image/180708/CeCeeBjJmE.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/CeCeeBjJmE.jpg?imageslim">
+</p>
 
 如上图所示，对于每一个节点，从根遍历到他的过程就是一个单词，如果这个节点被标记为红色，就表示这个单词存在，否则不存在。
 
@@ -47,7 +49,9 @@ Trie树是简单但实用的数据结构，通常用于实现字典查询。我�
 
 下面，再举一个例子。给出一组单词，inn, int, at, age, adv, ant, 我们可以得到下面的 Trie：
 
-![](http://images.iterate.site/blog/image/180708/5LDbB62A2I.gif){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/5LDbB62A2I.gif">
+</p>
 
 可以看出：
 

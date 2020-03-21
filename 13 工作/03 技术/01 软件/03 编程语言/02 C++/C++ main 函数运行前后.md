@@ -69,7 +69,9 @@ int main()
 
 运行结果：
 
-![](http://images.iterate.site/blog/image/180803/7H5b81CkAe.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/7H5b81CkAe.png?imageslim">
+</p>
 
 说明：
 

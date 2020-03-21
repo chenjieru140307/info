@@ -68,7 +68,9 @@ plt.title("n_estimator vs CV Error");
 ```
 
 
-![](http://images.iterate.site/blog/image/180721/bC3agm49EF.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180721/bC3agm49EF.png?imageslim">
+</p>
 
 可见，前一个版本中，ridge 最优结果也就是 0.135 ；而这里，我们使用 25个小 ridge 分类器的 bagging ，达到了低于 0.132 的结果。<span style="color:red;">可见，用 bagging 比不用还是好一些的。</span>
 
@@ -95,7 +97,9 @@ plt.title("n_estimator vs CV Error");
 ```
 
 
-![](http://images.iterate.site/blog/image/180721/jiK1d3274I.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180721/jiK1d3274I.png?imageslim">
+</p>
 
 可见，单纯的使用 Decision Tree 来 bagging 效果还是不是很好的，最好的结果也就 0.140 。当然，这个地方使用的 decision tree 是没有经过调参的。
 
@@ -126,7 +130,9 @@ plt.title("n_estimator vs CV Error");
 ```
 
 
-![](http://images.iterate.site/blog/image/180721/0EAeDd3IKk.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180721/0EAeDd3IKk.png?imageslim">
+</p>
 
 可见，Adaboost+Ridge 在 25 个小分类器的情况下，也是达到了接近 0.132的效果。
 
@@ -151,7 +157,9 @@ plt.title("n_estimator vs CV Error");
 ```
 
 
-![](http://images.iterate.site/blog/image/180721/8CbI11AAkK.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180721/8CbI11AAkK.png?imageslim">
+</p>
 
 还是大于 0.14 ，看来我们也许要先对要用的决策树模型进行调参，然后再进行 boost 。
 
@@ -189,7 +197,9 @@ plt.title("max_depth vs CV Error");
 ```
 
 
-![](http://images.iterate.site/blog/image/180721/i6IL42cHl4.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180721/i6IL42cHl4.png?imageslim">
+</p>
 
 惊了，深度为 5 的时候，错误率缩小到 0.127 。<span style="color:red;">震惊了。比我们用的调过参的 ridge 的 bagging 还要好。</span>
 

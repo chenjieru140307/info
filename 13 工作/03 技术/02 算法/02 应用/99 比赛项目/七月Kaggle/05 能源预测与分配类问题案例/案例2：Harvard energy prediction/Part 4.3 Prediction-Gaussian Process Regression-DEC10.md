@@ -175,7 +175,9 @@ crossValidation_all(theta, nugget, nfold, trainX_dailyElectricity, trainY_dailyE
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/1cbd3H5jff.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/1cbd3H5jff.png?imageslim">
+</p>
 
 I choose theta = 3 and nuggest = 0.04, which gives the best median prediction accuracy.
 
@@ -221,7 +223,9 @@ Test score R2: 0.822408541698
 
 
 
-![](http://images.iterate.site/blog/image/180725/aFgh3c1Lia.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/aFgh3c1Lia.png?imageslim">
+</p>
 
 
 ```python
@@ -256,7 +260,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/iE0LaKd9cH.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/iE0LaKd9cH.png?imageslim">
+</p>
 
 
 他会给出预测值，而且，会给出预测值的 95% 的置信区间。<span style="color:red;">为什么要给出这种置信区间？</span>
@@ -333,7 +339,9 @@ crossValidation(theta, nugget, 3, trainX_dailyChilledWater, trainY_dailyChilledW
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/K7fF46kCLE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/K7fF46kCLE.png?imageslim">
+</p>
 
 I will choose $\theta$ = 0.021.
 
@@ -380,10 +388,14 @@ Test score R2: 0.901408621289
 
 
 
-![](http://images.iterate.site/blog/image/180725/f1dFAk3bK3.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/f1dFAk3bK3.png?imageslim">
+</p>
 
 
-![](http://images.iterate.site/blog/image/180725/DkJ6e2hBEf.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/DkJ6e2hBEf.png?imageslim">
+</p>
 
 Above is the visualization of part of the prediction.
 
@@ -436,7 +448,9 @@ crossValidation(theta, nugget, 3, trainX_dailyChilledWaterMoreFeatures, trainY_d
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/JFIKiAE59G.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/JFIKiAE59G.png?imageslim">
+</p>
 
 Again, I will choose $\theta$ =0.021.
 
@@ -479,10 +493,14 @@ Test score R2: 0.926978705167
 
 
 
-![](http://images.iterate.site/blog/image/180725/9k6cAeFLlE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/9k6cAeFLlE.png?imageslim">
+</p>
 
 
-![](http://images.iterate.site/blog/image/180725/J18BlAb2fk.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/J18BlAb2fk.png?imageslim">
+</p>
 
 Above is the visualization of part of the prediction.
 
@@ -537,7 +555,9 @@ crossValidation(theta, nugget, 3, trainX_dailySteam, trainY_dailySteam)
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/2JiIL5b4BC.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/2JiIL5b4BC.png?imageslim">
+</p>
 
 I will choose $\theta$ = 0.1.
 
@@ -578,10 +598,14 @@ Test score R2: 0.933120481633
 
 
 
-![](http://images.iterate.site/blog/image/180725/IEi8H6H7cD.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/IEi8H6H7cD.png?imageslim">
+</p>
 
 
-![](http://images.iterate.site/blog/image/180725/2kF7dDfla2.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/2kF7dDfla2.png?imageslim">
+</p>
 
 Above is the visualization of part of the prediction.
 
@@ -659,7 +683,9 @@ crossValidation(theta, nugget, 10, trainX_hourlyElectricity, trainY_hourlyElectr
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/4HeHbLeBd5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/4HeHbLeBd5.png?imageslim">
+</p>
 
 > Predict, calculate accuracy and visualize
 
@@ -677,7 +703,9 @@ Test score R2: 0.893873175566
 
 
 
-![](http://images.iterate.site/blog/image/180725/a4FkB8Gcj1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/a4FkB8Gcj1.png?imageslim">
+</p>
 
 
 ```python
@@ -702,7 +730,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/BkhGlcAgaI.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/BkhGlcAgaI.png?imageslim">
+</p>
 
 Above is the visualization of part of the prediction.
 
@@ -751,7 +781,9 @@ Test score R2: 0.882986662109
 
 
 
-![](http://images.iterate.site/blog/image/180725/h4b7m3h8gC.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/h4b7m3h8gC.png?imageslim">
+</p>
 
 ### Hourly Chilled Water
 
@@ -821,7 +853,9 @@ crossValidation(theta, nugget, 5, trainX_hourlyChilledWater, trainY_hourlyChille
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/GeiG1bjbFi.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/GeiG1bjbFi.png?imageslim">
+</p>
 
 > Predict, calculate accuracy and visualize
 
@@ -839,7 +873,9 @@ Test score R2: 0.865202975683
 
 
 
-![](http://images.iterate.site/blog/image/180725/2f7F3I2DAB.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/2f7F3I2DAB.png?imageslim">
+</p>
 
 
 ```python
@@ -864,7 +900,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/lcal2E0i5E.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/lcal2E0i5E.png?imageslim">
+</p>
 
 Above is the visualization of part of the prediction.
 
@@ -917,7 +955,9 @@ Test score R2: 0.887195665411
 
 
 
-![](http://images.iterate.site/blog/image/180725/0AJ2E7d55h.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/0AJ2E7d55h.png?imageslim">
+</p>
 
 ### Hourly Steam
 
@@ -970,7 +1010,9 @@ crossValidation(theta, nugget, 5, trainX_hourlySteam, trainY_hourlySteam)
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/L6cK5FAGgb.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/L6cK5FAGgb.png?imageslim">
+</p>
 
 > Predict, calculate accuracy and visualize
 
@@ -989,7 +1031,9 @@ Test score R2: 0.570427290315
 
 
 
-![](http://images.iterate.site/blog/image/180725/FGc8BiGk75.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/FGc8BiGk75.png?imageslim">
+</p>
 
 
 ```python
@@ -1013,7 +1057,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/8IE96kL42i.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/8IE96kL42i.png?imageslim">
+</p>
 
 Above is the visualization of part of the prediction.
 
@@ -1069,7 +1115,9 @@ Test score R2: 0.84405417838
 
 
 
-![](http://images.iterate.site/blog/image/180725/jemBkB75h7.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/jemBkB75h7.png?imageslim">
+</p>
 
 The hourly prediction is not as good as daily. But still, we can get R2 score around 0.85.
 

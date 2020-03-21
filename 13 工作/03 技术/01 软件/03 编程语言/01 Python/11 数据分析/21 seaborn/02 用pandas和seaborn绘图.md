@@ -44,11 +44,15 @@ s.plot()
 
 
 
-![](http://images.iterate.site/blog/image/180708/f8dHcICFBH.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/f8dHcICFBH.png?imageslim">
+</p>
 
 Series对象的 index（索引），被 matplotlib 用来当做 x 轴，当然，我们也可以自己设定不这么做，use_index=False。x轴的 ticks（标记）和 limits（范围）能通过 xticks 和 xlim 选项来设定，而 y 轴的可以用 yticks 和 ylim 来设定。下面是关于 plot 的一些选项。
 
-![](http://images.iterate.site/blog/image/180803/BJ71dfCCcK.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/BJ71dfCCcK.png?imageslim">
+</p>
 
 大部分的 pandas 绘图方法接受一个 ax 参数，可以作为一个 matplotlib subplot对象。这给我们更强的灵活性在 gird layout（网格样式）中放置 subplot。
 
@@ -74,7 +78,9 @@ df.plot()
 
 
 
-![](http://images.iterate.site/blog/image/180708/C1Ek1kfDL8.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/C1Ek1kfDL8.png?imageslim">
+</p>
 
 plot属性中，包含一组方法，来画出不同类型的绘图。例如，df.plot()等同于 df.plot.line()。
 
@@ -82,7 +88,9 @@ plot属性中，包含一组方法，来画出不同类型的绘图。例如，d
 
 DataFrame有一些选项在处理列的时候提供了灵活性；例如，是否把所有列都画在一个子图中，或者把不同列画在不同的子图中。下图有更多的设定：
 
-![](http://images.iterate.site/blog/image/180803/H8aij3LjGA.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/H8aij3LjGA.png?imageslim">
+</p>
 
 # 2 Bar Plots（条形图）
 
@@ -109,7 +117,9 @@ data.plot.barh(ax=axes[1], color='k', alpha=0.7)
 
 
 
-![](http://images.iterate.site/blog/image/180708/A9Lfl1I1fe.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/A9Lfl1I1fe.png?imageslim">
+</p>
 
 color='k'设置颜色为黑，而 alpha=0.7则设置局部透明度（靠近 1 越明显，靠近 0 则虚化）。
 
@@ -203,7 +213,9 @@ df.plot.bar()
 
 
 
-![](http://images.iterate.site/blog/image/180708/m9Fdihj1IL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/m9Fdihj1IL.png?imageslim">
+</p>
 
 
 ```Python
@@ -223,7 +235,9 @@ df.plot.bar() # 可以看到导入 seaborn 后画出来的图漂亮多了
 
 
 
-![](http://images.iterate.site/blog/image/180708/4adGgbhcfH.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/4adGgbhcfH.png?imageslim">
+</p>
 
 注意这里 DataFrame 列名的"Genus"，被作为图例。
 
@@ -242,7 +256,9 @@ df.plot.barh(stacked=True, alpha=0.5)
 
 
 
-![](http://images.iterate.site/blog/image/180708/F5KgEFmBiL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/F5KgEFmBiL.png?imageslim">
+</p>
 
 > 一个小窍门，在画 series 的值出现的频率的条形图时，可以使用 value_counts: `s.value_counts().plot.bar()`
 
@@ -545,7 +561,9 @@ party_pcts.plot.bar()
 
 
 
-![](http://images.iterate.site/blog/image/180708/10L5DFHH72.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/10L5DFHH72.png?imageslim">
+</p>
 
 这样我们可以看出来，在周末的时候组大小（party size）是增大的。
 
@@ -653,7 +671,9 @@ sns.barplot(x='tip_pct', y='day', data=tips, orient='h')
 
 
 
-![](http://images.iterate.site/blog/image/180708/g2Id52kfji.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/g2Id52kfji.png?imageslim">
+</p>
 
 seaborn的绘图函数中有一个 data 参数，这里可以导入 pandas 的 DataFrame。其他参数指的是列名。因为每一天（比如一个固定的周六）可能会有多个不同的值，所以条形图表示的是 tip_pct的平均值。条形图上的黑线表示 95%的置信区间（confidence interval）（这个可以通过可选参数进行更改）。
 
@@ -678,7 +698,9 @@ sns.barplot(x='tip_pct', y='day', hue='time', data=tips, orient='h')
 
 
 
-![](http://images.iterate.site/blog/image/180708/hHba9376cD.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/hHba9376cD.png?imageslim">
+</p>
 
 注意 seaborn 会自动更改绘图的外观：默认的调色板，绘图背景，网格颜色。我们可以自己设定不同的绘图外观，通过 seaborn.set:
 
@@ -704,7 +726,9 @@ tips['tip_pct'].plot.hist(bins=50)
 
 
 
-![](http://images.iterate.site/blog/image/180708/2gFDamceIE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/2gFDamceIE.png?imageslim">
+</p>
 
 另一种相关的绘图类型是 density plot（密度图），这个是用来计算观测数据中，连续概率分布的推测值。通常的步骤是用一组混合的“kernels”（核）来近似这个分布————核指的是，像正态分布一样的简单分布。因此，概率图也经常被叫做 kernel density estimate(KDE, 核密度估计)图。用 plot.kde，通过 conventional mixture-of-normals estimate（常规混合估计
 ）制作一个密度图：
@@ -722,7 +746,9 @@ tips['tip_pct'].plot.density()
 
 
 
-![](http://images.iterate.site/blog/image/180708/bG62cCH6h9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/bG62cCH6h9.png?imageslim">
+</p>
 
 seaborn能更方便地绘制柱状图和概率图，通过 distplot 方法，这个方法可以同时绘制一个柱状图和 a continuous density estimate（一个连续密度估计）。举个例子，考虑一个 bimodal distribution（双峰分布，二项分布），它由连个不同的标准正态分布组成：
 
@@ -768,7 +794,9 @@ sns.distplot(values, bins=100, color='k')
 
 
 
-![](http://images.iterate.site/blog/image/180708/3g0kJ2lK9b.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/3g0kJ2lK9b.png?imageslim">
+</p>
 
 （我在运行上面的代码时，报错提示为 ypeError: slice indices must be integers or None or have an __index__ method。通过更新 statsmodels 这个包解决了问题，原先的版本是 0.6，更新到 0.8后就没问题了。可以直接输入`conda install -c statsmodels statsmodels=0.8.0
 `）
@@ -1054,7 +1082,9 @@ sns.regplot('m1', 'unemp', data=trans_data)
 
 
 
-![](http://images.iterate.site/blog/image/180708/GH0g7aBjIG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/GH0g7aBjIG.png?imageslim">
+</p>
 
 在数据探索阶段，散点图能把一组变量之间所有的散点图都画出来，这种图被称之为 pairs plot（多变量图）或 scatter plot matrix（散点图矩阵）。画这样的图很麻烦，所以 seaborn 有一个非常方便的 pairplot 函数，这个函数可以把每一个参数的柱状图或密度估计画在对角线上：
 
@@ -1071,7 +1101,9 @@ sns.pairplot(trans_data, diag_kind='kde', plot_kws={'alpha': 0.2})
 
 
 
-![](http://images.iterate.site/blog/image/180708/7f59D40Dc1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/7f59D40Dc1.png?imageslim">
+</p>
 
 这里要注意一下 plot_kws关键字。这个让我们能导入设置选项，用来控制非对角线上的绘图。查看 seaborn.pairplot的字符串文档查看更多的设定选项。
 
@@ -1098,7 +1130,9 @@ sns.factorplot(x='day', y='tip_pct', hue='time', col='smoker',
 
 
 
-![](http://images.iterate.site/blog/image/180708/iC3JbiF5IG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/iC3JbiF5IG.png?imageslim">
+</p>
 
 在一个 facet（面）内，不是通过 time 和不同的柱状颜色来分组，我们也能通过添加给每一个 time 值添加一行的方式来扩展多面网格：
 
@@ -1195,7 +1229,9 @@ sns.factorplot(x='day', y='tip_pct', row='time',
 
 
 
-![](http://images.iterate.site/blog/image/180708/DcDecGHFa1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/DcDecGHFa1.png?imageslim">
+</p>
 
 factorplot支持其他一些绘图类型，是否有用取决于我们想要如何展示。例如，box plots（箱线图，可以展示中位数，分位数和利群店）可能是一种有效的视觉类型：
 
@@ -1210,6 +1246,8 @@ sns.factorplot(x='tip_pct', y='day', kind='box',
 ```
 
 
-![](http://images.iterate.site/blog/image/180708/kl2bk5fL01.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/kl2bk5fL01.png?imageslim">
+</p>
 
 通过 seaborn.FacetGrid，我们可以创建自己的多面网格图。更多信息请查看 seaborn 的文档。

@@ -51,12 +51,16 @@ Adapter模式解决的问题在生活中经常会遇到，比如说：
 Adapter Pattern（类模式）的结构图为：
 
 
-![](http://images.iterate.site/blog/image/180727/9bFhL9E7Be.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/9bFhL9E7Be.png?imageslim">
+</p>
 
 Adapter Pattern（对象模式）的结构图为：
 
 
-![](http://images.iterate.site/blog/image/180727/HlI109084H.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/HlI109084H.png?imageslim">
+</p>
 
 可见：
 

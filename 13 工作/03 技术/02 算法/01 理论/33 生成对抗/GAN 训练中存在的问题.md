@@ -33,9 +33,13 @@ date: 2018-07-27 15:03:36
 **文章中只是提到了一下，需要仔细总结下。**
 
 
-![](http://images.iterate.site/blog/image/180727/309ii49fg0.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/309ii49fg0.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180727/373f98AL3E.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/373f98AL3E.png?imageslim">
+</p>
 
 
 

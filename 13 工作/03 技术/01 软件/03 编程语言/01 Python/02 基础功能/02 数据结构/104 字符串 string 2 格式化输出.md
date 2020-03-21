@@ -45,7 +45,9 @@ Python 支持格式化字符串的输出 。尽管这样可能会用到非常复
 
 最后一个常见的问题是如何输出格式化的字符串。我们经常会输出类似`'亲爱的 xxx 你好！你 xx 月的话费是 xx，余额是 xx'`之类的字符串，而 xxx 的内容都是根据变量变化的，所以，需要一种简便的格式化字符串的方式。
 
-![](http://images.iterate.site/blog/image/20181206/FwQ2C9BLRB0K.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181206/FwQ2C9BLRB0K.png?imageslim">
+</p>
 
 在 Python 中，采用的格式化方式和 C 语言是一致的，用 `%` 实现，举例如下：
 

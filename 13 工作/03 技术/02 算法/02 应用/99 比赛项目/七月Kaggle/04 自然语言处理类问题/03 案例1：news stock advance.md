@@ -469,7 +469,9 @@ plt.plot(params, test_scores)
 plt.title("Param vs CV AUC Score");
 ```
 
-![](http://images.iterate.site/blog/image/180724/jLdfh2K6Dl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180724/jLdfh2K6Dl.png?imageslim">
+</p>
 
 ### 用 CNN 来提升逼格
 

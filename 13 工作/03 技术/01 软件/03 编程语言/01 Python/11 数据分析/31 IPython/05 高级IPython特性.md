@@ -89,7 +89,9 @@ iPython shell的设置文件为`iPython_config.py`，通常位于主目录下的
 
 新创建的配置文件在 profile_secret_project目录下，我们可以按需要更改配置文件。然后按下面的方式启动 iPython：
 
-![](http://images.iterate.site/blog/image/180803/l6hfm4Icj9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/l6hfm4Icj9.png?imageslim">
+</p>
 
 创建 jupyter 的配置文件：
 

@@ -455,7 +455,9 @@ conda install nb_conda
 
 
 
-  ![](http://images.iterate.site/blog/image/20190627/umaKMbsJ1DHJ.png?imageslim){ width=55% }
+  <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/umaKMbsJ1DHJ.png?imageslim">
+</p>
 
   conda类目
 
@@ -463,7 +465,9 @@ conda install nb_conda
 
 
 
-  ![](http://images.iterate.site/blog/image/20190627/82IHtpoquY8h.png?imageslim){ width=55% }
+  <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/82IHtpoquY8h.png?imageslim">
+</p>
 
   切换内核
 
@@ -489,12 +493,16 @@ conda install -c conda-forge jupyter_contrib_nbextensions
 
 
 
-  ![](http://images.iterate.site/blog/image/20190627/mXfRyof4ywBP.png?imageslim){ width=55% }
+  <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/mXfRyof4ywBP.png?imageslim">
+</p>
 
   nbextensions
 
 - 之后再在 Jupyter Notebook中使用 Markdown，点击下图的图标即可使用啦。
-  ![](http://images.iterate.site/blog/image/20190627/kQThOUpyOqrn.png?imageslim){ width=55% }
+  <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190627/kQThOUpyOqrn.png?imageslim">
+</p>
 
   添加目录
 

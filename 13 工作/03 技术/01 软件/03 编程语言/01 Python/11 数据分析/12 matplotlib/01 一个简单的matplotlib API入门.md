@@ -218,7 +218,9 @@ axes
 
 这个操作是很有用的。axes能用一个二位数据来索引，例如，axes[0, 1]。我们可以使用 sharex 和 sharey 来指定不同 subplot 有相同的 x-或 y-axis（其实就是令坐标轴的范围相同），这能让我们在同一范围内进行数据之间的比较。不然的话，matplotlib会自动绘图的范围不一定是一样的。下面是 pyplot.subplot选项：
 
-![](http://images.iterate.site/blog/image/180803/42gBa422D2.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/42gBa422D2.png?imageslim">
+</p>
 
 ### Adjusting the spacing around subplots（调整 subplot 直接的间隔）
 
@@ -657,7 +659,9 @@ savefig不仅可以写入磁盘，还可以导出为任意像是文件一样的�
 
 看下图关于 savefig 更多的选项：
 
-![](http://images.iterate.site/blog/image/180803/JdjHd2fGbG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/JdjHd2fGbG.png?imageslim">
+</p>
 
 # 6 matplotlib Configuration（matplotlib设置）
 

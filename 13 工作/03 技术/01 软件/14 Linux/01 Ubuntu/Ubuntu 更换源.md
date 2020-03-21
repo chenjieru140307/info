@@ -131,7 +131,9 @@ sudo vi sources.list (要有管理员权限)
 
 ### 删除掉 sources.list的其他内容，任意选择一种源的内容复制粘贴进去，保存，例如，选择阿里源
 
-![](http://images.iterate.site/blog/image/181004/ABlG9C6Ela.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181004/ABlG9C6Ela.png?imageslim">
+</p>
 
 ### 更新 apt
 

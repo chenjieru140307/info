@@ -49,11 +49,15 @@ Unicode标准也在不断发展，但最常用的是用两个字节表示一个�
 
 用记事本编辑的时候，从文件读取的 UTF-8 字符被转换为 Unicode 字符到内存里，编辑完成后，保存的时候再把 Unicode 转换为 UTF-8 保存到文件：<span style="color:red;">这个之前不知道，也可能看到忘记了。</span>
 
-![](http://images.iterate.site/blog/image/20181206/cjlEB0aPRXHv.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181206/cjlEB0aPRXHv.png?imageslim">
+</p>
 
 浏览网页的时候，服务器会把动态生成的 Unicode 内容转换为 UTF-8 再传输到浏览器：<span style="color:red;">嗯。</span>
 
-![](http://images.iterate.site/blog/image/20181206/2I90IAH1BRzV.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181206/2I90IAH1BRzV.png?imageslim">
+</p>
 
 所以你看到很多网页的源码上会有类似 `<meta charset="UTF-8" />` 的信息，表示该网页正是用的 UTF-8 编码。<span style="color:red;">嗯。</span>
 
@@ -181,11 +185,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 3: invalid 
 
 申明了 UTF-8编码并不意味着你的`.py`文件就是 UTF-8编码的，必须并且要确保文本编辑器正在使用 UTF-8 without BOM编码：
 
-![](http://images.iterate.site/blog/image/20181206/SFvJQX5tRoKS.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181206/SFvJQX5tRoKS.png?imageslim">
+</p>
 
 如果`.py`文件本身使用 UTF-8编码，并且也申明了`# -*- coding: utf-8 -*-`，打开命令提示符测试就可以正常显示中文：
 
-![](http://images.iterate.site/blog/image/20181206/fNVIVJloqei1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181206/fNVIVJloqei1.png?imageslim">
+</p>
 
 
 

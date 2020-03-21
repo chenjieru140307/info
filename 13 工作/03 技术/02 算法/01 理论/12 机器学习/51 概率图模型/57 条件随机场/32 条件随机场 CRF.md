@@ -38,9 +38,13 @@ Conditional random field  CRF
 假设这是一幅图像，每个 X 就是一个像素点，假定每个像素只与他旁边的像素有关，与斜对角的无关，因此可以建立一个二维的贝叶斯网络，如下图左侧所示。OK，然后我们考察一下 X8 对应的马尔科夫毯（Markov blanket），如下图左侧部分的画圈的几个：
 
 
-![](http://images.iterate.site/blog/image/180728/bdG8fa6GiL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/bdG8fa6GiL.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180728/k14ICCIG0i.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/k14ICCIG0i.png?imageslim">
+</p>
 
 OK，我们把 X8 对应的马尔科夫毯的关键的部分拿出来看，如左图所示，它包括 x4,x12但是不包括 x2,x14。这样的话感觉看起来就不大对称，比如如果做旋转或者别的操作，感觉这里面得出的结论就会产生变化。**有严格的说法吗？**
 
@@ -54,7 +58,9 @@ OK，现在我们从另外一个角度观察这个事情：
 
 网络模型比较 HMM/MEMM/CRF/RVM：
 
-![](http://images.iterate.site/blog/image/180728/eB3jmhE47F.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/eB3jmhE47F.png?imageslim">
+</p>
 
 对于左上角的是 HMM 模型，如果我们反着理解，因为 y 和 x 谁是因谁是果其实是说不清的，看起来只是有联系而已，是的，甚至有可能它们之间不是直接相关的，只是有一定的条件非独立性 ，嗯 是呀。利害的。所以 y 到 x 的箭头实际上是可以倒过来的，x 是原因， y 是结果，而且假设 y 还有一个全局状态 $x_g$ 对它进行影响。那么我们就写成了右上角的网络。
 
@@ -91,7 +97,9 @@ OK，现在我们从另外一个角度观察这个事情：
 比如说词性标注问题：
 
 
-![](http://images.iterate.site/blog/image/180728/f0fJHBefki.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/f0fJHBefki.png?imageslim">
+</p>
 
 每个词对它标注词性，这是一个分类问题。
 
@@ -106,19 +114,29 @@ OK，我们从 Logistic 回归谈起：
 * Logistic回归是一种广义的线性回归
 * 几率是一个对数线性模型。
 
-![](http://images.iterate.site/blog/image/180728/GKbaCk3Eg6.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/GKbaCk3Eg6.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180728/diGab2eKif.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/diGab2eKif.png?imageslim">
+</p>
 
 因此，我们对刚才的模型做一个理论层面的提升：
 
-![](http://images.iterate.site/blog/image/180728/9H45mbCFAj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/9H45mbCFAj.png?imageslim">
+</p>
 
 Logistic回归的特征 $x_1,x_2,\cdots ,x_n)$ 是 $\theta_1x1$ 和\theta_2x2 和\theta_nxn ，其实 Logistic 回归里面的特征是样本的所有的维度各自作为一个特称然后做一个加权的乘积，把它加起来。
 
-对于 Logistic 回归来说：   \(\frac{1}{1+e^{-\theta^Tx} }\) 上下同时乘以 \(e^{\theta^Tx}\)  那么下面就可以看作是一个归一化因子，上面可以看作是权值 w 与特征 x 的乘积，即一般形式为：![](http://images.iterate.site/blog/image/180728/h5fe2AH0Ej.png?imageslim){ width=55% } w就是权值 F 就是与权值相关的特征
+对于 Logistic 回归来说：   \(\frac{1}{1+e^{-\theta^Tx} }\) 上下同时乘以 \(e^{\theta^Tx}\)  那么下面就可以看作是一个归一化因子，上面可以看作是权值 w 与特征 x 的乘积，即一般形式为：<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/h5fe2AH0Ej.png?imageslim">
+</p> w就是权值 F 就是与权值相关的特征
 
-而这个里面的 Z 是可以表达出来的， 两边同时对 y 求加和， 左边对所有的 y 求加和是 1 ，右边的话把 Z(x,w)放到左边，就是：![](http://images.iterate.site/blog/image/180728/m6i43jhJd3.png?imageslim){ width=55% }
+而这个里面的 Z 是可以表达出来的， 两边同时对 y 求加和， 左边对所有的 y 求加和是 1 ，右边的话把 Z(x,w)放到左边，就是：<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/m6i43jhJd3.png?imageslim">
+</p>
 
 
 
@@ -128,7 +146,9 @@ Logistic回归的特征 $x_1,x_2,\cdots ,x_n)$ 是 $\theta_1x1$ 和\theta_2x2 �
 
 把所有的 y 都遍历一遍
 
-![](http://images.iterate.site/blog/image/180728/fH7gfAJdBc.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/fH7gfAJdBc.png?imageslim">
+</p>
 
 那个值是最大的，把那个东西取出来作为我们预测的标记。
 
@@ -140,13 +160,17 @@ Logistic回归的特征 $x_1,x_2,\cdots ,x_n)$ 是 $\theta_1x1$ 和\theta_2x2 �
 ## 如果选择别的特征呢？
 
 
-![](http://images.iterate.site/blog/image/180728/4D73j7L0gg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/4D73j7L0gg.png?imageslim">
+</p>
 
 所以会有好多的特征。
 
 比如词性标注：
 
-![](http://images.iterate.site/blog/image/180728/F21jl8k9Ca.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/F21jl8k9Ca.png?imageslim">
+</p>
 
 词性 POS
 
@@ -157,7 +181,9 @@ Logistic回归的特征 $x_1,x_2,\cdots ,x_n)$ 是 $\theta_1x1$ 和\theta_2x2 �
 今天用到的做特征的情况，要么这个特征只与当前词性有关，或者与相邻的词性有关。什么意思？
 
 
-![](http://images.iterate.site/blog/image/180728/LG2KjaCI3b.png?imageslim){ width=55% }中的 y 是我们想要做的词性，x是我们观察到的词，因此 y_t这个词性只与相邻的词性有关。但是他可以与所有的词产生关系。什么意思？
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/LG2KjaCI3b.png?imageslim">
+</p>中的 y 是我们想要做的词性，x是我们观察到的词，因此 y_t这个词性只与相邻的词性有关。但是他可以与所有的词产生关系。什么意思？
 
 之前提到说 HMM 和 CRF 那个号，因为 CRF 可以做特征，所以他有很大的发展潜力。
 
@@ -166,14 +192,18 @@ Logistic回归的特征 $x_1,x_2,\cdots ,x_n)$ 是 $\theta_1x1$ 和\theta_2x2 �
 所以现在其实就产生了这么一个：
 
 
-![](http://images.iterate.site/blog/image/180728/gAKmBK8e90.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/gAKmBK8e90.png?imageslim">
+</p>
 
 x是观测到的，词性是相邻的差生关系的，这个模型就是条件随机场。
 
 之所以说是结构化预测，是因为，比如说对于 Logistic 回归而言：
 
 
-![](http://images.iterate.site/blog/image/180728/g4ECLGH2K4.png?imageslim){ width=55% }中的某个样本被分为正例还是负例可以看作是独立的，但是对于词性标注而言不是这样子，前一个词的词性会极大的影响到后一个词的词性。  是呀。
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/g4ECLGH2K4.png?imageslim">
+</p>中的某个样本被分为正例还是负例可以看作是独立的，但是对于词性标注而言不是这样子，前一个词的词性会极大的影响到后一个词的词性。  是呀。
 
 
 可见他与之前的对某个样本的进行分类是不一样的。
@@ -193,7 +223,9 @@ x是观测到的，词性是相邻的差生关系的，这个模型就是条件�
 而条件随机场其实是可以解决的，这个问题不是 NP？ 的，可以把它降到 P。什么是 NP 什么是 P
 
 
-![](http://images.iterate.site/blog/image/180728/l1JbKK63De.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/l1JbKK63De.png?imageslim">
+</p>
 
 Y是链状的。
 
@@ -216,7 +248,9 @@ X是给定的样本集合
 几乎任何一个模型拿到手，尤其是跟概率有关的，都这个干。
 
 
-![](http://images.iterate.site/blog/image/180728/GKJbjFAhfC.png?imageslim){ width=55% }你可以把分好写成逗号，写成逗号意味着，x和 w 是条件，y是预测的值，如果你认为 w 是条件，那么你就是一个贝叶斯学派的人，因为你认为 w 是条件。
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/GKJbjFAhfC.png?imageslim">
+</p>你可以把分好写成逗号，写成逗号意味着，x和 w 是条件，y是预测的值，如果你认为 w 是条件，那么你就是一个贝叶斯学派的人，因为你认为 w 是条件。
 
 
 如果你写成分号，就意味着这个 y 和 x 是有关的，w是系统中存在的某一个值，不管 w 知道不知道，但是我知道 w 是有关的，我把分号把 w 暴露出来而已。这个是频率学派的想法。
@@ -228,12 +262,18 @@ X是给定的样本集合
 现在已经有了特征，其实这个特征\(F_j(\overline{x},\overline{y})\)是比较粗的。它是指的整个句子本身的特征，它跟 X 有关，跟 Y 有关，我们看下能不能写开：
 
 
-![](http://images.iterate.site/blog/image/180728/8KcJdfab4L.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/8KcJdfab4L.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180728/Dacjih5l4e.png?imageslim){ width=55% }
-![](http://images.iterate.site/blog/image/180728/IkHH70C9m7.png?imageslim){ width=55% }这个所有的观测的样本还是放在这里，j是第几号特征 i是指这个句子的第几个词，y_i指的是句子的第几个词的词性
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/Dacjih5l4e.png?imageslim">
+</p>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/IkHH70C9m7.png?imageslim">
+</p>这个所有的观测的样本还是放在这里，j是第几号特征 i是指这个句子的第几个词，y_i指的是句子的第几个词的词性
 
 
 **为什么与后面的一个词没有关系？不是说相邻吗？**
@@ -244,32 +284,44 @@ X是给定的样本集合
 
 **没明白，什么叫句子的第 j 个特征？**
 
-这样做了之后，我们发现![](http://images.iterate.site/blog/image/180728/iiHa07D277.png?imageslim){ width=55% }这个已经解决了训练样本不等长的问题了，即句子不等长的问题。为什么？
+这样做了之后，我们发现<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/iiHa07D277.png?imageslim">
+</p>这个已经解决了训练样本不等长的问题了，即句子不等长的问题。为什么？
 
 
 
 OK，我们看下 w 如何计算：
 
-![](http://images.iterate.site/blog/image/180728/BecA1i86eJ.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/BecA1i86eJ.png?imageslim">
+</p>
 
 这个求法涉及到两个难点：
 
 给定了 w，能不能告诉我那个 y 是最优的？
 
 
-![](http://images.iterate.site/blog/image/180728/LF4eejff03.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/LF4eejff03.png?imageslim">
+</p>
 
 这个
 
 
-![](http://images.iterate.site/blog/image/180728/G9FmIgKAGb.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/G9FmIgKAGb.png?imageslim">
+</p>
 
 是对所有可能的 y 做加和。
 
-![](http://images.iterate.site/blog/image/180728/2alA69mj4j.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/2alA69mj4j.png?imageslim">
+</p>
 
 
-![](http://images.iterate.site/blog/image/180728/5kE07glAb6.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/5kE07glAb6.png?imageslim">
+</p>
 
 我让权值直接作用于次特征。
 
@@ -282,11 +334,15 @@ OK，我们看下 w 如何计算：
 现在我们给出一个类似于 HMM 里面的前向概率
 
 
-![](http://images.iterate.site/blog/image/180728/1KBBmI14m1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/1KBBmI14m1.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180728/Df0h9e6kId.png?imageslim){ width=55% }应该是叫做前向得分，因为这个时候还没有除以 Z，除以 Z 之后就是概率了。
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/Df0h9e6kId.png?imageslim">
+</p>应该是叫做前向得分，因为这个时候还没有除以 Z，除以 Z 之后就是概率了。
 
 
 
@@ -298,7 +354,9 @@ OK，我们看下 w 如何计算：
 实际上，假如说第 k-1个词 标记成 y_{k-1}，然后第 k 个词标记成 v，由于
 
 
-![](http://images.iterate.site/blog/image/180728/He1G4f35j4.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/He1G4f35j4.png?imageslim">
+</p>
 
 这个由上个式子是可以算出来的，因此假定他有 a 种情况，都进行遍历，看看这个 y_{k-1} 的哪一种词性使得 k 标记成 v 的概率最大。
 
@@ -307,22 +365,30 @@ OK，我们看下 w 如何计算：
 因此它满足这个递推公式：
 
 
-![](http://images.iterate.site/blog/image/180728/L1fECjfHIm.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/L1fECjfHIm.png?imageslim">
+</p>
 
 
 假定标记数目有 m 个，那么
 
 
-![](http://images.iterate.site/blog/image/180728/eGEFalAALC.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/eGEFalAALC.png?imageslim">
+</p>
 
 就要做 m 次，而 v 可以取 m 个，因此
 
-![](http://images.iterate.site/blog/image/180728/CCCHDd595F.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/CCCHDd595F.png?imageslim">
+</p>
 
 要算 m 回，因此这个有 m^2次训练，假定单词的数目是 n 个，因此时间复杂度是
 
 
-![](http://images.iterate.site/blog/image/180728/9a5hK5lbam.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/9a5hK5lbam.png?imageslim">
+</p>
 
 
 
@@ -342,31 +408,43 @@ OK 我们来解决第二个问题：
 
 我们想给定 w 和 x 之后 y 的概率是多大？
 
-![](http://images.iterate.site/blog/image/180728/g2lKj0Dj2b.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/g2lKj0Dj2b.png?imageslim">
+</p>
 
 对
 
-![](http://images.iterate.site/blog/image/180728/4CmLFe320h.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/4CmLFe320h.png?imageslim">
+</p>
 
 两边全部做对 i 的加和，那么就可以替换
 
-![](http://images.iterate.site/blog/image/180728/ckfE0j5Gmi.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/ckfE0j5Gmi.png?imageslim">
+</p>
 
 把指数拿进来，所以加和就变成了乘积
 
 
 
-![](http://images.iterate.site/blog/image/180728/934HH8790G.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/934HH8790G.png?imageslim">
+</p>
 
 我们把
 
 
-![](http://images.iterate.site/blog/image/180728/GlFHd1GB1G.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/GlFHd1GB1G.png?imageslim">
+</p>
 
 即
 
 
-![](http://images.iterate.site/blog/image/180728/ED2C8acGc0.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/ED2C8acGc0.png?imageslim">
+</p>
 
  ，然后求指数做成一个矩阵。
 
@@ -379,7 +457,9 @@ OK 我们来解决第二个问题：
 从 start 变道 q，然后从 q 变到 v。
 
 
-![](http://images.iterate.site/blog/image/180728/HcCHGEa5D7.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/HcCHGEa5D7.png?imageslim">
+</p>
 
 从 start 到 v 的归一化因子。
 
@@ -402,7 +482,9 @@ OK 我们来解决第二个问题：
 
 
 
-![](http://images.iterate.site/blog/image/180728/E054Fb9e1H.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/E054Fb9e1H.png?imageslim">
+</p>
 
 因为想用它的梯度下降算法，因此要求梯度。
 
@@ -411,14 +493,20 @@ OK 我们来解决第二个问题：
 我们这个东西求驻点
 
 
-![](http://images.iterate.site/blog/image/180728/Im9Em5GgeC.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/Im9Em5GgeC.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180728/e8cIIcE121.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/e8cIIcE121.png?imageslim">
+</p>
 
 这个是当前的第 j 号的情况
 
 
-![](http://images.iterate.site/blog/image/180728/EKKGbFFCdi.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/EKKGbFFCdi.png?imageslim">
+</p>
 
 这个是所有的归化因子，
 
@@ -426,20 +514,28 @@ OK 我们来解决第二个问题：
 
 所以这个东西就是在当前的攒书 w 的时候给定的 x 预测的 y。
 
-![](http://images.iterate.site/blog/image/180728/cceJE0c8h4.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/cceJE0c8h4.png?imageslim">
+</p>
 
 而
 
-![](http://images.iterate.site/blog/image/180728/0c43jg64mg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/0c43jg64mg.png?imageslim">
+</p>
 
 是特征，因此
 
-![](http://images.iterate.site/blog/image/180728/Hf7l865D1i.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/Hf7l865D1i.png?imageslim">
+</p>
 
 这个就是当前的 w 值，可以对它利用这个概率值求它的特征的期望，然后再看一下第 j 个特征到底是几。
 
 
-![](http://images.iterate.site/blog/image/180728/aEJd1376B8.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/aEJd1376B8.png?imageslim">
+</p>
 
 这个只是一个记号。
 
@@ -449,12 +545,16 @@ OK 我们来解决第二个问题：
 
 所以这些就是条件随机场的最核心的所有的内容。
 
-![](http://images.iterate.site/blog/image/180728/977FbJIHAI.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/977FbJIHAI.png?imageslim">
+</p>
 
 主题模型的 LDA 和 HMM 都是生成模型，因为我们的最终目的都是给定一个 x 然后看看 y 的标记是什么，但是在 HMM 种我们认为 y 是不可观测的。
 
 
-![](http://images.iterate.site/blog/image/180728/G8Bahm0Kag.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/G8Bahm0Kag.png?imageslim">
+</p>
 
 按道理，看到了 x 是想推测这个 y，但是在 HMM 种，我们认为看到的这个 x 是生成的东西，是被隐变量 y 产生得到的，箭头是从 y 指向 x 的，所以这是一个生成模型。
 
@@ -538,7 +638,9 @@ OK 到这里为止，做事情已经足够了。
 
 DGM转换维 UGM
 
-![](http://images.iterate.site/blog/image/180728/km3e3gGD5e.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/km3e3gGD5e.png?imageslim">
+</p>
 
 
 1. 第一步：只要是它们有共同孩子的，都连起来。比如 UW。
@@ -552,7 +654,9 @@ DGM转换维 UGM
 DGM转换为 UGM
 
 
-![](http://images.iterate.site/blog/image/180728/2B5eGAD2dF.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/2B5eGAD2dF.png?imageslim">
+</p>
 
 比如上面这个图，如果给定了 2，那么 4 和 5 是独立的。
 
@@ -569,11 +673,15 @@ DGM转换为 UGM
 靠考察是否有\(A\perp B|C\) ，则计算 U 的祖先图(ancestral graph)：\(U=A\cup B\cup C\)
 
 
-![](http://images.iterate.site/blog/image/180728/JEiF9LH7I5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/JEiF9LH7I5.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180728/1kkLl1AkBl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/1kkLl1AkBl.png?imageslim">
+</p>
 
 什么情况下需要做 DGM-UGM的变换？
 
@@ -594,7 +702,9 @@ DGM转换为 UGM
   * 局部马尔科夫性 local Markov property
   * 全局马尔科夫性 global Markov property
 
-![](http://images.iterate.site/blog/image/180728/agm0C6lAEC.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/agm0C6lAEC.png?imageslim">
+</p>
 
 记号：随机变量\(Y=(Y_1 ,Y_2 …Y_m )\)构成无向图\(G=(V,E)\)，结点(集)v对应的(联合)随机变量是\(Y_v) 。
 
@@ -614,7 +724,9 @@ DGM转换为 UGM
 在给定随机变量 Yo 的条件下，随机变量 Yu 和 Yv 条件独立。
 
 
-![](http://images.iterate.site/blog/image/180728/K8gJbI3Ih5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/K8gJbI3Ih5.png?imageslim">
+</p>
 
 
 
@@ -625,7 +737,9 @@ DGM转换为 UGM
 设 v 是无向图 G 中任意一个结点，W是与 v 有边相连的所有结点，G中其他结点记做 O；则在给定随机变量 Yw 的条件下，随机变量 Yv 和 Yo 条件独立。
 
 
-![](http://images.iterate.site/blog/image/180728/aA4e1mAba5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/aA4e1mAba5.png?imageslim">
+</p>
 
 
 
@@ -638,14 +752,18 @@ DGM转换为 UGM
 即\(P(Y_A , Y_B |Y_C )= P(Y_A | Y_C )* P(Y_B | Y_C )\)
 
 
-![](http://images.iterate.site/blog/image/180728/fa29accJ9d.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/fa29accJ9d.png?imageslim">
+</p>
 
 
 
 
 ## 三个性质的等价性
 
-![](http://images.iterate.site/blog/image/180728/34BKAg8aBK.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/34BKAg8aBK.png?imageslim">
+</p>
 
 
 
@@ -693,7 +811,9 @@ HMM做了一个很大的假设：当前状态只和前一个状态有关。
 最大团：{1,2,3}, {2,3,4}, {3,5}
 
 
-![](http://images.iterate.site/blog/image/180728/IE476D818d.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/IE476D818d.png?imageslim">
+</p>
 
 团这个概念有什么作用呢？
 
@@ -706,16 +826,22 @@ Hammersley-Clifford定理
 UGM的联合分布可以表示成最大团上的随机变量的函数的乘积的形式；这个操作叫做 UGM 的因子分解(Factorization)。
 
 
-![](http://images.iterate.site/blog/image/180728/982eE4Dmmj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/982eE4Dmmj.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180728/d4h0c2H0bk.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/d4h0c2H0bk.png?imageslim">
+</p>
 
 条件随机场的结点的联合概率，可以认为是 123 这个最大团和 234 这个最大团和 35 这个最大团的乘积
 
 这个函数 是叫势函数？还是我听错了，要确认下 就是 \Phi
 
 
-![](http://images.iterate.site/blog/image/180728/F3hBF2ib2J.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/F3hBF2ib2J.png?imageslim">
+</p>
 
 把它所有最大团上的势函数的乘积然后除以归一化因子就形成了 y 这个概率分布。
 
@@ -724,12 +850,16 @@ UGM的联合分布可以表示成最大团上的随机变量的函数的乘积�
 线性链条件随机场
 
 
-![](http://images.iterate.site/blog/image/180728/hHHHdalH05.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/hHHHdalH05.png?imageslim">
+</p>
 
 线性链条件随机场
 
 
-![](http://images.iterate.site/blog/image/180728/LmAiDh9LL4.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/LmAiDh9LL4.png?imageslim">
+</p>
 
 Y是马尔科夫场 X是条件，对于这个图来说，它的最大团就是：
 
@@ -744,29 +874,41 @@ Y1Y2 一个函数  Y2Y3 一个函数.。等等
 线性链条件随机场的定义
 
 
-![](http://images.iterate.site/blog/image/180728/eefCm1haD8.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/eefCm1haD8.png?imageslim">
+</p>
 
 线性链条件随机场的参数化形式
 
 
-![](http://images.iterate.site/blog/image/180728/5JHGeb6B1k.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/5JHGeb6B1k.png?imageslim">
+</p>
 
 参数说明
 
 
-![](http://images.iterate.site/blog/image/180728/gKEag9gG8G.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/gKEag9gG8G.png?imageslim">
+</p>
 
 ### 条件随机场举例
 
-![](http://images.iterate.site/blog/image/180728/eCfhC8dA32.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/eCfhC8dA32.png?imageslim">
+</p>
 
 NN、NNS、NNP、NNPS、PRP、DT、JJ分别代表普通名词单数形式、普通名词复数形式、专有名词单数形式、专有名词复数形式、代词、限定词、形容词
 
-![](http://images.iterate.site/blog/image/180728/216d3e4Hh7.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/216d3e4Hh7.png?imageslim">
+</p>
 
 条件随机场举例
 
-![](http://images.iterate.site/blog/image/180728/2ff04i5lI2.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/2ff04i5lI2.png?imageslim">
+</p>
 
 条件随机场举例
 
@@ -806,29 +948,41 @@ NN、NNS、NNP、NNPS、PRP、DT、JJ分别代表普通名词单数形式、普�
 则标记序列为 y=(1,2,2)的非规范化概率为：
 
 
-![](http://images.iterate.site/blog/image/180728/Ggd0076jDk.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/Ggd0076jDk.png?imageslim">
+</p>
 
 使用统一的函数记号表达特征
 
 
-![](http://images.iterate.site/blog/image/180728/0LigdG42lj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/0LigdG42lj.png?imageslim">
+</p>
 
 CRF的简化形式
 
 
-![](http://images.iterate.site/blog/image/180728/faG8eEfb28.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/faG8eEfb28.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180728/AiAfmmLe1f.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/AiAfmmLe1f.png?imageslim">
+</p>
 
 CRF 的矩阵形式
 
 
-![](http://images.iterate.site/blog/image/180728/0BalEd06DB.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/0BalEd06DB.png?imageslim">
+</p>
 
 CRF 的矩阵乘积和条件概率
 
 
-![](http://images.iterate.site/blog/image/180728/DgE3Dg6dfB.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/DgE3Dg6dfB.png?imageslim">
+</p>
 
 CRF的三个问题
 
@@ -871,39 +1025,55 @@ CRF的概率计算问题
 前向向量：
 
 
-![](http://images.iterate.site/blog/image/180728/5eE14Gh4ei.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/5eE14Gh4ei.png?imageslim">
+</p>
 
 后向向量
 
 
-![](http://images.iterate.site/blog/image/180728/8G0FJahc05.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/8G0FJahc05.png?imageslim">
+</p>
 
 归一化因子
 
-![](http://images.iterate.site/blog/image/180728/BEA3B79AK1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/BEA3B79AK1.png?imageslim">
+</p>
 
 概率计算
 
 
-![](http://images.iterate.site/blog/image/180728/BlhBleCcEf.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/BlhBleCcEf.png?imageslim">
+</p>
 
 CRF的参数学习问题
 
-![](http://images.iterate.site/blog/image/180728/iG2jk4EJc7.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/iG2jk4EJc7.png?imageslim">
+</p>
 
 改进的迭代尺度算法
 
 
-![](http://images.iterate.site/blog/image/180728/fifhlDdHCd.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/fifhlDdHCd.png?imageslim">
+</p>
 
 变化率δ的函数
 
-![](http://images.iterate.site/blog/image/180728/05c6Kc5G5I.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/05c6Kc5G5I.png?imageslim">
+</p>
 
 参数学习：改进的迭代尺度算法 IIS
 
 
-![](http://images.iterate.site/blog/image/180728/EHGIm96Ekg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/EHGIm96Ekg.png?imageslim">
+</p>
 
 
 ### CRF的预测算法
@@ -916,21 +1086,29 @@ CRF的预测问题，是给定条件随机场 P(Y|X)和输入序列(观测序列
 最优路径的目标函数
 
 
-![](http://images.iterate.site/blog/image/180728/CCBBb0gKba.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/CCBBb0gKba.png?imageslim">
+</p>
 
 最优路径的目标函数
 
 
-![](http://images.iterate.site/blog/image/180728/1CE2E7lf3i.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/1CE2E7lf3i.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180728/9F1ma3i9dg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/9F1ma3i9dg.png?imageslim">
+</p>
 
 状态预测：Viterbi算法
 
 
-![](http://images.iterate.site/blog/image/180728/FL333K4Ha8.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/FL333K4Ha8.png?imageslim">
+</p>
 
 
 

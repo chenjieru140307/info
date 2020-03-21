@@ -117,7 +117,9 @@ int main()
 ```
 
 
-![](http://images.iterate.site/blog/image/181031/hi6bGJIfJe.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/hi6bGJIfJe.png?imageslim">
+</p>
 
 
 

@@ -16,7 +16,9 @@
 下图展示了 Git 的工作流程：
 
 
-![](http://images.iterate.site/blog/image/180709/i1JLekkGad.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180709/i1JLekkGad.png?imageslim">
+</p>
 
 
 

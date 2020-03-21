@@ -22,12 +22,16 @@ date: 2018-08-12 17:06:45
 地址里面是 python 的很多 unofficial 库，因此加载时间比较长，要等一会。
 
 
-![](http://images.iterate.site/blog/image/180728/lkGF7d5C9I.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/lkGF7d5C9I.png?imageslim">
+</p>
 
 然后在 pycharm 中查看自己的 python 版本和对应的 win32 还是 AMD64，我的是 AMD64，python 3.6.0   ，  因此选择下载   opencv_python-3.4.1-cp36-cp36m-win_amd64.whl
 
 
-![](http://images.iterate.site/blog/image/180728/93AilD7B7E.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/93AilD7B7E.png?imageslim">
+</p>
 
 下载之后把文件复制到 Anaconda3\Lib\site-packages 文件夹里面。
 按 Win+R 输入 cmd 打开命令提示符窗口，进入到 Anaconda3\Lib\site-packages文件夹下
@@ -36,11 +40,15 @@ date: 2018-08-12 17:06:45
 pip install opencv_python-3.4.1-cp36-cp36m-win_amd64.whl
 
 
-![](http://images.iterate.site/blog/image/180728/ejkI14kBEl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/ejkI14kBEl.png?imageslim">
+</p>
 
 测试一下，输 python 进入 python，输入 import cv2回车，不报错就说明安装配置成功了
 
-![](http://images.iterate.site/blog/image/180728/jbIdCGaH7H.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/jbIdCGaH7H.png?imageslim">
+</p>
 
 
 

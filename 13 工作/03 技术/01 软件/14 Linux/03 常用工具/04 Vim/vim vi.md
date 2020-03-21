@@ -91,7 +91,9 @@ Vim是从 vi 发展出来的一个文本编辑器。代码补完、编译及错�
 vim 键盘图：
 
 
-![](http://images.iterate.site/blog/image/180727/l6k1lc1821.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/l6k1lc1821.png?imageslim">
+</p>
 
 
 
@@ -192,7 +194,9 @@ vim 键盘图：
 
 
 
-![](http://images.iterate.site/blog/image/180727/GfcBmdHLhF.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/GfcBmdHLhF.png?imageslim">
+</p>
 
 
 
@@ -214,7 +218,9 @@ vim 键盘图：
 
 直接输入** vi 文件名 **就能够进入 vi 的命令模式了。请注意，记得 vi 后面一定要加文件名，不管该文件存在与否！
 
-![](http://images.iterate.site/blog/image/180803/GfAIcGmhda.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/GfAIcGmhda.png?imageslim">
+</p>
 
 
 #### 按下 i 进入输入模式，开始编辑文字
@@ -226,7 +232,9 @@ vim 键盘图：
 
 这个时候，键盘上除了 [Esc] 这个按键之外，其他的按键都可以视作为一般的输入按钮了，所以你可以进行任何的编辑。
 
-![](http://images.iterate.site/blog/image/180803/m8c6e30Imf.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/m8c6e30Imf.png?imageslim">
+</p>
 
 
 #### 按下 [ESC] 按钮回到命令模式
@@ -240,7 +248,9 @@ vim 键盘图：
 
 OK，我们要存档了，存盘并离开的指令很简单，输入『:wq』即可保存离开！
 
-![](http://images.iterate.site/blog/image/180803/07F1eDGA4i.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/07F1eDGA4i.png?imageslim">
+</p>
 
 OK! 这样我们就成功创建了一个 test.txt 的文件。是不是很简单。
 

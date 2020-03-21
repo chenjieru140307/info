@@ -33,7 +33,9 @@ Eigin 是用于线性代数，矩阵和向量运算，几何变换，数值求�
 
 Eigen是 C++中可以用来调用并进行矩阵计算的一个库，里面封装了一些[类](http://eigen.tuxfamily.org/dox-2.0/annotated.html)，需要的头文件和功能如下：
 
-![](http://images.iterate.site/blog/image/180816/e9ABc2Jmkc.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/e9ABc2Jmkc.png?imageslim">
+</p>
 
 
 [Eigen的主页](http://eigen.tuxfamily.org/dox/index.html)上有一些更详细的 Eigen 介绍。
@@ -44,7 +46,9 @@ Eigen是 C++中可以用来调用并进行矩阵计算的一个库，里面封�
 
 ## Eigen的配置
 
-![](http://images.iterate.site/blog/image/180816/8cjGbijE7e.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/8cjGbijE7e.png?imageslim">
+</p>
 
 直接上图了，附加包含目录那里填上你放 Eigen 文件夹的位置即可。
 
@@ -54,7 +58,9 @@ Eigen是 C++中可以用来调用并进行矩阵计算的一个库，里面封�
 
 以下是我整理的一些常用操作，基本的矩阵运算就在下面了，算是个入门吧~主要分以下几部分：
 
-![](http://images.iterate.site/blog/image/180816/L9LGeImE4K.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/L9LGeImE4K.png?imageslim">
+</p>
 
 建议大家放到编译环境里去看，因为我这里有一些 region 的东西，编译器下更方便看~
 

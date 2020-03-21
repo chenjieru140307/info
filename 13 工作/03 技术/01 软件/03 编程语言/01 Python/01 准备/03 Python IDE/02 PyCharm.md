@@ -236,7 +236,9 @@ PyCharm 中的设置是可以导入和导出的，file>export settings可以保�
 
 `File->Setting->Editor->Code Style->Python`
 
-![](http://images.iterate.site/blog/image/181017/BLI87hc3K9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181017/BLI87hc3K9.png?imageslim">
+</p>
 
 
 

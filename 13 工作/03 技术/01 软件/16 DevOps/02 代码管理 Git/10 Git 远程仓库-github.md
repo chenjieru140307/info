@@ -45,7 +45,9 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 
 回到 github 上，进入 Account Settings（账户配置），左边选择 SSH Keys，Add SSH Key，title 随便填，粘贴在你电脑上生成的 key。
 
-![](http://images.iterate.site/blog/image/180710/gDeHfbjHEc.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180710/gDeHfbjHEc.png?imageslim">
+</p>
 
 为了验证是否成功，输入以下命令：
 
@@ -61,17 +63,23 @@ Hi WongJay! You've successfully authenticated, but GitHub does not provide shell
 
 之后登录后点击" New repository " 如下图所示：
 
-![](http://images.iterate.site/blog/image/180710/kbhaEgLl41.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180710/kbhaEgLl41.png?imageslim">
+</p>
 
 
 之后在在 Repository name 填入 w3cschool.cn(远程仓库名) ，其他保持默认设置，点击"Create repository"按钮，就成功地创建了一个新的 Git 仓库：
 
-![](http://images.iterate.site/blog/image/180710/Gml8l4cb9c.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180710/Gml8l4cb9c.png?imageslim">
+</p>
 
 
 创建成功后，显示如下信息：
 
-![](http://images.iterate.site/blog/image/180710/IE6efAE57L.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180710/IE6efAE57L.png?imageslim">
+</p>
 
 
 以上信息告诉我们可以从这个仓库克隆出新的仓库，也可以把本地仓库的内容推送到 GitHub 仓库。
@@ -100,7 +108,9 @@ Branch master set up to track remote branch master from origin.
 
 接下来我们返回 Github 创建的仓库，就可以看到文件已上传到 Github 上：
 
-![](http://images.iterate.site/blog/image/180710/406g3CFh68.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180710/406g3CFh68.png?imageslim">
+</p>
 
 
 

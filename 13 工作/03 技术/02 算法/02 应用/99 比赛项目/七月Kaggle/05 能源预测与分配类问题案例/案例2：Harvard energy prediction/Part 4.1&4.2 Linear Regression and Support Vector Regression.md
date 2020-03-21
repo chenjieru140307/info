@@ -143,7 +143,9 @@ plt.legend(loc='upper right')
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/jJL2D8m17g.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/jJL2D8m17g.png?imageslim">
+</p>
 
 
 ```python
@@ -165,7 +167,9 @@ plt.title("Energy vs Predicted Elec.: $Y_i$ vs $\hat{Y}_i$")
 
 
 
-![](http://images.iterate.site/blog/image/180725/iIb0kehAjG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/iIb0kehAjG.png?imageslim">
+</p>
 
 
 ### Daily Chilled Water Prediction
@@ -237,7 +241,9 @@ plt.legend(loc='upper right')
 
 
 
-![](http://images.iterate.site/blog/image/180725/h75Dh4dA36.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/h75Dh4dA36.png?imageslim">
+</p>
 
 
 
@@ -260,7 +266,9 @@ plt.title("Observed vs Predicted Chilled Water: $Y_i$ vs $\hat{Y}_i$")
 
 
 
-![](http://images.iterate.site/blog/image/180725/b5mAac9mak.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/b5mAac9mak.png?imageslim">
+</p>
 
 ### Daily Steam Prediction
 
@@ -331,7 +339,9 @@ plt.legend(loc='upper right')
 
 
 
-![](http://images.iterate.site/blog/image/180725/71i80DiLLd.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/71i80DiLLd.png?imageslim">
+</p>
 
 
 
@@ -354,7 +364,9 @@ plt.title("Observed vs Predicted Steam: $Y_i$ vs $\hat{Y}_i$")
 
 
 
-![](http://images.iterate.site/blog/image/180725/hF2GkfLem0.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/hF2GkfLem0.png?imageslim">
+</p>
 
 
 ## Hourly Prediction
@@ -440,7 +452,9 @@ plt.legend(loc='upper right')
 
 
 
-![](http://images.iterate.site/blog/image/180725/C85bgGjDIJ.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/C85bgGjDIJ.png?imageslim">
+</p>
 
 
 ```python
@@ -461,7 +475,9 @@ plt.title("Energy vs Predicted Elec.: $Y_i$ vs $\hat{Y}_i$")
 
 
 
-![](http://images.iterate.site/blog/image/180725/H7a6DE4aAd.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/H7a6DE4aAd.png?imageslim">
+</p>
 
 
 ### Hourly Chilled Water Prediction
@@ -534,7 +550,9 @@ plt.legend(loc='upper right')
 
 
 
-![](http://images.iterate.site/blog/image/180725/BIBBDdf142.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/BIBBDdf142.png?imageslim">
+</p>
 
 
 ```python
@@ -557,7 +575,9 @@ plt.title("Observed vs Predicted Chilled Water: $Y_i$ vs $\hat{Y}_i$")
 
 
 
-![](http://images.iterate.site/blog/image/180725/ej2c55587h.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/ej2c55587h.png?imageslim">
+</p>
 
 ### Hourly Steam Prediction
 
@@ -632,7 +652,9 @@ plt.legend(loc='upper right')
 
 
 
-![](http://images.iterate.site/blog/image/180725/3Gl7l2cJL5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/3Gl7l2cJL5.png?imageslim">
+</p>
 
 
 ```python
@@ -653,7 +675,9 @@ plt.title("Observed vs Predicted Steam: $Y_i$ vs $\hat{Y}_i$")
 
 
 
-![](http://images.iterate.site/blog/image/180725/hK19A3Gl69.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/hK19A3Gl69.png?imageslim">
+</p>
 
 ## 4.2 Support Vector Regression and Cross Validation
 
@@ -803,7 +827,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/55IhdE8jB1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/55IhdE8jB1.png?imageslim">
+</p>
 
 
 ```python
@@ -826,7 +852,9 @@ plt.title("Energy vs Predicted Energy: $Y_i$ vs $\hat{Y}_i$")
 
 
 
-![](http://images.iterate.site/blog/image/180725/FG2C9kgJ9d.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/FG2C9kgJ9d.png?imageslim">
+</p>
 
 ### Daily Chilled Water Prediction
 
@@ -893,7 +921,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/2gf1Aki1LG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/2gf1Aki1LG.png?imageslim">
+</p>
 
 
 ```python
@@ -914,7 +944,9 @@ plt.title("Observed vs Predicted Energy: $Y_i$ vs $\hat{Y}_i$")
 
 
 
-![](http://images.iterate.site/blog/image/180725/03iKj23A70.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/03iKj23A70.png?imageslim">
+</p>
 
 ### Daily Steam Prediction
 
@@ -980,7 +1012,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/F0CGIJ8B4k.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/F0CGIJ8B4k.png?imageslim">
+</p>
 
 
 ```python
@@ -1002,7 +1036,9 @@ plt.title("Observed vs Predicted Energy: $Y_i$ vs $\hat{Y}_i$")
 
 
 
-![](http://images.iterate.site/blog/image/180725/Ljm8kkBFCK.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/Ljm8kkBFCK.png?imageslim">
+</p>
 
 ## Hourly Prediction
 
@@ -1092,7 +1128,9 @@ plt.legend(loc='upper right')
 
 
 
-![](http://images.iterate.site/blog/image/180725/LB43Hje8EJ.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/LB43Hje8EJ.png?imageslim">
+</p>
 
 
 ```python
@@ -1114,4 +1152,6 @@ plt.title("Observed vs Predicted Elec.: $Y_i$ vs $\hat{Y}_i$")
 
 
 
-![](http://images.iterate.site/blog/image/180725/K1lkLkE74F.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/K1lkLkE74F.png?imageslim">
+</p>

@@ -28,7 +28,9 @@ img[273:333, 100:160] = ball
 看看结果吧：
 
 
-![](http://images.iterate.site/blog/image/181017/9JCkgcjH69.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181017/9JCkgcjH69.png?imageslim">
+</p>
 
 
 

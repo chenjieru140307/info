@@ -20,7 +20,9 @@ date: 2019-02-04
 
 
 
-![](http://images.iterate.site/blog/image/20190204/J6j1skzF9QVR.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190204/J6j1skzF9QVR.png?imageslim">
+</p>
 
 
 ## 代码
@@ -77,7 +79,9 @@ cv2.waitKey(0)
 运行脚本:
 
 
-![](http://images.iterate.site/blog/image/20190204/nf6hssLjYi66.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190204/nf6hssLjYi66.png?imageslim">
+</p>
 
 
 相信大家看到效果，再结合代码可以很容易理解。
@@ -135,10 +139,14 @@ cv2.waitKey(0)
 运行得到
  得到：
 
-![](http://images.iterate.site/blog/image/20190204/pit7Ki5IiOO0.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190204/pit7Ki5IiOO0.png?imageslim">
+</p>
 
 
-![](http://images.iterate.site/blog/image/20190204/SdIocl3PcPVs.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190204/SdIocl3PcPVs.png?imageslim">
+</p>
 
 
 我们“近似”得到了猫的头像。

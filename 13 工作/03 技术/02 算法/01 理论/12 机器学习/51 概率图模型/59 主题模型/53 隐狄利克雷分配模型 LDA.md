@@ -82,7 +82,9 @@ LDA之所以选择狄利克雷分布作为先验分布，是因为它为多项�
 
 图 6.11是 LDA 的图模型：
 
-![](http://images.iterate.site/blog/image/20190407/OlpLtfefgBMP.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190407/OlpLtfefgBMP.png?imageslim">
+</p>
 
 其中 $\alpha, \beta$ 分别为两个狄利克雷分布的超参数，为人工设定。
 

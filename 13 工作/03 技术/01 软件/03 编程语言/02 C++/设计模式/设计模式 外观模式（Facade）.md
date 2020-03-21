@@ -112,7 +112,9 @@ tags:
 图 2-1: Facade Pattern 结构图
 
 
-![](http://images.iterate.site/blog/image/180727/aE4CdIDChJ.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/aE4CdIDChJ.png?imageslim">
+</p>
 
 Fa5ade模式的想法、思路和实现都非常简单，但是其思想却是非常有意义的。并且 Fa5ade 设计模式在实际的开发设计中也是应用最广、最多的模式之一。
 

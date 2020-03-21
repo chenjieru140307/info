@@ -86,7 +86,9 @@ y_scores--- <class 'numpy.float64'> 4 [ 0.1   0.4   0.35  0.8 ]
 输出图像：
 
 
-![](http://images.iterate.site/blog/image/180727/LBaaCKALba.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/LBaaCKALba.png?imageslim">
+</p>
 
 
 

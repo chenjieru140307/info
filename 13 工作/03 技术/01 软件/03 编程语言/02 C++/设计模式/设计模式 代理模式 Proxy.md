@@ -44,7 +44,9 @@ date: 2018-07-27 17:55:39
 Proxy模式典型的结构图为:
 
 
-![](http://images.iterate.site/blog/image/180727/5Ah11e5CfA.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/5Ah11e5CfA.png?imageslim">
+</p>
 
 图 2-1: Proxy Pattern 结构图 实际上，Proxy模式的想法非常简单，
 

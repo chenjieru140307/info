@@ -146,7 +146,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/ah48jiBeDd.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/ah48jiBeDd.png?imageslim">
+</p>
 
 Choose number of trees as 20.
 
@@ -170,7 +172,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/d2G5F9LDAl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/d2G5F9LDAl.png?imageslim">
+</p>
 
 
 ```python
@@ -195,7 +199,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/6im2jgj784.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/6im2jgj784.png?imageslim">
+</p>
 
 Analysis of chilled water data.
 
@@ -244,7 +250,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/Fg3I1m1jGl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/Fg3I1m1jGl.png?imageslim">
+</p>
 
 Choose number of trees as 20.
 
@@ -266,7 +274,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/efc23g655l.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/efc23g655l.png?imageslim">
+</p>
 
 
 ```python
@@ -291,7 +301,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/ea9eHEIGLe.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/ea9eHEIGLe.png?imageslim">
+</p>
 
 Analysis of steam data.
 
@@ -339,7 +351,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/I2Dlm7kHfE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/I2Dlm7kHfE.png?imageslim">
+</p>
 
 Choose number of trees as 21.
 
@@ -361,7 +375,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/ckChjk7KJg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/ckChjk7KJg.png?imageslim">
+</p>
 
 
 ```python
@@ -386,7 +402,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/04lmAgaL6e.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/04lmAgaL6e.png?imageslim">
+</p>
 
 ## 4.5 K-Nearest Neighbours
 
@@ -534,7 +552,9 @@ The optimal value of k is: 30
 
 
 
-![](http://images.iterate.site/blog/image/180725/IJimh8gdEH.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/IJimh8gdEH.png?imageslim">
+</p>
 
 
 ```python
@@ -554,7 +574,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/jJe0LDkK72.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/jJe0LDkK72.png?imageslim">
+</p>
 
 
 ```python
@@ -581,7 +603,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/DG17mD72ce.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/DG17mD72ce.png?imageslim">
+</p>
 
 Analysis of chilled water data.
 
@@ -635,7 +659,9 @@ The optimal value of k is: 6
 
 
 
-![](http://images.iterate.site/blog/image/180725/a5a6kdk9C6.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/a5a6kdk9C6.png?imageslim">
+</p>
 
 
 ```python
@@ -655,7 +681,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/eF8cJC5dBf.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/eF8cJC5dBf.png?imageslim">
+</p>
 
 
 ```python
@@ -680,7 +708,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/52kFEbeLkb.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/52kFEbeLkb.png?imageslim">
+</p>
 
 Analysis of steam data.
 
@@ -733,7 +763,9 @@ The optimal value of k is: 3
 
 
 
-![](http://images.iterate.site/blog/image/180725/I4KhD177Aa.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/I4KhD177Aa.png?imageslim">
+</p>
 
 
 ```python
@@ -753,7 +785,9 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/ChD5hh31l6.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/ChD5hh31l6.png?imageslim">
+</p>
 
 
 ```python
@@ -779,4 +813,6 @@ plt.show()
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/l7I0GdiH3d.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/l7I0GdiH3d.png?imageslim">
+</p>

@@ -32,7 +32,9 @@ http://www.cs.unc.edu/~marc/tutorial/node45.html
 
 
 
-![](http://images.iterate.site/blog/image/180817/f7kd9k2G7b.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/f7kd9k2G7b.png?imageslim">
+</p>
 M=3-D model point
 M, m’, m” are image points
 C,C’,C” are camera centers
@@ -45,7 +47,9 @@ Example of 3-image
 reconstruction
 l Example
 
-![](http://images.iterate.site/blog/image/180817/1DekjGlgCj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/1DekjGlgCj.png?imageslim">
+</p>
 
 
 LIBVISO: Feature Matching for Visual Odometry

@@ -762,9 +762,13 @@ array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14])
 ```
 
 这里是一些创建数组的函数：
-![](http://images.iterate.site/blog/image/180616/3DLbKa5fCG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/3DLbKa5fCG.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180616/2kAi8ehi7H.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/2kAi8ehi7H.png?imageslim">
+</p>
 
 
 
@@ -792,8 +796,12 @@ dtype才是 numpy 能灵活处理其他外界数据的原因。
 
 类型表格：
 
-![](http://images.iterate.site/blog/image/180616/l8H3E5AlFB.png?imageslim){ width=55% }
-![](http://images.iterate.site/blog/image/180616/4i4gEd9FjB.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/l8H3E5AlFB.png?imageslim">
+</p>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/4i4gEd9FjB.png?imageslim">
+</p>
 
 可以用 astype 来转换类型：
 
@@ -1026,7 +1034,9 @@ arr2d[0, 2]
 
 我们可以把下图中的 axis0 看做 row（行），把 axis1 看做 column（列）：
 
-![](http://images.iterate.site/blog/image/180616/Dc587HleLb.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/Dc587HleLb.png?imageslim">
+</p>
 
 对于多维数组，如果省略后面的索引，返回的将是一个低纬度的多维数组。比如下面一个 2 x 2 x 3数组：
 
@@ -1214,7 +1224,9 @@ array([[1],
        [7]])
 ```
 
-看图示有助于理解：![](http://images.iterate.site/blog/image/180616/3efm8HfhJB.png?imageslim){ width=55% }
+看图示有助于理解：<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/3efm8HfhJB.png?imageslim">
+</p>
 
 赋值也很方便：
 
@@ -1750,12 +1762,18 @@ print(arr)
 
 一些一元通用函数：
 
-![](http://images.iterate.site/blog/image/180616/89dFg5A64a.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/89dFg5A64a.png?imageslim">
+</p>
 
 一些二元通用函数：
-![](http://images.iterate.site/blog/image/180616/BcGGHm8EAk.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/BcGGHm8EAk.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180616/dbggl7lbcJ.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/dbggl7lbcJ.png?imageslim">
+</p>
 
 
 
@@ -1811,7 +1829,9 @@ print(Y)
 
 可以看到 X 和 Y 的 shape 都是 3x5，用图的话更好理解：
 
-![](http://images.iterate.site/blog/image/180616/BCKE93iaDi.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/BCKE93iaDi.png?imageslim">
+</p>
 
 把 X 和 Y 画出来后，就可以看到网格了：
 
@@ -1825,7 +1845,9 @@ plt.plot(X, Y, marker='.', color='blue', linestyle='none')
 ```
 
 输出：
-![](http://images.iterate.site/blog/image/180616/Abe6fjCJd1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/Abe6fjCJd1.png?imageslim">
+</p>
 
 
 
@@ -1927,7 +1949,9 @@ plt.title("Image plot of $\sqrt{x^2 + y^2}$ for a grid of values")
 
 输出：
 
-![](http://images.iterate.site/blog/image/180616/Gj3C5E0hAL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/Gj3C5E0hAL.png?imageslim">
+</p>
 
 
 # 1 Expressing Conditional Logic as Array Operations (像数组操作一样表示逻辑条件)
@@ -2102,7 +2126,9 @@ array([[  0,   0,   0],
        [  6,  42, 336]])
 ```
 
-这里有一些基本的统计计算方法：![](http://images.iterate.site/blog/image/180616/lADlhDfmAe.png?imageslim){ width=55% }
+这里有一些基本的统计计算方法：<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/lADlhDfmAe.png?imageslim">
+</p>
 
 # 3 Methods for Boolean Arrays（布尔数组的方法）
 
@@ -2246,7 +2272,9 @@ array([ True, False, False,  True,  True, False,  True], dtype=bool)
 ```
 
 这里是一些数组的集合操作：
-![](http://images.iterate.site/blog/image/180616/kjD8FCG0L9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/kjD8FCG0L9.png?imageslim">
+</p>
 
 
 
@@ -2430,8 +2458,12 @@ np.round(r, 2)
 
 一些常用的 numpy.linalg函数：==都需要总结下==
 
-- ![](http://images.iterate.site/blog/image/180616/8ah15e1HEA.png?imageslim){ width=55% }
-- ![](http://images.iterate.site/blog/image/180616/7k77LE83Ig.png?imageslim){ width=55% }
+- <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/8ah15e1HEA.png?imageslim">
+</p>
+- <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/7k77LE83Ig.png?imageslim">
+</p>
 
 
 
@@ -2490,7 +2522,9 @@ array([ 0.47143516, -1.19097569,  1.43270697, -0.3126519 , -0.72058873,
 
 下面是是写 numpy.random里的函数：==还是要全面总结下的，现在这个还是不行的==
 
-![](http://images.iterate.site/blog/image/180616/JCHcjAcig3.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/JCHcjAcig3.png?imageslim">
+</p>
 
 
 
@@ -2519,7 +2553,9 @@ plt.plot(walk[:100])
 ```
 [0, -1, -2, -3, -2]
 ```
-![](http://images.iterate.site/blog/image/180616/ibe9cadaCm.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180616/ibe9cadaCm.png?imageslim">
+</p>
 
 随机漫步其实就是一个简单的累加。而用 np.random 能更快：
 

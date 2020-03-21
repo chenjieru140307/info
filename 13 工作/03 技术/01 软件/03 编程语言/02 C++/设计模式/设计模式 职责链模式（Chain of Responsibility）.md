@@ -64,7 +64,9 @@ Chain of Responsibility 模式描述其实就是这样一类问题将可能处�
 Chain of Responsibility模式典型的结构图为：
 
 
-![](http://images.iterate.site/blog/image/180727/Gg7HKFk8J8.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/Gg7HKFk8J8.png?imageslim">
+</p>
 
 图 2-1： Chain of Responsibility Pattern 结构图
 

@@ -93,7 +93,9 @@ Singleton 模式应该是最常用到的了。
 Singleton模式结构图如下：
 
 
-![](http://images.iterate.site/blog/image/180727/gk9emjI3C9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/gk9emjI3C9.png?imageslim">
+</p>
 
 可以看到，我们是通过维护一个 static 的成员变量来记录这个唯一的对象实例的。然后通过提供一个 staitc 的接口 instance 来获得这个唯一的实例。
 

@@ -253,7 +253,9 @@ ax.set_yticklabels(features)
 
 
 
-![](http://images.iterate.site/blog/image/180725/i23hGJ4C4m.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/i23hGJ4C4m.png?imageslim">
+</p>
 
 <span style="color:red;">竟然是分钟最重要，真的没想到，可见，如果你没有加入这个特征，那么效果是非常差的。</span>
 
@@ -270,7 +272,9 @@ plot_days(gbr, full, '2015-02-28', '2015-03-02')
 
 
 
-![](http://images.iterate.site/blog/image/180725/adFdK9Ea8a.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/adFdK9Ea8a.png?imageslim">
+</p>
 
 
 ```python
@@ -283,7 +287,9 @@ plot_days(gbr, full, '2015-07-31', '2015-08-02')
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/2Ik3BeBA3A.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/2Ik3BeBA3A.png?imageslim">
+</p>
 
 
 ```python
@@ -300,7 +306,9 @@ plot_days(gbr, full, '2015-10-30', '2015-11-03')
 
 
 
-![](http://images.iterate.site/blog/image/180725/967EB2DliH.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/967EB2DliH.png?imageslim">
+</p>
 
 
 ```python
@@ -401,7 +409,9 @@ compare_models(with_forecast, gbr, '2015-07-12', '2015-07-25', weather=False)
 
 
 
-![](http://images.iterate.site/blog/image/180725/EJddhHm1A6.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/EJddhHm1A6.png?imageslim">
+</p>
 
 
 ```python
@@ -416,7 +426,9 @@ compare_models(with_forecast, gbr, '2014-12-25', '2014-12-26')
 
 
 
-![](http://images.iterate.site/blog/image/180725/G23hj54a1D.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/G23hj54a1D.png?imageslim">
+</p>
 
 
 ```python
@@ -430,7 +442,9 @@ compare_models(with_forecast, gbr, '2014-07-25', '2014-07-29')
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/h2da9BE49A.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/h2da9BE49A.png?imageslim">
+</p>
 
 
 ```python
@@ -510,7 +524,9 @@ ax1.set_ylabel('Load (Megawatts)', fontsize=15)
 
 
 
-![](http://images.iterate.site/blog/image/180725/35jli3bDFh.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/35jli3bDFh.png?imageslim">
+</p>
 
 
 ```python
@@ -631,7 +647,9 @@ ax1.set_ylabel('Load (Megawatts)', fontsize=15)
 
 
 
-![](http://images.iterate.site/blog/image/180725/Ahfc6mKhbG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/Ahfc6mKhbG.png?imageslim">
+</p>
 
 
 ```python

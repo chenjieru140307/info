@@ -22,7 +22,9 @@ date: 2018-07-27 17:56:05
 Mediator模式典型的结构图为：
 
 
-![](http://images.iterate.site/blog/image/180727/8ekD4baGDF.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/8ekD4baGDF.png?imageslim">
+</p>
 
 图 2-1: Mediator Pattern 结构图
 

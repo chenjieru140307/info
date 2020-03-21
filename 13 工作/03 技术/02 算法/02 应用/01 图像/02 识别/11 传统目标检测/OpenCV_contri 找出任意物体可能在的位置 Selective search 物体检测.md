@@ -15,7 +15,9 @@ date: 2018-10-31
 
 //这个比金字塔采样+滑窗高明的地方在于可以少匹配很多次……
 
-![](http://images.iterate.site/blog/image/181031/Gh2g7IB9jF.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/Gh2g7IB9jF.png?imageslim">
+</p>
 
 首先，Selective Search的原理可参考博客：  [地址](http://blog.csdn.net/mao_kun/article/details/50576003)
 
@@ -112,7 +114,9 @@ int main() {
 
 附上原图方便大家自己验证~
 
-![](http://images.iterate.site/blog/image/181031/8mD8af625d.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/8mD8af625d.png?imageslim">
+</p>
 
 
 # 相关

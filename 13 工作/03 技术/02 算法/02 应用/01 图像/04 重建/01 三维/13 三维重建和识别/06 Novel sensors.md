@@ -18,14 +18,20 @@ http://www.youtube.com/watch?v=0W_1Ce2lTBo
 http://graphics.stanford.edu/papers/CameraArray/
 
 
-![](http://images.iterate.site/blog/image/180817/H94l2lc9ji.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/H94l2lc9ji.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180817/Ad9mL9Af4l.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/Ad9mL9Af4l.png?imageslim">
+</p>
 
 
 下面是可以自我重构的 camera 阵列：
 
-![](http://images.iterate.site/blog/image/180817/48eK8LG8Ll.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/48eK8LG8Ll.png?imageslim">
+</p>
 
 http://chenlab.ece.cornell.edu/projects/MobileCamArray/videos/train.mov
 http://chenlab.ece.cornell.edu/projects/MobileCamArray/videos/self_reconfiguration.mov

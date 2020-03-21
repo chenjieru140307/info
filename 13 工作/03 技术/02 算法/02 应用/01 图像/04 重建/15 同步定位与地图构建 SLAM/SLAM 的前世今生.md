@@ -27,18 +27,24 @@ SLAM作为一种基础技术，从最早的军事用途（核潜艇海底定位�
 
 目前用在 SLAM 上的 Sensor 主要分两大类，激光雷达和摄像头。（待会儿发的部分素材摘自官网、论文、专利，侵删）。
 
-![](http://images.iterate.site/blog/image/180829/l4fG47Hef8.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/l4fG47Hef8.png?imageslim">
+</p>
 
 
 这里面列举了一些常见的雷达和各种深度摄像头。激光雷达有单线多线之分，角分辨率及精度也各有千秋。SICK、velodyne、Hokuyo以及国内的北醒光学、Slamtech是比较有名的激光雷达厂商。他们可以作为 SLAM 的一种输入形式。
 
 这个小视频里展示的就是一种简单的 2D SLAM。
 
-![](http://images.iterate.site/blog/image/180829/6aJjhLJ8c4.gif){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/6aJjhLJ8c4.gif">
+</p>
 
 这个小视频是宾大的教授 kumar 做的特别有名的一个 demo，是在无人机上利用二维激光雷达做的 SLAM。
 
-![](http://images.iterate.site/blog/image/180829/3LKdmLDH8m.gif){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/3LKdmLDH8m.gif">
+</p>
 
 而 VSLAM 则主要用摄像头来实现，摄像头品种繁多，主要分为单目、双目、单目结构光、双目结构光、ToF几大类。他们的核心都是获取 RGB 和 depth map(深度信息)。简单的单目和双目（Zed、leapmotion）我这里不多做解释，我主要解释一下结构光和 ToF。
 
@@ -46,19 +52,27 @@ SLAM作为一种基础技术，从最早的军事用途（核潜艇海底定位�
 
 结构光原理的深度摄像机通常具有激光投射器、光学衍射元件（DOE）、红外摄像头三大核心器件。
 
-![](http://images.iterate.site/blog/image/180829/f1CeCg1lbi.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/f1CeCg1lbi.png?imageslim">
+</p>
 
 这个图（下图）摘自 primesense 的专利。
 
-![](http://images.iterate.site/blog/image/180829/ImgiLJgIkc.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/ImgiLJgIkc.png?imageslim">
+</p>
 
 可以看到 primesense 的 doe 是由两部分组成的，一个是扩散片，一个是衍射片。先通过扩散成一个区域的随机散斑，然后复制成九份，投射到了被摄物体上。根据红外摄像头捕捉到的红外散斑，PS1080这个芯片就可以快速解算出各个点的深度信息。
 
 这儿还有两款结构光原理的摄像头。
 
-![](http://images.iterate.site/blog/image/180829/1b0h1b0AJ7.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/1b0h1b0AJ7.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180829/k8ajakH7c5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/k8ajakH7c5.png?imageslim">
+</p>
 
 第一页它是由两幅十分规律的散斑组成，最后同时被红外相机获得，精度相对较高。但据说 DOE 成本也比较高。
 
@@ -70,15 +84,21 @@ ToF（time of flight）也是一种很有前景的深度获取方法。
 
 好，那在有了深度图之后呢，SLAM算法就开始工作了，由于 Sensor 和需求的不同，SLAM的呈现形式略有差异。大致可以分为激光 SLAM（也分 2D 和 3D）和视觉 SLAM（也分 Sparse、semiDense、Dense）两类，但其主要思路大同小异。
 
-![](http://images.iterate.site/blog/image/180829/b75fL53ej4.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/b75fL53ej4.png?imageslim">
+</p>
 
 这个是 Sparse（稀疏）的
 
-![](http://images.iterate.site/blog/image/180829/haAh02jbBJ.gif){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/haAh02jbBJ.gif">
+</p>
 
 这个偏 Dense（密集）的
 
-![](http://images.iterate.site/blog/image/180829/aHi8FEcg4I.gif){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/aHi8FEcg4I.gif">
+</p>
 
 ## ▌SLAM算法实现的 4 要素
 
@@ -94,13 +114,17 @@ SLAM算法在实现的时候主要要考虑以下 4 个方面吧：
 
 其他的还有回环检测问题，探索问题（exploration），以及绑架问题（kidnapping）。
 
-![](http://images.iterate.site/blog/image/180829/efL1h2EceG.gif){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/efL1h2EceG.gif">
+</p>
 
 这个是一个比较有名的 SLAM 算法，这个回环检测就很漂亮。但这个调用了 cuda，gpu对运算能力要求挺高，效果看起来比较炫。
 
 ## ▌以 VSLAM 举个栗子
 
-![](http://images.iterate.site/blog/image/180829/hGL7I21l71.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/hGL7I21l71.png?imageslim">
+</p>
 
 我大概讲一种比较流行的 VSLAM 方法框架。
 
@@ -114,23 +138,35 @@ SLAM算法在实现的时候主要要考虑以下 4 个方面吧：
 
 列举几个目前比较有名的 SLAM 算法：**PTAM,MonoSLAM, ORB-SLAM,RGBD-SLAM,RTAB-SLAM,LSD-SLAM。**
 
-![](http://images.iterate.site/blog/image/180829/8fgh3ga78K.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/8fgh3ga78K.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180829/ih8fFJKdfb.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/ih8fFJKdfb.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180829/H6CmfdGIHl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/H6CmfdGIHl.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180829/I2k3EGc0Cm.gif){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/I2k3EGc0Cm.gif">
+</p>
 
 所以大家如果想学习 SLAM 的话，各个高校提高的素材是很多的，比如宾大、MIT、ETH、香港科技大学、帝国理工等等都有比较好的代表作品，还有一个比较有前景的就是三维的机器视觉，普林斯顿大学的肖剑雄教授结合 SLAM 和 Deep Learning做一些三维物体的分类和识别， 实现一个对场景深度理解的机器人感知引擎。
 
-![](http://images.iterate.site/blog/image/180829/8Ge5eKIAd5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/8Ge5eKIAd5.png?imageslim">
+</p>
 
 <http://robots.princeton.edu/talks/2016_MIT/RobotPerception.pdf>  这是他们的展示。
 
 总的来说，SLAM技术从最早的军事用途（核潜艇海底定位就有了 SLAM 的雏形）到今天，已经逐步走入人们的视野，扫地机器人的盛行更是让它名声大噪。同时基于三维视觉的 VSLAM 越来越显主流。在地面/空中机器人、VR/AR/MR、汽车/AGV自动驾驶等领域，都会得到深入的发展，同时也会出现越来越多的细分市场等待挖掘。
 
-![](http://images.iterate.site/blog/image/180829/0Dh441HkcE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180829/0Dh441HkcE.png?imageslim">
+</p>
 
 这个是 occipital 团队出的一个产品，是个很有意思的应用，国内卖 4000+，大概一个月 1000 出货量吧（虽然不是很多，但是效果不错，pad可玩）虚拟家居、无人飞行／驾驶、虚拟试衣、3D打印、刑侦现场记录、沉浸式游戏、增强现实、商场推送、设计辅助、地震救援、工业流水线、GIS采集等等，都等待着 VSLAM 技术一展宏图
 

@@ -6,7 +6,9 @@ date: 2018-09-22
 
 # R-FCN
 
-![](http://images.iterate.site/blog/image/180922/dmK3lb8A3h.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180922/dmK3lb8A3h.png?imageslim">
+</p>
 
 
 

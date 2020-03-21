@@ -17,20 +17,16 @@ date: 2019-07-31
 
 图 3.1的网络输出特征的感受野为 $11*11$，而图 3.2的网络输出特征的感受野为 $93*93$，是图 3.1的 $81$ 倍。
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190731/HfpSTkU1ejjV.png?imageslim){width=75%}
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190731/HfpSTkU1ejjV.png?imageslim">
+</p>
 
 > 图 3.1 没有 pooling 的网络
 
 
-<center>
-
-![mark](http://images.iterate.site/blog/image/20190731/vUrYENSRpIlw.png?imageslim){width=75%}
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190731/vUrYENSRpIlw.png?imageslim">
+</p>
 
 > 图 3.2 有 pooling 的网络
 

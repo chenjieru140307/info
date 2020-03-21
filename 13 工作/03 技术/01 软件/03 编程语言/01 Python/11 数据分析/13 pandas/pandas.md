@@ -936,7 +936,9 @@ CSV文件如下：
 
 
 
-![](http://images.iterate.site/blog/image/180728/kA2gd2kjfl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/kA2gd2kjfl.png?imageslim">
+</p>
 
 
 

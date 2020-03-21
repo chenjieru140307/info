@@ -582,7 +582,9 @@ plt.title("Param vs CV Error");
 ```
 
 
-![](http://images.iterate.site/blog/image/180724/5JGK3eIKi1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180724/5JGK3eIKi1.png?imageslim">
+</p>
 
 大概 9 的时候达到了最优解。直观的来看 可能跟前文的差别不大。
 

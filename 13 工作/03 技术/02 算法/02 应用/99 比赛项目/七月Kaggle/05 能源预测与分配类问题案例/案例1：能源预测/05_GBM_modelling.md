@@ -226,7 +226,9 @@ ax.legend(loc='upper right')
 
 
 
-![](http://images.iterate.site/blog/image/180725/fmBgDfFb17.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/fmBgDfFb17.png?imageslim">
+</p>
 
 
 

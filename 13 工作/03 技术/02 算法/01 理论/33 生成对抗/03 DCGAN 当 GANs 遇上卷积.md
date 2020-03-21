@@ -128,7 +128,9 @@ date: 2019-04-24
 传统卷积层只能缩小或保持前一层的高度和宽度，对于扩大高宽无能为力，我们需要采用特殊的卷积层来实现增加高宽的升采样计算[38]，即分数步进卷积层，如图 13.13所示：<span style="color:red;">什么是分数步进卷积层？是怎么做到的？</span>
 
 
-![](http://images.iterate.site/blog/image/20190426/AvetosfWhaIC.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190426/AvetosfWhaIC.png?imageslim">
+</p>
 
 
 步长大于 1 的传统卷积层会把输入图缩成一张高宽更小的图，5×5 的图经过核 3×3步长 2×2 的卷积层得到一个 2×2 的图，如图 13.14（a）所示：

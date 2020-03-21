@@ -13,19 +13,25 @@ date: 2018-08-18 16:33:42
 
 因此需要一个 CNN：
 
-![](http://images.iterate.site/blog/image/180814/9512HG0b66.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/9512HG0b66.png?imageslim">
+</p>
 
 然后，我们怎么把图像和描述结合起来训练呢？
 
 
-![](http://images.iterate.site/blog/image/180814/G8BIkAIIkA.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/G8BIkAIIkA.png?imageslim">
+</p>
 
 
 我们可以看到，这个地方也有一个 CNN，这个 CNN 把上面的 object detection 的 head 也就是 softmax 不要了。然后，提出来的 feature 作为 START ，然后，开始了 RNN，输出的 label 是 man ，然后，这个 man 作为下一个的输入，等等，然后输入 frisbee，输出一个状态 END。<span style="color:red;">嗯，感觉还是非常平常的，不过</span>
 
 这个是相关的参考文献：
 
-![](http://images.iterate.site/blog/image/180814/EkKml44CIG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/EkKml44CIG.png?imageslim">
+</p>
 
 
 
@@ -40,7 +46,9 @@ date: 2018-08-18 16:33:42
 
 RNN 提供了很多的灵活性，很多应用都建立在 RNN 基础上。
 
-![](http://images.iterate.site/blog/image/180815/c76kgbjai9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180815/c76kgbjai9.png?imageslim">
+</p>
 
 - one to one 就是传统的 CNN，就是做 cv 任务的
 - one to many 就是 image captioning
@@ -56,13 +64,19 @@ RNN：
 
 什么是 RNN
 
-![](http://images.iterate.site/blog/image/180815/i3A2GlG7aj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180815/i3A2GlG7aj.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180815/8ee7GIBBaG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180815/8ee7GIBBaG.png?imageslim">
+</p>
 
 前一帧的输出作为这一帧的输入：
 
-![](http://images.iterate.site/blog/image/180815/i9cH8ACgCG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180815/i9cH8ACgCG.png?imageslim">
+</p>
 
 可以看到，是 state 和 input 的一个组合通过一个函数之后输出一个 state。
 
@@ -70,7 +84,9 @@ RNN：
 
 传统的 RNN 是做什么的呢？
 
-![](http://images.iterate.site/blog/image/180815/jEHmkj7mjE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180815/jEHmkj7mjE.png?imageslim">
+</p>
 
 传统的 RNN ，类似 马尔科夫 或者 CRF，有一个隐变量在里面。
 
@@ -84,15 +100,21 @@ Character-level language model example
 
 假设我们的词库里面就有 helo 这四个字母，然后我想说一个 hello：
 
-![](http://images.iterate.site/blog/image/180815/7e2abeif5K.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180815/7e2abeif5K.png?imageslim">
+</p>
 
 因此，我们的输入就是类似这样：
 
-![](http://images.iterate.site/blog/image/180815/jc2GdA4ekc.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180815/jc2GdA4ekc.png?imageslim">
+</p>
 
 然后 隐含层就是这样：
 
-![](http://images.iterate.site/blog/image/180815/2BjjbCcmdd.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180815/2BjjbCcmdd.png?imageslim">
+</p>
 
 
 W_xh 就是从 x 到 h 的权重， W_hh 就是从 h 到 h 的权重。
@@ -101,7 +123,9 @@ W_xh 就是从 x 到 h 的权重， W_hh 就是从 h 到 h 的权重。
 
 输出层是这样的：
 
-![](http://images.iterate.site/blog/image/180816/F0jhLghcAb.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/F0jhLghcAb.png?imageslim">
+</p>
 
 上面这个是最基本的 RNN，从这个出发，我们想一下
 
@@ -111,7 +135,9 @@ Preview of fancier architectures
 RNN attends spatially to different parts of images while generating each word of the sentence
 
 
-![](http://images.iterate.site/blog/image/180816/H8DGkfEl9m.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/H8DGkfEl9m.png?imageslim">
+</p>
 
 这个论文就是 Show Attend and Tell .
 
@@ -119,11 +145,15 @@ RNN attends spatially to different parts of images while generating each word of
 
 我们正常的多层 RNN 就是这样的：
 
-![](http://images.iterate.site/blog/image/180816/a8FL6Jj4kG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/a8FL6Jj4kG.png?imageslim">
+</p>
 
 但是 LSTM 是这样的：
 
-![](http://images.iterate.site/blog/image/180816/bhJBJbLI8l.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/bhJBJbLI8l.png?imageslim">
+</p>
 
 绿色的后面又加了一些黄色的东西，这些就是 gate。
 
@@ -131,18 +161,28 @@ OK，我们说一下这个 LSTM
 
 LSTM 是上世纪 90 年代的 97 年的
 
-![](http://images.iterate.site/blog/image/180816/bFgK7Gmh92.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/bFgK7Gmh92.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180816/lG5g9Ki9K0.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/lG5g9Ki9K0.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180816/19g3Lc4Hdb.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/19g3Lc4Hdb.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180816/672e4Ikf17.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/672e4Ikf17.png?imageslim">
+</p>
 
 
 Long Short Term Memory
 
-![](http://images.iterate.site/blog/image/180816/aKf5caLi1d.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/aKf5caLi1d.png?imageslim">
+</p>
 
 4n*2n 中的 4 是因为有 4 个 gate，即 i,f,o,g 。那么 2 是因为有 x 和 h。
 
@@ -150,11 +190,15 @@ Long Short Term Memory
 
 第一步：
 
-![](http://images.iterate.site/blog/image/180816/lJlA6j74FG.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/lJlA6j74FG.png?imageslim">
+</p>
 
 前一个时刻的 cell 的状态就是 $c_{t-1}^l$ 。
 
-这个 x 就是我们之前说的 image 的 feature ，假如说是 4096 。 这个 ![](http://images.iterate.site/blog/image/180816/6ihcIG5h2C.png?imageslim){ width=55% } 是点运算。
+这个 x 就是我们之前说的 image 的 feature ，假如说是 4096 。 这个 <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/6ihcIG5h2C.png?imageslim">
+</p> 是点运算。
 
 <span style="color:red;">为什么是 c 乘以 f 呢？</span>
 
@@ -162,19 +206,25 @@ Long Short Term Memory
 
 i 是前一个过程，g 也是前一个过程。
 
-![](http://images.iterate.site/blog/image/180816/KaDdFiBBBf.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/KaDdFiBBBf.png?imageslim">
+</p>
 
 得到的这个 $c_t^l$ 就是当前的 cell state。
 
 第三步：
 
-![](http://images.iterate.site/blog/image/180816/4ibElA3kbk.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/4ibElA3kbk.png?imageslim">
+</p>
 
 当前的 cell state 过一个 tanh 之后，在经过一个 o 的 gate。
 
 第四步：
 
-![](http://images.iterate.site/blog/image/180816/7i1Lk80gLk.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/7i1Lk80gLk.png?imageslim">
+</p>
 
 h 是下一个 higher layer ，也可以是 prediction，也就是说，如果这个 单元是 多层中的一层，那么输出就是到更高的一层，如果是最后一层，那么输出就是预测。
 
@@ -185,7 +235,9 @@ h 是下一个 higher layer ，也可以是 prediction，也就是说，如果�
 
 OK，我们看一下相邻的两个时间戳的时候的状态的转化：
 
-![](http://images.iterate.site/blog/image/180816/Df18fdjL3b.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/Df18fdjL3b.png?imageslim">
+</p>
 
 <span style="color:red;">上面这个图没有写出 h 传入的饿时候到哪里的，还是说传入的 h 并没有被用到，只是作为输出了？嗯，用到了，在第一步的第一个公式里，用来更新这四个门。哈哈，终于知道这个门是怎么更新的了，一直奇怪这门是怎么更新的。嗯，还想知道更多关于这个门的，公式写的带简略了。</span>
 
@@ -193,14 +245,18 @@ OK，我们看一下相邻的两个时间戳的时候的状态的转化：
 
 OK，对比一下 LSTM 和 RNN ：
 
-![](http://images.iterate.site/blog/image/180816/FbG4bkD4DA.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/FbG4bkD4DA.png?imageslim">
+</p>
 
 
 那么大家想一下 ResNet 与 LSTM 有什么区别？
 
 ResNet 对于平常的网络来说，相当于 LSTM 对于 RNN：
 
-![](http://images.iterate.site/blog/image/180816/JaBB2mJA5f.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/JaBB2mJA5f.png?imageslim">
+</p>
 
 
 了解动态梯度变化：
@@ -211,15 +267,23 @@ Cute backprop signal video: http://imgur.com/gallery/vaNahKE
 
 上面这个连接是 RNN 和 LSTM 的动态的梯度变化。
 
-![](http://images.iterate.site/blog/image/180816/lB73d23b5L.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/lB73d23b5L.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180816/gLj2hB3C19.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/gLj2hB3C19.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180816/38aib40d59.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/38aib40d59.png?imageslim">
+</p>
 
 LSTM 的一些变种：LSTM  variants and friends：
 
-![](http://images.iterate.site/blog/image/180816/DLBCIlbcEI.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180816/DLBCIlbcEI.png?imageslim">
+</p>
 
 这个 GRU 是一个基于 LSTM 的一个变种，是图上的蓝色的线表示的，老师只用过 LSTM，这个 GRU 不知道现在应用的怎么样，应该没有很火。
 

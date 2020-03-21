@@ -40,7 +40,9 @@ Gradient boosting 算法
 ### 树集成模型：
 
 
-模型：![](http://images.iterate.site/blog/image/180728/mh50CbghLj.png?imageslim){ width=55% }
+模型：<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/mh50CbghLj.png?imageslim">
+</p>
 
 每一个回归书，就是把样本映射到一个 score，使用加性模型
 
@@ -55,12 +57,16 @@ Gradient boosting 算法
 假设我们拥有 k 个树：
 
 
-![](http://images.iterate.site/blog/image/180728/Kl68i9FL5L.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/Kl68i9FL5L.png?imageslim">
+</p>
 
 目标函数：
 
 
-![](http://images.iterate.site/blog/image/180728/edmelk0B91.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/edmelk0B91.png?imageslim">
+</p>
 
 如何涉及复杂度函数？损失函数？
 
@@ -91,9 +97,13 @@ Gradient boosting 算法
 
 尽管我们使用回归树作为基函数，只需要通过涉及合适的目标函数，可以应用到分类问题
 
-回归问题：![](http://images.iterate.site/blog/image/180728/CDJj91011i.png?imageslim){ width=55% }
+回归问题：<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/CDJj91011i.png?imageslim">
+</p>
 
-二分类问题：![](http://images.iterate.site/blog/image/180728/Ie96Aa49E3.png?imageslim){ width=55% }
+二分类问题：<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/Ie96Aa49E3.png?imageslim">
+</p>
 
 
 #### 如何实现函数的学习？
@@ -106,16 +116,22 @@ Gradient boosting 算法
 从最简单起点开始，一步步增加
 
 
-![](http://images.iterate.site/blog/image/180728/170DE3Djf9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/170DE3Djf9.png?imageslim">
+</p>
 
 通过最优化目标函数，来确定选择什么样的\(f_t(x)\)假如到模型中
 
 
-![](http://images.iterate.site/blog/image/180728/CbiHcgbh6C.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/CbiHcgbh6C.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180728/gAj2e0FBKb.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/gAj2e0FBKb.png?imageslim">
+</p>
 
 
 
@@ -125,7 +141,9 @@ Gradient boosting 算法
 
 
 
-![](http://images.iterate.site/blog/image/180728/ich1ID7Eek.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/ich1ID7Eek.png?imageslim">
+</p>
 
 上图红圈部分是前一次迭代的残差
 
@@ -134,25 +152,37 @@ Gradient boosting 算法
 目标函数：
 
 
-![](http://images.iterate.site/blog/image/180728/lfldH7fIGA.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/lfldH7fIGA.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180728/fjBgJjiAHg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/fjBgJjiAHg.png?imageslim">
+</p>
 
 其中
 
 
-![](http://images.iterate.site/blog/image/180728/fh2HjIcCec.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/fh2HjIcCec.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180728/IibAKg5Gm0.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/IibAKg5Gm0.png?imageslim">
+</p>
 
 如采用 L2 损失函数：
 
-![](http://images.iterate.site/blog/image/180728/a910HKEHi3.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/a910HKEHi3.png?imageslim">
+</p>
 
 去掉常数项目，观察新的目标函数
 
 
-![](http://images.iterate.site/blog/image/180728/I76LLHHLD7.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/I76LLHHLD7.png?imageslim">
+</p>
 
 很明显\(g_i\)，\(h_i\)都可以计算，已知的
 
@@ -161,7 +191,9 @@ Gradient boosting 算法
 
 #### 考察\(f_t(x)\)：
 
-![](http://images.iterate.site/blog/image/180728/5KmCHieEem.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/5KmCHieEem.png?imageslim">
+</p>
 
 
 
@@ -181,7 +213,9 @@ Gradient boosting 算法
 
 
 
-![](http://images.iterate.site/blog/image/180728/ff886c429J.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/ff886c429J.png?imageslim">
+</p>
 
 注意这不是唯一的方法？
 
@@ -190,19 +224,27 @@ Gradient boosting 算法
 对某一个\(f_t(x)\)，遍历所有叶节点\(I_j=\{i|q(x_i)=j\}\)，首先定义叶节点训练样本集合
 
 
-![](http://images.iterate.site/blog/image/180728/d4CbL04LDf.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/d4CbL04LDf.png?imageslim">
+</p>
 
 T个变量的二次函数
 
 树的评价计算：
 
-![](http://images.iterate.site/blog/image/180728/k61aACGE1I.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/k61aACGE1I.png?imageslim">
+</p>
 
 知道如何评价树，如何搜索出最佳树？
 
   * 枚举所有树结构
-    * 计算树的评价函数![](http://images.iterate.site/blog/image/180728/cb2EEImDgJ.png?imageslim){ width=55% }
-  * 选择最优树，计算对应的 W![](http://images.iterate.site/blog/image/180728/ICLFGHK1aE.png?imageslim){ width=55% }
+    * 计算树的评价函数<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/cb2EEImDgJ.png?imageslim">
+</p>
+  * 选择最优树，计算对应的 W<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/ICLFGHK1aE.png?imageslim">
+</p>
 
 
 **但是，树结构太多了。**
@@ -210,7 +252,9 @@ T个变量的二次函数
 不是搜索所有树结构，而是从哪个根节点开始，一层层长出一颗最佳树
 
 
-![](http://images.iterate.site/blog/image/180728/eHci3KDegL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/eHci3KDegL.png?imageslim">
+</p>
 
 注意不再计算 gini 指数
 
@@ -225,11 +269,15 @@ T个变量的二次函数
   * 在选中的特征维度上，按样本值排序，选中对应的 split value
   * 计算目标函数
 
-![](http://images.iterate.site/blog/image/180728/8gFlK5Jm4c.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/8gFlK5Jm4c.png?imageslim">
+</p>
 
 完整的算法：
 
-![](http://images.iterate.site/blog/image/180728/l6hHjGe16c.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/l6hHjGe16c.png?imageslim">
+</p>
 
 随机森林 vs AdaBoost vs Gradient boosting
 

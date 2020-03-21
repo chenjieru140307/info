@@ -10,7 +10,9 @@ pLSA 是用一个生成模型来建模文章的生成过程。假设有 K 个主
 
 图 6.10是 pLSA 图模型：
 
-![](http://images.iterate.site/blog/image/20190406/7IKhCUbM4sll.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190406/7IKhCUbM4sll.png?imageslim">
+</p>
 
 生成主题 $z$ 和词 $w$ 的过程遵照一个确定的概率分布。
 

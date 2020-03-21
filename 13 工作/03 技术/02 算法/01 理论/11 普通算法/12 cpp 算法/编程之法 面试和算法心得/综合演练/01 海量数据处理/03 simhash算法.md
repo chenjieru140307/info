@@ -59,7 +59,9 @@ simhash算法分为 5 个步骤：分词、hash、加权、合并、降维，具
 
 其流程如下图所示：
 
-![](http://images.iterate.site/blog/image/180803/f197AA58H4.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/f197AA58H4.png?imageslim">
+</p>
 
 
 ### 应用
@@ -81,12 +83,16 @@ simhash算法分为 5 个步骤：分词、hash、加权、合并、降维，具
 这两种方案，要么时间复杂度高，要么空间复杂度复杂，能否有一种方案可以达到时空复杂度的绝佳平衡呢？答案是肯定的：
 
 - 我们可以把 64 位的二进制 simhash 签名均分成 4 块，每块 16 位。根据鸽巢原理（也称抽屉原理），如果两个签名的海明距离在 3 以内，它们必有一块完全相同。如下图所示：
-![](http://images.iterate.site/blog/image/180803/61AceDK34J.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/61AceDK34J.png?imageslim">
+</p>
 - 然后把分成的 4 块中的每一个块分别作为前 16 位来进行查找，建倒排索引。
 
 具体如下图所示：
 
-![](http://images.iterate.site/blog/image/180803/AkAaHC1590.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/AkAaHC1590.png?imageslim">
+</p>
 
 如此，如果样本库中存有 2^34（差不多 10 亿）的 simhash 签名，则每个 table 返回 2^(34-16)=262144个候选结果，大大减少了海明距离的计算成本。
  - 假设数据是均匀分布，16位的数据，产生的像限为 2^16个，则平均每个像限分布的文档数则为 2^34/2^16 = 2^(34-16)) ，四个块返回的总结果数为 4* 262144 （大概 100 万）。

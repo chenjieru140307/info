@@ -107,7 +107,9 @@ date: 2019-04-26
 
 除了生成网络和推断网络，还有一个判别网络。它的目标是区分来自生成网络的 $\left(\hat{x}=G_{\text { decoder }}(z), z\right)$ 和来自推断网络的 $\left(x, \hat{z}=G_{\text { encoder }}(x)\right)$ ，如图 13.16 所示，ALI 模型：
 
-![](http://images.iterate.site/blog/image/20190426/KoqgpA2fmSew.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190426/KoqgpA2fmSew.png?imageslim">
+</p>
 
 
 在 GANs 框架下，判别网络与生成和推断网络共享一个目标函数：

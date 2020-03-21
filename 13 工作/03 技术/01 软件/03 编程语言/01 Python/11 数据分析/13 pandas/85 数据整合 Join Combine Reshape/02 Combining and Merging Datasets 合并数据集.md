@@ -426,7 +426,9 @@ pd.merge(df1, df2, how='outer')
 
 这里是 how 的一些选项：
 
-![](http://images.iterate.site/blog/image/180803/9Ff5BI1JBk.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/9Ff5BI1JBk.png?imageslim">
+</p>
 
 many-to-many(多对多)连接也被定义好了，不过可能不是那么直观。这里有一个例子：
 
@@ -949,7 +951,9 @@ pd.merge(left, right, on='key1', suffixes=('_left', '_right'))
 
 下表是 mege 的一些参数。用 DataFrame 的 row index来联结会在下一部分讲到。
 
-![](http://images.iterate.site/blog/image/180803/7LHBaBEBFa.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/7LHBaBEBFa.png?imageslim">
+</p>
 
 # 2 Merging on Index（在 index 上做归并）
 
@@ -2741,9 +2745,13 @@ pd.concat([df1, df2], ignore_index=True)
 
 concat函数的一些参数：
 
-![](http://images.iterate.site/blog/image/180803/j0BdBHdCej.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/j0BdBHdCej.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180803/fj7H9dB8dg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/fj7H9dB8dg.png?imageslim">
+</p>
 
 # 3 Combining Data with Overlap（用重叠来合并数据）
 

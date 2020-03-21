@@ -52,7 +52,9 @@ CGI程序可以是 Python 脚本，PERL脚本，SHELL脚本，C或者 C++程序�
 
 
 
-![](http://images.iterate.site/blog/image/180727/AIJ9ehE4C3.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/AIJ9ehE4C3.png?imageslim">
+</p>
 
 
 

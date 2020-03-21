@@ -11,7 +11,9 @@ date: 2018-11-10
 
 用一个可爱的虫子做为一个示例，目标是把虫子区域抠出来：
 
-![](http://images.iterate.site/blog/image/181106/hGhGh0Lhbk.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181106/hGhGh0Lhbk.png?imageslim">
+</p>
 
 
 
@@ -27,7 +29,9 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 看，这不就是你处理初始的样子？
 
-![](http://images.iterate.site/blog/image/181106/4IC8gGBakb.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181106/4IC8gGBakb.png?imageslim">
+</p>
 
 2.转换灰度并去噪声
 
@@ -40,7 +44,9 @@ blurred = cv2.GaussianBlur(gray, (9, 9),0)
 
 这里取高斯是因为高斯去噪效果是最好的。
 
-![](http://images.iterate.site/blog/image/181106/f04JK94IA4.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181106/f04JK94IA4.png?imageslim">
+</p>
 
 3.提取图像的梯度
 
@@ -56,7 +62,9 @@ gradient = cv2.convertScaleAbs(gradient)
 
 此时，我们会得到
 
-![](http://images.iterate.site/blog/image/181106/Gi9jeHc0DJ.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181106/Gi9jeHc0DJ.png?imageslim">
+</p>
 
 4.我们继续去噪声
 
@@ -72,7 +80,9 @@ blurred = cv2.GaussianBlur(gradient, (9, 9),0)
 
 此时，我们会得到
 
-![](http://images.iterate.site/blog/image/181106/ELIC3DEhaE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181106/ELIC3DEhaE.png?imageslim">
+</p>
 
 
 其实就算手动分割我们也是需要找到一个边界吧，可以看到轮廓出来了，但是我们最终要的是整个轮廓，所以内部小区域就不要了
@@ -88,7 +98,9 @@ closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
 
 此时，我们会得到
 
-![](http://images.iterate.site/blog/image/181106/ibhCc6Bac8.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181106/ibhCc6Bac8.png?imageslim">
+</p>
 
 6.细节刻画
 
@@ -102,7 +114,9 @@ closed = cv2.dilate(closed, None, iterations=4)
 
 此时，我们会得到
 
-![](http://images.iterate.site/blog/image/181106/IkBHb5khl2.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181106/IkBHb5khl2.png?imageslim">
+</p>
 
 7.找出昆虫区域的轮廓
 
@@ -147,7 +161,9 @@ cv2.imshow("draw_img", draw_img)
 
 此时，我们会得到
 
-![](http://images.iterate.site/blog/image/181106/k75DlGCaK8.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181106/k75DlGCaK8.png?imageslim">
+</p>
 
 
 9.裁剪出来就完成啦
@@ -155,7 +171,9 @@ cv2.imshow("draw_img", draw_img)
 方法嘛，这不就是么，找到这四个点切出来就好啦
 我们放大一点看一下细节
 
-![](http://images.iterate.site/blog/image/181106/iKJ6ga8bmE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181106/iKJ6ga8bmE.png?imageslim">
+</p>
 
 
 ```
@@ -174,7 +192,9 @@ cv2.imshow('crop_img', crop_img)
 其实，box里保存的是绿色矩形区域四个顶点的坐标。 我将按下图红色矩形所示裁剪昆虫图像。
 找出四个顶点的 x，y坐标的最大最小值。新图像的高=maxY-minY，宽=maxX-minX
 
-![](http://images.iterate.site/blog/image/181106/0dCC856J07.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181106/0dCC856J07.png?imageslim">
+</p>
 
 
 终于我们得到了可爱的小虫子。

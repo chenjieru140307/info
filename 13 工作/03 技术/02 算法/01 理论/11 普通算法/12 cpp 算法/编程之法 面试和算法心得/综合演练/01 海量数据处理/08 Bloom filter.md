@@ -22,15 +22,21 @@ Bloom Filter，被译作称布隆过滤器，是一种空间效率很高的随�
 
 下面我们具体来看 Bloom Filter是如何用位数组表示集合的。初始状态时，Bloom Filter是一个包含 m 位的位数组，每一位都置为 0。
 
-![](http://images.iterate.site/blog/image/180708/BeaaeGaabA.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/BeaaeGaabA.jpg?imageslim">
+</p>
 
 为了表达 S={x<sub>1</sub>, x<sub>2</sub>,…,x<sub>n</sub>}这样一个 n 个元素的集合，Bloom Filter使用 k 个相互独立的哈希函数（Hash Function），它们分别将集合中的每个元素映射到{1,…,m}的范围中。对任意一个元素 x，第 i 个哈希函数映射的位置 h<sub>i</sub>(x)就会被置为 1（1≤i≤k）。注意，如果一个位置多次被置为 1，那么只有第一次会起作用，后面几次将没有任何效果。在下图中，k=3，且有两个哈希函数选中同一个位置（从左边数第五位，即第二个“1“处）。
 
-![](http://images.iterate.site/blog/image/180708/77Idb7Ikc3.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/77Idb7Ikc3.jpg?imageslim">
+</p>
 
 在判断 y 是否属于这个集合时，我们对 y 应用 k 次哈希函数，如果所有 h<sub>i</sub>(y)的位置都是 1（1≤i≤k），那么我们就认为 y 是集合中的元素，否则就认为 y 不是集合中的元素。下图中 y<sub>1</sub>就不是集合中的元素（因为 y1 有一处指向了“0”位）。y<sub>2</sub>或者属于这个集合，或者刚好是一个 false positive。
 
-![](http://images.iterate.site/blog/image/180708/JbhJ058jHD.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/JbhJ058jHD.jpg?imageslim">
+</p>
 
 #### 1.2、错误率估计
 

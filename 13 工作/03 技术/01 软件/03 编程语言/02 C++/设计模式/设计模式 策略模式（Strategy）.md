@@ -48,7 +48,9 @@ Strategy模式和 Template 模式要解决的问题是相同（类似）的，�
 Strategy 模式典型的结构图为:
 
 
-![](http://images.iterate.site/blog/image/180727/K2EIbCaAkj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/K2EIbCaAkj.png?imageslim">
+</p>
 
 图 2-1: Strategy Pattern 结构图
 

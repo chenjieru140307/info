@@ -11,7 +11,9 @@ date: 2018-07-27 17:22:58
  每行、每列、每个九宫内，都是 1-9这 9 个数字。
 
 
-![](http://images.iterate.site/blog/image/180727/a4imgAGeFE.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/a4imgAGeFE.png?imageslim">
+</p>
 
 
 
@@ -22,17 +24,23 @@ date: 2018-07-27 17:22:58
 可。
 
 
-![](http://images.iterate.site/blog/image/180727/4b0g2d0aIL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/4b0g2d0aIL.png?imageslim">
+</p>
 
 代码如下：
 
 
-![](http://images.iterate.site/blog/image/180727/7H40d32i4A.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/7H40d32i4A.png?imageslim">
+</p>
 
 非递归数独 Sudoku
 
 
-![](http://images.iterate.site/blog/image/180727/59ELEa1JiC.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/59ELEa1JiC.png?imageslim">
+</p>
 
 COMMENT：
 

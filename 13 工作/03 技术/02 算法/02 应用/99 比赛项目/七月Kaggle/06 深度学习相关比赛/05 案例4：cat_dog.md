@@ -245,7 +245,9 @@ plt.legend()
 plt.show()
 ```
 
-![](http://images.iterate.site/blog/image/180726/da5mll8c7d.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180726/da5mll8c7d.png?imageslim">
+</p>
 
 
 由于是第 5 次的时候停止的，而 patience =3，所以是在第 2 次的时候停下来最好。<span style="color:red;">这个地方是 5-3=2 还是 5-3+1=3？ 确认下。而且，我最后生成的模型在哪里？我怎么生成第二个 epoch 的时候的模型？而且模型要怎么加载？这些这里没有讲。</span>

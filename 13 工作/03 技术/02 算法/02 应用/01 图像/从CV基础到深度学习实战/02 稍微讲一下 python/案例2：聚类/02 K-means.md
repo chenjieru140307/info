@@ -43,7 +43,9 @@ plt.scatter(X[:, 0], X[:, 1], s=50);
 ```
 
 
-![](http://images.iterate.site/blog/image/180806/F25lJh5ak9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180806/F25lJh5ak9.png?imageslim">
+</p>
 
 By eye, it is relatively easy to pick out the four clusters. If you were to perform an exhaustive search for the different segmentations of the data, however, the search space would be exponential in the number of points. Fortunately, there is a well-known *Expectation Maximization (EM)* procedure which scikit-learn implements, so that KMeans can be solved relatively quickly.
 
@@ -57,7 +59,9 @@ plt.scatter(X[:, 0], X[:, 1], c=y_kmeans, s=50, cmap='rainbow');
 ```
 
 
-![](http://images.iterate.site/blog/image/180806/eF4AKdj6Jl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180806/eF4AKdj6Jl.png?imageslim">
+</p>
 
 The algorithm identifies the four clusters of points in a manner very similar to what we would do by eye!
 
@@ -80,7 +84,9 @@ plot_kmeans_interactive();
 ```
 
 
-![](http://images.iterate.site/blog/image/180806/2DjaLjFJkA.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180806/2DjaLjFJkA.png?imageslim">
+</p>
 
 This algorithm will (often) converge to the optimal cluster centers.
 
@@ -126,7 +132,9 @@ for i in range(10):
 ```
 
 
-![](http://images.iterate.site/blog/image/180806/hH8EIhliem.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180806/hH8EIhliem.png?imageslim">
+</p>
 
 We see that *even without the labels*, KMeans is able to find clusters whose means are recognizable digits (with apologies to the number 8)!
 
@@ -146,7 +154,9 @@ plt.grid(False);
 ```
 
 
-![](http://images.iterate.site/blog/image/180806/FJB3Bkg09E.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180806/FJB3Bkg09E.png?imageslim">
+</p>
 
 The image itself is stored in a 3-dimensional array, of size ``(height, width, RGB)``:
 
@@ -207,10 +217,14 @@ with sns.axes_style('white'):
 ```
 
 
-![](http://images.iterate.site/blog/image/180806/hH990fdmbK.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180806/hH990fdmbK.png?imageslim">
+</p>
 
 
-![](http://images.iterate.site/blog/image/180806/Fl4iAbFid4.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180806/Fl4iAbFid4.png?imageslim">
+</p>
 
 Compare the input and output image: we've reduced the $256^3$ colors to just 64.
 

@@ -102,7 +102,9 @@ Command模式通过将请求封装到一个对象（Command）中，并将请求
 Command模式的典型结构图为:
 
 
-![](http://images.iterate.site/blog/image/180727/0B9G8i6H64.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/0B9G8i6H64.png?imageslim">
+</p>
 
 图 2-1： Command Pattern 结构图
 

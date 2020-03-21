@@ -16,7 +16,9 @@ date: 2018-11-10
 比如这张图，利用 PCA 求出了特征向量之后，我想要求解与轮廓的交点，不知道有没有简单的方法：
 
 
-![](http://images.iterate.site/blog/image/20190313/OnJHCdFOunxl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190313/OnJHCdFOunxl.png?imageslim">
+</p>
 
 
 
@@ -35,14 +37,18 @@ date: 2018-11-10
 
 
 
-![](http://images.iterate.site/blog/image/20190313/f6d2zNhDDbUD.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190313/f6d2zNhDDbUD.png?imageslim">
+</p>
 
 
 最后得到的结果是这样的，其中黄点为主方向向量和外界矩形交点，红点为和轮廓交点。
 
 
 
-![](http://images.iterate.site/blog/image/20190313/k6fNKh07NCWe.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190313/k6fNKh07NCWe.png?imageslim">
+</p>
 
 
 

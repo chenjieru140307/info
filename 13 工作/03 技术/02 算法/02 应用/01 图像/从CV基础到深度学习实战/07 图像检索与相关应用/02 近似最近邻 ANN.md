@@ -47,7 +47,9 @@ date: 2018-08-18 16:38:39
 
 传统 Hash 与 Local Sensitive Hash 区别 LSH
 
-![](http://images.iterate.site/blog/image/180814/1mcJ3E5f98.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/1mcJ3E5f98.png?imageslim">
+</p>
 
 他与一般的 hash 有区别，一般的 hash 要避免冲突，不能同时落在同一个位置上，
 
@@ -62,7 +64,9 @@ date: 2018-08-18 16:38:39
 - 把原始的样本点映射成长度为 N 的⼀个 2 进制串
 - 其中每个位次可以理解为在空间取了⼀个超平面去做划分
 
-![](http://images.iterate.site/blog/image/180814/75ChHljGiH.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/75ChHljGiH.png?imageslim">
+</p>
 
 
 从上图可以看出，我们是选择一些超平面对这个高维空间进行切分，需要多少 bit 就选多少个超平面进行切分。由于有些样本被划分到同一个区域了，所以这些点所对应的 01 串是相同的。
@@ -87,7 +91,9 @@ date: 2018-08-18 16:38:39
 
 Local Sensitive Hash示意图
 
-![](http://images.iterate.site/blog/image/180814/i01a5kCCKd.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/i01a5kCCKd.png?imageslim">
+</p>
 
 上图可以看出，在不同的 hash 方式下，hash1 里面这个图找到的相似图是这个鸭子，然后 hash2 中找到的是另外一个鸭子。最后我们根据几个 hash 找到了 4 张图，然后我们就可以用 4096*1 的 vector 与这几张图的 vector 求距离来确定谁最接近，可以使用 cos 距离或者欧氏距离。
 
@@ -132,11 +138,15 @@ K-D Tree 是类似的。这个老师没有讲。 <span style="color:red;">K-D Tr
 
 建索引与最近邻查找， 可以直接⽤list作为向量输⼊
 
-![](http://images.iterate.site/blog/image/180814/bGL9Ffae8A.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/bGL9Ffae8A.png?imageslim">
+</p>
 
 做索引的时候：我针对我现在的 vector v来找到最近的 n 个向量。
 
-![](http://images.iterate.site/blog/image/180814/a49dK87f7C.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/a49dK87f7C.png?imageslim">
+</p>
 
 
 #### FLANN
@@ -151,7 +161,9 @@ K-D Tree 是类似的。这个老师没有讲。 <span style="color:red;">K-D Tr
 
 使用方式如下：
 
-![](http://images.iterate.site/blog/image/180814/e2gbCfJjBJ.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/e2gbCfJjBJ.png?imageslim">
+</p>
 
 我会生成一个集合，1w 个，每个都是 128 维的，然后给 1000 个向量，我希望每个向量都可以检索回来他最近的 5 个向量。
 
@@ -167,9 +179,13 @@ autotuned 是不指定他是 LSH 还是 K-means Tree 什么的，让他帮我们
 - 可并⾏化地建索引和检索近似最近邻
 - 建完的索引⽂件⼤⼩稍微⼩⼀些
 
-![](http://images.iterate.site/blog/image/180814/ll5lDKA7Dj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/ll5lDKA7Dj.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180814/HJ7LCCkImg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/HJ7LCCkImg.png?imageslim">
+</p>
 
 #### Nearpy
 
@@ -178,7 +194,9 @@ autotuned 是不指定他是 LSH 还是 K-means Tree 什么的，让他帮我们
 - 构建在 Numpy， Scipy和 redis 之上
 - 因为 cache 在 redis 之上， 可以增量式补充数据， 增加索引
 
-![](http://images.iterate.site/blog/image/180814/K191faKCf4.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/K191faKCf4.png?imageslim">
+</p>
 
 #### Lshash
 
@@ -187,9 +205,13 @@ autotuned 是不指定他是 LSH 还是 K-means Tree 什么的，让他帮我们
 - 超级精简！！
 - 也⽀持 redis 存储索引
 
-![](http://images.iterate.site/blog/image/180814/8AH4egfJ9e.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/8AH4egfJ9e.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180814/kbbfahCmbm.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180814/kbbfahCmbm.png?imageslim">
+</p>
 
 
 

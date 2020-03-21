@@ -23,7 +23,9 @@ Ubuntu 默认不支持命令 ll，必须用 ls -l，这样使用起来不是很�
 
 操作如下：
 
-- `vim ~/.bashrc` 编辑文件   加入 `alias ll='ls -l'` 如图![](http://images.iterate.site/blog/image/181022/IJ8bkjhGC4.png?imageslim){ width=55% }
+- `vim ~/.bashrc` 编辑文件   加入 `alias ll='ls -l'` 如图<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181022/IJ8bkjhGC4.png?imageslim">
+</p>
 
 - 保存。 `source ~/.bashrc` 立即生效
 

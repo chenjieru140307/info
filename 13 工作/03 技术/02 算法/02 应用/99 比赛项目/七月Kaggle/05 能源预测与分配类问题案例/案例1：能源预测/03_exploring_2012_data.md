@@ -365,7 +365,9 @@ plt.plot(alphas, avg_MSE)
 ```
 
 
-![](http://images.iterate.site/blog/image/180725/53KgdkaGd4.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180725/53KgdkaGd4.png?imageslim">
+</p>
 
 
 

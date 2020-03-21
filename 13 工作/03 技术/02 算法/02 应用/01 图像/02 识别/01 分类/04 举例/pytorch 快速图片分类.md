@@ -156,7 +156,9 @@ learn=cnn_learner(data,models.resnet34,metrics=error_rate)
 
 cnn_learner 使用来自给定架构的预训练模型构建 CNN 学习器、来自预训练模型的学习参数用于初始化模型，允许更快的收敛和高精度。我们使用的 CNN 架构是 ResNet34。下图是一个典型的 CNN 架构。
 
-![](http://images.iterate.site/blog/image/20190711/BGyNFy4HtMDI.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190711/BGyNFy4HtMDI.png?imageslim">
+</p>
 
 
 ResNet34后面的数字可以随意更改，比如改成 ResNet50。数字越大，GPU内存消耗越高。

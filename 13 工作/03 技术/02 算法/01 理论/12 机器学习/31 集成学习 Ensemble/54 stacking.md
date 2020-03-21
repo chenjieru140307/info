@@ -23,7 +23,9 @@ date: 2018-08-03 12:49:44
 
 Kaggle机器学习之模型融合（stacking）心得
 
-![](http://images.iterate.site/blog/image/180803/g14emlcIeb.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/g14emlcIeb.png?imageslim">
+</p>
 
 这张图，如果你能一下子就能看懂，那就 OK。
 
@@ -33,7 +35,9 @@ Kaggle机器学习之模型融合（stacking）心得
 
 我把图改了一下：
 
-![](http://images.iterate.site/blog/image/180803/2b7be562be.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/2b7be562be.png?imageslim">
+</p>
 
 对于每一轮的 5-fold，Model 1都要做满 5 次的训练和预测。
 
@@ -76,7 +80,9 @@ Train Data有 890 行。(请对应图中的上层部分）
 
 Kaggle机器学习之模型融合（stacking）心得
 
-![](http://images.iterate.site/blog/image/180803/8i7jKCkG3j.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/8i7jKCkG3j.png?imageslim">
+</p>
 
 雷锋网版权文章，未经授权禁止转载。详情见[转载须知](http://dwz.cn/4ErMxZ)。
 

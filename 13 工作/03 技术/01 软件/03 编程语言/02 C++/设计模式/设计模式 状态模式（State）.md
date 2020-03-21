@@ -34,7 +34,9 @@ State模式就是被用来解决上面列出的两个问题的，在 State 模�
 图 2-1: State Pattern 结构图
 
 
-![](http://images.iterate.site/blog/image/180727/ChG7j7lICe.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/ChG7j7lICe.png?imageslim">
+</p>
 
 ## 实现
 

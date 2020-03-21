@@ -11,12 +11,18 @@ date: 2018-10-31
 
 # 【OpenCV】OpenCV轮廓检测，计算物体旋转角度
 
-![](http://images.iterate.site/blog/image/181031/6k4hl17Am2.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/6k4hl17Am2.png?imageslim">
+</p>
 
 
-![](http://images.iterate.site/blog/image/181031/5K7E46Gg34.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/5K7E46Gg34.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/181031/5KFbdF9hji.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/5KFbdF9hji.png?imageslim">
+</p>
 
 
 OpenCV轮廓检测，计算物体旋转角度
@@ -266,7 +272,9 @@ int main()
 
 
 
-![](http://images.iterate.site/blog/image/181031/GgC8Elib7K.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/GgC8Elib7K.png?imageslim">
+</p>
 
 
 

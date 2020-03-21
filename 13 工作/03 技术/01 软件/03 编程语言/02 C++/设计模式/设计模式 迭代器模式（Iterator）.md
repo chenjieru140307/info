@@ -111,7 +111,9 @@ Iterator 模式也正是用来解决对一个聚合对象的遍历问题，将�
 Iterator模式典型的结构图为:
 
 
-![](http://images.iterate.site/blog/image/180727/jK5G7k7ic1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/jK5G7k7ic1.png?imageslim">
+</p>
 
 图 2-1： Iterator Pattern 结构图
 

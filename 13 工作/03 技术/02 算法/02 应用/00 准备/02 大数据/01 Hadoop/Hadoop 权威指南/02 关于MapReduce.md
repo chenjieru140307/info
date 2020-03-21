@@ -17,12 +17,16 @@ MapReduce是一种可用于数据处理的编程模型。该模型比较简单�
 
 范例 2-1显示了一行采样数据，其中重要字段加了注释。这一行数据被分成很多行以突出每个字段，但在实际文件中，这些字段合并成一行，没有任何分隔符。
 
-![](http://images.iterate.site/blog/image/180625/BJc0421l3B.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/BJc0421l3B.png?imageslim">
+</p>
 
 
 数据文件按照日期和气象站进行组织。从 1901 年到 2001 年，每一年都有一个目 录，每一个目录中包含各个气象站该年气象数据的打包文件及其说明文件。例如，1999年对应文件夹下面就包含下面的记录：
 
-![](http://images.iterate.site/blog/image/180625/meC7eEBeB6.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/meC7eEBeB6.png?imageslim">
+</p>
 
 气象台有成千上万个，所以整个数据集由大量的小文件组成。通常情况下，处理 少量的大型文件更容易、更有效，因此，这些数据需要经过预处理，将每年的数据文件拼接成一个单独的文件。具体做法请参见附录 C。<span style="color:red;">怎么拼接的？</span>
 
@@ -32,7 +36,9 @@ MapReduce是一种可用于数据处理的编程模型。该模型比较简单�
 
 传统处理按行存储数据的工具是范例 2-2 是一个程序脚本，用于计算每年的最高气温。
 
-![](http://images.iterate.site/blog/image/180625/H8A5lgmDkL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/H8A5lgmDkL.png?imageslim">
+</p>
 
 <span style="color:red;">看来 bash 也要会写的，因为最初的处理还是需要部分的脚本来处理的。</span>
 
@@ -40,7 +46,9 @@ MapReduce是一种可用于数据处理的编程模型。该模型比较简单�
 
 下面是某次运行结果的起始部分:
 
-![](http://images.iterate.site/blog/image/180625/6KcgF4haCH.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/6KcgF4haCH.png?imageslim">
+</p>
 
 由于源文件中的气温值被放大 10 倍，所以 1901 年的最高气温是 31.7°C (20世纪初记录的气温数据比较少，所以这个结果也是可能的)。使用亚马逊的 EC2 High-CPU Extra Large Instance 运行这个程序，只需要 42 分钟就可以处理完一个世纪的气象数据，找出最高气温。
 
@@ -68,32 +76,44 @@ map 阶段的输入是 NCDC 原始数据。我们选择文本格式作为输入�
 
 为了全面了解 map 的工作方式，我们考虑以下输入数据的示例数据（考虑到篇 幅，去除了一些未使用的列，并用省略号表示）：
 
-![](http://images.iterate.site/blog/image/180625/m5BJACAKEg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/m5BJACAKEg.png?imageslim">
+</p>
 
 
 这些行以键-值对的方式作为 map 函数的输入：
 
-![](http://images.iterate.site/blog/image/180625/GL1HlHec5H.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/GL1HlHec5H.png?imageslim">
+</p>
 
 键（key）是文件中的行偏移量，map 函数并不需要这个信息，所以将其忽略。map 函数的功能仅限干提取年份和气温信息（以粗体显示），并将它们作为输出（气温值已用整数表示）：
 
-![](http://images.iterate.site/blog/image/180625/901aLk4315.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/901aLk4315.png?imageslim">
+</p>
 
 
 map 函数的输出经由 MapReduce 框架处理后，最后发送到 reduce 函数。这个处理过程基于键来对键-值对进行排序和分组。因此，在这一示例中，reduce函数看到 的是如下输入：嗯，剩下的就是排序了。
 
-![](http://images.iterate.site/blog/image/180625/3DEjg52BcA.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/3DEjg52BcA.png?imageslim">
+</p>
 
 每一年份后紧跟着一系列气温数据。reduce 函数现在要做的是遍历整个列表并从 中找出最大的读数：
 
-![](http://images.iterate.site/blog/image/180625/EJj5k59G4b.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/EJj5k59G4b.png?imageslim">
+</p>
 
 这是最终输出结果，每一年的全球最高气温记录。
 
 
 整个数据流如图 2-1 所示。在图的底部是 Unix 管线，用于模拟整个 MapReduce 的流程，部分内容将在讨论 Hadoop Streaming 时再次涉及。
 
-![](http://images.iterate.site/blog/image/180625/DjJ7h0Gkm1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/DjJ7h0Gkm1.png?imageslim">
+</p>
 
 <span style="color:red;">嗯，大概知道了，但是，为什么这个就叫做 map 了？</span>
 
@@ -104,7 +124,9 @@ map 函数的输出经由 MapReduce 框架处理后，最后发送到 reduce 函
 
 范例 2-3显示了我们的 map函数实现。
 
-![](http://images.iterate.site/blog/image/180625/leJFCD23Ag.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180625/leJFCD23Ag.png?imageslim">
+</p>
 
 范例 2-3.查找最高气温的 Mapper 类
 ```java

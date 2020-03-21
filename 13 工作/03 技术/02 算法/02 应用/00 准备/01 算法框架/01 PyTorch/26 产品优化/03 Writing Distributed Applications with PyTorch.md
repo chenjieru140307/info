@@ -110,10 +110,22 @@ Point-to-point communication is useful when we want a fine-grained control over 
 
 ## Collective Communication
 
-| ![](http://images.iterate.site/blog/image/20190629/2HVwxom8Pvsj.png?imageslim){ width=55% }Scatter | ![](http://images.iterate.site/blog/image/20190629/wnBBmn7n021v.png?imageslim){ width=55% }Gather |
+| <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/2HVwxom8Pvsj.png?imageslim">
+</p>Scatter | <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/wnBBmn7n021v.png?imageslim">
+</p>Gather |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![](http://images.iterate.site/blog/image/20190629/gCzDXzvT6RXj.png?imageslim){ width=55% }Reduce | ![](http://images.iterate.site/blog/image/20190629/A5E7TsW7I7ew.png?imageslim){ width=55% }All-Reduce |
-| ![](http://images.iterate.site/blog/image/20190629/5wB1mYbHRU4I.png?imageslim){ width=55% }Broadcast | ![](http://images.iterate.site/blog/image/20190629/xG7SgzSHyXcc.png?imageslim){ width=55% }All-Gather |
+| <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/gCzDXzvT6RXj.png?imageslim">
+</p>Reduce | <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/A5E7TsW7I7ew.png?imageslim">
+</p>All-Reduce |
+| <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/5wB1mYbHRU4I.png?imageslim">
+</p>Broadcast | <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190629/xG7SgzSHyXcc.png?imageslim">
+</p>All-Gather |
 
 As opposed to point-to-point communcation, collectives allow for communication patterns across all processes in a **group**. A group is a subset of all our processes. To create a group, we can pass a list of ranks to `dist.new_group(group)`. By default, collectives are executed on the all processes, also known as the **world**. For example, in order to obtain the sum of all tensors at all processes, we can use the`dist.all_reduce(tensor, op, group)` collective.
 

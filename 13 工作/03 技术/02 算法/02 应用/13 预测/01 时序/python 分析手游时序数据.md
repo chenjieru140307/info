@@ -768,13 +768,19 @@ Holt-Winters模型在第二序列上的偏差
 
 - 右边的红色曲线不平稳，因为均值随着时间增加：
 
-  ![](http://images.iterate.site/blog/image/20190704/xPfHO9cTwx4p.png?imageslim){ width=55% }
+  <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/xPfHO9cTwx4p.png?imageslim">
+</p>
 
 - 这一次，右边的红色曲线在方差方面的运气不好：
-  ![](http://images.iterate.site/blog/image/20190704/K15adjUmFjQa.png?imageslim){ width=55% }
+  <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/K15adjUmFjQa.png?imageslim">
+</p>
 
 - 最后，第 i 项和第(i+m)项的协方差函数不应该是时间的函数。随着时间推移，右边的红色曲线更紧了。因此，协方差不是常量。
-  ![](http://images.iterate.site/blog/image/20190704/rlh6RwxUsYSv.png?imageslim){ width=55% }
+  <p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/rlh6RwxUsYSv.png?imageslim">
+</p>
 
 为什么平稳性如此重要？我们假定未来的统计性质不会和现在观测到的不同，在平稳序列上做出预测很容易。大多数时序模型多多少少建模和预测这些性质（例如均值和方差），这就是如果原序列不平稳，预测会出错的原因。不幸的是，我们在教科书以外的地方见到的大多数时序都是不平稳的。不过，我们可以（并且应该）改变这一点。
 
@@ -812,13 +818,21 @@ for rho in [0, 0.6, 0.9, 1]:
 plotProcess(rho=rho)
 ```
 
-![](http://images.iterate.site/blog/image/20190704/5UQHxGI36Y0o.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/5UQHxGI36Y0o.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/20190704/Wn7hmIsOzmpv.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/Wn7hmIsOzmpv.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/20190704/YclVmwGIuOCP.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/YclVmwGIuOCP.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/20190704/J7NqqDu1cI98.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/J7NqqDu1cI98.png?imageslim">
+</p>
 
 第一张图上你可以看到之前的平稳的白噪声。第二张图的ρ值增加到 0.6，导致周期更宽了，但总体上还是平稳的。第三张图更偏离均值 0，但仍以其为中心振荡。最后，ρ值为 1 时我们得到了随机游走过程——不平稳的时序。
 

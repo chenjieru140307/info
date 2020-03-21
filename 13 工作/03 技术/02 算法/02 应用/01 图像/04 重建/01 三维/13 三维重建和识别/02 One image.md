@@ -11,7 +11,9 @@ date: 2018-08-18 16:34:33
 
 l Difficult and with ambiguity
 
-![](http://images.iterate.site/blog/image/180817/eKIk9hcG8c.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/eKIk9hcG8c.png?imageslim">
+</p>
 
 
 
@@ -23,7 +25,9 @@ http://ai.stanford.edu/~asaxena/reconstruction3d/
 
 使用一些预先知道的知识：
 
-![](http://images.iterate.site/blog/image/180817/a1HA2BdA4e.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180817/a1HA2BdA4e.png?imageslim">
+</p>
 
 检测到人脸位置之后，我知道左眼右眼的大概位置，我们会根据不同的角度来恢复坐标位置。
 

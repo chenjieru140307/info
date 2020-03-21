@@ -54,7 +54,9 @@ date: 2018-08-21 18:16:23
 最细粒度的需要知道词是什么样的含义，这样就需要对词进行编码，编码成一个向量，你需要这些向量能够保持住词的一些信息，比如我希望它能保持住一些词的一些 similarity，一些相似性，相关性。比如，下面的青蛙：这些词，实际上是有一些相关性的，我们希望这个在表示成最后的 word vector的时候呢，希望它们能够保持这些相关性。
 
 
-![](http://images.iterate.site/blog/image/180727/DK2DGl8lhB.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/DK2DGl8lhB.png?imageslim">
+</p>
 
 
 
@@ -67,7 +69,9 @@ date: 2018-08-21 18:16:23
 左：英语                                                                              右：西班牙语
 
 
-![](http://images.iterate.site/blog/image/180727/6Ji2fEIF73.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/6Ji2fEIF73.png?imageslim">
+</p>
 
 
 
@@ -352,7 +356,9 @@ one-hot 有好处也有坏处，one-hot 会产生一种对句子的离散的表�
 而且模型参数数量与 n 的关系如下：如果是一篇 20 万词的文本：
 
 
-![](http://images.iterate.site/blog/image/180727/8K5A5h3leF.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/8K5A5h3leF.png?imageslim">
+</p>
 
 可见，维度不仅极度增长，而且增长之后是一个非常 sparse 稀疏的一个情况。那么有没有更好的办法呢？
 
@@ -453,7 +459,9 @@ Bi-gram/2-gram 即只与它前面的这个词有依赖关系
 banking附近的词将会代表 banking 的含义：
 
 
-![](http://images.iterate.site/blog/image/180727/D32BD2Fdg5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/D32BD2Fdg5.png?imageslim">
+</p>
 
 比如 banking 就会牵涉到 government 等。
 
@@ -484,7 +492,9 @@ Word-Document 的共现矩阵主要用于发现主题(topic)，用于主题模�
 如 I 的左右两边分别看 1 个词，左边没有，右边是有 2 个 like，有 1 个 enjoy。
 
 
-![](http://images.iterate.site/blog/image/180727/A63A0h77lg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/A63A0h77lg.png?imageslim">
+</p>
 
 可以看出，这个是一个对称的矩阵。
 
@@ -525,17 +535,23 @@ Word-Document 的共现矩阵主要用于发现主题(topic)，用于主题模�
 最直接的想法：用 SVD 对共现矩阵向量做降维
 
 
-![](http://images.iterate.site/blog/image/180727/EHmhjEBD5l.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/EHmhjEBD5l.png?imageslim">
+</p>
 
 SVD分解的公式：**没明白？之前的 SVD 的分解没有学到。学了之后这里补充下。**
 
 
-![](http://images.iterate.site/blog/image/180727/77lAmEhi5a.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/77lAmEhi5a.png?imageslim">
+</p>
 
 然后分解后做一个可视化，为了可视化，对于每个词而言，我只取了前两个维度的信息。**没明白？U是什么？前两个维度的信息指的是什么？**
 
 
-![](http://images.iterate.site/blog/image/180727/mDjfl64J36.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/mDjfl64J36.png?imageslim">
+</p>
 
 从上面的图可发现：I与 enjoy 和 like 的距离好像是差不多的，而且距离 like 最近的好像就是 enjoy。所以只是通过这样的简单的梳理，我就可以捕获到 like 和 enjoy 之间的 similarity。**利害。但是看到这里，我就想知道那个 window length 到底取多少比较好？一般取多少？而且，对于中文来说怎么处理？是分次之后像这样进行处理吗？**
 
@@ -581,9 +597,13 @@ SVD分解的公式：**没明白？之前的 SVD 的分解没有学到。学了�
 是做什么的：我想用一个长度为 N 的滑动窗口在我的语料中滑动，当我每取出来 N 个连在一起的词的时候，我用前 N-1个词去预测后面的一个词。所以如果文章很长，我就有很多的这种 N 个词的串，每个都可以进行一次训练。
 
 
-![](http://images.iterate.site/blog/image/180727/gK221ffF00.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/gK221ffF00.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180727/K81j1g92cj.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/K81j1g92cj.png?imageslim">
+</p>
 
 look-up Table 是一个查找表
 
@@ -636,7 +656,9 @@ look-up Table 是一个查找表
 基本上是对上面的结构又介绍了下。
 
 
-![](http://images.iterate.site/blog/image/180727/Kc2ki4e0bD.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/Kc2ki4e0bD.png?imageslim">
+</p>
 
 每个训练样本的计算复杂度：\(N * D + N * D * H + H * V\)
 
@@ -653,7 +675,9 @@ look-up Table 是一个查找表
 先理解一下原理，使用的话，可以直接调用。
 
 
-![](http://images.iterate.site/blog/image/180727/IBb4Il04kA.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/IBb4Il04kA.png?imageslim">
+</p>
 
 
 * 无隐层
@@ -678,7 +702,9 @@ $$J=\sum_{i\in corpus,j\in context(i)}^{ }log(\frac{exp(w_i^T\widetilde{w_I})}{\
 W=“足球”时的相关记号示意图
 
 
-![](http://images.iterate.site/blog/image/180727/AF70FBDJ91.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/AF70FBDJ91.png?imageslim">
+</p>
 
 
 
@@ -696,7 +722,9 @@ W=“足球”时的相关记号示意图
 
 
 
-![](http://images.iterate.site/blog/image/180727/9EGhlK668l.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/9EGhlK668l.png?imageslim">
+</p>
 
 
 
@@ -755,7 +783,9 @@ P(w|context(w))： 一个正样本，V-1个负样本，对负样本做采样
 \(l_1,l_2,\cdots ,l_N\)组成了[0,1]间的剖分
 
 
-![](http://images.iterate.site/blog/image/180727/aIB2Ial3dK.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/aIB2Ial3dK.png?imageslim">
+</p>
 
 将[0,1]划分为 M=10^8等分，每次随机生成一个[1,M-1]间的整数，看落在那个词对应的剖分上。
 
@@ -765,7 +795,9 @@ P(w|context(w))： 一个正样本，V-1个负样本，对负样本做采样
 
 
 
-![](http://images.iterate.site/blog/image/180727/3B25hLK90F.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/3B25hLK90F.png?imageslim">
+</p>
 
 
 * 无隐层
@@ -792,12 +824,16 @@ $$p(w_k|w_t)=\frac{exp(\widetilde{w}_k^Tw_t)}{\sum_{m=1}^{V}exp(\widetilde{w}_m^
 
 ### 词嵌入可视化: 公司 — CEO
 
-![](http://images.iterate.site/blog/image/180727/a4eEL8e23m.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/a4eEL8e23m.png?imageslim">
+</p>
 
 
 ### 词嵌入可视化: 词向
 
-![](http://images.iterate.site/blog/image/180727/95IhII0HEg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/95IhII0HEg.png?imageslim">
+</p>
 
 
 
@@ -807,14 +843,18 @@ $$p(w_k|w_t)=\frac{exp(\widetilde{w}_k^Tw_t)}{\sum_{m=1}^{V}exp(\widetilde{w}_m^
 
 
 
-![](http://images.iterate.site/blog/image/180727/2HCLadkEmC.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/2HCLadkEmC.png?imageslim">
+</p>
 
 
 
 
 ### 词嵌入效果评估: 词类比任务
 
-![](http://images.iterate.site/blog/image/180727/9fFjak9cAi.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/9fFjak9cAi.png?imageslim">
+</p>
 
 19544个类比问题
 
@@ -834,7 +874,9 @@ $$p(w_k|w_t)=\frac{exp(\widetilde{w}_k^Tw_t)}{\sum_{m=1}^{V}exp(\widetilde{w}_m^
 
 
 
-![](http://images.iterate.site/blog/image/180727/60KihC5hD3.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/60KihC5hD3.png?imageslim">
+</p>
 
 
 * SVD：只保留出现次数最大的 1 万个词，记为\(X_{trunc}\)
@@ -844,7 +886,9 @@ $$p(w_k|w_t)=\frac{exp(\widetilde{w}_k^Tw_t)}{\sum_{m=1}^{V}exp(\widetilde{w}_m^
 ## 词嵌入效果评估: 作为特征用于 CRF 实体识别
 
 
-![](http://images.iterate.site/blog/image/180727/cIlL7kfG62.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/cIlL7kfG62.png?imageslim">
+</p>
 
 NER任务
 
@@ -867,7 +911,9 @@ NER任务
 
 
 
-![](http://images.iterate.site/blog/image/180727/J1mKbHJdlc.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/J1mKbHJdlc.png?imageslim">
+</p>
 
 GloVe随着迭代次数增加，精度提升
 
@@ -960,15 +1006,21 @@ Word2Vec未使用类似迭代次数的 Epoch，用 Negative Samples模拟
 
 
 
-![](http://images.iterate.site/blog/image/180727/H2f6ak8Jja.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/H2f6ak8Jja.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180727/HhjHimKjiL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/HhjHimKjiL.png?imageslim">
+</p>
 
 
 
-![](http://images.iterate.site/blog/image/180727/C43dj1f98k.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/C43dj1f98k.png?imageslim">
+</p>
 
 
 
@@ -980,7 +1032,9 @@ Word2Vec未使用类似迭代次数的 Epoch，用 Negative Samples模拟
 https://www.zybuluo.com/hanxiaoyang/note/472184
 
 
-![](http://images.iterate.site/blog/image/180727/g9JiGabKKB.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/g9JiGabKKB.png?imageslim">
+</p>
 
 ## Word2vec+CNN做文本分类
 
@@ -1002,7 +1056,9 @@ https://www.zybuluo.com/hanxiaoyang/note/472184
 https://www.zybuluo.com/hanxiaoyang/note/472184
 
 
-![](http://images.iterate.site/blog/image/180727/j2B3IK4Am3.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/j2B3IK4Am3.png?imageslim">
+</p>
 
 搜狗全网新闻语料地址 ：
 http://www.sogou.com/labs/resource/ca.php

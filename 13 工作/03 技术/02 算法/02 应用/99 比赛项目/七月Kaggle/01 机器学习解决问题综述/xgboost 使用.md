@@ -5,22 +5,30 @@ date: 2018-07-19 22:29:23
 ---
 
 非常不建议在 XGBoost 里面用他的缺省值处理方法
-![](http://images.iterate.site/blog/image/180718/C2DHI1elbg.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180718/C2DHI1elbg.png?imageslim">
+</p>
 还是要一个 feature，一个 feature 的手工做处理比较好。
 
 
 
-![](http://images.iterate.site/blog/image/180718/dhlD6kHgHc.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180718/dhlD6kHgHc.png?imageslim">
+</p>
 这个可以知道每个特征的重要性。
 
 看起来 XGBoost 还是很好用的。
 最简单的例子：guide-python/basic_walkthrough.py 里面有讲一些基本的操作。
 然后 guide-python 里面还有一些例子。比如 custom_objective.py 这个是教你怎么自定义 loss function 的。
 注意：
-![](http://images.iterate.site/blog/image/180718/D710cdeHhD.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180718/D710cdeHhD.png?imageslim">
+</p>
 如果你要自己制定 loss function 的话，你要保证你的 loss function 是可导的，而且，你要告诉他一阶导数 grad 和二阶倒数 hess。
 
-![](http://images.iterate.site/blog/image/180718/3klEbE2jHc.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180718/3klEbE2jHc.png?imageslim">
+</p>
 这个是交叉验证的使用案例。
 
 sklearn_parallel.py 这个是讲怎么用 sklearn 并行的调用 xgboost

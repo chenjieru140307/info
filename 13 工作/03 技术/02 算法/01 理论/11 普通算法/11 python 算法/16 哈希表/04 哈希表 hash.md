@@ -118,13 +118,17 @@ class Map:
 
 开放定址法就是产生冲突之后去寻找下一个空闲的空间。函数定义为：
 
-![](http://images.iterate.site/blog/image/180803/AlJFDC5IJK.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/AlJFDC5IJK.png?imageslim">
+</p>
 
 其中，`hash(key)`是哈希函数，`di`是增量序列，`i`为已冲突的次数。
 
 - 线性探测法
 
-![](http://images.iterate.site/blog/image/180803/Elijh82i7d.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/Elijh82i7d.png?imageslim">
+</p>
 
 即`di=i`，或者其它线性函数。相当于逐个探测存放地址的表，直到查找到一个空单元，然后放置在该单元。
 
@@ -176,7 +180,9 @@ class Map:
 
 - 平方探测
 
-![](http://images.iterate.site/blog/image/180803/5E0d5LDcgl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180803/5E0d5LDcgl.png?imageslim">
+</p>
 
 这称作平方探测法，一个道理，也是查找到一个空单元然后放进去。这里就不一步一步说明了=。=
 

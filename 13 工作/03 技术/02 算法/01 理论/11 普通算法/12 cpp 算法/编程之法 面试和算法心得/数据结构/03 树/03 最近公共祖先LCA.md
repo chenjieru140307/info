@@ -15,7 +15,9 @@ date: 2018-07-08 07:23:02
 
 举个例子，如针对下图所示的一棵普通的二叉树来讲：
 
-![](http://images.iterate.site/blog/image/180707/li3BcaIdkb.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180707/li3BcaIdkb.jpg?imageslim">
+</p>
 
 结点 3 和结点 4 的最近公共祖先是结点 2，即 LCA（3 4）=2 。在此，需要注意到当两个结点在同一棵子树上的情况，如结点 3 和结点 2 的最近公共祖先为 2，即 LCA（3，2）=2。同理：LCA（5，6）=4，LCA（6，10）=1。
 
@@ -27,7 +29,9 @@ date: 2018-07-08 07:23:02
 
 在当这棵树是二叉查找树的情况下，如下图：
 
-![](http://images.iterate.site/blog/image/180707/b68CAgf6eE.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180707/b68CAgf6eE.jpg?imageslim">
+</p>
 
 那么从树根开始：
 
@@ -117,7 +121,9 @@ Tarjan算法 （以发现者 Robert Tarjan命名）是一个在图中寻找强�
 
 举一个例子，如下图（不同颜色的结点相当于不同的集合）：
 
-![](http://images.iterate.site/blog/image/180707/kDhIf0232g.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180707/kDhIf0232g.jpg?imageslim">
+</p>
 
 假设遍历完 10 的孩子，要处理关于 10 的请求了，取根节点到当前正在遍历的节点的路径为关键路径，即 1-3-8-10，集合的祖先便是关键路径上距离集合最近的点。
 
@@ -134,7 +140,9 @@ Tarjan算法 （以发现者 Robert Tarjan命名）是一个在图中寻找强�
 
 但关键是 Tarjan算法是怎么想出来的呢？再给定下图，你是否能看出来：分别从结点 1 的左右子树当中，任取一个结点，设为 u、v，这两个任意结点 u、v的最近公共祖先都为 1。
 
-![](http://images.iterate.site/blog/image/180707/h3lf088e71.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180707/h3lf088e71.jpg?imageslim">
+</p>
 
 于此，我们可以得知：若两个结点 u、v分别分布于某节点 t 的左右子树，那么此节点 t即为 u 和 v 的最近公共祖先。更进一步，考虑到一个节点自己就是 LCA 的情况，得知：
 
@@ -178,7 +186,9 @@ RMQ，全称为 Range Minimum Query，顾名思义，则是区间最值查询，
 
 如下图所示，RMQA(2,7 )则表示求数组 A 中从 A[2]~A[7]这段区间中的最小值：
 
-![](http://images.iterate.site/blog/image/180707/laia0l7L72.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180707/laia0l7L72.jpg?imageslim">
+</p>
 
 很显然，从上图中，我们可以看出最小值是 A[3] = 1，所以也就不难得出最小值的索引值 RMQA(2,7) = 3。
 
@@ -212,13 +222,17 @@ void process1(int M[MAXN][MAXN], int A[MAXN], int N)
 
 * 一个比较有趣的点子是把向量分割成 sqrt(N)大小的段。我们将在 M[0,sqrt(N)-1]为每一个段保存最小值的位置。如此，M可以很容易的在 O(N)时间内预处理。
 
-![](http://images.iterate.site/blog/image/180707/K3D3D4Ic5I.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180707/K3D3D4Ic5I.jpg?imageslim">
+</p>
 
 * 一个更好的方法预处理 RMQ 是对 2^k 的长度的子数组进行动态规划。我们将使用数组 M[0, N-1][0, logN]进行保存，其中 M[ i ][ j ] 是以 i 开始，长度为 2^j 的子数组的最小值的索引。这就引出了咱们接下来要介绍的 Sparse Table (ST) algorithm。
 
 ##### 3.2.2、Sparse Table (ST) algorithm
 
-![](http://images.iterate.site/blog/image/180707/m45megiK1m.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180707/m45megiK1m.jpg?imageslim">
+</p>
 
 在上图中，我们可以看出：
 * 在 A[1]这个长度为 2^0的区间内，最小值即为 A[1] = 4，故最小值的索引 M[1][0]为 1；
@@ -227,7 +241,9 @@ void process1(int M[MAXN][MAXN], int A[MAXN], int N)
 
 为了计算 M[i][j]我们必须找到前半段区间和后半段区间的最小值。很明显小的片段有着 2^(j-1)长度，因此递归如下
 
-![](http://images.iterate.site/blog/image/180708/dcHhEELI5K.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/dcHhEELI5K.jpg?imageslim">
+</p>
 
 根据上述公式，可以写出这个预处理的递归代码，如下：
 
@@ -254,7 +270,9 @@ void process2(int M[MAXN][LOGMAXN], int A[MAXN], int N)
 
 为了计算 RMQA(i, j)，我们可以使用下面的公式：
 
-![](http://images.iterate.site/blog/image/180708/7KKD5E39Dd.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/7KKD5E39Dd.jpg?imageslim">
+</p>
 
 故，综合来看，咱们预处理的时间复杂度从 O(N3)降低到了 O(N logN)，查询的时间复杂度为 O(1)，所以最终的整体复杂度为：\<O(N logN), O(1)\>。
 
@@ -262,9 +280,13 @@ void process2(int M[MAXN][LOGMAXN], int A[MAXN], int N)
 
 现在，让我们看看怎样用 RMQ 来计算 LCA 查询。事实上，我们可以在线性时间里将 LCA 问题规约到 RMQ 问题，因此每一个解决 RMQ 的问题都可以解决 LCA 问题。让我们通过例子来说明怎么规约的：
 
-![](http://images.iterate.site/blog/image/180708/9F262A8JL8.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/9F262A8JL8.jpg?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180708/j311Ha7CHI.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/j311Ha7CHI.jpg?imageslim">
+</p>
 
 注意 LCAT(u, v)是在对 T 进行 dfs 过程当中在访问 u 和 v 之间离根结点最近的点。因此我们可以考虑树的欧拉环游过程 u 和 v 之间所有的结点，并找到它们之间处于最低层的结点。为了达到这个目的，我们可以建立三个数组：
 
@@ -274,7 +296,9 @@ void process2(int M[MAXN][LOGMAXN], int A[MAXN], int N)
 
 假定 H[u]< H[v](否则你要交换 u 和 v)。可以很容易的看到 u 和 v 第一次出现的结点是 E[H[u]..H[v]]。现在，我们需要找到这些结点中的最低层。为了达到这个目的，我们可以使用 RMQ。因此 LCAT(u, v) = E[RMQL(H[u], H[v])] ,RMQ返回的是索引，下面是 E,L,H数组：
 
-![](http://images.iterate.site/blog/image/180708/bKhg6fG027.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/bKhg6fG027.jpg?imageslim">
+</p>
 
 注意 L 中连续的元素相差为 1。
 
@@ -286,9 +310,13 @@ void process2(int M[MAXN][LOGMAXN], int A[MAXN], int N)
 
 下面是一个例子：
 
-![](http://images.iterate.site/blog/image/180708/20gLD8J56K.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/20gLD8J56K.jpg?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180708/GDBeEaKL36.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/GDBeEaKL36.jpg?imageslim">
+</p>
 
 现在我们需要做的仅仅是用线性时间计算 C(A)。这个可以使用栈来实现。
 
@@ -318,7 +346,9 @@ RMQ和 LCA 是密切相关的问题，因为它们之间可以相互规约。有
 
 注意具有 N 个区间元素的线段树的高度为[logN] + 1。下面是区间[0,9]的线段树：
 
-![](http://images.iterate.site/blog/image/180708/5Ee9j71aIm.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/5Ee9j71aIm.jpg?imageslim">
+</p>
 
 线段树和堆具有相同的结构，因此我们定义 x 是一个非叶结点，那么左孩子结点为 2*x，而右孩子结点为 2*x+1。想要使用线段树解决 RMQ 问题，我们则要要使用数组 M[1, 2 * 2[logN] + 1]，这里 M[i]保存结点 i 区间最小值的位置。初始时 M 的所有元素为-1。树应当用下面的函数进行初始化(b和 e 是当前区间的范围)：
 

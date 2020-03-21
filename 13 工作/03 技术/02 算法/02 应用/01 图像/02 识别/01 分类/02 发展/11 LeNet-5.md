@@ -31,11 +31,10 @@ LeNet-5 网络参数配置：
 > - $C_3$ 卷积层可训练参数并未直接连接 $S_2$ 中所有的特征图（Feature Map），而是采用如下图所示的采样特征方式进行连接（稀疏连接），生成的 16 个通道特征图中分别按照相邻 3 个特征图、相邻 4 个特征图、非相邻 4 个特征图和全部 6 个特征图进行映射，得到的参数个数计算公式为 $6\times(25\times3+1)+6\times(25\times4+1)+3\times(25\times4+1)+1\times(25\times6+1)=1516$，<span style="color:red;">有点没大理解。</span>在原论文中解释了使用这种采样方式原因包含两点：限制了连接数不至于过大（当年的计算能力比较弱）；强制限定不同特征图的组合可以使映射得到的特征图学习到不同的特征模式。<span style="color:red;">这种限定特征图的组合来学习不同的特征模式的方式可行吗？</span>
 >
 > $S_2$ 与 $C_3$ 之间的特征图稀疏连接：
-> <center>
->
-> ![](http://images.iterate.site/blog/image/20190722/m0obhOpt91PU.jpg?imageslim){ width=55% }
->
-> </center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/m0obhOpt91PU.jpg?imageslim">
+</p>
+
 >
 > - $C_5$ 卷积层在示意图中显示为全连接层，原论文中解释这里实际采用的是卷积操作，只是刚好在 $5\times5$ 卷积后尺寸被压缩为 $1\times1​$，输出结果看起来和全连接很相似。
 

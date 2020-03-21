@@ -39,7 +39,9 @@ tags:
 MNIST 是一个入门级的计算机视觉数据集，它包含各种手写数字图片：
 
 
-![](http://images.iterate.site/blog/image/180727/57GgcK9b6D.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/57GgcK9b6D.png?imageslim">
+</p>
 
 它也包含每一张图片对应的标签，告诉我们这个是数字几．比如，上面这四张图片的标签分别是 5,0,4,1
 
@@ -99,7 +101,9 @@ MNIST 数据集的官网是 [Yann LeCun’s website](http://yann.lecun.com/exdb/
 
 每一张图片包含 28×28 像素．我们可以用一个数字数组来表示这张图片：
 
-![](http://images.iterate.site/blog/image/180727/Fd962eh5d9.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/Fd962eh5d9.png?imageslim">
+</p>
 
 
 我们把这个数组展开成一个向量，长度是 28×28=784 ．如何展开这个数组（数字间的顺序）不重要，只要保持各个图片采用相同的方式展开．从这个角度来看， MNIST数据集的图片就是在 784 维向量空间里面的点 , 并且拥有比较复杂的结构 ( 注意 : 此类数据的可视化是计算密集型的 ) ．（**什么意思？什么是可视化是计算密集型的？**）
@@ -109,7 +113,9 @@ MNIST 数据集的官网是 [Yann LeCun’s website](http://yann.lecun.com/exdb/
 因此，在 MNIST 训练数据集中， mnist.train.images 是一个形状为 [55000, 784] 的张量，第一个维度数字用来索引图片，第二个维度数字用来索引每张图片中的像素点．在此张量里的每一个元素，都表示某张图片里的某个像素的强度值，值介于 0 和 1 之间．（**之所以是 55000 行 784 列，而不是反过来，是因为每一列都是对应一个特征，每一行都是一个样本**）
 
 
-![](http://images.iterate.site/blog/image/180727/eDd4kjfidJ.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/eDd4kjfidJ.png?imageslim">
+</p>
 
 相对应的 MNIST 数据集的标签是介于 0 到 9 的数字，用来描述给定图片里表示的数字．为了用于这个教程，我们使标签数据是 "one-hot vectors" ．**一个 one-hot 向量除了某一位的数字是 1 以外其余各维度数字都是 0** ．所以在此教程中，数字 n 将表示成一个只有在第 n 维度（从 0 开始）数字为 1 的 10 维向量．比如，标签 0 将表示成( [1,0,0,0,0,0,0,0,0,0,0] ) ．因此， mnist.train.labels 是一个[55000, 10] 的数字矩阵．（**原来这个就是 one-hot，之前看到过，但是又忘记了，然后对这个一直有疑问，是的，labels是一个 55000*10的矩阵**）
 
@@ -128,7 +134,9 @@ softmax 回归（ softmax regression ）分两步：首先对输入被分类对�
 下面的图片显示了一个模型学习到的图片上每个像素对于特定数字类的权值．红色代表负权值，蓝色代表正权值．（**没想到这个都可以弄出来，怎么做到的？**）
 
 
-![](http://images.iterate.site/blog/image/180727/k0mKI98Db0.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/k0mKI98Db0.png?imageslim">
+</p>
 
 我们也需要引入额外的“证据”，可称之为偏置量 (bias ）。总的来说，我们希望它代表了与所输入向无关的判断证据．因此对于给定的输入图片 x 代表某数字 i 的总体证据可以表示为：
 [mathjax]
@@ -153,17 +161,23 @@ softmax 回归（ softmax regression ）分两步：首先对输入被分类对�
 偏置量，最后再输入到 softmax 函数中：
 
 
-![](http://images.iterate.site/blog/image/180727/71J6lcmfBh.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/71J6lcmfBh.png?imageslim">
+</p>
 
 如果把它写成一个方程，可以得到：（为什么得到的是这样的形式？\(W_{1,1}\)是什么？）
 
 
-![](http://images.iterate.site/blog/image/180727/ecmL9BIm34.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/ecmL9BIm34.png?imageslim">
+</p>
 
 我们也可以用向量表示这个计算过程：用矩阵乘法和向量相加．这有助于提高计算效率（也是一种更有效的思考方式）．
 
 
-![](http://images.iterate.site/blog/image/180727/aKi4E234JJ.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/aKi4E234JJ.png?imageslim">
+</p>
 
 更进一步，可以写成更加紧凑的方式：
 \[y=softmax(W_{k}+b)\]

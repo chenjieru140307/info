@@ -48,7 +48,9 @@ date: 2018-08-21 18:16:48
 每一个节点的内容代表胜利次数/游戏次数
 
 
-![](http://images.iterate.site/blog/image/180728/j9e53IeAjh.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180728/j9e53IeAjh.png?imageslim">
+</p>
 
 
 

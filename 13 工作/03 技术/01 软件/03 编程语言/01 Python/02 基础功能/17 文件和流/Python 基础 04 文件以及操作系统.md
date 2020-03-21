@@ -83,7 +83,9 @@ with open(patn) as f:
 
 这里有一张表格会更全一些：
 
-![](http://images.iterate.site/blog/image/180615/J2IFk4Cf9d.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180615/J2IFk4Cf9d.png?imageslim">
+</p>
 
 想要写文本到文件里的话，用 file 的 write 或 writelines 方法。比如，我们想给 prof_mod.py写一个没有空白行的版本：
 
@@ -117,9 +119,13 @@ with open('../examples/tmp.txt') as f:
 
 下面的方法，有需要再去看吧：
 
-![](http://images.iterate.site/blog/image/180615/H4KmD1eFd5.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180615/H4KmD1eFd5.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/180615/AGjjff0mJA.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180615/AGjjff0mJA.png?imageslim">
+</p>
 
 ==到底什么时候用 flush？ 这个 tell 和 seek 到底是怎么用的？什么时候会用 closed 来判断是否关闭？如果没有关闭怎么办？强制关闭吗？怎么做？==
 

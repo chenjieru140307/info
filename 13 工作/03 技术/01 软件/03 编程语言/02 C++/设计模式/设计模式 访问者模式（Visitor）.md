@@ -31,7 +31,9 @@ Visitor 模式则提供了一种解决方案:将更新(变更)封装到一个类
 我们通过 Visitor 模式解决上面的问题，其典型的结构图为:
 
 
-![](http://images.iterate.site/blog/image/180727/Ifl7d1Cd8h.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/Ifl7d1Cd8h.png?imageslim">
+</p>
 
 图 2-1: Visitor Pattern 结构图
 

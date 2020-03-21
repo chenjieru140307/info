@@ -14,7 +14,9 @@ date: 2018-10-27
 
 原图片举例（将红色矩形框部分裁剪出来））：
 
-![](http://images.iterate.site/blog/image/181027/gh4F6EDbib.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181027/gh4F6EDbib.png?imageslim">
+</p>
 
 
 
@@ -42,7 +44,9 @@ gradient = cv2.convertScaleAbs(gradient)
 
 执行完这一步，得到的图像如下：
 
-![](http://images.iterate.site/blog/image/181027/l8e7LfJLC7.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181027/l8e7LfJLC7.png?imageslim">
+</p>
 
 ## step3：去除图像上的噪声。
 
@@ -60,7 +64,9 @@ blurred = cv2.blur(gradient, (9, 9))
 
 执行完这一步，得到的图像如下：
 
-![](http://images.iterate.site/blog/image/181027/jF1Ef0dcaI.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181027/jF1Ef0dcaI.png?imageslim">
+</p>
 
 ## step4: 用白色填充昆虫身体的空白区域
 
@@ -75,7 +81,9 @@ closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
 
 处理之后的图像如下：
 
-![](http://images.iterate.site/blog/image/181027/IIACE06C7B.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181027/IIACE06C7B.png?imageslim">
+</p>
 
 
 ## step5: 去掉图上的一些小的白色斑点
@@ -93,7 +101,9 @@ closed = cv2.dilate(closed, None, iterations=4)
 
 执行完这步，得到的图形如下：
 
-![](http://images.iterate.site/blog/image/181027/8iJFBD3eGm.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181027/8iJFBD3eGm.png?imageslim">
+</p>
 
 ## step6：找出昆虫区域的轮廓。
 
@@ -151,14 +161,18 @@ cv2.waitKey(0)
 执行完这步得到的图形如下：
 
 
-![](http://images.iterate.site/blog/image/181027/hEDgFHhlIl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181027/hEDgFHhlIl.png?imageslim">
+</p>
 
 
 ## step7：裁剪。
 
 box里保存的是绿色矩形区域四个顶点的坐标。我将按下图红色矩形所示裁剪昆虫图像。找出四个顶点的 x，y坐标的最大最小值。新图像的高=maxY-minY，宽=maxX-minX。
 
-![](http://images.iterate.site/blog/image/181027/iIC3CAfaIl.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181027/iIC3CAfaIl.png?imageslim">
+</p>
 
 ```
 Xs = [i[0] for i in box]
@@ -175,7 +189,9 @@ cropImg = image[y1:y1+hight, x1:x1+width]
 
 裁剪出的图片如下：
 
-![](http://images.iterate.site/blog/image/181027/5Bbah84aJL.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181027/5Bbah84aJL.png?imageslim">
+</p>
 
 
 

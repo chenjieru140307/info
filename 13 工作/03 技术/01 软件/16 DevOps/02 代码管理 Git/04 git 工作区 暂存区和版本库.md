@@ -21,11 +21,15 @@ date: 2018-07-09 19:06:32
 
 .git 文件夹里面的内容如下：
 
-![](http://images.iterate.site/blog/image/180709/5iIEgCFj7d.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180709/5iIEgCFj7d.png?imageslim">
+</p>
 
 下面这个图展示了工作区、版本库中的暂存区和版本库之间的关系：
 
-![](http://images.iterate.site/blog/image/180709/Kgl7EAfeB3.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180709/Kgl7EAfeB3.png?imageslim">
+</p>
 
 
 图中左侧为工作区，右侧为版本库。在版本库中标记为 "index" 的区域是暂存区（stage, index），标记为 "master" 的是 master 分支所代表的目录树。

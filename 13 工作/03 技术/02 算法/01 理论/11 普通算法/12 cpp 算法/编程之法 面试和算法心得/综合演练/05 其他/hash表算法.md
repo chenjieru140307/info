@@ -101,7 +101,9 @@ HASH主要用于信息安全领域中加密算法，它把一些不同长度的�
 
 数组的特点是：寻址容易，插入和删除困难；而链表的特点是：寻址困难，插入和删除容易。那么我们能不能综合两者的特性，做出一种寻址容易，插入删除也容易的数据结构？答案是肯定的，这就是我们要提起的哈希表，哈希表有多种不同的实现方法，我接下来解释的是最常用的一种方法——拉链法，我们可以理解为“链表的数组”，如图：
 
-![](http://images.iterate.site/blog/image/180708/b24D7dmA68.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/b24D7dmA68.jpg?imageslim">
+</p>
 
 左边很明显是个数组，数组的每个成员包括一个指针，指向一个链表的头，当然这个链表可能为空，也可能元素很多。我们根据元素的一些特征把元素分配到不同的链表中去，也是根据这些特征，找到正确的链表，再从链表中找出这个元素。
 
@@ -139,7 +141,9 @@ index = (value * 2654435769) >> 28
 
 如果用这种斐波那契散列法的话，那上面的图就变成这样了：
 
-![](http://images.iterate.site/blog/image/180708/J4cecAB64E.jpg?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/J4cecAB64E.jpg?imageslim">
+</p>
 
 注：用斐波那契散列法调整之后会比原来的取摸散列法好很多。
 

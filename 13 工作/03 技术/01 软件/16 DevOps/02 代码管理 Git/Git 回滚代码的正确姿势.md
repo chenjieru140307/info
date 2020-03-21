@@ -12,7 +12,9 @@ date: 2018-12-15
 
 先看图：
 
-![](http://images.iterate.site/blog/image/20181215/VeyvLMIeb33h.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181215/VeyvLMIeb33h.png?imageslim">
+</p>
 
 
 

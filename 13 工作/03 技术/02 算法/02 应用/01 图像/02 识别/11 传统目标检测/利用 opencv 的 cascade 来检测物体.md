@@ -40,12 +40,16 @@ opencv人脸识别大家应该都听说过，本篇目的是利用 opencv 从视
 
 处理后得到如下所示图片：
 
-![](http://images.iterate.site/blog/image/181031/a321Ikc9eh.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/a321Ikc9eh.png?imageslim">
+</p>
 
 3. 负样本制作：如上操作类似，不过这里不要求尺寸一样，但是负样本图片中一定不要包含待识别的区域（如这里的：舌头）
   如下所示：
 
-![](http://images.iterate.site/blog/image/181031/J7I65kBbaa.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/J7I65kBbaa.png?imageslim">
+</p>
 
 
 
@@ -67,13 +71,17 @@ b. 负样本资源记录文件
 
 生成后删除最后一行的带有(neg.txt)的内容，让负样本资源记录文件内容如下类似所示：
 
-![](http://images.iterate.site/blog/image/181031/5he2hmE6eK.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/5he2hmE6eK.png?imageslim">
+</p>
 
 处理好后，将 negtxt 移动到上一级文件夹
 
 得到如图所示文件夹结构：
 
-![](http://images.iterate.site/blog/image/181031/d8acJJ7df8.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/d8acJJ7df8.png?imageslim">
+</p>
 
 5. 使用 opencv 提供的 opencv_createsamples.exe程序生成样本 vec 文件，新建批处理文件：createsamples.bat
   内容如下：
@@ -104,7 +112,9 @@ pause
 
 运行后会在 xml 文件夹生成如下文件：
 
-![](http://images.iterate.site/blog/image/181031/KI3k903J8h.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/KI3k903J8h.png?imageslim">
+</p>
 
 其中 cascade.xml是我们需要使用的分类器
 
@@ -157,7 +167,9 @@ cv2.destroyAllWindows()
 效果图如下所示：
 
 
-![](http://images.iterate.site/blog/image/181031/FH4A14clij.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/FH4A14clij.png?imageslim">
+</p>
 
 
 所有需要用到的文件下载地址：  http://download.csdn.net/download/qq_27063119/10238488  

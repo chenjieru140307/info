@@ -225,11 +225,15 @@ Python 元组包含了以下内置函数
 
 别急，我们先看看定义的时候 tuple 包含的 3 个元素：
 
-![](http://images.iterate.site/blog/image/20181206/b7dKEBhP6AET.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181206/b7dKEBhP6AET.png?imageslim">
+</p>
 
 当我们把 list 的元素`'A'`和`'B'`修改为`'X'`和`'Y'`后，tuple变为：
 
-![](http://images.iterate.site/blog/image/20181206/0g3Hjt7M7F2f.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20181206/0g3Hjt7M7F2f.png?imageslim">
+</p>
 
 表面上看，tuple 的元素确实变了，但其实变的不是 tuple 的元素，而是 list 的元素。tuple 一开始指向的 list 并没有改成别的 list，所以，tuple所谓的“不变”是说，tuple的每个元素，指向永远不变。即指向`'a'`，就不能改成指向`'b'`，指向一个 list，就不能改成指向其他对象，但指向的这个 list 本身是可变的！<span style="color:red;">嗯，是要注意的，tuple 所谓的不变是指：tuple 的每个元素，指向永远不变。</span>
 

@@ -31,7 +31,9 @@ date: 2018-07-27 19:46:09
 Decorator模式典型的结构图为:
 
 
-![](http://images.iterate.site/blog/image/180727/5h8hleceA1.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/5h8hleceA1.png?imageslim">
+</p>
 
 在结构图中， ConcreteComponent 和 Decorator 需要有同样的接口，因此 ConcreteComponent和 Decorator 有着一个共同的父类。这里有人会问，让 Decorator 直接维 护一个指向 ConcreteComponent 引用（指针）不就可以达到同样的效果，答案是肯定并且是 否定的。肯定的是你可以通过这种方式实现，否定的是你不要用这种方式实现，因为通过这 种方式你就只能为这个特定的 ConcreteComponent 提供修饰操作了，当有了一个新的
 

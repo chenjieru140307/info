@@ -25,18 +25,26 @@ SIFT算法是目前公认的效果最好的特征点检测算法，关于该算�
 
 首先，对两幅图片，都使用 SIFT 算法提取特征点，提取结果如下：（SIFT特征提取方法就用的是上文链接“SIFT算法详解”中提供的代码）
 
-![](http://images.iterate.site/blog/image/181031/i69CAI95Ca.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/i69CAI95Ca.png?imageslim">
+</p>
 
-![](http://images.iterate.site/blog/image/181031/ah652fa09d.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/ah652fa09d.png?imageslim">
+</p>
 
 然后对特征点进行匹配，按照 SIFT 算法原文作者的思路，每个特征点产生一个 128 维的向量，计算向量之间的欧式距离，采用最近比次近的方式完成匹配，如果最近距离比上次近距离小于 0.8，则认为这是一个正确的匹配， 否则认为匹配不成功。结果这种匹配后的情况如下图：
 
-![](http://images.iterate.site/blog/image/181031/B1g23046Ge.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/B1g23046Ge.png?imageslim">
+</p>
 
 
 可以发现，仍然存在着很多错误的匹配点，所以再尝试用 RANSAC 算法消除错误匹配，尝试使用[OpenCV](http://lib.csdn.net/base/opencv)中的 findFundamentalMat 函数消除错误匹配：
 
-![](http://images.iterate.site/blog/image/181031/KaK8BGH4k2.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/KaK8BGH4k2.png?imageslim">
+</p>
 
 
 通过使用 findFundamentalMat 函数，函数返回一个 3*3的矩阵，一开始我认为这个矩阵就是变换矩阵，只要将左图中的点与这个变换矩阵相乘，就可以得到右图中的对应点。但是这其实是不对的。
@@ -49,7 +57,9 @@ SIFT算法是目前公认的效果最好的特征点检测算法，关于该算�
 
 尝试用 findHomography 函数返回的矩阵，在模板图像中，已经用绿色方框标示出物体轮廓，根据物体的四个边界点，与变换矩阵相乘，即可得到变换后的物体的轮廓的四个边界点，将此边界点连接即为物体轮廓，如下图所示（绿色方框为事先标注的模板物体中的轮廓，白色方框为事先标注的测试图片中的轮廓，红色方框为经过绿色方框经变换矩阵变换后计算出的轮廓）：
 
-![](http://images.iterate.site/blog/image/181031/f5C6jgJ1GF.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181031/f5C6jgJ1GF.png?imageslim">
+</p>
 
 
 从结果可以看出，这才是比较正确的结果。

@@ -11,15 +11,21 @@ date: 2018-07-08 12:14:10
 
 来看一个具体的例子，假设我们要对 0-7内的 5 个元素(4,7,2,5,3)排序（这里假设这些元素没有重复）。那么我们就可以采用 Bit-map的方法来达到排序的目的。要表示 8 个数，我们就只需要 8 个 Bit（1Bytes），首先我们开辟 1Byte 的空间，将这些空间的所有 Bit 位都置为 0(如下图：)
 
-![](http://images.iterate.site/blog/image/180708/dg8l27hk57.gif){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/dg8l27hk57.gif">
+</p>
 
 然后遍历这 5 个元素，首先第一个元素是 4，那么就把 4 对应的位置为 1（可以这样操作 p+(i/8)|(0×01<<(i%8)) 当然了这里的操作涉及到 Big-ending和 Little-ending的情况，这里默认为 Big-ending），因为是从零开始的，所以要把第五位置为一（如下图）：
 
-![](http://images.iterate.site/blog/image/180708/a2bHHFLf5a.gif){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/a2bHHFLf5a.gif">
+</p>
 
 然后再处理第二个元素 7，将第八位置为 1,，接着再处理第三个元素，一直到最后处理完所有的元素，将相应的位置为 1，这时候的内存的 Bit 位的状态如下：
 
-![](http://images.iterate.site/blog/image/180708/iAIC39F3DJ.gif){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180708/iAIC39F3DJ.gif">
+</p>
 
 然后我们现在遍历一遍 Bit 区域，将该位是一的位的编号输出（2，3，4，5，7），这样就达到了排序的目的。下面的代码给出了一个 BitMap 的用法：排序。
 

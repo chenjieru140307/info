@@ -39,11 +39,15 @@ cv2.destroyAllWindows()
 
 Matplotlib 输出如下：
 
-![](http://images.iterate.site/blog/image/181014/ELeIIhFE7c.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181014/ELeIIhFE7c.png?imageslim">
+</p>
 
 OpenCV 输出如下：
 
-![](http://images.iterate.site/blog/image/181014/Blfcg8e1ch.png?imageslim){ width=55% }
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/181014/Blfcg8e1ch.png?imageslim">
+</p>
 
 <span style="color:red;">一直不知道 cv2 还有 split 和 merge 的功能。有些厉害，这个功能做出来是为了什么情况下使用的呢？就是为了这种情况的吗？</span>
 
