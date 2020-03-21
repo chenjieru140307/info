@@ -78,12 +78,9 @@ windows 下安装 Anaconda3 之后再 cmd 下出现 'activate' 不是内部或�
 
 经过查找，问题在于应该将 `D:\software\Anaconda3\Scripts` 加入到环境变量之中。因为这里存在 conda 和 activate。
 
-<center>
-
-
-![](http://images.iterate.site/blog/image/20190624/57VqcqXEClwf.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190624/57VqcqXEClwf.png?imageslim">
+</p>
 <p align="center">
     <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190624/2fIsjvF2BAVK.png?imageslim">
 </p>

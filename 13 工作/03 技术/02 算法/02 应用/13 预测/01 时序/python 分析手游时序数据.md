@@ -382,12 +382,9 @@ def plotDoubleExponentialSmoothing(series, alphas, betas):
   plotDoubleExponentialSmoothing(ads.Ads, alphas=[0.9, 0.02], betas=[0.9, 0.02])
 plotDoubleExponentialSmoothing(currency.GEMS_GEMS_SPENT, alphas=[0.9, 0.02], betas=[0.9, 0.02])
 ```
-<center>
-
-
-![](http://images.iterate.site/blog/image/20190704/c8epGBpONMjk.png?imageslim){ width=55% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/c8epGBpONMjk.png?imageslim">
+</p>
 
 <p align="center">
     <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190704/agA78IXhdSNN.png?imageslim">
