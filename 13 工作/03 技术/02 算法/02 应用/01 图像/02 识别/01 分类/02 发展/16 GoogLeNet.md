@@ -8,11 +8,9 @@
 
 Inception 性能比较图：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/jVuSjy0EFjRQ.png?imageslim){ width=65% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/jVuSjy0EFjRQ.png?imageslim">
+</p>
 
 <span style="color:red;">横坐标的 Operations 是什么意思？</span>
 
@@ -20,11 +18,9 @@ Inception 性能比较图：
 
 GoogLeNet 网络结构图：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/I9pMUsIOeJI3.jpeg?imageslim){ width=75% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/I9pMUsIOeJI3.jpeg?imageslim">
+</p>
 
 如图 4.9中所示，GoogLeNet 相比于以前的卷积神经网络结构，除了在深度上进行了延伸，还对网络的宽度进行了扩展，整个网络由许多块状子网络的堆叠而成，这个子网络构成了 Inception 结构。
 
@@ -38,52 +34,40 @@ GoogLeNet 网络结构图：
 
 $Inception_{v1}$
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/6BLFHpihc0GY.png?imageslim){ width=75% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/6BLFHpihc0GY.png?imageslim">
+</p>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/W6MFXPSfXQxH.png?imageslim){ width=75% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/W6MFXPSfXQxH.png?imageslim">
+</p>
 
 <span style="color:red;">怎么合并不同的卷积结果的？怎么还有 max pooling ？也合并进来了吗？</span>
 
 $Inception_{v2}$
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/Qdxvn9AEePhw.png?imageslim){ width=50% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/Qdxvn9AEePhw.png?imageslim">
+</p>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/Xsp3lQ54osLM.png?imageslim){ width=50% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/Xsp3lQ54osLM.png?imageslim">
+</p>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/weVIuRRX44qV.png?imageslim){ width=65% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/weVIuRRX44qV.png?imageslim">
+</p>
 
 <span style="color:red;">$n$ 是怎么定的？为什么上面的结构是合理的？</span>
 
 $Inception_{v3}$
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/HCaOfpofR4d1.png?imageslim){ width=25% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/HCaOfpofR4d1.png?imageslim">
+</p>
 
 
 <span style="color:red;">这个是什么？</span>
@@ -91,29 +75,23 @@ $Inception_{v3}$
 
 $Inception_{v4}$
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/BBwO8qMwCayc.png?imageslim){ width=36% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/BBwO8qMwCayc.png?imageslim">
+</p>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/SJ2WkJ7SeQ0j.jpg?imageslim){ width=90% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/SJ2WkJ7SeQ0j.jpg?imageslim">
+</p>
 
 <span style="color:red;">上面这个为什么是合理的？</span>
 
 
 图 4.10 Inception$_{v1-4}$ 结构图：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/O2yqknELcK4y.png?imageslim){ width=30% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/O2yqknELcK4y.png?imageslim">
+</p>
 
 
 

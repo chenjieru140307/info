@@ -8,11 +8,9 @@
 ## 结构
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/mx3QHPzvlcL9.png?imageslim){ width=85% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/mx3QHPzvlcL9.png?imageslim">
+</p>
 
 如图 所示，除去下采样（池化层）和局部响应规范化操作（Local Responsible Normalization, LRN），<span style="color:red;">嗯，也就是 局部归一化。</span>AlexNet 一共包含 8 层，前 5 层由卷积层组成，而剩下的 3 层为全连接层。
 

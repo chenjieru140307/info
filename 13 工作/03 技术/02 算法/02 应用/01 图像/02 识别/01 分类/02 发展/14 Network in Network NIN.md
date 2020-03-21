@@ -15,11 +15,9 @@ NIN 以一种全新的角度审视了卷积神经网络中的卷积核设计，�
 
 NIN 网络结构图：
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/E4WWatTig6k0.jpg?imageslim){ width=75% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/E4WWatTig6k0.jpg?imageslim">
+</p>
 
 
 NIN 由三层的多层感知卷积层（MLPConv Layer）构成，每一层多层感知卷积层内部由若干层的局部全连接层和非线性激活函数组成，代替了传统卷积层中采用的线性卷积核。

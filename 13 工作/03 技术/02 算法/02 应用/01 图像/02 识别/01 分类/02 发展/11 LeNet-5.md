@@ -6,11 +6,9 @@
 
 ## 结构
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/y4YQLvVNnUBn.png?imageslim){ width=80% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/y4YQLvVNnUBn.png?imageslim">
+</p>
 
 如图所示，LeNet-5 一共包含 7 层（输入层不作为网络结构），分别由 2 个卷积层、2 个下采样层和 3 个连接层组成。
 

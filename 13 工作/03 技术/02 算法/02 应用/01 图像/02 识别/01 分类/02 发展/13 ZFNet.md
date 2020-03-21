@@ -11,18 +11,14 @@ ZFNet 实际上是微调（fine-tuning）了的 AlexNet，并通过反卷积（D
 
 ## 结构
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/DqLUUV2PsY5I.png?imageslim){ width=85% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/DqLUUV2PsY5I.png?imageslim">
+</p>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/QkIjXDWAAa8n.jpeg?imageslim){ width=85% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/QkIjXDWAAa8n.jpeg?imageslim">
+</p>
 
 > 图 4.4 ZFNet 网络结构图（原始结构图与 AlexNet 风格结构图）
 
@@ -30,18 +26,14 @@ ZFNet 实际上是微调（fine-tuning）了的 AlexNet，并通过反卷积（D
 
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/mBeCvIv9mcoi.png?imageslim){ width=65% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/mBeCvIv9mcoi.png?imageslim">
+</p>
 
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/NPV7w5JbbCDc.png?imageslim){ width=85% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/NPV7w5JbbCDc.png?imageslim">
+</p>
 
 > 图 4.5
 >

@@ -5,11 +5,9 @@
 
 ## 结构
 
-<center>
-
-![](http://images.iterate.site/blog/image/20190722/sslRwmdcvStR.png?imageslim){ width=65% }
-
-</center>
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20190722/sslRwmdcvStR.png?imageslim">
+</p>
 
 > 图 4.7 VGG16 网络结构图
 
