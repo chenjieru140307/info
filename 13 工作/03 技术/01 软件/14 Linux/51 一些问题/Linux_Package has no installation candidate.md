@@ -1,8 +1,4 @@
----
-title: Linux_Package has no installation candidate
-toc: true
-date: 2019-10-18
----
+
 # Linux_Package has no installation candidate
 
 今天在安装软件的时候出现了Package has no installation candidate的问题，如：

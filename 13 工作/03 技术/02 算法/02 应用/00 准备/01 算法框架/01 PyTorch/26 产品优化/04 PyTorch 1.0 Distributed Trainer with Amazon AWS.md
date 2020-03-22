@@ -1,8 +1,4 @@
----
-title: 04 PyTorch 1.0 Distributed Trainer with Amazon AWS
-toc: true
-date: 2019-06-29
----
+
 # PYTORCH 1.0 DISTRIBUTED TRAINER WITH AMAZON AWS
 
 **Author**: [Nathan Inkawhich](https://github.com/inkawhich)

@@ -1,8 +1,4 @@
----
-title: 07 torch.Storage
-toc: true
-date: 2019-06-29
----
+
 # TORCH.STORAGE
 
 A `torch.Storage` is a contiguous, one-dimensional array of a single data type.

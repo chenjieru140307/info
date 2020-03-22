@@ -1,8 +1,4 @@
----
-title: 17 torch.multiprocessing
-toc: true
-date: 2019-06-29
----
+
 # MULTIPROCESSING PACKAGE - TORCH.MULTIPROCESSING
 
 torch.multiprocessing is a wrapper around the native [`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing) module. It registers custom reducers, that use shared memory to provide shared views on the same data in different processes. Once the tensor/storage is moved to shared_memory (see [`share_memory_()`](https://pytorch.org/docs/stable/tensors.html#torch.Tensor.share_memory_)), it will be possible to send it to other processes without making any copies.

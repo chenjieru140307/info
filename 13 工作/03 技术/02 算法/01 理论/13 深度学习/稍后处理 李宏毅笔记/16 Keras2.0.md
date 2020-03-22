@@ -1,8 +1,4 @@
----
-title: 16 Keras2.0
-toc: true
-date: 2019-08-18
----
+
 ![mark](http://images.iterate.site/blog/image/20190818/F6BQwCJcTCHM.png?imageslim)
 ## 创建网络
 

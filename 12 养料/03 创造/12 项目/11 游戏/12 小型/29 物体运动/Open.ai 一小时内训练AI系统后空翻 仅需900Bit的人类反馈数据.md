@@ -1,8 +1,4 @@
----
-title: Open.ai 一小时内训练AI系统后空翻 仅需900Bit的人类反馈数据
-toc: true
-date: 2019-10-29
----
+
 # Open.ai 一小时内训练AI系统后空翻 仅需900Bit的人类反馈数据
 
 

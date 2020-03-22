@@ -1,8 +1,4 @@
----
-title: 25 torch.onnx
-toc: true
-date: 2019-06-29
----
+
 # TORCH.ONNX
 
 ## Example: End-to-end AlexNet from PyTorch to Caffe2

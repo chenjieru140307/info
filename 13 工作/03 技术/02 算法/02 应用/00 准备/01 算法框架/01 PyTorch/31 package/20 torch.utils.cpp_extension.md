@@ -1,8 +1,4 @@
----
-title: 20 torch.utils.cpp_extension
-toc: true
-date: 2019-06-29
----
+
 # TORCH.UTILS.CPP_EXTENSION
 
 - `torch.utils.cpp_extension.``CppExtension`(*name*, *sources*, **args*, **\*kwargs*)[[SOURCE\]](https://pytorch.org/docs/stable/_modules/torch/utils/cpp_extension.html#CppExtension)

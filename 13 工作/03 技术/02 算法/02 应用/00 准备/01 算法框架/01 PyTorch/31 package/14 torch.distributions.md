@@ -1,8 +1,4 @@
----
-title: 14 torch.distributions
-toc: true
-date: 2019-06-29
----
+
 # PROBABILITY DISTRIBUTIONS - TORCH.DISTRIBUTIONS
 
 The `distributions` package contains parameterizable probability distributions and sampling functions. This allows the construction of stochastic computation graphs and stochastic gradient estimators for optimization. This package generally follows the design of the [TensorFlow Distributions](https://arxiv.org/abs/1711.10604) package.

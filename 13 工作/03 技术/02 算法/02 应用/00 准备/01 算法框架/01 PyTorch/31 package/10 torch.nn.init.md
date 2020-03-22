@@ -1,8 +1,4 @@
----
-title: 10 torch.nn.init
-toc: true
-date: 2019-06-29
----
+
 # TORCH.NN.INIT
 
 - `torch.nn.init.``calculate_gain`(*nonlinearity*, *param=None*)[[SOURCE\]](https://pytorch.org/docs/stable/_modules/torch/nn/init.html#calculate_gain)

@@ -1,8 +1,4 @@
----
-title: 01 Using the PyTorch C++ Frontend
-toc: true
-date: 2019-06-29
----
+
 # USING THE PYTORCH c++ FRONTEND
 
 The PyTorch c++ frontend is a pure c++ interface to the PyTorch machine learning framework. While the primary interface to PyTorch naturally is python, this python API sits atop a substantial c++ codebase providing foundational data structures and functionality such as tensors and automatic differentiation. The c++ frontend exposes a pure c++11 API that extends this underlying c++ codebase with tools required for machine learning training and inference. This includes a built-in collection of common components for neural network modeling; an API to extend this collection with custom modules; a library of popular optimization algorithms such as stochastic gradient descent; a parallel data loader with an API to define and load datasets; serialization routines and more.

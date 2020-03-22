@@ -1,8 +1,4 @@
----
-title: understand AVFrame.linesize
-toc: true
-date: 2019-10-19
----
+
 
 # Can anyone help in understanding AVFrame.linesize[]?
 

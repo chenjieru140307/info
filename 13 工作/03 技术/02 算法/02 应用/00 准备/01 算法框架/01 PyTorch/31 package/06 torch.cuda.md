@@ -1,8 +1,4 @@
----
-title: 06 torch.cuda
-toc: true
-date: 2019-06-30
----
+
 # TORCH.CUDA
 
 This package adds support for CUDA tensor types, that implement the same function as CPU tensors, but they utilize GPUs for computation.

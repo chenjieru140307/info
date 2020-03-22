@@ -1,8 +1,4 @@
----
-title: 15 torch.hub
-toc: true
-date: 2019-06-29
----
+
 # TORCH.HUB
 
 Pytorch Hub is a pre-trained model repository designed to facilitate research reproducibility.

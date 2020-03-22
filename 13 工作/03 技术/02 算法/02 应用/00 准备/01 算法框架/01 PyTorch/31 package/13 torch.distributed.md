@@ -1,8 +1,4 @@
----
-title: 13 torch.distributed
-toc: true
-date: 2019-06-29
----
+
 # DISTRIBUTED COMMUNICATION PACKAGE - TORCH.DISTRIBUTED
 
 ## Backends

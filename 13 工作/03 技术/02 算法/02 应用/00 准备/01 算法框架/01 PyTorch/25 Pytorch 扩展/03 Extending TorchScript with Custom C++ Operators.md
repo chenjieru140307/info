@@ -1,8 +1,4 @@
----
-title: 03 Extending TorchScript with Custom C++ Operators
-toc: true
-date: 2019-06-29
----
+
 # EXTENDING TORCHSCRIPT WITH CUSTOM c++ OPERATORS
 
 The PyTorch 1.0 release introduced a new programming model to PyTorch called [TorchScript](https://pytorch.org/docs/master/jit.html). TorchScript is a subset of the python programming language which can be parsed, compiled and optimized by the TorchScript compiler. Further, compiled TorchScript models have the option of being serialized into an on-disk file format, which you can subsequently load and run from pure c++ (as well as python) for inference.

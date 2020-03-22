@@ -1,8 +1,4 @@
----
-title: 02 torch.Tensor
-toc: true
-date: 2019-06-29
----
+
 # TORCH.TENSOR
 
 A [`torch.Tensor`](https://pytorch.org/docs/stable/tensors.html#torch.Tensor) is a multi-dimensional matrix containing elements of a single data type.

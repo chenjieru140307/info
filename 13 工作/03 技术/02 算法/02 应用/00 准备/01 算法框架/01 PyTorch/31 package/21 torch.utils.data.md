@@ -1,8 +1,4 @@
----
-title: 21 torch.utils.data
-toc: true
-date: 2019-06-29
----
+
 # TORCH.UTILS.DATA
 
 - *CLASS*`torch.utils.data.``Dataset`[[SOURCE\]](https://pytorch.org/docs/stable/_modules/torch/utils/data/dataset.html#Dataset)

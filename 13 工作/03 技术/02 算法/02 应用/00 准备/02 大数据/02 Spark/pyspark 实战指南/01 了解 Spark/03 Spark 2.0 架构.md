@@ -1,8 +1,4 @@
----
-title: 03 Spark 2.0 架构
-toc: true
-date: 2019-07-02
----
+
 1.3 Spark 2.0的架构
 Apache Spark 2.0的引入是 Apache Spark项目基于过去两年平台开发经验近期所发布的主要版本更新：
 资料来源：Apache Spark 2.0：Faster，Easier and Smarter（http://bit.ly/2ap7qd5）

@@ -1,8 +1,4 @@
----
-title: 01.11 使用 opencv 进行人脸检测
-toc: true
-date: 2019-10-13
----
+
 # 使用 opencv 进行人脸检测
 
 

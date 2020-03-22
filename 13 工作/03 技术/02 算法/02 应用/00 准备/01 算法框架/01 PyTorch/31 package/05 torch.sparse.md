@@ -1,8 +1,4 @@
----
-title: 05 torch.sparse
-toc: true
-date: 2019-06-29
----
+
 # TORCH.SPARSE
 
 WARNING

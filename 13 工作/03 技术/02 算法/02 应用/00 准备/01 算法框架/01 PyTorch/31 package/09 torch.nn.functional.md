@@ -1,8 +1,4 @@
----
-title: 09 torch.nn.functional
-toc: true
-date: 2019-06-29
----
+
 # TORCH.NN.FUNCTIONAL
 
 ## Convolution functions

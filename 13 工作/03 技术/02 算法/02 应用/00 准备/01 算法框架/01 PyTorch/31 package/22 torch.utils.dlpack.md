@@ -1,8 +1,4 @@
----
-title: 22 torch.utils.dlpack
-toc: true
-date: 2019-06-29
----
+
 # TORCH.UTILS.DLPACK
 
 - `torch.utils.dlpack.``from_dlpack`(*dlpack*) → Tensor

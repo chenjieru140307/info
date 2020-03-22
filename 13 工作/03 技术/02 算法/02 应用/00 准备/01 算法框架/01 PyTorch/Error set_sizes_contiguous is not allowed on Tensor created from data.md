@@ -1,8 +1,4 @@
----
-title: Error set_sizes_contiguous is not allowed on Tensor created from data
-toc: true
-date: 2019-05-30
----
+
 # 可以补充进来的
 
 - 今天遇到的一个问题。看来源码还是要看的，不然根本不知道里面到底是有怎么实现的。

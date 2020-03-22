@@ -1,8 +1,4 @@
----
-title: 18 torch.utils.bottleneck
-toc: true
-date: 2019-06-29
----
+
 # TORCH.UTILS.BOTTLENECK
 
 torch.utils.bottleneck is a tool that can be used as an initial step for debugging bottlenecks in your program. It summarizes runs of your script with the python profiler and PyTorch’s autograd profiler.

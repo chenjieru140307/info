@@ -1,8 +1,4 @@
----
-title: 11 torch.optim
-toc: true
-date: 2019-06-29
----
+
 # TORCH.OPTIM
 
 [`torch.optim`](https://pytorch.org/docs/stable/optim.html#module-torch.optim) is a package implementing various optimization algorithms. Most commonly used methods are already supported, and the interface is general enough, so that more sophisticated ones can be also easily integrated in the future.

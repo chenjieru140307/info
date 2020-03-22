@@ -1,8 +1,4 @@
----
-title: PIL Image 与 np.array 之间的转换
-toc: true
-date: 2018-10-31
----
+
 
 
 # PIL Image 与 np.array 之间的转换

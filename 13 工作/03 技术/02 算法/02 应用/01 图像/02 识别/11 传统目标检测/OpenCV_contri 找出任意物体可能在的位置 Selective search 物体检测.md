@@ -1,8 +1,4 @@
----
-title: OpenCV_contri 找出任意物体可能在的位置 Selective search 物体检测
-toc: true
-date: 2018-10-31
----
+
 # 可以补充进来的
 
 -

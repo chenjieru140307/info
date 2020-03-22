@@ -1,8 +1,4 @@
----
-title: 16 torch.jit
-toc: true
-date: 2019-06-29
----
+
 # TORCHSCRIPT
 
 - [Creating TorchScript Code](https://pytorch.org/docs/stable/jit.html#creating-torchscript-code)

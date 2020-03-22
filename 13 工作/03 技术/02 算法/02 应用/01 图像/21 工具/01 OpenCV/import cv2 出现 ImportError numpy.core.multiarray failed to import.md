@@ -1,8 +1,4 @@
----
-title: import cv2 出现 ImportError numpy.core.multiarray failed to import
-toc: true
-date: 2019-05-16
----
+
 # import cv2 出现的 “ImportError: numpy.core.multiarray failed to import”
 
 

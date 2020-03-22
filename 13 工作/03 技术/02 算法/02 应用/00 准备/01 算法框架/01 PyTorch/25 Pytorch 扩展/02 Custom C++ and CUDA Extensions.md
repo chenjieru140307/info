@@ -1,8 +1,4 @@
----
-title: 02 Custom C++ and CUDA Extensions
-toc: true
-date: 2019-06-29
----
+
 # CUSTOM c++ AND CUDA EXTENSIONS
 
 **Author**: [Peter Goldsborough](https://www.goldsborough.me/)

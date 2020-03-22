@@ -1,8 +1,4 @@
----
-title: 23 torch.utils.model_zoo
-toc: true
-date: 2019-06-29
----
+
 # TORCH.UTILS.MODEL_ZOO
 
 Moved to torch.hub.

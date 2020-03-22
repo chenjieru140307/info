@@ -1,8 +1,4 @@
----
-title: Vim ctrl+s
-toc: true
-date: 2018-10-04
----
+
 
 # Vim 按了 Ctrl+S 后卡住的解决方法：
 

@@ -1,8 +1,4 @@
----
-title: 深度学习开发环境详解 TensorFlow + Docker + PyCharm 等
-toc: true
-date: 2019-10-29
----
+
 # 深度学习开发环境详解 TensorFlow + Docker + PyCharm 等
 
 > *在这篇文章中，研究员 Killian 介绍了自己的深度学习开发环境：TensorFlow + Docker + PyCharm + OSX Fuse + Tensorboard。但根据自己的预算、语言习惯、开发需求，每个人都会配置不同的开发环境，也遇到过各种各样的难题。因此，我们在文后附上了一份调查问卷，希望能了解众多不同开发者的深度学习环境，最终汇集成一篇文章为大家提供不同的洞见。*

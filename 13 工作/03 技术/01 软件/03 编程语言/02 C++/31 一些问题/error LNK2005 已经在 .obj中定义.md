@@ -1,8 +1,4 @@
----
-title: error LNK2005 已经在 .obj中定义
-toc: true
-date: 2019-10-19
----
+
 # error LNK2005: 已经在*.obj中定义
 
 
