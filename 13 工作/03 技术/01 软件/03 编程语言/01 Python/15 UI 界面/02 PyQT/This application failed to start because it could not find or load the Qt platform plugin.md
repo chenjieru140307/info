@@ -1,8 +1,4 @@
----
-title: This application failed to start because it could not find or load the Qt platform plugin
-toc: true
-date: 2019-06-15
----
+
 # 可以补充进来的
 
 - 这个问题之前就遇到过，忘记记了，又遇到了。

@@ -1,8 +1,4 @@
----
-title: 08 利用 SQL 查询
-toc: true
-date: 2019-07-02
----
+
 3.8 利用 SQL 查询
 让我们运行相同的查询，但是这一次，我们将对相同的 DataFrame 使用 SQL 查询。记住，DataFrame是可访问的，因为我们针对 swimmers 执行了.createOrReplaceTempView方法。
 3.8.1 行数

@@ -1,8 +1,4 @@
----
-title: 53 隐狄利克雷分配模型 LDA
-toc: true
-date: 2019-08-27
----
+
 
 <p align="center">
     <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180701/ikfEl45aL5.png?imageslim">

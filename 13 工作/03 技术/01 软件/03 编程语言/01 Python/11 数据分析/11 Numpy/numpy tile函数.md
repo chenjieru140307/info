@@ -1,8 +1,4 @@
----
-title: numpy tile函数
-toc: true
-date: 2018-07-08 12:14:30
----
+
 # ORIGIN
   * 在机器学习实战中看到的，
 

@@ -1,8 +1,4 @@
----
-title: 07 Reproducibility
-toc: true
-date: 2019-06-29
----
+
 # REPRODUCIBILITY
 
 Completely reproducible results are not guaranteed across PyTorch releases, individual commits or different platforms. Furthermore, results need not be reproducible between CPU and GPU executions, even when using identical seeds.

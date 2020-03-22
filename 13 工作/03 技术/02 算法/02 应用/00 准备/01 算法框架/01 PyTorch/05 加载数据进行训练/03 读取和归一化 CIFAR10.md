@@ -1,8 +1,4 @@
----
-title: 03 读取和归一化 CIFAR10
-toc: true
-date: 2019-12-06
----
+
 
 # 读取和归一化 CIFAR10
 

@@ -1,8 +1,4 @@
----
-title: 开发方式 Pycharm SFTP
-toc: true
-date: 2019-10-01
----
+
 PyCharm 利用SFTP远程炼丹
 
 

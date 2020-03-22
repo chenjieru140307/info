@@ -1,8 +1,4 @@
----
-title: 读取 xml 中内容存放到 txt 中
-toc: true
-date: 2019-01-21
----
+
 ```py
 import xml.etree.ElementTree as ET
 import os

@@ -1,8 +1,4 @@
----
-title: 04 Type Info
-toc: true
-date: 2019-06-29
----
+
 # TYPE INFO
 
 The numerical properties of a [`torch.dtype`](https://pytorch.org/docs/stable/tensor_attributes.html#torch.torch.dtype) can be accessed through either the [`torch.finfo`](https://pytorch.org/docs/stable/type_info.html#torch.torch.finfo) or the [`torch.iinfo`](https://pytorch.org/docs/stable/type_info.html#torch.torch.iinfo).

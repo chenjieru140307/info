@@ -1,8 +1,4 @@
----
-title: 02 StringIO 和 BytesIO
-toc: true
-date: 2019-02-09
----
+
 # 可以补充进来的
 
 - 什么时候使用 StringIO 和 BytesIO？

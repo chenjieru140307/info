@@ -1,8 +1,4 @@
----
-title: xgboost 使用
-toc: true
-date: 2018-07-19 22:29:23
----
+
 
 非常不建议在 XGBoost 里面用他的缺省值处理方法
 <p align="center">

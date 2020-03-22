@@ -1,8 +1,4 @@
----
-title: 06 提取 Tensor 中的部分数据
-toc: true
-date: 2019-12-06
----
+
 # 提取 Tensor 中的部分数据
 
 举例：

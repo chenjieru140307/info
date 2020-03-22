@@ -1,8 +1,4 @@
----
-title: 最大后验概率估计 MAP 的理解
-toc: true
-date: 2019-11-17
----
+
 # 最大后验概率估计 MAP 的理解
 
 最大似然估计（Maximum likelihood estimation, 简称MLE）和最大后验概率估计（Maximum a posteriori estimation, 简称MAP）是很常用的两种参数估计方法，如果不理解这两种方法的思路，很容易弄混它们。

@@ -1,8 +1,4 @@
----
-title: 06 Novel sensors
-toc: true
-date: 2018-08-18 16:35:14
----
+
 
 # Novel sensors
 

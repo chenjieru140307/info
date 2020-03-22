@@ -1,8 +1,4 @@
----
-title: 08 MapReduce的类型与格式
-toc: true
-date: 2018-06-27 07:51:45
----
+
 ### MapReduce的类型与格式
 
 MapReduce数据处理模型非常简单：map和 reduce 函数的输入和输出是键-值对。 本章深入讨论 MapReduce 模型，重点介绍各种类型的数据（从简单文本到结构化的 二进制对象）如何在 MapReduce 中使用。

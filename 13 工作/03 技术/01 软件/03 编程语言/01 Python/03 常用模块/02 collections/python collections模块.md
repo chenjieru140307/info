@@ -1,8 +1,4 @@
----
-title: python collections模块
-toc: true
-date: 2018-07-13 19:48:57
----
+
 # Python collections模块
 
 ## 缘由：

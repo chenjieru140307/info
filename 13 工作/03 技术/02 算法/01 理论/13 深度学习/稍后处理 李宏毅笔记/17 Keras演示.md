@@ -1,8 +1,4 @@
----
-title: 17 Keras演示
-toc: true
-date: 2019-08-18
----
+
 
 ## 初始代码
 deep learning这么潮的东西，实现起来也很简单。首先是 load_data进行数据载入处理。

@@ -1,8 +1,4 @@
----
-title: 03 CUDA semantics
-toc: true
-date: 2019-06-29
----
+
 # CUDA SEMANTICS
 
 [`torch.cuda`](https://pytorch.org/docs/stable/cuda.html#module-torch.cuda) is used to set up and run CUDA operations. It keeps track of the currently selected GPU, and all CUDA tensors you allocate will by default be created on that device. The selected device can be changed with a [`torch.cuda.device`](https://pytorch.org/docs/stable/cuda.html#torch.cuda.device) context manager.

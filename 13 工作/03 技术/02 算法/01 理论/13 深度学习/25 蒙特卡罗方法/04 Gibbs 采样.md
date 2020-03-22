@@ -1,8 +1,4 @@
----
-title: 04 Gibbs 采样
-toc: true
-date: 2019-06-05
----
+
 
 # Gibbs采样
 

@@ -1,8 +1,4 @@
----
-title: 脉冲版ResNet 继承ResNet优势 实现当前最佳
-toc: true
-date: 2019-11-17
----
+
 # 脉冲版ResNet 继承ResNet优势 实现当前最佳
 
 

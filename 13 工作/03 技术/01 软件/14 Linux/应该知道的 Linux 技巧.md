@@ -1,8 +1,4 @@
----
-title: 应该知道的 Linux 技巧
-toc: true
-date: 2019-10-17
----
+
 # 应该知道的 Linux 技巧
 
 原作者：陈皓

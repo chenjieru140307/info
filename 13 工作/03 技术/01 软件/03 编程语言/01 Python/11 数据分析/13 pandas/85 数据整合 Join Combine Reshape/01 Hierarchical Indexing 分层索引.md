@@ -1,8 +1,4 @@
----
-title: 01 Hierarchical Indexing 分层索引
-toc: true
-date: 2018-07-08 13:32:45
----
+
 
 # CHAPTER 8 Data Wrangling: Join, Combine, and Reshape（数据加工：连接, 合并, 整形）
 

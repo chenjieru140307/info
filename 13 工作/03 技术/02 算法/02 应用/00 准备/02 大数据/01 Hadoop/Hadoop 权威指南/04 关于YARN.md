@@ -1,8 +1,4 @@
----
-title: 04 关于YARN
-toc: true
-date: 2018-06-27 07:51:47
----
+
 ### 关于 YARN
 
 Apache YARN(Yet Another Resource Negotiator 的缩写)是 Hadoop 的集群资源管理 系统。YARN被引入 Hadoop 2，最初是为了改善 MapReduce 的实现，但它具有足 够的通用性，同样可以支持其他的分布式计算模式。

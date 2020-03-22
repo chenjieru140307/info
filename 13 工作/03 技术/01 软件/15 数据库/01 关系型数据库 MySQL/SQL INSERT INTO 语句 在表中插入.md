@@ -1,8 +1,4 @@
----
-title: SQL INSERT INTO 语句 在表中插入
-toc: true
-date: 2018-08-03 14:00:58
----
+
 # SQL INSERT INTO 语句（在表中插入）
 
 

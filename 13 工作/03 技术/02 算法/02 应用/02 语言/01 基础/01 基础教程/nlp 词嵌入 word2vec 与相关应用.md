@@ -1,8 +1,4 @@
----
-title: nlp 词嵌入 word2vec 与相关应用
-toc: true
-date: 2018-08-21 18:16:23
----
+
 # nlp 词嵌入/word2vec 与相关应用
 
 

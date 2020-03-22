@@ -1,8 +1,4 @@
----
-title: 02 安装 GraphFrames
-toc: true
-date: 2019-07-02
----
+
 # 安装 GraphFrames
 
 如果你正在 Spark CLI（例如 spark-shell、pyspark、spark-sql、spark-submit）的环境中运行你的程序，你可以使用——packages命令来提取、编译和执行使用 GraphFrames 包所需的必要代码。

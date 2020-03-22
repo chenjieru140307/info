@@ -1,8 +1,4 @@
----
-title: Python进行JSON格式化输出
-toc: true
-date: 2019-01-16
----
+
 # Python进行 JSON 格式化输出
 
 

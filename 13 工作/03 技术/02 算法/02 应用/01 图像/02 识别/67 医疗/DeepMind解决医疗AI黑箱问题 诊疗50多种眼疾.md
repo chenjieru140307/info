@@ -1,8 +1,4 @@
----
-title: DeepMind解决医疗AI黑箱问题 诊疗50多种眼疾
-toc: true
-date: 2019-11-17
----
+
 ![img](https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtC0ywIu8o05DzL6G1Io75Kt01nicozILichZibuHavTr0p3Kibl91AHiaZZuyG5JRPicSqNmcKvgpjib4pVw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)﻿
 
 人工智能诊断疾病并不是什么稀罕事，但是，在今天之前，还没有人知道AI在做出诊断时，内心到底是怎么“想”的，AI对人类是个黑箱。

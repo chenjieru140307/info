@@ -1,8 +1,4 @@
----
-title: Tensorflow 的安装
-toc: true
-date: 2018-06-12 13:41:37
----
+
 ## 可以补充进来的
 
 * 要补充 GPU 版本的安装和 linux 下的安装。

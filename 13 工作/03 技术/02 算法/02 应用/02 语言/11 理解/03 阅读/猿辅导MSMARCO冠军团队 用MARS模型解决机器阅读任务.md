@@ -1,8 +1,4 @@
----
-title: 猿辅导MSMARCO冠军团队 用MARS模型解决机器阅读任务
-toc: true
-date: 2019-11-17
----
+
 # 猿辅导MSMARCO冠军团队 用MARS模型解决机器阅读任务
 
 

@@ -1,8 +1,4 @@
----
-title: IPython and Jupyter
-toc: true
-date: 2018-07-22 09:37:00
----
+
 - 一直想知道，怎么把 iPython 格式的项目加入到 Jupyter notebook 里面去看，一直没弄明白。
 - 而且，这个 Jupyter notebook 与 IPython 到底有什么区别和联系？
 - 而且，正规的运行、调试、退出 的流程是什么样的？

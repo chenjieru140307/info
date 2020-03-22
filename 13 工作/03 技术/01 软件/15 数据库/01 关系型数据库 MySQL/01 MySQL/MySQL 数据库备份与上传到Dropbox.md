@@ -1,8 +1,4 @@
----
-title: MySQL 数据库备份与上传到Dropbox
-toc: true
-date: 2018-06-20 19:45:08
----
+
 # 定时备份数据库并上传到 Dropbox
 
 

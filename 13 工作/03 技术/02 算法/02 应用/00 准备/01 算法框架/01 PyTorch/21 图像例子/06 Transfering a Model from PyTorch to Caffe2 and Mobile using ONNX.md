@@ -1,8 +1,4 @@
----
-title: 06 Transfering a Model from PyTorch to Caffe2 and Mobile using ONNX
-toc: true
-date: 2019-06-29
----
+
 # TRANSFERING A MODEL FROM PYTORCH TO CAFFE2 AND MOBILE USING ONNX
 
 In this tutorial, we describe how to use ONNX to convert a model defined in PyTorch into the ONNX format and then load it into Caffe2. Once in Caffe2, we can run the model to double-check it was exported correctly, and we then show how to use Caffe2 features such as mobile exporter for executing the model on mobile devices.

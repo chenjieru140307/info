@@ -1,8 +1,4 @@
----
-title: 09 使用 PageRank 确定机场排名
-toc: true
-date: 2019-07-02
----
+
 7.9 使用 PageRank 确定机场排名
 因为 GraphFrames 建立在 GraphX 之上，所以有几个算法是我们可以立即利用的。PageRank在 Google Search Engine中广泛使用，由 Larry Page创建。这里我们来引用 Wikipedia 的解释：
 “PageRank的工作原理是对到连接页面的数量和质量进行计数，从而估计该页面的重要性。缺省的假定是：越是重要的网站接收到的其他网站的链接就越多。”

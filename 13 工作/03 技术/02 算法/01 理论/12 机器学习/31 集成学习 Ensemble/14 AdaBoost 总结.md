@@ -1,8 +1,4 @@
----
-title: 14 AdaBoost 总结
-toc: true
-date: 2019-08-27
----
+
 
 # AdaBoost 开发过程中要注意的
 

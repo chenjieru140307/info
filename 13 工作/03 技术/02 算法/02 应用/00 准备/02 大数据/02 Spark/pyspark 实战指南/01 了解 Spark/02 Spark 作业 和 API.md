@@ -1,8 +1,4 @@
----
-title: 02 Spark 作业 和 API
-toc: true
-date: 2019-07-02
----
+
 1.2 Spark作业和 API
 在本节中，我们将简要介绍 Apache Spark作业（job）和 API。这为 Spark 2.0架构的后续部分提供了必要的基础。
 1.2.1 执行过程

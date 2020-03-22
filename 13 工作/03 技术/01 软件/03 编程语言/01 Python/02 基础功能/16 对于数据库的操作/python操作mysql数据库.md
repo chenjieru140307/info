@@ -1,8 +1,4 @@
----
-title: python操作mysql数据库
-toc: true
-date: 2018-06-11 08:14:43
----
+
 # Python操作 mysql 数据库
 
 

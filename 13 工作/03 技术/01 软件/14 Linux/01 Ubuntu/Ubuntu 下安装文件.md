@@ -1,8 +1,4 @@
----
-title: Ubuntu 下安装文件
-toc: true
-date: 2018-10-04
----
+
 
 # 可以补充进来的
 

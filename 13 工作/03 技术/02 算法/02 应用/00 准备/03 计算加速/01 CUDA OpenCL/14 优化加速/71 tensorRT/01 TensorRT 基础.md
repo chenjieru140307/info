@@ -1,8 +1,4 @@
----
-title: 01 TensorRT 基础
-toc: true
-date: 2019-08-31
----
+
 # TensorRT基础
 
 TensorRT 是 NVIDIA 推出的深度学习优化加速工具，采用的原理如下图所示，具体可参考[3] [4]：

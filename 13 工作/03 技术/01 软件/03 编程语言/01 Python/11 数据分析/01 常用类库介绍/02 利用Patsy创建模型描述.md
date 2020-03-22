@@ -1,8 +1,4 @@
----
-title: 02 利用Patsy创建模型描述
-toc: true
-date: 2018-07-08 13:33:35
----
+
 
 # 13.2 Creating Model Descriptions with Patsy（利用 Patsy 创建模型描述）
 

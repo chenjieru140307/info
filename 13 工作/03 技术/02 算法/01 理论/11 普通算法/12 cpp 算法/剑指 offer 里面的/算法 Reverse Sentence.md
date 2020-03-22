@@ -1,8 +1,4 @@
----
-title: 算法 Reverse Sentence
-toc: true
-date: 2018-07-05 21:32:56
----
+
 
 ## 题目：
 

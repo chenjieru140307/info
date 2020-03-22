@@ -1,8 +1,4 @@
----
-title: PhoenixGo
-toc: true
-date: 2019-11-17
----
+
 # 业界 | 微信团队开源围棋AI技术PhoenixGo，复现AlphaGo Zero论文
 
 

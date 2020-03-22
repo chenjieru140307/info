@@ -1,8 +1,4 @@
----
-title: opencv 安装
-toc: true
-date: 2019-01-18
----
+
 # 可以补充进来的
 
 - 这个最好挪到 python 那边

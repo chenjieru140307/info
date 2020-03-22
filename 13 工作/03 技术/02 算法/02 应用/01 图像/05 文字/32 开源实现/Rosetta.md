@@ -1,8 +1,4 @@
----
-title: Rosetta
-toc: true
-date: 2019-11-17
----
+
 # Rosetta
 
 大规模图像文本提取和识别系统

@@ -1,8 +1,4 @@
----
-title: python 总结
-toc: true
-date: 2019-07-30
----
+
 **Table of Contents**
 
 

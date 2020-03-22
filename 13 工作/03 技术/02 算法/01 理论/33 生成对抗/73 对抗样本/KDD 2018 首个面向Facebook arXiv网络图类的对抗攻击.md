@@ -1,8 +1,4 @@
----
-title: KDD 2018 首个面向Facebook arXiv网络图类的对抗攻击
-toc: true
-date: 2019-11-17
----
+
 
 # KDD 2018 首个面向Facebook arXiv网络图类的对抗攻击
 

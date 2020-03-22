@@ -1,8 +1,4 @@
----
-title: 01 在 Linux 系统上安装
-toc: true
-date: 2019-10-29
----
+
 # 在 Linux 系统上安装
 
 版本

@@ -1,8 +1,4 @@
----
-title: paGAN
-toc: true
-date: 2019-11-17
----
+
 # paGAN
 
 

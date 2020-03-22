@@ -1,8 +1,4 @@
----
-title: 01 REINFORCEMENT LEARNING DQN TUTORIAL
-toc: true
-date: 2019-06-29
----
+
 # REINFORCEMENT LEARNING (DQN) TUTORIAL
 
 **Author**: [Adam Paszke](https://github.com/apaszke)

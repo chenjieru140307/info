@@ -1,8 +1,4 @@
----
-title: tensorflow 安装新版本
-toc: true
-date: 2018-10-04
----
+
 # 可以补充进来的
 
 # 用 anaconda 安装最新的 TensorFlow 版本

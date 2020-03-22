@@ -1,8 +1,4 @@
----
-title: Batch Size
-toc: true
-date: 2019-09-03
----
+
 
 ## 3.5 Batch_Size
 

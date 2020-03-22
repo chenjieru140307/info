@@ -1,8 +1,4 @@
----
-title: Travis CI
-toc: true
-date: 2018-08-01 17:53:17
----
+
 # Travis CI
 
 

@@ -1,8 +1,4 @@
----
-title: 04 TensorFrames 快速入门
-toc: true
-date: 2019-07-02
----
+
 .4 TensorFrames快速入门
 所有这些前言之后，让我们用这个快速入门教程来开始使用 TensorFrames。你可以在 http://bit.ly/2hwGyuC下载并使用 Databricks 社区版中笔记本的完整版本。
 你也可以从 PySpark shell（或其他 Spark 环境）运行它，就像任何其他 Spark 软件包一样：

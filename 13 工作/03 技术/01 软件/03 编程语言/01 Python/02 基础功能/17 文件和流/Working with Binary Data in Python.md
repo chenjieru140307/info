@@ -1,8 +1,4 @@
----
-title: Working with Binary Data in Python
-toc: true
-date: 2019-10-13
----
+
 # Working with Binary Data in Python
 
 

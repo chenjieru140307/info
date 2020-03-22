@@ -1,8 +1,4 @@
----
-title: 基于TensorFlow 人声识别如何在端上实现
-toc: true
-date: 2019-11-17
----
+
 # 基于TensorFlow，人声识别如何在端上实现？
 
 

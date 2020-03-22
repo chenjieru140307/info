@@ -1,8 +1,4 @@
----
-title: 02 python in one
-toc: true
-date: 2018-08-18 16:36:35
----
+
 
 
 ```python

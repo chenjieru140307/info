@@ -1,8 +1,4 @@
----
-title: DeepMind CNN的变形稳定性和池化无关 滤波器平滑度才是关键
-toc: true
-date: 2019-11-17
----
+
 # DeepMind论文：CNN的变形稳定性和池化无关，滤波器平滑度才是关键
 
 

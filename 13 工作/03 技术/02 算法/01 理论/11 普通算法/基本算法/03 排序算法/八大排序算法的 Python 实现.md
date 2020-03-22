@@ -1,8 +1,4 @@
----
-title: 八大排序算法的 Python 实现
-toc: true
-date: 2019-10-19
----
+
 # 八大排序算法的 Python 实现
 
 

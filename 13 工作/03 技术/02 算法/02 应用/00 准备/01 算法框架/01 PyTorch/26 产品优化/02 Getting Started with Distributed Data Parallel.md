@@ -1,8 +1,4 @@
----
-title: 02 Getting Started with Distributed Data Parallel
-toc: true
-date: 2019-06-29
----
+
 # GETTING STARTED WITH DISTRIBUTED DATA PARALLEL
 
 **Author**: [Shen Li](https://mrshenli.github.io/)

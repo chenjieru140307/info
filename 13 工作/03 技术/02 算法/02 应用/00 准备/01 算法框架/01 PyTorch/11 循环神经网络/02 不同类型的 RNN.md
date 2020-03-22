@@ -1,8 +1,4 @@
----
-title: 02 不同类型的 RNN
-toc: true
-date: 2019-06-16
----
+
 # 不同类型的 RNN
 
 ## Simple RNN（SRN）

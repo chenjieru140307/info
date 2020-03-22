@@ -1,8 +1,4 @@
----
-title: 71 XGBoost
-toc: true
-date: 2019-10-18
----
+
 # XGBoost
 
 

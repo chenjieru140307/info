@@ -1,8 +1,4 @@
----
-title: Git Deprecated option RSAAuthentication
-toc: true
-date: 2018-07-10 11:06:36
----
+
 ## 可以补充进来的：
 
 - 好像还是没有解决。

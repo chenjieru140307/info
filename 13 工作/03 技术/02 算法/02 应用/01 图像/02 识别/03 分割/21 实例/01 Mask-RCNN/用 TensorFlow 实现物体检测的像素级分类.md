@@ -1,8 +1,4 @@
----
-title: 用 TensorFlow 实现物体检测的像素级分类
-toc: true
-date: 2019-11-17
----
+
 # TensorFlow 的物体检测 API 模型——Mask-RCNN
 
 

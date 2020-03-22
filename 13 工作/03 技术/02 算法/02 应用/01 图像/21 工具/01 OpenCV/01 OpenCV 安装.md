@@ -1,8 +1,4 @@
----
-title: 01 OpenCV 安装
-toc: true
-date: 2018-08-12 17:06:45
----
+
 # OpenCV 安装
 
 ## 缘由：

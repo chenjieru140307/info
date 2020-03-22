@@ -1,8 +1,4 @@
----
-title: 19 Keras演示2
-toc: true
-date: 2019-08-18
----
+
 ![mark](http://images.iterate.site/blog/image/20190818/G4sxdyDkphsK.png?imageslim)
 ## 上一次失败的例子
 deep learning这么潮的东西，实现起来也很简单。首先是 load_data进行数据载入处理。

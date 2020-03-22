@@ -1,8 +1,4 @@
----
-title: pytorch 中 lstm 输入
-toc: true
-date: 2019-07-04
----
+
 # pytorch 中 lstm 输入
 
 

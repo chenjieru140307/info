@@ -1,8 +1,4 @@
----
-title: 15 CoupleNet
-toc: true
-date: 2018-09-22
----
+
 # CoupleNet
 
 针对 R-FCN算法没有考虑到 region proposal的全局信息和语义信息的问题，2017年中科院自动化所提出 CoupleNet 算法，其在原来 R-FCN的基础上引入了 proposal 的全局和语义信息，通过结合局部、全局以及语义的信息，提高了检测的精度。

@@ -1,8 +1,4 @@
----
-title: arg min  arg max
-toc: true
-date: 2019-07-20
----
+
 # 数学中常见的 arg min arg max 是什么意思
 
 - arg    是变元（即自变量 argument）的英文缩写。

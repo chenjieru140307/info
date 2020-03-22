@@ -1,8 +1,4 @@
----
-title: OpenCV实战 八种目标跟踪算法
-toc: true
-date: 2019-11-17
----
+
 # 目标跟踪
 
 object tracking

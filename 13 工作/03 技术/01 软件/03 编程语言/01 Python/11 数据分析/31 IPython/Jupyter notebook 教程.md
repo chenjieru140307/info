@@ -1,8 +1,4 @@
----
-title: Jupyter notebook 教程
-toc: true
-date: 2019-06-27
----
+
 # 一、什么是 Jupyter Notebook？
 
 ## 1. 简介

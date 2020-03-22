@@ -1,8 +1,4 @@
----
-title: 08 Serialization semantics
-toc: true
-date: 2019-06-29
----
+
 # SERIALIZATION SEMANTICS
 
 ## Best practices

@@ -1,8 +1,4 @@
----
-title: Unity 训练框架
-toc: true
-date: 2019-11-17
----
+
 # Introducing: Unity Machine Learning Agents
 
 

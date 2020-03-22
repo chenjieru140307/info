@@ -1,8 +1,4 @@
----
-title: 渐进式生成 GAN
-toc: true
-date: 2019-09-29
----
+
 
 # 渐进式生成 GAN
 

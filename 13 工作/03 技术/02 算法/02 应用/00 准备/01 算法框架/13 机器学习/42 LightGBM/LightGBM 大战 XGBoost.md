@@ -1,8 +1,4 @@
----
-title: LightGBM 大战 XGBoost
-toc: true
-date: 2019-11-17
----
+
 # LightGBM 大战 XGBoost
 
 

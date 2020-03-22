@@ -1,8 +1,4 @@
----
-title: 搭建 Pipeline
-toc: true
-date: 2019-10-18
----
+
 # 搭建 Pipeline
 
 很有必要搭建一个 Pipeline，至少要能够自动训练并记录最佳参数。

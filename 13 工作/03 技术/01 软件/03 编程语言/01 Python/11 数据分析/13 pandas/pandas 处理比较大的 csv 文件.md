@@ -1,8 +1,4 @@
----
-title: pandas 处理比较大的 csv 文件
-toc: true
-date: 2018-08-01 17:40:38
----
+
 # pandas 处理比较大的 csv 文件
 
 

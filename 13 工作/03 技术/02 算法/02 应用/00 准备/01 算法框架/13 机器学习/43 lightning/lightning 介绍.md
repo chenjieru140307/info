@@ -1,8 +1,4 @@
----
-title: lightning 介绍
-toc: true
-date: 2019-11-17
----
+
 # Github 项目推荐 | 用 Python 实现的大规模线性回归、分类和排名库 —— lightning
 
 

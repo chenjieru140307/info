@@ -1,8 +1,4 @@
----
-title: Shell 流程控制
-toc: true
-date: 2018-06-11 08:14:45
----
+
 # Shell 流程控制
 
 ## Shell 流程控制

@@ -1,8 +1,4 @@
----
-title: keras 天气预测
-toc: true
-date: 2019-07-04
----
+
 本文翻译自 Jason Brownlee的博客[Multivariate Time Series Forecasting with LSTMs in Keras](https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/)
 
 　　传统的线性模型难以解决多变量或多输入问题，而神经网络如 LSTM 则擅长于处理多个变量的问题，该特性使其有助于解决时间序列预测问题。

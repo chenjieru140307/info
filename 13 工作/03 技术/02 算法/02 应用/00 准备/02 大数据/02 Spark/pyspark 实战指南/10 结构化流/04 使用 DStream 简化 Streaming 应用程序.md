@@ -1,8 +1,4 @@
----
-title: 04 使用 DStream 简化 Streaming 应用程序
-toc: true
-date: 2019-07-02
----
+
 10.4 使用 DStream 简化 Streaming 应用程序
 下面我们使用 python 的 Spark Streaming来创建一个简单的单词计数例子。这个例子中，我们会使用 DStream——由众多小批次数据组成的离散数据流。本书这一部分使用的例子可以在以下内容中找到：https://github.com/drabastomek/learningPySpark/blob/master/Chapter10/streaming_word_count.py。
 这个字数计数示例将使用 Linux/Unix nc命令——它是一种读写跨网络连接数据的简单实用程序。我们将使用两个不同的 bash 终端，一个使用 nc 命令将多个单词发送到我们计算机的本地端口（9999），另一个终端将运行 Spark Streaming来接收这些字，并对它们进行计数。脚本的初始命令集在这里被注明：

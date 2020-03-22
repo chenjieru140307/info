@@ -1,8 +1,4 @@
----
-title: 16 MegDet
-toc: true
-date: 2018-09-22
----
+
 # MegDet
 
 基于 CNN 的物体检测研究一直在不断进步，从 R-CNN 到 Fast/Faster R-CNN，再 Mask R-CNN，主要的改进点都在于新的网络架构、新的范式、或者新的损失函数设计，然而 mini-batch 大小，这个训练中的关键因素并没有得到完善的研究。

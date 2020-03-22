@@ -1,8 +1,4 @@
----
-title: 浅析 Geoffrey Hinton 最近提出的 Capsule 计划
-toc: true
-date: 2019-10-18
----
+
 # 可以补充进来的
 
 - 公式有比较多是图片，转化下。

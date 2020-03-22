@@ -1,8 +1,4 @@
----
-title: DeepMind 研发出类脑 AI 神经元 具备超强空间导航能力
-toc: true
-date: 2019-11-17
----
+
 # DeepMind 研发出类脑 AI 神经元 具备超强空间导航能力
 
 

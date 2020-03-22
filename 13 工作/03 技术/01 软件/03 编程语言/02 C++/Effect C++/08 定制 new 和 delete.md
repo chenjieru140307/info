@@ -1,8 +1,4 @@
----
-title: 08 定制 new 和 delete
-toc: true
-date: 2018-06-26 21:59:56
----
+
 8
 
 定制 new 和 delete

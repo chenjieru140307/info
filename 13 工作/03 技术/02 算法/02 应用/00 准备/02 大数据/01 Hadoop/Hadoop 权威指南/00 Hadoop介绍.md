@@ -1,8 +1,4 @@
----
-title: 00 Hadoop介绍
-toc: true
-date: 2018-06-25 11:35:01
----
+
 
 Hadoop： The Definitive Guide大数据的存储与分析
 

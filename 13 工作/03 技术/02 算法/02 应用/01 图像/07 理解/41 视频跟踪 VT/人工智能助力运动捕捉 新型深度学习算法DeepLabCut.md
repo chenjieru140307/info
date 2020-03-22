@@ -1,8 +1,4 @@
----
-title: 人工智能助力运动捕捉 新型深度学习算法DeepLabCut
-toc: true
-date: 2019-11-17
----
+
 根据今天《自然-神经科学》在线发表的一项研究**DeepLabCut: markerless pose estimation of user-defined body parts with deep learning**，运用一种**新型深度学习算法追踪动物运动及行为**，其准确度可达到人工水平，而且无需采用追踪标记物或进行费时的手动分析。
 
 ![img](https://mmbiz.qpic.cn/mmbiz_jpg/0OWoGbRW1icibpclTUqd4yic6n8rww9rticMhRG8NbSqTCNe9JNKs2X2hI9sw4uyCu3icIzdPrcpHnSMsj8g0feCeAQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)

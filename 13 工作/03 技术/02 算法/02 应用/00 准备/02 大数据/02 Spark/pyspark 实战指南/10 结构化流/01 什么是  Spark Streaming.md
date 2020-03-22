@@ -1,8 +1,4 @@
----
-title: 01 什么是  Spark Streaming
-toc: true
-date: 2019-07-02
----
+
 10.1 什么是 Spark Streaming
 Spark Streaming的核心是一种可扩展、容错的数据流系统，它采用 RDD 批量模式（即批量处理数据）并加快处理速度。同时它又有点过于简单，基本上 Spark Streaming可以以小批量或批次间隔（从 500 毫秒到更大的间隔窗口）运行。
 如下图所示，Spark Streaming接收输入数据流，并在内部将数据流分为多个较小的 batch（batch大小取决于 batch 的间隔）。Spark引擎将这些输入数据的 batch 处理后，生成处理过数据的 batch 结果集。

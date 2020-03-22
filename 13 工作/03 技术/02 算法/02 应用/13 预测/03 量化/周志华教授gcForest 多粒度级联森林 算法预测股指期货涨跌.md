@@ -1,8 +1,4 @@
----
-title: 周志华教授gcForest 多粒度级联森林 算法预测股指期货涨跌
-toc: true
-date: 2019-10-29
----
+
 # gcForest 多粒度级联森林 算法预测股指期货涨跌
 
 gcForest Algorithm

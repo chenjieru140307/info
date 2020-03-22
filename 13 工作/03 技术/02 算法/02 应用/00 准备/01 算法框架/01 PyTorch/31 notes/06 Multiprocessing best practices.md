@@ -1,8 +1,4 @@
----
-title: 06 Multiprocessing best practices
-toc: true
-date: 2019-06-29
----
+
 # MULTIPROCESSING BEST PRACTICES
 
 [`torch.multiprocessing`](https://pytorch.org/docs/stable/multiprocessing.html#module-torch.multiprocessing) is a drop in replacement for python’s [`multiprocessing`](https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing) module. It supports the exact same operations, but extends it, so that all tensors sent through a [`multiprocessing.Queue`](https://docs.python.org/3/library/multiprocessing.html#multiprocessing.Queue), will have their data moved into shared memory and will only send a handle to another process.

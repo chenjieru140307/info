@@ -1,8 +1,4 @@
----
-title: Nature再发DeepMind研究 AI复现大脑网格细胞模拟导航
-toc: true
-date: 2019-11-17
----
+
 # Nature再发DeepMind研究 AI复现大脑网格细胞模拟导航
 
 

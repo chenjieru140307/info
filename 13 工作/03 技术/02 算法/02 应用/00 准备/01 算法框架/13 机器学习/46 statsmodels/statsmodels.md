@@ -1,8 +1,4 @@
----
-title: statsmodels
-toc: true
-date: 2018-06-14 14:51:32
----
+
 ## 可以补充进来的
 
 * 这个 statsmodels 一直没听说过，看来也是很厉害的

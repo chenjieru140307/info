@@ -1,8 +1,4 @@
----
-title: 21 Tensor 与 List 转换
-toc: true
-date: 2019-12-06
----
+
 # Tensor 与 List 转换
 
 举例：

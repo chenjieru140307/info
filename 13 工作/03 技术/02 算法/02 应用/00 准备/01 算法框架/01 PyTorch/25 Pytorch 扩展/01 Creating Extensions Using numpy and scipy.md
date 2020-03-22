@@ -1,8 +1,4 @@
----
-title: 01 Creating Extensions Using numpy and scipy
-toc: true
-date: 2019-06-29
----
+
 # CREATING EXTENSIONS USING NUMPY AND SCIPY
 
 **Author**: [Adam Paszke](https://github.com/apaszke)

@@ -1,8 +1,4 @@
----
-title: 08 Bloom filter
-toc: true
-date: 2018-08-03 14:21:34
----
+
 # Bloom Filter
 
 ## 方法介绍

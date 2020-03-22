@@ -1,8 +1,4 @@
----
-title: AlphaZero和人工智能是否存在学习极限 从智能熵和智能容量的角度进行建模与分析
-toc: true
-date: 2019-09-04
----
+
 # AlphaZero和人工智能是否存在学习极限？——从智能熵和智能容量的角度进行建模与分析
 
 ## Original Title:The Entropy of Artificial Intelligence and a Case Study of AlphaZero from Shannon's Perspective

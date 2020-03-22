@@ -1,8 +1,4 @@
----
-title: 04 Functional 函数
-toc: true
-date: 2019-06-07
----
+
 
 # 可以补充进来的
 

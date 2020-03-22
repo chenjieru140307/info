@@ -1,8 +1,4 @@
----
-title: 07 MapReduce的工作机制
-toc: true
-date: 2018-06-27 07:51:46
----
+
 ### MapReduce的工作机制
 
 在本章中，我们将深入学习 Hadoop 中的 MapReduce 工作机制。这些知识将为我 们随后两章学习写 MapReduce 高级编程奠定基础。

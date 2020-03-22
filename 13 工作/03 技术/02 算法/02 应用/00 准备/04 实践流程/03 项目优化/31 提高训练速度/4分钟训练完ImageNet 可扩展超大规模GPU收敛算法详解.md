@@ -1,8 +1,4 @@
----
-title: 4分钟训练完ImageNet 可扩展超大规模GPU收敛算法详解
-toc: true
-date: 2019-11-17
----
+
 # 4分钟训练完ImageNet 可扩展超大规模GPU收敛算法详解
 
 

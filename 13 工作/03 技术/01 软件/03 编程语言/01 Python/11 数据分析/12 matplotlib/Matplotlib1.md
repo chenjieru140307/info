@@ -1,8 +1,4 @@
----
-title: Matplotlib1
-toc: true
-date: 2018-07-28 08:38:52
----
+
 
 ## 缘由：
 

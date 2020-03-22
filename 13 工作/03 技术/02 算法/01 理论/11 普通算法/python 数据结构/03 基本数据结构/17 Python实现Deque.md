@@ -1,8 +1,4 @@
----
-title: 17 Python实现Deque
-toc: true
-date: 2019-07-02
----
+
 ## 3.17.python实现 Deque
 
 正如我们在前面的部分中所做的，我们将为抽象数据类型 deque 的实现创建一个新类。同样，python 列表将提供一组非常好的方法来构建 deque 的细节。我们的实现（Listing 1）将假定 deque 的尾部在列表中的位置为 0。

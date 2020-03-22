@@ -1,8 +1,4 @@
----
-title: github上面的文件夹是灰色的
-toc: true
-date: 2018-08-25 22:27:00
----
+
 
 # 在自己的 repo 里 clone 了别的 repo ，然后 push 的时候有问题
 

@@ -1,8 +1,4 @@
----
-title: Hadoop HA 高可用集群的搭建
-toc: true
-date: 2019-10-29
----
+
 # Hadoop HA 高可用集群的搭建
 
 ## hadoop部署服务器

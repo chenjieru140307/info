@@ -1,8 +1,4 @@
----
-title: ValueError sampler is mutually exclusive with shuffle
-toc: true
-date: 2019-05-30
----
+
 # 可以补充进来的
 
 - 嗯，这个知道了，是 `shuffle` 和 `sampler` 的设定冲突了。

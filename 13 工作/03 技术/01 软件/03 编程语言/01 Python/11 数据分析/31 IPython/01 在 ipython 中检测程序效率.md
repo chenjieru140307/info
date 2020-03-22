@@ -1,8 +1,4 @@
----
-title: 01 在 ipython 中检测程序效率
-toc: true
-date: 2018-10-27
----
+
 # 可以补充进来的
 
 - 这个要拆分到 IPython 的里面去，但是，关于 opencv 和 numpy 的类似函数的效率对比还是要总结下的。

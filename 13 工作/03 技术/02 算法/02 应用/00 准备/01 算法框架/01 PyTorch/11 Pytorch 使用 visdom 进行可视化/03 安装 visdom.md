@@ -1,8 +1,4 @@
----
-title: 03 安装 visdom
-toc: true
-date: 2019-06-15
----
+
 # 安装 Visdom
 
 在 python 3环境下，使用安装 Visdom 模块。

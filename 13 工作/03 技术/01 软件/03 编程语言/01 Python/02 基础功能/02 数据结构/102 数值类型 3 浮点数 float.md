@@ -1,8 +1,4 @@
----
-title: 102 数值类型 3 浮点数 float
-toc: true
-date: 2018-08-19
----
+
 # 可以补充进来的
 
 - nan 是什么？是 None 吗？

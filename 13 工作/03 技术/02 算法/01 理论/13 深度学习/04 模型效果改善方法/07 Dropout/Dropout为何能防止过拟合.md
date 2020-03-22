@@ -1,8 +1,4 @@
----
-title: Dropout为何能防止过拟合
-toc: true
-date: 2019-11-17
----
+
 # Dropout为何能防止过拟合
 
 

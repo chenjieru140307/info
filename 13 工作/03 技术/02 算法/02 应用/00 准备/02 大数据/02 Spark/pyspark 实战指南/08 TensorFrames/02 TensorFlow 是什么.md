@@ -1,8 +1,4 @@
----
-title: 02 TensorFlow 是什么
-toc: true
-date: 2019-07-02
----
+
 8.2 TensorFlow是什么
 TensorFlow是一个 Google 开源软件库，用于使用数据流图进行数值计算。换句话说就是一个以深度学习为重点的开源机器学习库。TensorFlow是 Google Brain团队的研究人员和工程师基于神经网络将深度学习应用于 Google 产品，并为各个 Google 团队（包括但不限于）的搜索、照片和语音识别构建生产模型的成果。
 Tensorflow建立在具有 python 接口的 C＋＋之上，它在很短的时间内迅速成长为最受欢迎的深度学习项目之一。下图展示了四个流行的深度学习库之间的 Google trend比较；请注意 2015 年 11 月 8 日至 14 日（TensorFlow宣布时）的尖峰以及去年快速上涨（此快照拍于 2016 年 12 月底）：

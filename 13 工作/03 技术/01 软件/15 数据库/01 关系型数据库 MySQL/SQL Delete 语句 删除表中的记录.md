@@ -1,8 +1,4 @@
----
-title: SQL Delete 语句 删除表中的记录
-toc: true
-date: 2018-08-03 13:56:56
----
+
 
 # 相关
 

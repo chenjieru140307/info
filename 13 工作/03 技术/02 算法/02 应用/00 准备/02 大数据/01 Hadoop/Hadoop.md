@@ -1,8 +1,4 @@
----
-title: Hadoop
-toc: true
-date: 2018-08-01 17:31:40
----
+
 # Hadoop
 
 

@@ -1,8 +1,4 @@
----
-title: AnyQ
-toc: true
-date: 2019-11-17
----
+
 # AnyQ
 
 基于FAQ集合的问答系统

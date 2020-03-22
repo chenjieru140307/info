@@ -1,8 +1,4 @@
----
-title: fatal error C1189 No Target Architecture
-toc: true
-date: 2019-10-19
----
+
 # fatal error C1189: #error : “No Target Architecture”
 
 在编译程序的时候发现报这个错误，在网上看到很多文章，说设置include路径，lib目录等等，都没有解决。最后调整了以下include文件的顺序，问题解决了。例如

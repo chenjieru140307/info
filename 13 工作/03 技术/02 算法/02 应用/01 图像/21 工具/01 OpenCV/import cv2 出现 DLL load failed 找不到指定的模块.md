@@ -1,8 +1,4 @@
----
-title: import cv2 出现 DLL load failed 找不到指定的模块
-toc: true
-date: 2019-04-22
----
+
 
 
 # import cv2 出现 DLL load failed 找不到指定的模块

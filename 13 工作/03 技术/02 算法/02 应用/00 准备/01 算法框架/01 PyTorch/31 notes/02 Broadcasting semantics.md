@@ -1,8 +1,4 @@
----
-title: 02 Broadcasting semantics
-toc: true
-date: 2019-06-29
----
+
 # BROADCASTING SEMANTICS
 
 Many PyTorch operations support [`NumPy Broadcasting Semantics`](https://docs.scipy.org/doc/numpy/user/basics.broadcasting.html#module-numpy.doc.broadcasting).

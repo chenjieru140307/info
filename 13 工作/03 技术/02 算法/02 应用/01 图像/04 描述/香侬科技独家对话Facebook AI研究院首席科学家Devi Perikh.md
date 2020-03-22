@@ -1,8 +1,4 @@
----
-title: 香侬科技独家对话Facebook AI研究院首席科学家Devi Perikh
-toc: true
-date: 2019-11-17
----
+
 # 香侬科技独家对话Facebook AI研究院首席科学家Devi Perikh
 
 

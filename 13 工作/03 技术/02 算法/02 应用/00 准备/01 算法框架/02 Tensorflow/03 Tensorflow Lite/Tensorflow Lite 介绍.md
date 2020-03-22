@@ -1,8 +1,4 @@
----
-title: Tensorflow Lite 介绍
-toc: true
-date: 2019-11-17
----
+
 
 最新的中文技术分享视频来了！本期来自 Google 的工程师 Renmin 为大家带来 TensorFlow Lite 的深度解析视频，主要讲述 TensorFlow Lite 模型文件格式，并可视化以帮助大家记忆理解，也包含 TensorFlow Lite 的具体加载运行过程，并给出关键的数据结构描述，同样以可视化的形式呈现给大家：
 

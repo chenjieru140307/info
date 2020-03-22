@@ -1,8 +1,4 @@
----
-title: api sdk 设计
-toc: true
-date: 2018-08-01 17:24:47
----
+
 # api sdk 设计
 
 这种知识属于什么类别的？

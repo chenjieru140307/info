@@ -1,8 +1,4 @@
----
-title: 03 Tensor Attributes
-toc: true
-date: 2019-06-29
----
+
 # TENSOR ATTRIBUTES
 
 Each `torch.Tensor` has a [`torch.dtype`](https://pytorch.org/docs/stable/tensor_attributes.html#torch.torch.dtype), [`torch.device`](https://pytorch.org/docs/stable/tensor_attributes.html#torch.torch.device), and [`torch.layout`](https://pytorch.org/docs/stable/tensor_attributes.html#torch.torch.layout).

@@ -1,8 +1,4 @@
----
-title: 52 pLSA 2
-toc: true
-date: 2018-08-12 20:04:22
----
+
 # pLSA
 
 

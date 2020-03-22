@@ -1,8 +1,4 @@
----
-title: 04 Extending PyTorch
-toc: true
-date: 2019-06-29
----
+
 # EXTENDING PYTORCH
 
 In this note we’ll cover ways of extending [`torch.nn`](https://pytorch.org/docs/stable/nn.html#module-torch.nn), [`torch.autograd`](https://pytorch.org/docs/stable/autograd.html#module-torch.autograd), and writing custom C extensions utilizing our C libraries.

@@ -1,8 +1,4 @@
----
-title: LOF
-toc: true
-date: 2019-10-19
----
+
 # 局部异常因子LOF算法
 
 

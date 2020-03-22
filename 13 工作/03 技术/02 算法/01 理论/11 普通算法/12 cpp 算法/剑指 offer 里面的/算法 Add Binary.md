@@ -1,8 +1,4 @@
----
-title: 算法 Add Binary
-toc: true
-date: 2018-07-05 21:31:27
----
+
 # 算法题 Add Binary
 
 ## 题目描述

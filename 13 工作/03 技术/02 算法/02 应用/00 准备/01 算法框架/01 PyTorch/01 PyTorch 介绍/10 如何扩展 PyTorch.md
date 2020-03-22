@@ -1,8 +1,4 @@
----
-title: 10 如何扩展 PyTorch
-toc: true
-date: 2019-12-06
----
+
 # 如何扩展 PyTorch
 
 可以使用 Numpy、SciPy 和 Cython 来扩展 PyTorch。

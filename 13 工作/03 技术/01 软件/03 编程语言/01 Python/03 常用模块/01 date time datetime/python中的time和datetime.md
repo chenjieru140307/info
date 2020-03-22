@@ -1,8 +1,4 @@
----
-title: python中的time和datetime
-toc: true
-date: 2018-06-11 08:14:30
----
+
 # Python中的 time 和 datetime
 
 

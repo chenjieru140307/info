@@ -1,8 +1,4 @@
----
-title: 05 ADVERSARIAL EXAMPLE GENERATION
-toc: true
-date: 2019-06-29
----
+
 # ADVERSARIAL EXAMPLE GENERATION
 
 **Author:** [Nathan Inkawhich](https://github.com/inkawhich)

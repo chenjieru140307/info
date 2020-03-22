@@ -1,8 +1,4 @@
----
-title: 02 Combining and Merging Datasets 合并数据集
-toc: true
-date: 2018-08-03 11:27:40
----
+
 
 # 8.2 Combining and Merging Datasets（合并数据集）
 

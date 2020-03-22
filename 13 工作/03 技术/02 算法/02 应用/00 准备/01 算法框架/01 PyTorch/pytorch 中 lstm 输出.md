@@ -1,8 +1,4 @@
----
-title: pytorch 中 lstm 输出
-toc: true
-date: 2019-07-04
----
+
 # 聊一聊 PyTorch 中 LSTM 的输出格式
 
 

@@ -1,8 +1,4 @@
----
-title: 05 TensorFlow 实现卷积神经网络
-toc: true
-date: 2018-06-26 20:29:23
----
+
 ### TensorFlow实现卷积 神经网络
 
 

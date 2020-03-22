@@ -1,8 +1,4 @@
----
-title: 05 NeuralStyle
-toc: true
-date: 2018-08-18 16:38:27
----
+
 
 # Neural Style
 

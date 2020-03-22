@@ -1,8 +1,4 @@
----
-title: Python 文本读取
-toc: true
-date: 2018-08-28
----
+
 # Python 文本的读写
 
 Python中读取文件常用的三种方法：

@@ -1,8 +1,4 @@
----
-title: AlphaZero 解读
-toc: true
-date: 2019-10-13
----
+
 #
 
 Facebook人工智能组研究员田渊栋博士解读：

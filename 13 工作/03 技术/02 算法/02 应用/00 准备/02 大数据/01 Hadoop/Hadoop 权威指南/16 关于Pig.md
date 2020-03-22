@@ -1,8 +1,4 @@
----
-title: 16 关于Pig
-toc: true
-date: 2018-08-21 18:16:23
----
+
 Apache ?々([http://pig.apache.org/)](http://pig.apache.org/)%e4%b8%ba%e5%a4%a7%e5%9e%8b%e6%95%b0%e6%8d%ae%e9%9b%86%e7%9a%84%e5%a4%84%e7%90%86%e6%8f%90%e4%be%9bT%e6%9b%b4%e9%ab%98%e5%b1%82%e6%ac%a1%e7%9a%84%e6%8a%bd%e8%b1%a1%e3%80%82)[为大型数据集的处理提供 T 更高层次的抽象。](http://pig.apache.org/)%e4%b8%ba%e5%a4%a7%e5%9e%8b%e6%95%b0%e6%8d%ae%e9%9b%86%e7%9a%84%e5%a4%84%e7%90%86%e6%8f%90%e4%be%9bT%e6%9b%b4%e9%ab%98%e5%b1%82%e6%ac%a1%e7%9a%84%e6%8a%bd%e8%b1%a1%e3%80%82)MapReduce使作为程序员的你能够自己定义一个 map 函数和一个紧跟其后的 reduce函数。但是，你必须使数据处理过程与这一连续的 map 和 reduce 模式相匹 配。很多时候，数据处理需要多个 MapReduce 过程才能实现。而使得数据处理过 程与该模式匹配可能很困难。有了 Pig，就能使用更为丰富的数据结构。这些数据 结构往往都是多值和嵌套的。Pig还提供了一套更强大的数据变换操作，包括在 MapReduce中被忽视的连接(join)操作。
 
 Pig包括两部分。

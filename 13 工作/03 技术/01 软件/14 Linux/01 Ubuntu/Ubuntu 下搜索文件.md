@@ -1,8 +1,4 @@
----
-title: Ubuntu 下搜索文件
-toc: true
-date: 2018-10-04
----
+
 
 
 

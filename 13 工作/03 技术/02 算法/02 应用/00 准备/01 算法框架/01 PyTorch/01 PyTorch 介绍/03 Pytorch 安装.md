@@ -1,8 +1,4 @@
----
-title: 03 Pytorch 安装
-toc: true
-date: 2019-06-27
----
+
 # Pytorch 安装
 
 

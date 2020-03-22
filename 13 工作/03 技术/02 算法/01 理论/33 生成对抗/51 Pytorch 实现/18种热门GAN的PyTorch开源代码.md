@@ -1,8 +1,4 @@
----
-title: 18种热门GAN的PyTorch开源代码
-toc: true
-date: 2019-11-17
----
+
 
 # 18种热门GAN的PyTorch开源代码
 

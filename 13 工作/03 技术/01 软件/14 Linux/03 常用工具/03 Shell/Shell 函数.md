@@ -1,8 +1,4 @@
----
-title: Shell 函数
-toc: true
-date: 2018-06-11 08:14:45
----
+
 # Shell 函数
 
 

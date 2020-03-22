@@ -1,8 +1,4 @@
----
-title: 05 高级IPython特性
-toc: true
-date: 2018-08-03 11:40:38
----
+
 
 # B.5 Advanced IPython Features（高级 IPython 特性）
 

@@ -1,8 +1,4 @@
----
-title: 10 RON
-toc: true
-date: 2018-09-22
----
+
 # RON
 
 2017年清华大学提出了 RON 算法，结合 two stage名的方法和 one stage方法的优势，更加关注多尺度对象定位和负空间样本挖掘问题。

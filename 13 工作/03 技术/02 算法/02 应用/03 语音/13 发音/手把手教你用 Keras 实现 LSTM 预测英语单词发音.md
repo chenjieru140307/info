@@ -1,8 +1,4 @@
----
-title: 手把手教你用 Keras 实现 LSTM 预测英语单词发音
-toc: true
-date: 2019-11-17
----
+
 # 手把手教你用 Keras 实现 LSTM 预测英语单词发音
 
 

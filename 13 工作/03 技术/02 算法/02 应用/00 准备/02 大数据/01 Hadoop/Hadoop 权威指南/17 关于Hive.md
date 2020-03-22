@@ -1,8 +1,4 @@
----
-title: 17 关于Hive
-toc: true
-date: 2018-06-27 07:51:31
----
+
 住 fc 题为 “Information Platforms and the Rise of the Data Scientist” 的文章一文中，Jeff Hammerbacher' “信息平台”描述为“企业摄取(ingest)、处理(process)、生成 (generate)信息的行为”与“帮助加速从经验数据中学习”的“中心”。
 
 在 Facebook, Jeff团队所构建的信息平台中，最庞大的组成部分是 Apache Hive (<https://hive.apache.org/)0> Hive是一个构建在 Hadoop 上的数据仓库框架，是应 Facebook每天产生的海量新兴社会网络数据进行管理和(机器)学习的需求而产生 和发展的。在尝试了不同系统之后，Jeff团队选择 Hadoop 来存储和处理数据，因 为 Hadoop 的性价比高，同时还能够满足他们的可伸缩性要求。

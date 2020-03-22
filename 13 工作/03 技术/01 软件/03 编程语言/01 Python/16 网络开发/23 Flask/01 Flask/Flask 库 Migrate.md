@@ -1,8 +1,4 @@
----
-title: Flask 库 Migrate
-toc: true
-date: 2018-06-22 21:59:05
----
+
 ## 可以补充进来的
 - 对于这个 Flask 的 Migrate 还是有一些问题的。比如 列的名称的变更，这个就做不到
 

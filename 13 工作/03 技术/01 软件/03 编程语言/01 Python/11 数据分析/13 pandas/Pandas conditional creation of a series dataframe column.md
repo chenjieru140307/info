@@ -1,8 +1,4 @@
----
-title: Pandas conditional creation of a series dataframe column
-toc: true
-date: 2019-07-04
----
+
 # Pandas conditional creation of a series/dataframe column
 
 

@@ -1,8 +1,4 @@
----
-title: 01 visdom 介绍
-toc: true
-date: 2019-06-12
----
+
 # 可以补充进来的
 
 - 不知道有没有出现比 visdom 更好的 dashboards，要查下。

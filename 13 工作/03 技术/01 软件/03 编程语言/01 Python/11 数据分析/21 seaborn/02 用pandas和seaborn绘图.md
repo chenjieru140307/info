@@ -1,8 +1,4 @@
----
-title: 02 用pandas和seaborn绘图
-toc: true
-date: 2018-08-03 11:28:44
----
+
 
 # 9.2 Plotting with pandas and seaborn（用 pandas 和 seaborn 绘图）
 

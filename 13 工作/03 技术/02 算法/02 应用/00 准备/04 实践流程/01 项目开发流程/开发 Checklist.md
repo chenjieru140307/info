@@ -1,8 +1,4 @@
----
-title: 开发 Checklist
-toc: true
-date: 2019-10-01
----
+
 # 可以补充进来的
 
 - [机器学习项目流程清单](https://zhuanlan.zhihu.com/p/34667595) 中文版对应进来。

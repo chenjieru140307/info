@@ -1,8 +1,4 @@
----
-title: 01 Model Parallel Best Practices
-toc: true
-date: 2019-06-29
----
+
 # MODEL PARALLEL BEST PRACTICES
 
 **Author**: [Shen Li](https://mrshenli.github.io/)

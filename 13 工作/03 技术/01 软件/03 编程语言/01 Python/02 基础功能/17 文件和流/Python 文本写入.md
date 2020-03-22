@@ -1,8 +1,4 @@
----
-title: Python 文本写入
-toc: true
-date: 2018-10-13
----
+
 
 
 # Python 文本写入

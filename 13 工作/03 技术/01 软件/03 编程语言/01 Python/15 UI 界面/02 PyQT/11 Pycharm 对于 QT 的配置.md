@@ -1,8 +1,4 @@
----
-title: 11 Pycharm 对于 QT 的配置
-toc: true
-date: 2018-10-17
----
+
 
 
 

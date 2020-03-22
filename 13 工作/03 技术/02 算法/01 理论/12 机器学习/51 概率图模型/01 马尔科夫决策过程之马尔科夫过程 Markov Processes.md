@@ -1,8 +1,4 @@
----
-title: 01 马尔科夫决策过程之马尔科夫过程 Markov Processes
-toc: true
-date: 2019-10-29
----
+
 介绍Markov Processes之前，必须介绍一下马尔科夫性质。
 
 ## **一、Markov Property**

@@ -1,8 +1,4 @@
----
-title: AI 玩游戏
-toc: true
-date: 2019-12-06
----
+
 作者： Vino Wan @ Tencent Game AI Research Center (TGAIRC)
 
 本文内容包含（但不限于）以下章节：

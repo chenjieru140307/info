@@ -1,8 +1,4 @@
----
-title: 08 Obtain 3D directly
-toc: true
-date: 2018-08-18 16:35:06
----
+
 
 
 Obtain 3D directly

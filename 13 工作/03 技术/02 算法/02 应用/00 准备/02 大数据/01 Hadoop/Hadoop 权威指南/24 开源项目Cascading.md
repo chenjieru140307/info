@@ -1,8 +1,4 @@
----
-title: 24 开源项目Cascading
-toc: true
-date: 2018-06-27 07:51:49
----
+
 #### 第 24 章
 
 （作者：Chris K. Wensel）

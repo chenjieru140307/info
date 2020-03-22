@@ -1,8 +1,4 @@
----
-title: 52 概率隐语义分析 pLSA
-toc: true
-date: 2019-08-27
----
+
 
 ### pLSA
 

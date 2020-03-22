@@ -1,8 +1,4 @@
----
-title: 03 Stark Streaming 应用程序数据流是什么
-toc: true
-date: 2019-07-02
----
+
 10.3 Spark Streaming应用程序数据流是什么
 下图提供了 Spark driver、workers、streaming源与目标间的数据流：
 上图中 Spark Streaming Context的 ssc.start（）是入口点：

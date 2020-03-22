@@ -1,8 +1,4 @@
----
-title: 01 下载 face landmark 数据
-toc: true
-date: 2019-12-06
----
+
 # 下载 face landmark 数据
 
 软件包准备：

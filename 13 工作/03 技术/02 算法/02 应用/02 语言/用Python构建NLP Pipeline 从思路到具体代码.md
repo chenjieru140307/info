@@ -1,8 +1,4 @@
----
-title: 用Python构建NLP Pipeline 从思路到具体代码
-toc: true
-date: 2019-11-17
----
+
 阅读时长：全文大约 2000 字，读完可能需要下面这首歌的时间
 
 ![img](https://y.gtimg.cn/music/photo_new/T002R90x90M0000026rzHh4a8xjN.jpg)Thorne RoomBuckethead - Project Little Man![img](https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source42f400.png)

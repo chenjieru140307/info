@@ -1,8 +1,4 @@
----
-title: 22 Bagging 推导
-toc: true
-date: 2019-08-27
----
+
 
 # Bagging
 

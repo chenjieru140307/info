@@ -1,8 +1,4 @@
----
-title: ll command not found 当ll 无法识别时解决办法
-toc: true
-date: 2018-10-22
----
+
 # ll command not found
 
 ll 并不是 linux 下一个基本的命令，它实际上是 ls -l 的一个别名。

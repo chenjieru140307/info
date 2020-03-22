@@ -1,8 +1,4 @@
----
-title: 02 RNN 和 LSTM 
-toc: true
-date: 2018-08-18 16:33:42
----
+
 
 下面，我们介绍下 RNN 和 LSTM 的一些背景知识：
 

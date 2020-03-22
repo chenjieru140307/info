@@ -1,8 +1,4 @@
----
-title: FAGAN
-toc: true
-date: 2019-11-17
----
+
 # FAGAN：完全注意力机制（Full Attention）GAN，Self-attention+GAN
 
 

@@ -1,8 +1,4 @@
----
-title: numpy 中的 matrix 和 array
-toc: true
-date: 2018-06-11 08:14:49
----
+
 
 
 # 相关

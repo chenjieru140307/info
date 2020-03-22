@@ -1,8 +1,4 @@
----
-title: 105 布尔值 bool
-toc: true
-date: 2018-08-19
----
+
 
 # 布尔值 bool
 

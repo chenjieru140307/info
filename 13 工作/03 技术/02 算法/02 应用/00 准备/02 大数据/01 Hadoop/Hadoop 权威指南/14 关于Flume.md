@@ -1,8 +1,4 @@
----
-title: 14 关于Flume
-toc: true
-date: 2018-06-27 07:51:33
----
+
 #### 第 14 章
 
 ![img](Hadoop43010757_2cdb48_2d8748-170.jpg)

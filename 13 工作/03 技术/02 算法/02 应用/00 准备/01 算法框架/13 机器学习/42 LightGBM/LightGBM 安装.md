@@ -1,8 +1,4 @@
----
-title: LightGBM 安装
-toc: true
-date: 2018-08-23 13:51:22
----
+
 # LightGBM 安装
 
 

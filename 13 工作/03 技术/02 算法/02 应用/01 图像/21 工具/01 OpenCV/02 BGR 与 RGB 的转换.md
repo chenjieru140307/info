@@ -1,8 +1,4 @@
----
-title: 02 BGR 与 RGB 的转换
-toc: true
-date: 2018-10-14
----
+
 # BGR 与 RGB 的转换
 
 

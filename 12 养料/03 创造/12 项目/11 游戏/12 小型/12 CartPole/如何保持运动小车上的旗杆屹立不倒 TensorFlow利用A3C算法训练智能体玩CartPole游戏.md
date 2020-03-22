@@ -1,8 +1,4 @@
----
-title: 如何保持运动小车上的旗杆屹立不倒 TensorFlow利用A3C算法训练智能体玩CartPole游戏
-toc: true
-date: 2019-11-17
----
+
 # 如何保持运动小车上的旗杆屹立不倒 TensorFlow利用A3C算法训练智能体玩CartPole游戏
 
 

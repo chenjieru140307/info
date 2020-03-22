@@ -1,8 +1,4 @@
----
-title: 个人博客服务器上的 githook
-toc: true
-date: 2019-04-06
----
+
 # 个人博客服务器上的 githook
 
 记录一下。

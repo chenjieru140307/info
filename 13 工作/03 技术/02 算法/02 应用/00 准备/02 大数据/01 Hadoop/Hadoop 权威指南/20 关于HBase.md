@@ -1,8 +1,4 @@
----
-title: 20 关于HBase
-toc: true
-date: 2018-06-27 07:51:30
----
+
 （作者：Jonathan Gray 和 Michael Stack）
 
 

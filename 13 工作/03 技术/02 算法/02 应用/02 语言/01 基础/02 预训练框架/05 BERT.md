@@ -1,8 +1,4 @@
----
-title: 05 BERT
-toc: true
-date: 2019-09-29
----
+
 # 可以补充进来的
 
 - [BERT相关论文、文章和代码资源汇总](http://www.52nlp.cn/tag/bert%E8%A7%A3%E8%AF%BB)

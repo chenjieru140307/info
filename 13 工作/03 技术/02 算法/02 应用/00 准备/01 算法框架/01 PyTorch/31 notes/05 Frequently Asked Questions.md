@@ -1,8 +1,4 @@
----
-title: 05 Frequently Asked Questions
-toc: true
-date: 2019-06-29
----
+
 # FREQUENTLY ASKED QUESTIONS
 
 ## My model reports “cuda runtime error(2): out of memory”

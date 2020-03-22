@@ -1,8 +1,4 @@
----
-title: PeleeNet
-toc: true
-date: 2019-11-17
----
+
 # 优于MobileNet、YOLOv2：移动设备上的实时目标检测系统Pelee
 
 

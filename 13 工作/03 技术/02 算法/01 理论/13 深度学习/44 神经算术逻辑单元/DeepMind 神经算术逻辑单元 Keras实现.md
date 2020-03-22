@@ -1,8 +1,4 @@
----
-title: DeepMind 神经算术逻辑单元 Keras实现
-toc: true
-date: 2019-11-17
----
+
 # DeepMind 神经算术逻辑单元 Keras实现
 
 

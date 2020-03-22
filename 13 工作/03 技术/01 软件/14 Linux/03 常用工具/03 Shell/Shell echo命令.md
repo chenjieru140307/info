@@ -1,8 +1,4 @@
----
-title: Shell echo命令
-toc: true
-date: 2018-06-11 08:14:45
----
+
 # Shell echo命令
 
 

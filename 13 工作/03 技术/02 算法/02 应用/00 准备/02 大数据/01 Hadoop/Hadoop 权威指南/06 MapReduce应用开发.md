@@ -1,8 +1,4 @@
----
-title: 06 MapReduce应用开发
-toc: true
-date: 2018-06-27 07:51:46
----
+
 ### MapReduce应用开发
 
 在第 2 章中，我们介绍了 MapReduce模型。本章中，我们从实现层面介绍在 Hadoop中开发 MapReduce 应用程序。

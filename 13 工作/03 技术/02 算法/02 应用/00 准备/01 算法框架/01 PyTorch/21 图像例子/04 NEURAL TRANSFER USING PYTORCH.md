@@ -1,8 +1,4 @@
----
-title: 04 NEURAL TRANSFER USING PYTORCH
-toc: true
-date: 2019-06-29
----
+
 # NEURAL TRANSFER USING PYTORCH
 
 **Author**: [Alexis Jacq](https://alexis-jacq.github.io/)

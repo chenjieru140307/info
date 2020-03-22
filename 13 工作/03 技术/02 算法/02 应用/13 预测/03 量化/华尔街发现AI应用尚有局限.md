@@ -1,8 +1,4 @@
----
-title: 华尔街发现AI应用尚有局限
-toc: true
-date: 2019-11-17
----
+
 2018年8月22日，高盛董事总经理兼机器学习全球负责人Charles Elkan在开源AI软件公司H2O.ai主办的会议上发言。 图片来源：SARA CASTELLANOS / THE WALL STREET JOURNAL
 
 高盛集团(Goldman Sachs Group Inc., GS)和摩根士丹利(Morgan Stanley, MS)对人工智能进行多方位试验的专家称，人工智能可能有助发现欺诈行为，减少算法交易中的错误，但眼下这种技术仍存在很多局限。

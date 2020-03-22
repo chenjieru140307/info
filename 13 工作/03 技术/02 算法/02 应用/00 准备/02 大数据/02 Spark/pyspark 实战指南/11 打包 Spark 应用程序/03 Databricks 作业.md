@@ -1,8 +1,4 @@
----
-title: 03 Databricks 作业
-toc: true
-date: 2019-07-02
----
+
 11.3 Databricks作业
 如果你正在使用 Databricks 产品，从你的 Databricks 笔记本开发到生产的一种简单的方法是使用 Databricks 作业特征。它会让你：
 ·安排你的 Databricks 笔记本运行现存的或者新的集群；

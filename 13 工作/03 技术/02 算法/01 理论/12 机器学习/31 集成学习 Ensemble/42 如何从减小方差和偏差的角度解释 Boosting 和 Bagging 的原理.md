@@ -1,8 +1,4 @@
----
-title: 42 如何从减小方差和偏差的角度解释 Boosting 和 Bagging 的原理
-toc: true
-date: 2019-04-21
----
+
 # 可以补充进来的
 
 

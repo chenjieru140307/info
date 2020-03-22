@@ -1,8 +1,4 @@
----
-title: 14 利用Numba构建快速的NumPy函数
-toc: true
-date: 2018-07-08 13:36:55
----
+
 
 # A.7 Writing Fast NumPy Functions with Numba（利用 Numba 构建快速的 NumPy 函数）
 

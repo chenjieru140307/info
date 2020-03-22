@@ -1,8 +1,4 @@
----
-title: JoshieGo
-toc: true
-date: 2019-11-17
----
+
 # JoshieGo
 
 \#仿AlphaGo实现的AI围棋程序

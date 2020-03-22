@@ -1,8 +1,4 @@
----
-title: 08 ndarray对象的内部
-toc: true
-date: 2018-08-03 11:21:21
----
+
 
 # APPENDIX A Advanced NumPy（附录 A：高级 NumPy 用法）
 

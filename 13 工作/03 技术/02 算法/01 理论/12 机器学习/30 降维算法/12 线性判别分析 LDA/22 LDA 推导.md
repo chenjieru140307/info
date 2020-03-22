@@ -1,8 +1,4 @@
----
-title: 22 LDA 推导
-toc: true
-date: 2019-08-27
----
+
 
 # LDA 是为分类服务的
 

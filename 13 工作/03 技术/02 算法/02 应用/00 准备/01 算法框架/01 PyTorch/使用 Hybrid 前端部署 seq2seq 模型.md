@@ -1,8 +1,4 @@
----
-title: 使用 Hybrid 前端部署 seq2seq 模型
-toc: true
-date: 2019-06-28
----
+
 # 可以补充进来的
 
 - 暂时没有看

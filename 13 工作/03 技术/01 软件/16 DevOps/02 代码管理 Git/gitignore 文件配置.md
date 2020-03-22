@@ -1,8 +1,4 @@
----
-title: gitignore 文件配置
-toc: true
-date: 2019-10-19
----
+
 # Git 的 .gitignore 配置
 
 .gitignore 配置文件用于配置不需要加入版本管理的文件，配置好该文件可以为我们的版本管理带来很大的便利，以下是个人对于配置 .gitignore 的一些心得。

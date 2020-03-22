@@ -1,8 +1,4 @@
----
-title: Shell 文件包含
-toc: true
-date: 2018-06-11 08:14:45
----
+
 # Shell 文件包含
 
 ## Shell 文件包含

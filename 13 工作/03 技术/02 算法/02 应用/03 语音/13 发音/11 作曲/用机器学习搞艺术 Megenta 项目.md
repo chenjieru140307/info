@@ -1,8 +1,4 @@
----
-title: 用机器学习搞艺术 Megenta 项目
-toc: true
-date: 2019-11-17
----
+
 # 用机器学习搞艺术，谷歌 Megenta 项目集锦（附 Github）
 
 

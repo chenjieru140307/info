@@ -1,8 +1,4 @@
----
-title: SNIPER
-toc: true
-date: 2019-11-17
----
+
 **03 SNIPER：高效的多尺度物体检测算法**
 
 

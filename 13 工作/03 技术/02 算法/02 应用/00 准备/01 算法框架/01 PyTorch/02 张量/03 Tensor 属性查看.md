@@ -1,8 +1,4 @@
----
-title: 03 Tensor 属性查看
-toc: true
-date: 2019-12-06
----
+
 # Tensor 属性查看
 
 x = torch.randn(1)

@@ -1,8 +1,4 @@
----
-title: 04 创建 DataFrame
-toc: true
-date: 2019-07-02
----
+
 3.4 创建 DataFrame
 通常情况下，通过使用 SparkSession 导入数据（或者调用 PySpark 的 shell 脚本 spark）来创建 DataFrame。在 Spark 1.x版本中，通常必须使用 sqlContext。
 后几章中，我们将讨论如何将数据导入你的本地文件系统、Hadoop分布式文件系统（HDFS）或者其他的云存储系统（例如 S3 或者 WASB）。在本章中，我们的重点是在 Spark 中直接生成你自己的 DataFrame 数据或者利用 Databricks 社区版中的现成数据源。关于如何注册 Databricks 社区版的说明，请参阅额外的章节。

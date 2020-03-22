@@ -1,8 +1,4 @@
----
-title: seaborn1
-toc: true
-date: 2018-08-01 17:51:39
----
+
 # seaborn
 
 

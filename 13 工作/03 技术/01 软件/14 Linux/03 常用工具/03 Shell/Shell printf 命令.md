@@ -1,8 +1,4 @@
----
-title: Shell printf 命令
-toc: true
-date: 2018-06-11 08:14:45
----
+
 # Shell printf 命令
 
 ## Shell printf 命令

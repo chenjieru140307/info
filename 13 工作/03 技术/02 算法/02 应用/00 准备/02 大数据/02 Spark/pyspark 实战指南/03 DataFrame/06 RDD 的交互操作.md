@@ -1,8 +1,4 @@
----
-title: 06 RDD 的交互操作
-toc: true
-date: 2019-07-02
----
+
 3.6 RDD的交互操作
 有两种从 RDD 变换到 DataFrame（或者 Dataset[T]）的不同方法：使用反射推断模式或以编程方式指定模式。前者可以让你写出更简洁的代码（如果你的 Spark 应用程序已经识别该模式），而在列和 DataFrame 的数据类型是在运行时才发现的情况下，后者则允许你构建 DataFrame。注意，反射是参照模式反射（schema reflection）而不是 python reflection。
 3.6.1 使用反射来推断模式

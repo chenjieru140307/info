@@ -1,8 +1,4 @@
----
-title: 一些 github NLP 项目
-toc: true
-date: 2019-11-17
----
+
 # Github 上的一些 PyTorch NLP 代码和模型
 
 

@@ -1,8 +1,4 @@
----
-title: 02 visdom 基本概念
-toc: true
-date: 2019-06-15
----
+
 # Visdom 基本概念
 
 Visdom 有一组简单的特性，可以用它们组合成不同的用例。

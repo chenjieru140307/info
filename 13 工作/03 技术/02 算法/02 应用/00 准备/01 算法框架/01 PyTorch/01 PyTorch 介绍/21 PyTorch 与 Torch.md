@@ -1,8 +1,4 @@
----
-title: 21 PyTorch 与 Torch
-toc: true
-date: 2019-12-06
----
+
 
 # PyTorch 与 Torch
 

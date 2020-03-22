@@ -1,8 +1,4 @@
----
-title: sqlite Cannot add a NOT NULL column with default value NULL
-toc: true
-date: 2018-06-11 08:15:06
----
+
 
 
 # 相关

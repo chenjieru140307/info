@@ -1,8 +1,4 @@
----
-title: CycleGAN
-toc: true
-date: 2019-09-29
----
+
 # CycleGAN
 
 CycleGAN本质上是利用对偶学习并结合 GAN 机制来优化生成图片的效果的，采取类似思想的包括 DualGAN 以及 DiscoGAN 等，包括后续的很多改进模型例如 StarGAN 等。

@@ -1,8 +1,4 @@
----
-title: 02 更多 ipython 的魔法命令
-toc: true
-date: 2018-12-10
----
+
 
 
 

@@ -1,8 +1,4 @@
----
-title: 如何使用Docker TensorFlow目标检测API和OpenCV实现实时目标检测和视频处理
-toc: true
-date: 2019-11-17
----
+
 # 如何使用Docker、TensorFlow目标检测API和OpenCV实现实时目标检测和视频处理
 
 

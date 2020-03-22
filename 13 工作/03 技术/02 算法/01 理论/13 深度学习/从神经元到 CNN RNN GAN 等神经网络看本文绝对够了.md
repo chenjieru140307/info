@@ -1,8 +1,4 @@
----
-title: 从神经元到 CNN RNN GAN 等神经网络看本文绝对够了
-toc: true
-date: 2019-10-29
----
+
 # 从神经元到 CNN RNN GAN 等神经网络看本文绝对够了
 
 

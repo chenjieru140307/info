@@ -1,8 +1,4 @@
----
-title: 04 GPT
-toc: true
-date: 2019-09-29
----
+
 # 从 Word Embedding到 GPT
 
 <p align="center">

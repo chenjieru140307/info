@@ -1,8 +1,4 @@
----
-title: 02 One image
-toc: true
-date: 2018-08-18 16:34:33
----
+
 # One-image
 
 把一张平面图像映射成 3D 物体。

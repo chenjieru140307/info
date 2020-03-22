@@ -1,8 +1,4 @@
----
-title: 测量神经网络真的难吗 Uber 说未必
-toc: true
-date: 2019-11-17
----
+
 ![img](https://mmbiz.qpic.cn/mmbiz_jpg/vJe7ErxcLmjhrYicQzyozGpwSic0yFQwQAn6SzSob8JYn6JoPSVqsIZn9O3oWszneFJr6Xg4ia132J0CLE1YQElSg/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 过去十年来，神经网络彻底改变了机器学习。机器学习从一个相对晦涩的学术研究领域崛起成为工业支柱，在大量数据可用的地方为众多应用提供支持。Uber 将神经网络用于多种应用，建立基于计算机视觉模型的世界地图、使用自然语言理解实现更快的消费者反映、通过对骑手需求模式进行建模来缩短等待时间。

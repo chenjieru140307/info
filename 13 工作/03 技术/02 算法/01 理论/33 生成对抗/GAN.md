@@ -1,8 +1,4 @@
----
-title: GAN
-toc: true
-date: 2018-07-27 10:09:51
----
+
 # GAN
 
 <span style="color:red;">还没有进行总结</span>

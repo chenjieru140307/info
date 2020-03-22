@@ -1,8 +1,4 @@
----
-title: 403 翻转 reverse
-toc: true
-date: 2019-11-17
----
+
 # 翻转 reverse
 
 reverse 可以倒叙迭代序列：

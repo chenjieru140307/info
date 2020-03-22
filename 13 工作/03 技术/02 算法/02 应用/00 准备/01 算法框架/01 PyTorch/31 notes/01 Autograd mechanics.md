@@ -1,8 +1,4 @@
----
-title: 01 Autograd mechanics
-toc: true
-date: 2019-06-29
----
+
 # AUTOGRAD MECHANICS
 
 This note will present an overview of how autograd works and records the operations. It’s not strictly necessary to understand all this, but we recommend getting familiar with it, as it will help you write more efficient, cleaner programs, and can aid you in debugging.

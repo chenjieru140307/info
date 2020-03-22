@@ -1,8 +1,4 @@
----
-title: 03 ESPnet
-toc: true
-date: 2019-11-17
----
+
 ESPnet
 #端到端语音处理工具箱
 

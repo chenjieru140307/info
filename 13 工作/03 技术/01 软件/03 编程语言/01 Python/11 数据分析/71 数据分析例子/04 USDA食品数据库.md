@@ -1,8 +1,4 @@
----
-title: 04 USDA食品数据库
-toc: true
-date: 2018-07-08 15:06:00
----
+
 
 # 14.4 USDA Food Database（美国农业部食品数据库）
 

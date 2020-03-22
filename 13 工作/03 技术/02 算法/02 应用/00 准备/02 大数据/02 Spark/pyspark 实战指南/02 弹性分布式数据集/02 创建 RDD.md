@@ -1,8 +1,4 @@
----
-title: 02 创建 RDD
-toc: true
-date: 2019-07-02
----
+
 2.2 创建 RDD
 PySpark中，有两种方法可以创建 RDD：
 要么用.parallelize（……）集合（元素 list 或 array）：

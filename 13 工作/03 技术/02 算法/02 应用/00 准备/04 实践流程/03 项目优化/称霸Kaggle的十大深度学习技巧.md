@@ -1,8 +1,4 @@
----
-title: 称霸Kaggle的十大深度学习技巧
-toc: true
-date: 2019-11-17
----
+
 # 称霸Kaggle的十大深度学习技巧
 
 

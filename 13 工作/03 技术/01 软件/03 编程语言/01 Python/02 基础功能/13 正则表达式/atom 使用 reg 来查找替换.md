@@ -1,8 +1,4 @@
----
-title: atom 使用 reg 来查找替换
-toc: true
-date: 2019-07-21
----
+
 # atom 使用 reg 来查找替换
 
 

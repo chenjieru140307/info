@@ -1,8 +1,4 @@
----
-title: 03 TensorFrames 介绍
-toc: true
-date: 2019-07-02
----
+
 8.3 TensorFrames介绍
 在撰写本文时，TensorFrames是 Apache Spark的实验性约束。它是在 TensorFlow 发布后不久于 2016 年初推出的。使用 TensorFrames，可以利用 TensorFlow 程序来操作 Spark DataFrame。参考上一节中的张量图，我们将其更新为一张新图，以显示 Spark DataFrame如何与 TensorFlow 配合使用，如下图所示：
 如前图所示，TensorFrames在 Spark DataFrame和 TensorFlow 之间提供了一个桥梁。这样，你可以将 DataFrame 作为输入应用到你的 TensorFlow 计算图中。TensorFrames还允许你使用 TensorFlow 计算图输出并将其推回到 DataFrame 中，以便可以继续下游的 Spark 处理。

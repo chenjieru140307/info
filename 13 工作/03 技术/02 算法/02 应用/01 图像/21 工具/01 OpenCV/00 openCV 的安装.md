@@ -1,8 +1,4 @@
----
-title: 00 openCV 的安装
-toc: true
-date: 2018-10-14
----
+
 # OpenCV 的安装
 
 OpenCV 是我们在图像处理的时候，经常要使用的。可以说是必须使用的。

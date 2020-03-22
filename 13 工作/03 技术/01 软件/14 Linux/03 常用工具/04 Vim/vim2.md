@@ -1,8 +1,4 @@
----
-title: vim2
-toc: true
-date: 2018-06-11 08:14:32
----
+
 ---
 author: evo
 comments: true

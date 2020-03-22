@@ -1,8 +1,4 @@
----
-title: 02 Word2Vec
-toc: true
-date: 2019-09-29
----
+
 # Word2Vec
 
 

@@ -1,8 +1,4 @@
----
-title: TensorFlow发布重要更新AutoGraph 自动将Python转化为TF计算图
-toc: true
-date: 2019-11-17
----
+
 >
 > 近日，谷歌发布了一项新的 TensorFlow 工具「AutoGraph」，能将 print() 函数和其它 Python 代码转化为纯 TensorFlow 计算图代码。这一工具极大地加强了 TensorFlow 在调用纯 Python 语句时的性能，开发者可以轻松在 TensorFlow 上实现更好的模型性能。
 

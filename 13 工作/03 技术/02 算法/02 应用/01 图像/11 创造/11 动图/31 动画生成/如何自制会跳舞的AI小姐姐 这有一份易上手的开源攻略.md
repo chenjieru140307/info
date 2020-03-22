@@ -1,8 +1,4 @@
----
-title: 如何自制会跳舞的AI小姐姐 这有一份易上手的开源攻略
-toc: true
-date: 2019-11-17
----
+
 身材苗条，动作有力，姿势优美，视频片段里的小姐姐跳得行云流水，颇有C位出道的气势。
 
 ﻿![img](https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtBlUzTtzY9SuukOqnCSpt8GFCdmkx8RqlfxsJrp81sIn1GVCjribO13J4RuM95AfRLJ8lwQiaHJXX7w/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)﻿

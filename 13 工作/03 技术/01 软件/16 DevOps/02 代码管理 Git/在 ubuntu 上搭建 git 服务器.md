@@ -1,8 +1,4 @@
----
-title: 在 ubuntu 上搭建 git 服务器
-toc: true
-date: 2018-11-25
----
+
 
 # 可以补充进来的
 

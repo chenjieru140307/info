@@ -1,8 +1,4 @@
----
-title: 101 条件判断 if else
-toc: true
-date: 2018-12-08
----
+
 # 条件判断 if else
 
 举例：

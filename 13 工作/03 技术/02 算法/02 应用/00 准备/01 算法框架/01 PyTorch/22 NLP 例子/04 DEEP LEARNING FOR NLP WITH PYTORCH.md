@@ -1,8 +1,4 @@
----
-title: 04 DEEP LEARNING FOR NLP WITH PYTORCH
-toc: true
-date: 2019-06-29
----
+
 # DEEP LEARNING FOR NLP WITH PYTORCH
 
 **Author**: [Robert Guthrie](https://github.com/rguthrie3/DeepLearningForNLPInPytorch)

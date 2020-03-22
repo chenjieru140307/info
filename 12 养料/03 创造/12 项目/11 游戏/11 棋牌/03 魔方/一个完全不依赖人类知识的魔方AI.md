@@ -1,8 +1,4 @@
----
-title: 一个完全不依赖人类知识的魔方AI
-toc: true
-date: 2019-11-17
----
+
 # 一个完全不依赖人类知识的魔方AI
 
 ![img](https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtAoGzWTdBLm5DRIfKS9E2ibQRZqOHGrHX7N68ndASc1LjmXxKnpv2qHZdRxSarFBq419TNl6UlcUSw/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)

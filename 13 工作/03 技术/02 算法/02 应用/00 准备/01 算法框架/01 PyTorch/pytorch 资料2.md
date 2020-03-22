@@ -1,8 +1,4 @@
----
-title: pytorch 资料2
-toc: true
-date: 2019-07-04
----
+
 自网络，原文地址：[https://github.com/INTERMT/Awesome-PyTorch-Chinese](https://link.zhihu.com/?target=https%3A//github.com/INTERMT/Awesome-PyTorch-Chinese)
 
 

@@ -1,8 +1,4 @@
----
-title: error LNK2019 无法解析的外部符号
-toc: true
-date: 2019-10-19
----
+
 # error LNK2019: 无法解析的外部符号 __imp_GetUserObjectInformationW，该符号在函数 OPENSSL_isservice 中被引用
 
 

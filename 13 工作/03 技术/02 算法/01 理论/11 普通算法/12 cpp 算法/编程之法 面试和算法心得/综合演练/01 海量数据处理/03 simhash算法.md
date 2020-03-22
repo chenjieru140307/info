@@ -1,8 +1,4 @@
----
-title: 03 simhash算法
-toc: true
-date: 2018-08-03 11:44:24
----
+
 # simhash算法
 
 ## 方法介绍

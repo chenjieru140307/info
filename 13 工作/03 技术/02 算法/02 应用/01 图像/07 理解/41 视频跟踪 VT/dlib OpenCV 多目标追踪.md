@@ -1,8 +1,4 @@
----
-title: dlib OpenCV 多目标追踪
-toc: true
-date: 2019-10-29
----
+
 # dlib OpenCV 多目标追踪
 
 

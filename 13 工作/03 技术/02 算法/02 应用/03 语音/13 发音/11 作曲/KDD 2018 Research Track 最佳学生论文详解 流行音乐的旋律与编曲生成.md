@@ -1,8 +1,4 @@
----
-title: KDD 2018 Research Track 最佳学生论文详解 流行音乐的旋律与编曲生成
-toc: true
-date: 2019-11-17
----
+
 # KDD 2018 Research Track 最佳学生论文详解 流行音乐的旋律与编曲生成
 
 

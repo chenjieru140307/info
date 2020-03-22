@@ -1,8 +1,4 @@
----
-title: tensorflow MNIST 入门
-toc: true
-date: 2018-07-27 15:10:30
----
+
 ---
 author: evo
 comments: true

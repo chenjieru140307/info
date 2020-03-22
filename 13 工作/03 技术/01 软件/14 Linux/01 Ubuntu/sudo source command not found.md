@@ -1,8 +1,4 @@
----
-title: sudo source command not found
-toc: true
-date: 2018-10-07
----
+
 # sudo source :command not found
 
 

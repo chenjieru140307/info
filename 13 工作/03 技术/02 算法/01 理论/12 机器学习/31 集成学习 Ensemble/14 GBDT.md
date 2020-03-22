@@ -1,8 +1,4 @@
----
-title: 14 GBDT
-toc: true
-date: 2018-08-12 19:43:37
----
+
 # GBDT
 
 

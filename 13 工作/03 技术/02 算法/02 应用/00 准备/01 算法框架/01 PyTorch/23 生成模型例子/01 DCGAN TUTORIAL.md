@@ -1,8 +1,4 @@
----
-title: 01 DCGAN TUTORIAL
-toc: true
-date: 2019-06-29
----
+
 # DCGAN TUTORIAL
 
 **Author**: [Nathan Inkawhich](https://github.com/inkawhich)

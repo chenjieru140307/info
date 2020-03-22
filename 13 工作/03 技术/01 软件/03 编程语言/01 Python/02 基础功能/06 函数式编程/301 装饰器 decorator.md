@@ -1,8 +1,4 @@
----
-title: 301 装饰器 decorator
-toc: true
-date: 2019-02-05
----
+
 # 可以补充进来的
 
 - <span style="color:red;">functools 里面到底有那些功能？还是要总结下的。</span>

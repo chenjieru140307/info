@@ -1,8 +1,4 @@
----
-title: 05 MapReduce
-toc: true
-date: 2018-07-08 12:14:11
----
+
 # 分布式处理之 MapReduce
 
 ## 方法介绍

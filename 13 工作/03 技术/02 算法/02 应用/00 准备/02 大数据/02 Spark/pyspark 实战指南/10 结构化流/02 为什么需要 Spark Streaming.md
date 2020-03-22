@@ -1,8 +1,4 @@
----
-title: 02 为什么需要 Spark Streaming
-toc: true
-date: 2019-07-02
----
+
 10.2 为什么需要 Spark Streaming
 Tathagata Das是 Apache Spark项目的贡献者及管理委员会（PMC）的成员，Spark Streaming的主要开发者，他曾在 Datanami 文章《Spark Streaming：What is It and Who’s Using it》中提到的对 streaming 有商业需求（https://www.datanami.com/2015/11/30/spark-streaming-what-is-it-and-whos-using-it/）。随着在线交易和社交媒体以及传感器和设备的普及，很多公司正在以更快的速度产生和处理更多的数据。
 开发有规模的、实时的可实现的可预测的能力，为这些企业提供了竞争优势。无论你是在检测欺诈性的交易，提供传感器异常的实时检测，还是对下一个病毒性传播的推文做出反应，流分析在数据科学家和数据工程师的工具箱中变得日益重要。

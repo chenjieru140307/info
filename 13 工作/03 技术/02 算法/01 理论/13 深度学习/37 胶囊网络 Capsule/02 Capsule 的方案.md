@@ -1,8 +1,4 @@
----
-title: 02 Capsule 的方案
-toc: true
-date: 2019-09-29
----
+
 # Capsule 的方案
 
 在 Capsule 的方案中，CNN的卷积层保留，MaxPooling层被拿掉。

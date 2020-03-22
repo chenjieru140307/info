@@ -1,8 +1,4 @@
----
-title: Python设计模式
-toc: true
-date: 2018-07-30
----
+
 # Python设计模式
 
 代码直戳: https://github.com/faif/Python-patterns

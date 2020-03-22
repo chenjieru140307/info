@@ -1,8 +1,4 @@
----
-title: 分布式TensorFlow入门教程
-toc: true
-date: 2019-11-17
----
+
 # 分布式TensorFlow入门教程
 
 ## 前言

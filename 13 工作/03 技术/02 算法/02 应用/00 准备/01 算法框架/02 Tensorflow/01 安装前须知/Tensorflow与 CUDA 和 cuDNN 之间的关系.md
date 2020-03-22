@@ -1,8 +1,4 @@
----
-title: Tensorflow与 CUDA 和 cuDNN 之间的关系
-toc: true
-date: 2019-11-17
----
+
 # Tensorflow 与 CUDA 和 cuDNN 之间的关系
 
 ## 首先，明确几个概念

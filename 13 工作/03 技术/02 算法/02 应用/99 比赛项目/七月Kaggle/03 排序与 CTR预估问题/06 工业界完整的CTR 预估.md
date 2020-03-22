@@ -1,8 +1,4 @@
----
-title: 06 工业界完整的CTR 预估
-toc: true
-date: 2018-07-26 16:54:52
----
+
 
 # **Click-Through Rate Prediction**
 

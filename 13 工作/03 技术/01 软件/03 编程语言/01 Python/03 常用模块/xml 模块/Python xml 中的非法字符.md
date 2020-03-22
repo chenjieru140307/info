@@ -1,8 +1,4 @@
----
-title: Python xml 中的非法字符
-toc: true
-date: 2018-06-11 22:18:35
----
+
 # 缘由
 
 在使用 Python 处理 xml 的时候，经常会说：invalid-token，非法字符，因此，要在处理 xml 文件的时候，先对非法字符进行过滤。

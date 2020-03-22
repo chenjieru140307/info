@@ -1,8 +1,4 @@
----
-title: 自适应注意力机制在Image Caption中的应用
-toc: true
-date: 2019-11-17
----
+
 # 自适应注意力机制在Image Caption中的应用
 
 本文主要讨论自适应的注意力机制在 Image Caption 中的应用。作者提出了带有视觉标记的自适应 Attention 模型，在每一个 time step，由模型决定更依赖于图像还是视觉标记。

@@ -1,8 +1,4 @@
----
-title: 03 statsmodels简介
-toc: true
-date: 2018-07-08 13:33:35
----
+
 
 # 13.3 Introduction to statsmodels（statsmodels简介）
 

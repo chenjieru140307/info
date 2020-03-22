@@ -1,8 +1,4 @@
----
-title: 01 GraphFrames 介绍
-toc: true
-date: 2019-07-02
----
+
 # GraphFrames介绍
 
 GraphFrames利用 Apache Spark DataFrame的强大功能来支持一般图形处理。具体来说，点和边由 DataFrame 表示，允许我们存储每个节点和边的任意数据。虽然 GraphFrames 与 Spark 的 GraphX 库类似，但他们之间有一些关键的区别，包括：

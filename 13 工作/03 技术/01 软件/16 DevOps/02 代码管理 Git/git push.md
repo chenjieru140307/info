@@ -1,8 +1,4 @@
----
-title: git push
-toc: true
-date: 2018-08-20 20:38:45
----
+
 # git push 错误 failed to push some refs to 的解决
 
 # **问题说明**

@@ -1,8 +1,4 @@
----
-title: Shell test命令
-toc: true
-date: 2018-06-11 08:14:45
----
+
 # Shell test命令
 
 ## Shell test命令

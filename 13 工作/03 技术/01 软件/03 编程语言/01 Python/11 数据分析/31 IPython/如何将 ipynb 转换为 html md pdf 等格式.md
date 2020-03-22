@@ -1,8 +1,4 @@
----
-title: 如何将 ipynb 转换为 html md pdf 等格式
-toc: true
-date: 2019-06-27
----
+
 # 如何将 ipynb 转换为 html md pdf 等格式
 
 jupyter notebook 的后缀名是 .ipynb 的文件如何转换成 html，md，pdf 等格式呢？

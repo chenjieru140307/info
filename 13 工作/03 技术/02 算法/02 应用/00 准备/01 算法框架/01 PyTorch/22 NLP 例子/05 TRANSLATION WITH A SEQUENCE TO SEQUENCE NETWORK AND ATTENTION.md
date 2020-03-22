@@ -1,8 +1,4 @@
----
-title: 05 TRANSLATION WITH A SEQUENCE TO SEQUENCE NETWORK AND ATTENTION
-toc: true
-date: 2019-06-29
----
+
 # TRANSLATION WITH A SEQUENCE TO SEQUENCE NETWORK AND ATTENTION
 
 **Author**: [Sean Robertson](https://github.com/spro/practical-pytorch)

@@ -1,8 +1,4 @@
----
-title: Python XML解析
-toc: true
-date: 2018-06-11 08:14:44
----
+
 # 可以补充进来的
 
 

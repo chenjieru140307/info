@@ -1,8 +1,4 @@
----
-title: QANet
-toc: true
-date: 2019-10-13
----
+
 # QANet
 
 ICLR 2018《QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension》

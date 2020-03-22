@@ -1,8 +1,4 @@
----
-title: hash表算法
-toc: true
-date: 2018-07-08 12:13:57
----
+
 # hash表算法
 
 ##第一部分：Top K 算法详解

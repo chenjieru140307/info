@@ -1,8 +1,4 @@
----
-title: python 分析手游时序数据
-toc: true
-date: 2019-07-04
----
+
 # 基于 python 分析真实手游时序数据
 
 Zeptolab数据科学家[Dmitriy Sergeev](https://medium.com/%40dmitriysergeev)介绍了分析和预测时序数据的主要方法。

@@ -1,8 +1,4 @@
----
-title: Jacobian矩阵和Hessian矩阵
-toc: true
-date: 2019-08-31
----
+
 # Jacobian 矩阵和 Hessian 矩阵
 
 

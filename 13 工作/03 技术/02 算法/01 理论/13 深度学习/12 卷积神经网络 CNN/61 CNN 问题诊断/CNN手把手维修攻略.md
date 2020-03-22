@@ -1,8 +1,4 @@
----
-title: CNN手把手维修攻略
-toc: true
-date: 2019-11-17
----
+
 你的CNN还健在么？
 
 Github用户**Zeyad Emam**贡献了一篇**CNN故障排除攻略**，详细介绍了CNN的常见故障和调教方法，量子位编译了中文版。

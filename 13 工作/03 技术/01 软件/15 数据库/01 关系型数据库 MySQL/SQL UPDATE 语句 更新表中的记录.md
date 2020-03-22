@@ -1,8 +1,4 @@
----
-title: SQL UPDATE 语句 更新表中的记录
-toc: true
-date: 2018-08-03 14:02:35
----
+
 
 # 相关
 

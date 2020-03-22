@@ -1,8 +1,4 @@
----
-title: 31 将张量在 CPU 和 GPU 中移动
-toc: true
-date: 2019-12-06
----
+
 # 将张量在 CPU 和 GPU 中移动
 
 举例：

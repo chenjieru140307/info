@@ -1,8 +1,4 @@
----
-title: 可逆生成模型 Glow AI合成超逼真人像
-toc: true
-date: 2019-11-17
----
+
 
 # Glow
 

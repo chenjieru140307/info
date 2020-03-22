@@ -1,8 +1,4 @@
----
-title: 61 SVM 算法优缺点
-toc: true
-date: 2019-08-27
----
+
 
 
 # SVM算法特点

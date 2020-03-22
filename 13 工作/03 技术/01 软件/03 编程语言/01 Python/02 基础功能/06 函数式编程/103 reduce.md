@@ -1,8 +1,4 @@
----
-title: 103 reduce
-toc: true
-date: 2019-11-23
----
+
 # reduce
 
 

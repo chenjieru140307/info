@@ -1,8 +1,4 @@
----
-title: Python 中文支持
-toc: true
-date: 2018-06-11 23:06:33
----
+
 # Python 中文支持
 
 Python3.5 默认是 utf8 编码的，对于 Python2 版本的需要声明 utf8 编码。

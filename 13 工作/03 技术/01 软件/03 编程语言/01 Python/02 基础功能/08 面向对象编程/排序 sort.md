@@ -1,8 +1,4 @@
----
-title: 排序 sort
-toc: true
-date: 2019-01-18
----
+
 # How to sort a list of objects based on an attribute of the objects?
 
 

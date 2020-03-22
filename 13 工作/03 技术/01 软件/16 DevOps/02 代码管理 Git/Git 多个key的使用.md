@@ -1,8 +1,4 @@
----
-title: Git 多个key的使用
-toc: true
-date: 2018-08-26 15:40:00
----
+
 # Git 多个 key 的使用
 
 当需要连接 github 的多个 repo 的时候，肯定要对应每个 repo 有不同的 key，那么就需要每次在某个 repo 里提交的时候，要先把 key 加进去：

@@ -1,8 +1,4 @@
----
-title: 07 HyperNet
-toc: true
-date: 2018-09-22
----
+
 # HyperNet
 
 

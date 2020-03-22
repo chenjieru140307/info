@@ -1,8 +1,4 @@
----
-title: 算法 Two Sum
-toc: true
-date: 2018-06-25 16:09:43
----
+
 # 题目地址：
 
 https://leetcode.com/problems/two-sum/description/

@@ -1,8 +1,4 @@
----
-title: Scipy
-toc: true
-date: 2018-06-14 15:10:15
----
+
 
 
 # Scipy

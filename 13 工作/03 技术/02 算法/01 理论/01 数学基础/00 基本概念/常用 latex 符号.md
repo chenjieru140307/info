@@ -1,8 +1,4 @@
----
-title: 常用 latex 符号
-toc: true
-date: 2019-07-09
----
+
 # Markdown Cheat Sheet
 
 ## 数学相关LaTeX表达

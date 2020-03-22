@@ -1,8 +1,4 @@
----
-title: 04 TensorRT 的加速效果如何
-toc: true
-date: 2019-08-31
----
+
 
 
 # TensorRT 加速效果如何？

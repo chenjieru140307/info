@@ -1,8 +1,4 @@
----
-title: 05 简单的 DataFrame 查询
-toc: true
-date: 2019-07-02
----
+
 3.5 简单的 DataFrame 查询
 现在你已经创建了 swimmersJSON DataFrame，我们便可以运行 DataFrame 的 API 以及对 DataFrame 的 SQL 查询。我们用一个简单的查询显示 DataFrame 内的所有行。
 3.5.1 DataFrame API查询

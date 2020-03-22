@@ -1,8 +1,4 @@
----
-title: 07 TensorFlow 实现循环神经网络及 Word2Vec
-toc: true
-date: 2018-06-26 20:29:22
----
+
 ### TensorFlow实现循环神 经网络及 Word2Vec
 
 本章我们将探索循环神经网络(RNN )和 Word2Vec55，并在 TensorFlow 上实现它们。 循环神经网络是在 NLP (Nature Language Processing，自然语言处理)领域最常使用的 神经网络结构，和卷积神经网络在图像识别领域的地位类似。而 Word2VeC 则是将语言中 的字词转化为计算机可以理解的稠密向量(Dense Vector)，进而可以做其他自然语言处 理任务，比如文本分类、词性标注、机器翻译等。

@@ -1,8 +1,4 @@
----
-title: 当RNN神经网络遇上NER 命名实体识别  双向LSTM 条件随机场 CRF  StackLSTM  字母嵌入
-toc: true
-date: 2019-11-17
----
+
 # 当RNN神经网络遇上NER（命名实体识别）：双向LSTM，条件随机场（CRF），层叠Stack LSTM， 字母嵌入
 
 

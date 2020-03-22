@@ -1,8 +1,4 @@
----
-title: 01 Pytorch 简介
-toc: true
-date: 2019-05-28
----
+
 # PyTorch简介
 
 ## PyTorch介绍

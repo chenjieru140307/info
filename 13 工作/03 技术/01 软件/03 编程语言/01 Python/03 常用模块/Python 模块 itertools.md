@@ -1,8 +1,4 @@
----
-title: Python 模块 itertools
-toc: true
-date: 2018-06-22 22:20:37
----
+
 ## 缘由：
 模块模块
 

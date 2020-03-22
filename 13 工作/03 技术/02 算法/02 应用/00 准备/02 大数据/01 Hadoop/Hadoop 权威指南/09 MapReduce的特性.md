@@ -1,8 +1,4 @@
----
-title: 09 MapReduce的特性
-toc: true
-date: 2018-06-27 07:51:44
----
+
 ### MapReduce的特性
 
 本章探讨 MapReduce 的一些高级特性，其中包括计数器、数据集的排序和连接

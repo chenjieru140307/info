@@ -1,8 +1,4 @@
----
-title: python enumerate
-toc: true
-date: 2018-06-22 22:03:54
----
+
 ## 可以补充进来的
 - 之前我用这个 enumerate 的时候发现了个问题，就是 对一个 list enumerate 然后进行遍历之后，再遍历这个 enumerate 的结果就不行了，好像这个结果并没有保存下来。<font color=red>确认下</font>
 -

@@ -1,8 +1,4 @@
----
-title: MaxCompute Geabase 大话健康知识图谱取经之路
-toc: true
-date: 2019-11-17
----
+
 小叽导语：正如Google的高级搜索副总裁Amit Singhal在介绍知识图谱时提到的：“The world is not made of strings , but is made of things.” 大千世界，万物相联，借助知识图谱，实现了搜索领域的things, not strings。保险领域的知识图谱之路，何去何从呢？
 
 背景

@@ -1,8 +1,4 @@
----
-title: vim vi
-toc: true
-date: 2018-08-03 11:50:30
----
+
 ---
 author: evo
 comments: true

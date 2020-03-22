@@ -1,8 +1,4 @@
----
-title: 105 匿名函数 lambda
-toc: true
-date: 2019-11-17
----
+
 
 # 匿名函数 lambda
 

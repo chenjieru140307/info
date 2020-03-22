@@ -1,8 +1,4 @@
----
-title: DeepMind提出关系RNN 记忆模块RMC解决关系推理问题
-toc: true
-date: 2019-11-17
----
+
 # DeepMind提出关系RNN 记忆模块RMC解决关系推理问题
 
 

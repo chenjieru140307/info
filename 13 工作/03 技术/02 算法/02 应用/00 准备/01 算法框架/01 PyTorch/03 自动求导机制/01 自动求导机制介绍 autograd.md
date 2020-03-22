@@ -1,8 +1,4 @@
----
-title: 01 自动求导机制介绍 autograd
-toc: true
-date: 2019-12-06
----
+
 # 自动求导机制介绍 autograd
 
 PyTorch 中所有神经网络的核心是 `autograd` 包。`torch.Tensor` 是 `autograd` 包的核心类。

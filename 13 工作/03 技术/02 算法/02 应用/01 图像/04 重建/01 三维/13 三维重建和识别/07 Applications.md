@@ -1,8 +1,4 @@
----
-title: 07 Applications
-toc: true
-date: 2018-08-18 16:35:01
----
+
 
 
 

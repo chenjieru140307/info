@@ -1,8 +1,4 @@
----
-title: DensePose
-toc: true
-date: 2019-11-17
----
+
 # DensePose
 
 

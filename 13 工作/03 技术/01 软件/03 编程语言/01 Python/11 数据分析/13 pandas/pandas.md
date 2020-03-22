@@ -1,8 +1,4 @@
----
-title: pandas
-toc: true
-date: 2018-07-28 08:38:49
----
+
 ---
 author: evo
 comments: true

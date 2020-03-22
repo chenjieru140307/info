@@ -1,8 +1,4 @@
----
-title: 02 Catalyst 优化器刷新
-toc: true
-date: 2019-07-02
----
+
 3.2 Catalyst优化器刷新
 正如第 1 章所述，Spark SQL引擎如此之快的主要原因之一是 Catalyst 优化器。对于拥有数据库背景的读者，这张图看起来类似于关系数据库管理系统（RDBMS）的逻辑/物理计划和成本模型/基于成本的优化。
 其意义在于，相对立即处理查询来说，Spark引擎的 Catalyst 优化器编译并优化了逻辑计划，而且还有一个能够确保生成最有效的物理计划的成本优化器。如下图：正如前几章所述，Spark SQL引擎既有基于规则的优化，也有基于成本的优化，包括（但不仅限于）谓词下推和列精简。针对 Apache Spark 2.2版本，jira项目[SPARK-16026]Cost-based Optimizer Framework（https://issues.apache.org/jira/browse/SPARK-16026）就像一张“通票”，除广播连接选择外，还实现了基于成本的优化器框架。更多的信息请参阅 Design Specification of Spark Cost-Based Optimization（http://bit.ly/2li1t4T）。

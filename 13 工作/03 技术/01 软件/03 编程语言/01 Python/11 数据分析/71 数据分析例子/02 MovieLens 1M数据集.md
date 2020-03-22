@@ -1,8 +1,4 @@
----
-title: 02 MovieLens 1M数据集
-toc: true
-date: 2018-07-08 13:33:42
----
+
 
 # 14.2 MovieLens 1M Dataset（MovieLens 1M数据集）
 

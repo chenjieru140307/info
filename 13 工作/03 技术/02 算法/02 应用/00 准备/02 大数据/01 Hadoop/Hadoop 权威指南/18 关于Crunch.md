@@ -1,8 +1,4 @@
----
-title: 18 关于Crunch
-toc: true
-date: 2018-06-27 07:38:50
----
+
 Apache Crunch    叩 ac/ze.org/）是用来写 MapReduce 管线的高层 API。
 
 与普通的 MapReduce 相比，Crunch的主要优势体现在它注重程序员友好的 Java 类型(如 String)以及旧式的纯 Java 对象，另外还有一组丰富的数据变换操作和多级 管线(不需要显式地管理 MapReduce 工作流中的每个作业)。

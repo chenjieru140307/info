@@ -1,8 +1,4 @@
----
-title: 22 Tensor 与 numpy 转换
-toc: true
-date: 2019-12-06
----
+
 # 可以补充进来的
 
 - 不够，且不够理解

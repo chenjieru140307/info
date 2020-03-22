@@ -1,8 +1,4 @@
----
-title: 03 SPATIAL TRANSFORMER NETWORKS TUTORIAL
-toc: true
-date: 2019-06-29
----
+
 # SPATIAL TRANSFORMER NETWORKS TUTORIAL
 
 **Author**: [Ghassen HAMROUNI](https://github.com/GHamrouni)

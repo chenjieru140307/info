@@ -1,8 +1,4 @@
----
-title: 04 使用IPython进行有效开发的建议
-toc: true
-date: 2018-07-08 13:37:13
----
+
 
 # B.4 Tips for Productive Code Development Using IPython（使用 IPython 进行有效开发的建议）
 

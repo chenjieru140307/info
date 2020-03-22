@@ -1,8 +1,4 @@
----
-title: 01 Translate 基于 Pytorch
-toc: true
-date: 2019-11-17
----
+
 # Translate
 
 基于Pytorch的机器翻译库

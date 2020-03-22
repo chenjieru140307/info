@@ -1,8 +1,4 @@
----
-title: 08 TensorFlow 实现深度强化学习
-toc: true
-date: 2018-06-26 20:29:21
----
+
 ### TensorFlow实现深度 强化学习
 
 ##### 8.1深度强化学习简介

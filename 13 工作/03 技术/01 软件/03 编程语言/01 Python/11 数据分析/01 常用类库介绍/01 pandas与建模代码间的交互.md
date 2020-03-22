@@ -1,8 +1,4 @@
----
-title: 01 pandas与建模代码间的交互
-toc: true
-date: 2018-07-08 13:33:35
----
+
 
 # CHAPTER 13 Introduction to Modeling Libraries in Python（Python中建模库的介绍）
 

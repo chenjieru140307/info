@@ -1,8 +1,4 @@
----
-title: opencv python 的图像像素访问
-toc: true
-date: 2019-02-18
----
+
 # opencv python的图像像素访问
 
 

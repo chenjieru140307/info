@@ -1,8 +1,4 @@
----
-title: 02 关于MapReduce
-toc: true
-date: 2018-06-25 14:58:13
----
+
 关于 MapReduce
 
 MapReduce是一种可用于数据处理的编程模型。该模型比较简单，但要想写出有 用的程序却不太容易。Hadoop可以运行各种语言版本的 MapReduce 程序。在本章 中，我们将看到同一个程序的 Java、Ruby和 python 语言版本。最重要的是， MapReduce程序本质上是并行运行的，因此可以将大规模的数据分析任务分发给任何一个拥有足够多机器的数据中心。MapReduce的优势在于处理大规模数据集，所以这里先来看一个数据集。<span style="color:red;">为什么在本质上是并行运行的？怎么做到的？</span>

@@ -1,8 +1,4 @@
----
-title: 01 Poster
-toc: true
-date: 2019-11-17
----
+
 # CVPR 2018 | Poster论文：处理多种退化类型的卷积超分辨率
 
 

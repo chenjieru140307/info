@@ -1,8 +1,4 @@
----
-title: 06 torch 安装
-toc: true
-date: 2018-10-07
----
+
 
 
 

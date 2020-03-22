@@ -1,8 +1,4 @@
----
-title: 13 AdaBoost 基分类器的训练和合并的基本步骤
-toc: true
-date: 2019-08-27
----
+
 
 # Adaboost 基分类器的训练和合并的基本步骤如下。
 

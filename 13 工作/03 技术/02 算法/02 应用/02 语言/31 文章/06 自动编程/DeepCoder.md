@@ -1,8 +1,4 @@
----
-title: DeepCoder
-toc: true
-date: 2019-10-11
----
+
 # DeepCoder
 
 

@@ -1,8 +1,4 @@
----
-title: 03 利用 DataFrame 加速 PySpark
-toc: true
-date: 2019-07-02
----
+
 .3 利用 DataFrame 加速 PySpark
 DataFrame和 Catalyst 优化器（以及 Tungsten 项目）的意义是在和非优化的 RDD 查询比较时增加 PySpark 查询的性能。如下图所示，引入 DataFrame 之前，python查询速度普遍比使用 RDD 的 Scala 查询慢（后者快两倍）。通常情况下，这种查询性能的降低源于 python 和 JVM 之间的通信开销：
 资料来源：Introducing DataFrames in Apache-spark for Large Scale Data Science（http://bit.ly/2blDBI1）

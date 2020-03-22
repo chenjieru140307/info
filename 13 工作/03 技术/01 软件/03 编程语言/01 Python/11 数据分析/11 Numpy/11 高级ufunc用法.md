@@ -1,8 +1,4 @@
----
-title: 11 高级ufunc用法
-toc: true
-date: 2018-08-03 11:23:43
----
+
 
 # A.4 Advanced ufunc Usage（高级 ufunc 用法）
 

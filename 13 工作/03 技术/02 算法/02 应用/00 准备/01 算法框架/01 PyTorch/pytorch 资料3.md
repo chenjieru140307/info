@@ -1,8 +1,4 @@
----
-title: pytorch 资料3
-toc: true
-date: 2019-07-10
----
+
 # Awesome-Pytorch-list
 
 

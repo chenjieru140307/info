@@ -1,8 +1,4 @@
----
-title: How to store model which trained by multi GPUs DataParallel
-toc: true
-date: 2019-06-10
----
+
 
 
 

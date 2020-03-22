@@ -1,8 +1,4 @@
----
-title: 01 Neural Network Distiller
-toc: true
-date: 2019-11-17
----
+
 # Neural Network Distiller
 
 

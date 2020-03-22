@@ -1,8 +1,4 @@
----
-title: 05 ONNX Live Tutorial
-toc: true
-date: 2019-06-29
----
+
 # ONNX LIVE TUTORIAL
 
 This tutorial will show you to convert a neural style transfer model that has been exported from PyTorch into the Apple CoreML format using ONNX. This will allow you to easily run deep learning models on Apple devices and, in this case, live stream from the camera.

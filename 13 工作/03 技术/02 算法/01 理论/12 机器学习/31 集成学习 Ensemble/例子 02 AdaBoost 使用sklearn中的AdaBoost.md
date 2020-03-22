@@ -1,8 +1,4 @@
----
-title: 例子 02 AdaBoost 使用sklearn中的AdaBoost
-toc: true
-date: 2018-08-12 20:14:51
----
+
 # AdaBoost 例子 2：使用 sklearn 中的 AdaBoost
 
 

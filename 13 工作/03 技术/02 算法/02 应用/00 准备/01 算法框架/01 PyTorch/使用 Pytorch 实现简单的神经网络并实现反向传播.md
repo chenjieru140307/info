@@ -1,8 +1,4 @@
----
-title: 使用 Pytorch 实现简单的神经网络并实现反向传播
-toc: true
-date: 2019-06-28
----
+
 # 使用 Pytorch 实现简单的神经网络并实现反向传播
 
 Here we use PyTorch Tensors to fit a two-layer network to random data. Like the numpy example above we need to manually implement the forward and backward passes through the network:

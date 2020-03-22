@@ -1,8 +1,4 @@
----
-title: Pythia
-toc: true
-date: 2019-11-17
----
+
 Pythia
 
 #来自FAIR的模块化VQA框架

@@ -1,8 +1,4 @@
----
-title: 01 torch
-toc: true
-date: 2019-06-29
----
+
 # TORCH
 
 The torch package contains data structures for multi-dimensional tensors and mathematical operations over these are defined. Additionally, it provides many utilities for efficient serializing of Tensors and arbitrary types, and other useful utilities.

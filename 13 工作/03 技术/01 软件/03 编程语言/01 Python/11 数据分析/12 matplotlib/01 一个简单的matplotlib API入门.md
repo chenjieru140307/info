@@ -1,8 +1,4 @@
----
-title: 01 一个简单的matplotlib API入门
-toc: true
-date: 2018-08-03 11:28:13
----
+
 
 # CHAPTER 9 Plotting and Visualization（绘图和可视化）
 

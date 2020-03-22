@@ -1,8 +1,4 @@
----
-title: 02 FINETUNING TORCHVISION MODELS
-toc: true
-date: 2019-06-28
----
+
 # FINETUNING TORCHVISION MODELS
 
 **Author:** [Nathan Inkawhich](https://github.com/inkawhich)

@@ -1,8 +1,4 @@
----
-title: 02 创建 Tensor
-toc: true
-date: 2019-12-06
----
+
 # 创建 Tensor
 
 

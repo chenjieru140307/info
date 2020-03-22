@@ -1,8 +1,4 @@
----
-title: Ubuntu技巧之 is not in the sudoers file解决方法
-toc: true
-date: 2018-11-25
----
+
 # Ubuntu技巧之 is not in the sudoers file 解决方法
 
 这个问题是在 git adduser git 然后使用 git 账户来创建 repo 的时候出现的，嗯，按照这个文章的确解决了这个问题。

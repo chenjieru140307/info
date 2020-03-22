@@ -1,8 +1,4 @@
----
-title: 05 Tensor 拆分与拼接
-toc: true
-date: 2019-12-06
----
+
 # Tensor 拆分与拼接
 
 举例：

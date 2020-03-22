@@ -1,8 +1,4 @@
----
-title: Python 时间戳 毫秒
-toc: true
-date: 2019-01-18
----
+
 # Python 时间戳 毫秒
 
 之前用  `time.time()` 来作为时间戳，但是只能精确到秒。

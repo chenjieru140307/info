@@ -1,8 +1,4 @@
----
-title: 54 stacking
-toc: true
-date: 2018-08-03 12:49:44
----
+
 # Kaggle机器学习之模型融合（stacking）心得
 
 雷锋网 AI科技评论按，本文作者[吉他手](https://www.zhihu.com/people/zhu-a-zhu-83/activities)，雷锋网(公众号：雷锋网) AI科技评论获其授权发布。

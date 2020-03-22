@@ -1,8 +1,4 @@
----
-title: 09 TensorBoard 多 GPU 并行及分布式并行
-toc: true
-date: 2018-06-26 20:29:21
----
+
 ![img](06TensorFlow9e18_c4875a088c74095baibbt-113.jpg)
 
 

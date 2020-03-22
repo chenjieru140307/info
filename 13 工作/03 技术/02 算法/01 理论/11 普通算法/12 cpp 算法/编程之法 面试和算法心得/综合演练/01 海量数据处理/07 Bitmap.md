@@ -1,8 +1,4 @@
----
-title: 07 Bitmap
-toc: true
-date: 2018-07-08 12:14:10
----
+
 # Bitmap
 
 ## 方法介绍

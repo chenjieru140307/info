@@ -1,8 +1,4 @@
----
-title: 07 利用 DataFrame API 查询
-toc: true
-date: 2019-07-02
----
+
 .7 利用 DataFrame API查询
 如上一节所述，你可以通过 collect（）、show（）或者 take（）来查看 DataFrame 中的数据（show（）和 take（）包含了限制返回行数的选项）。
 3.7.1 行数

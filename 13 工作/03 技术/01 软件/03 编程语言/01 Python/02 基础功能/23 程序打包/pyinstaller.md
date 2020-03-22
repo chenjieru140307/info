@@ -1,8 +1,4 @@
----
-title: pyinstaller
-toc: true
-date: 2018-09-18
----
+
 
 
 

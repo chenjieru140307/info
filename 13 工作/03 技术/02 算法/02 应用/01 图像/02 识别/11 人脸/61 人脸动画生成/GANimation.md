@@ -1,8 +1,4 @@
----
-title: GANimation
-toc: true
-date: 2019-11-17
----
+
 # GAN如此简单的PyTorch实现，一张脸生成72种表情
 
 - 研究展示：http://www.albertpumarola.com/#projects

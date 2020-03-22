@@ -1,8 +1,4 @@
----
-title: 01 什么是 Apache Spark
-toc: true
-date: 2019-07-02
----
+
 # 什么是 Apache Spark
 
 Apache Spark是一个开源的、强大的分布式查询和处理引擎。它提供 MapReduce 的灵活性和可扩展性，但速度明显更高：当数据存储在内存中时，它比 Apache Hadoop快 100 倍，访问磁盘时高达 10 倍。

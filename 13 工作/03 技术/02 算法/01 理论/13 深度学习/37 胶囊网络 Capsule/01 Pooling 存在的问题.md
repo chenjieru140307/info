@@ -1,8 +1,4 @@
----
-title: 01 Pooling 存在的问题
-toc: true
-date: 2019-09-29
----
+
 # Pooling 存在的问题
 
 Hinton一直对 CNN 中的 Pooling 操作意见很大，他曾经吐槽说：“CNN中使用的 Pooling 操作是个大错误，事实上它在实际使用中效果还不错，但这其实更是一场灾难”。

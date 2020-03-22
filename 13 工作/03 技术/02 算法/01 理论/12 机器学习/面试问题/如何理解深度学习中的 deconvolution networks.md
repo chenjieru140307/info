@@ -1,8 +1,4 @@
----
-title: 如何理解深度学习中的 deconvolution networks
-toc: true
-date: 2019-08-01
----
+
 # 如何理解深度学习中的 deconvolution networks？
 
 是呀？到底是反卷积还是转置卷积？

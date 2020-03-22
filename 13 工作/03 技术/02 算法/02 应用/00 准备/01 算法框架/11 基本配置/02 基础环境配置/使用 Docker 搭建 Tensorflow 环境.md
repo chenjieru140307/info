@@ -1,8 +1,4 @@
----
-title: 使用 Docker 搭建 Tensorflow 环境
-toc: true
-date: 2019-10-18
----
+
 # 使用 Docker 搭建 Tensorflow 环境
 
 

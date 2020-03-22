@@ -1,8 +1,4 @@
----
-title: OpenAI Five
-toc: true
-date: 2019-11-17
----
+
 # OpenAI Five
 
 ![img](https://mmbiz.qpic.cn/mmbiz_gif/YicUhk5aAGtDyejvdDrgLr2Zg3jQIibsOonn7KsD1ic2dtsPG2Y7GicsQuA5GYQjiaoPa3zjjvdIy5e1xBGzPUA8GMw/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)﻿

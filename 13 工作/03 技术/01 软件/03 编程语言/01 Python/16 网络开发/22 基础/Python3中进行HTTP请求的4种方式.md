@@ -1,8 +1,4 @@
----
-title: Python3中进行HTTP请求的4种方式
-toc: true
-date: 2018-10-31
----
+
 
 
 # Python3中进行 HTTP 请求的 4 种方式

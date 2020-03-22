@@ -1,8 +1,4 @@
----
-title: 09 NAS 的未来
-toc: true
-date: 2019-08-31
----
+
 
 # NAS 未来会怎样？
 

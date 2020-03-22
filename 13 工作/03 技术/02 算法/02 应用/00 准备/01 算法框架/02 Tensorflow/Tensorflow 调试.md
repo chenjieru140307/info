@@ -1,8 +1,4 @@
----
-title: Tensorflow 调试
-toc: true
-date: 2018-11-10
----
+
 # Tensorflow 调试
 
 Tensorflow 要怎么调试？这个还真的是个问题。

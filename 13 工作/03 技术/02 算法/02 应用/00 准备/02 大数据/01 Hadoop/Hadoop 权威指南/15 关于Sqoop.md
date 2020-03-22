@@ -1,8 +1,4 @@
----
-title: 15 关于Sqoop
-toc: true
-date: 2018-06-27 07:51:32
----
+
 #### 第 15 章
 
 （作者：Aaron Kimball）

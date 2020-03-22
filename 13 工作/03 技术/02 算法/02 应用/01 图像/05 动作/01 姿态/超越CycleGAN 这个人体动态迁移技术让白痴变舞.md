@@ -1,8 +1,4 @@
----
-title: 超越CycleGAN 这个人体动态迁移技术让白痴变舞
-toc: true
-date: 2019-11-17
----
+
 
 
 

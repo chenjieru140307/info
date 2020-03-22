@@ -1,8 +1,4 @@
----
-title: DeepMind 开源三大新框架
-toc: true
-date: 2019-09-29
----
+
 # DeepMind 开源三大新框架
 
 深度强化学习（DRL）一直是人工智能取得最大突破的核心。，DeepMind 在推动 DRL 研发方面做了大量工作，包括构建了许多专有工具和框架，以大规模地简化 DRL agent 训练、实验和管理。最近，DeepMind 又默默开源了三种 DRL 框架：OpenSpiel、SpriteWorld 和 bsuite，用于简化 DRL 应用。

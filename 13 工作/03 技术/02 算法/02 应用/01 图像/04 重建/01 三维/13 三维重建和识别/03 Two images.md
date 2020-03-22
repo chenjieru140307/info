@@ -1,8 +1,4 @@
----
-title: 03 Two images
-toc: true
-date: 2018-08-18 16:34:39
----
+
 
 # Two-image
 

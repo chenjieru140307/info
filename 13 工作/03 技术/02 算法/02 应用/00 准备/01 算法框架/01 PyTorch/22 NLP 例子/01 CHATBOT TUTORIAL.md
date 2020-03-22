@@ -1,8 +1,4 @@
----
-title: 01 CHATBOT TUTORIAL
-toc: true
-date: 2019-06-29
----
+
 # CHATBOT TUTORIAL
 
 **Author:** [Matthew Inkawhich](https://github.com/MatthewInkawhich)

@@ -1,8 +1,4 @@
----
-title: practice 金融贷款发放预测
-toc: true
-date: 2018-08-17 19:06:31
----
+
 # practice 金融贷款发放预测
 
 

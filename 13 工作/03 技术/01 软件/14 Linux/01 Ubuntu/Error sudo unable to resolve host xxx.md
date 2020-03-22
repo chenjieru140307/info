@@ -1,8 +1,4 @@
----
-title: Error sudo unable to resolve host xxx
-toc: true
-date: 2018-10-04
----
+
 # 可以补充进来的
 
 - 对于 sudo 还是有点不是很清楚。

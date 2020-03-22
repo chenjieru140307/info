@@ -1,8 +1,4 @@
----
-title: python linecache
-toc: true
-date: 2018-08-28
----
+
 
 # Python linecache 模块
 

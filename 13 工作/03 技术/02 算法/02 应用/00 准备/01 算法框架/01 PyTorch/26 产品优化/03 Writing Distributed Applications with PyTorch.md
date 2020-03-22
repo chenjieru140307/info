@@ -1,8 +1,4 @@
----
-title: 03 Writing Distributed Applications with PyTorch
-toc: true
-date: 2019-06-29
----
+
 # WRITING DISTRIBUTED APPLICATIONS WITH PYTORCH
 
 **Author**: [Séb Arnold](https://seba1511.com/)
