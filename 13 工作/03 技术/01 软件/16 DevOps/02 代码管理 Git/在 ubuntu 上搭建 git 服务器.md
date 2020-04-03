@@ -29,11 +29,19 @@ $ sudo apt-get install git
 $ sudo adduser git
 ```
 
+增加git用户后会生成文件夹/home/git
+
 <span style="color:red;">这个地方创建的 git 账户最好再按照这个地方设置下：[Ubuntu技巧之 is not in the sudoers file解决方法](https://www.linuxidc.com/Linux/2010-12/30386.htm)</span>
 
 第三步，创建证书登录：
 
 收集所有需要登录的用户的公钥，就是他们自己的`id_rsa.pub`文件，把所有公钥导入到`/home/git/.ssh/authorized_keys`文件里，一行一个。
+
+```
+sudo mkdir /home/git/.ssh
+sudo touch /home/git/.ssh/authorized_keys
+```
+
 
 第四步，初始化 Git 仓库：
 
@@ -75,6 +83,12 @@ Cloning into 'sample'...
 warning: You appear to have cloned an empty repository.
 ```
 
+注意：
+
+- 如果，用的是 ubuntu 登录的 ssh ，然后创建一个 a 文件夹，在 a 文件夹里面用 root 创建一个 git repo，然后改为 git ，那么，从本地的 shell 连接过来时，是 clone 不到这个 git repo 的。会说：does not appear to be a git repository。一般这个问题出在文件夹的权限上。
+- `git clone git@xxx.xxx.xxx.xxx:/home/test.git`
+
+
 剩下的推送就简单了。
 
 ### 管理公钥
@@ -101,3 +115,4 @@ warning: You appear to have cloned an empty repository.
 # 相关
 
 - [搭建 Git 服务器](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137583770360579bc4b458f044ce7afed3df579123eca000)
+- [ubuntu16.04 搭建git服务器简单教程](https://blog.csdn.net/xiemanR/article/details/53405556)
