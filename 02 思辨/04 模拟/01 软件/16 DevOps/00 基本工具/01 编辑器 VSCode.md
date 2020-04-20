@@ -110,11 +110,19 @@ Ctrl+Shift+P，然后输入 Preferences:Configure User Snippets 选择 markdown(
 		"prefix": "cc",
 		"body": [
 			"<p align=\"center\">",
-			"\t<img width=\"50%\" height=\"50%\" src=\"$1\">",
+			"\t<img width=\"70%\" height=\"70%\" src=\"$1\">",
 			"</p>",
 			"$2",
 		],
 		"description": "input center image style"
+	},
+	"code block txt": {
+		"prefix": "tt",
+		"body": [
+			"```txt\n$1\n```",
+			"$2",
+		],
+		"description": "input code block"
 	},
 	"code block py": {
 		"prefix": "py",
