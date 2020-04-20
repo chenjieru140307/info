@@ -5,8 +5,6 @@
 - [Anaconda 官方](https://www.anaconda.com/)
 - [Anaconda 镜像 清华](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)
 
-
-
 ## 环境操作 常用指令
 
 常用指令：
@@ -26,27 +24,27 @@ source deactivate
 - `source deactivate` 退出当前所在的环境。
 
 
-
 ## 库的安装
 
 
 在线安装：
 
 - 直接运行：
-    ```
-    conda install xxx
-    ```
+
+```
+conda install xxx
+```
 
 离线安装：
 
 - 下载：可以在 Anaconda 的网站上下载安装包，搜索地址：<https://anaconda.org/>。将包下载至本地。
-
 - 安装：
-    ```
-    conda install --use-local ffmpeg-2.7.0-0.tar.bz2
-    conda install --offline -f ***.tar.bz2
-    conda install /path/***.tar.bz2
-    ```
+
+```
+conda install --use-local ffmpeg-2.7.0-0.tar.bz2
+conda install --offline -f ***.tar.bz2
+conda install /path/***.tar.bz2
+```
 
 ## 与 Pip 混合使用时需注意
 
