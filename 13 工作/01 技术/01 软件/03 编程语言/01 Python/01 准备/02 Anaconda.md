@@ -1,13 +1,14 @@
 # Anaconda 
 
-## Anaconda 下载
+## 下载
 
 - [Anaconda 官方](https://www.anaconda.com/)
 - [Anaconda 镜像 清华](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)
 
-## 环境操作 常用指令
 
-常用指令：
+## 环境操作
+
+指令：
 
 ```
 conda create -n py36 Python=3.6
@@ -27,26 +28,24 @@ source deactivate
 ## 库的安装
 
 
-在线安装：
-
-- 直接运行：
+在线：
 
 ```
 conda install xxx
 ```
 
-离线安装：
+离线：
 
-- 下载：可以在 Anaconda 的网站上下载安装包，搜索地址：<https://anaconda.org/>。将包下载至本地。
-- 安装：
+1. 下载：可以在 Anaconda 的网站上下载安装包，搜索地址：<https://anaconda.org/>。将包下载至本地。
+2.  ```
+    conda install --use-local ffmpeg-2.7.0-0.tar.bz2
+    conda install --offline -f ***.tar.bz2
+    conda install /path/***.tar.bz2
+    ```
 
-```
-conda install --use-local ffmpeg-2.7.0-0.tar.bz2
-conda install --offline -f ***.tar.bz2
-conda install /path/***.tar.bz2
-```
+## 注意
 
-## 与 Pip 混合使用时需注意
+### 与 Pip 混合使用时
 
 包可以使用 conda 下载和更新，也可以使用 pip 下载和更新：
 
@@ -64,11 +63,9 @@ pip install --upgrade package_name # pip更新
 - 更新。**不要使用 pip 来更新用 conda 下载的包，这会导致库之间的依赖出现问题。** 
 
 
+## 问题
 
-
-
-
-## 问题：windows下安装 Anaconda3 之后再 cmd 下出现'activate' 不是内部或外部命令，也不是可运行的程序 或批处理文件
+### 问题：windows下安装 Anaconda3 之后再 cmd 下出现'activate' 不是内部或外部命令，也不是可运行的程序 或批处理文件
 
 windows 下安装 Anaconda3 之后再 cmd 下出现 'activate' 不是内部或外部命令，也不是可运行的程序 或批处理文件。
 
@@ -96,7 +93,7 @@ windows 下安装 Anaconda3 之后再 cmd 下出现 'activate' 不是内部或�
 
 
 
-## 问题：Intel MKL FATAL ERROR: Cannot load mkl_intel_thread.dll.
+### 问题：Intel MKL FATAL ERROR: Cannot load mkl_intel_thread.dll.
 
 这个问题，当我把 pycharm 升级到最新的时候，再安装 matplotlib 的时候总是遇到。
 
