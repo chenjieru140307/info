@@ -1,9 +1,9 @@
 
 
 
-## 综合使用 map reduce filter
+# 综合使用 map reduce filter
 
-### 举例 1：
+## 举例 1：
 
 
 把 `str` 转换为 `int`：
@@ -34,7 +34,7 @@ print(str2int('6468434'))
 
 
 
-### 举例 2：
+## 举例 2：
 
 将列表中的偶数取出来，然后乘以 3，再转化为 string。
 
@@ -81,10 +81,3 @@ print(list(res))
 
 - 上面分别用三个lambda 实现了三个函数，然后，在如何在一个 list 上使用这三个函数的时候，**pipeline_func 又使用了 reduce，来排列使用这三个函数。让他们依次作用在数据列表上。**
 
-
-
-# 相关：
-
-
-- [函数式编程](https://coolshell.cn/articles/10822.html)
-- [map/reduce](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014317852443934a86aa5bb5ea47fbbd5f35282b331335000)
