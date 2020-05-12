@@ -1,15 +1,14 @@
-
-# 可以补充进来的
-
-
 # 集合 set
 
-set 和 dict 类似，也是一组 key 的集合，但不存储 value。由于 key 不能重复，所以，在 set 中，没有重复的 key。
+集合：
+
+- 和字典类似，也是一组 key 的集合，但不存储 value。
+- 由于 key 不能重复，所以，在 set 中，没有重复的 key。
 
 
-## 集合的初始化
+## 初始化
 
-初始化 set 的时候 重复的元素自动只保留一个。
+举例：
 
 ```py
 a = set([1, 2, 2, 3, 4, 5, 6])
@@ -36,14 +35,20 @@ Traceback (most recent call last):
 TypeError: unhashable type: 'list'
 ```
 
-注意：纯粹的 tuple 是可以作为 set 的 key 的，但是里面含有 list 的 tuple 是无法作为 key 被 hash 的。
+说明：
+
+- 初始化 set 的时候 重复的元素自动只保留一个。
+
+注意：
+
+- 纯粹的 tuple 是可以作为 set 的 key 的，但是里面含有 list 的 tuple 是无法作为 key 被 hash 的。
 
 ## 集合的运算
 
-
+举例：
 
 ```py
-s_a = set([1, 2, 2, 3, 4, 5, 6])  # 这里在使用 list 初始化 set 的时候 重复的元素自动只保留一个
+s_a = set([1, 2, 2, 3, 4, 5, 6])  
 s_b = set([4, 5, 6, 7])
 # 并集
 print(s_a | s_b)
@@ -78,27 +83,17 @@ print(s_a.symmetric_difference(s_b))
 
 
 
-## 修改集合中的元素
+## 修改或删除集合中元素
 
-
+举例：
 
 ```py
 s_a = set([1, 2, 2, 3, 4, 5, 6])
 s_a.add('x')
 s_a.update([4, 5, 6, 9])
 print(s_a)
-```
 
-输出：
 
-```
-{1, 2, 3, 4, 5, 6, 'x', 9}
-```
-
-删除集合中的元素：
-
-```py
-# 必须知道这个元素的值，不然的话无法删除
 s_a = set([1, 2, 2, 'x', 4, 5, 6])
 s_a.remove('x')
 s_a.remove(88)
@@ -107,6 +102,7 @@ s_a.remove(88)
 输出：
 
 ```
+{1, 2, 3, 4, 5, 6, 'x', 9}
 Traceback (most recent call last):
   File "E:\11.ProgramFiles\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line 2881, in run_code
     exec(code_obj, self.user_global_ns, self.user_ns)
@@ -118,11 +114,3 @@ KeyError: 88
 注意：
 
 - 必须知道这个元素的值，不然只能用 try catch
-
-
-# 原文及引用
-
-
-- [Python集合（set）类型的操作](https://blog.csdn.net/business122/article/details/7541486) <span style="color:red;">未整理</span>
-- [Python 集合比较（交集、并集，差集）](https://blog.csdn.net/isoleo/article/details/13000975)<span style="color:red;">未整理</span>
-pan>
