@@ -19,6 +19,18 @@ print(b4)
 # 利用字符串的encode()方法编码成bytes，默认使用utf-8字符集
 b5 = "Python 编程".encode('utf-8')
 print(b5)
+
+b6 = bytes(4)
+print(type(b6))
+print(b6)
+
+print('')
+i = 16
+print(i.to_bytes(1, byteorder='big', signed=True))
+print(i.to_bytes(4, byteorder='big', signed=True))
+print(i.to_bytes(4, byteorder='little', signed=True))
+
+print(bytes([255, 254, 253, 252]))
 ```
 
 输出：
@@ -30,6 +42,13 @@ b'Python'
 b'th'
 b'Python \xe7\xbc\x96\xe7\xa8\x8b'
 b'Python \xe7\xbc\x96\xe7\xa8\x8b'
+<class 'bytes'>
+b'\x00\x00\x00\x00'
+
+b'\x10'
+b'\x00\x00\x00\x10'
+b'\x10\x00\x00\x00'
+b'\xff\xfe\xfd\xfc'
 ```
 
 说明：
@@ -114,3 +133,40 @@ c34
 - 之所以第一行输出的是 `\0xc4` 是因为 `4` 的 ASICC 码是 `34`，所以当输出为`\x0c\x34` 的时候，Python直接把`\x34` 打印成 `4`。
 
 
+## 与 base64 的编解码
+
+举例：
+
+```py
+binary_data = b'\x00\xFF\x00\xFF'
+import codecs
+base64_data = codecs.encode(binary_data, 'base64')
+print(base64_data)
+import binascii
+base64_data = binascii.b2a_base64(binary_data)
+print(base64_data)
+
+print('')
+print(codecs.decode(base64_data, 'base64'))
+print(binascii.a2b_base64(base64_data))
+print('')
+print(base64_data.decode('utf-8'))
+```
+
+输出：
+
+```txt
+b'AP8A/w==\n'
+b'AP8A/w==\n'
+
+b'\x00\xff\x00\xff'
+b'\x00\xff\x00\xff'
+
+AP8A/w==
+
+```
+
+说明：
+
+- 可以使用 `codecs.encode(binary_data, 'base64')` 或 `binascii.b2a_base64(binary_data)` 来对 bytes 编码为 base64 样式的 bytes
+- 可以用 `codecs.decode(base64_data, 'base64')` 或 `binascii.a2b_base64(base64_data)` 进行解码
