@@ -7,7 +7,8 @@
 
 文档：
 
-- [fabric 中文文档](https://fabric-chs.readthedocs.io/zh_CN/chs/tutorial.html)
+- [文档](https://fabric-chs.readthedocs.io/zh_CN/chs/tutorial.html)
+
 
 **举例1：**（自动部署）
 

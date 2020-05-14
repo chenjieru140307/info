@@ -1,9 +1,9 @@
 
-## 序列化
+# 序列化
 
 - 把变量从内存中变成可存储或传输的过程称之为序列化
 
-### pickling
+## pickle
 
 举例：
 
@@ -40,7 +40,7 @@ pickle 的问题：
 
 - 只能用于 Python，并且可能不同版本的 Python 彼此都不兼容。
 
-### json
+## json
 
 json 优点：
 
@@ -68,8 +68,10 @@ import json
 
 d = dict(name='Bob', age=20, score=88)
 print(json.dumps(d),type(json.dumps(d)))
+print(json.dumps(d, sort_keys=True, indent=4, separators=(',', ':')))
 json_str = '{"age": 20, "score": 88, "name": "Bob"}'
 print(json.loads(json_str),type(json.loads(json_str)))
+
 
 with open('dump.json', 'w') as f:
     json.dump(d, f)
@@ -115,6 +117,11 @@ print(json.loads(json_str, object_hook=dict2student)) # 推荐
 
 ```txt
 {"name": "Bob", "age": 20, "score": 88} <class 'str'>
+{
+    "age":20,
+    "name":"Bob",
+    "score":88
+}
 {'age': 20, 'score': 88, 'name': 'Bob'} <class 'dict'>
 {'name': 'Bob', 'age': 20, 'score': 88}
 
@@ -137,7 +144,10 @@ TypeError: Object of type Student is not JSON serializable
 
 说明:
 
-- `dumps()` 方法返回一个 `str`，内容就是标准的 JSON
+- `json.dumps()` 方法返回一个 `str`，内容就是标准的 JSON。`json.dumps(dic, sort_keys=True, indent=4, separators=(',', ':'))` 可以对输出格式进行调整。
+  - sort_keys：是否按照字典排序（a-z）输出，True代表是，False代表否。
+  - indent=4：设置缩进格数，一般由于 Linux 的习惯，这里会设置为 4。
+  - separators：设置分隔符，在 d = {'a': 1, 'b': 2, 'c': 3}这行代码里可以看到冒号和逗号后面都带了个空格，这也是因为 Python 的默认格式也是如此，如果不想后面带有空格输出，那就可以设置成 separators=(',', ':')，如果想保持原样，可以写成 separators=(', ', ': ')。
 - `dump()` 方法可以直接把 JSON 写入一个 `file-like Object`。
 - 可以用 `loads()`或者 `load()`方法把 json 反序列化为 python 对象，`loads()` 从字符串反序列化，`load()` 从 `file-like Object` 中读取字符串并反序列化
 - 由于 JSON 标准规定 JSON 编码是 UTF-8，所以我们总是能正确地在 Python 的 `str` 与 JSON 的字符串之间转换。
@@ -149,3 +159,4 @@ TypeError: Object of type Student is not JSON serializable
 备注：
 
 - `json` 模块的 `dumps()` 和 `loads()` 函数是定义得非常好的接口的典范。当我们使用时，只需要传入一个必须的参数。但是，当默认的序列化或反序列机制不满足我们的要求时，我们又可以传入更多的参数来定制序列化或反序列化的规则，既做到了接口简单易用，又做到了充分的扩展性和灵活性。
+
