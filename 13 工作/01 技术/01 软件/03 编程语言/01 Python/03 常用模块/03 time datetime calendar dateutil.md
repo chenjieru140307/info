@@ -171,21 +171,40 @@ calendar 函数：
 
 
 ```py
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
+
+dt = datetime.now()  # 获取当前datetime
+print(dt)
+print(type(dt))
+print(dt)
+print()
 
 dt = datetime(2011, 10, 29, 20, 30, 21)
 print(dt.day)
 print(dt.minute)
 print(dt.date())
 print(dt.time())
-print(dt.strftime('%m/%d/%Y %H:%M'))
 dt.replace(minute=0, second=0)
 print(dt)
 print()
 
+dt = datetime(2011, 10, 29, 20, 30, 21)
+print(dt.timestamp())  # 把datetime转换为timestamp
+t = 1429417200.0
+print(datetime.fromtimestamp(t))  # 时间戳转为本地时间
+print(datetime.fromtimestamp(t).tzinfo)
+print(datetime.utcfromtimestamp(t))  # 时间戳转为UTC时间
+print(datetime.utcfromtimestamp(t).tzinfo)
+print()
+
+dt = datetime.now()
 print(datetime.strptime('20091031', '%Y%m%d'))
-print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-print(datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f'))
+print(datetime.strptime('20091031', '%Y%m%d').tzinfo)
+print(datetime.strptime('2015-6-1 18:19:59', '%Y-%m-%d %H:%M:%S'))
+print(dt.strftime('%a, %b %d %H:%M'))
+print(dt.strftime('%Y-%m-%d %H:%M:%S'))
+print(dt.strftime('%Y-%m-%d %H:%M:%S.%f'))
+print(dt.strftime('%m/%d/%Y %H:%M'))
 print()
 
 dt1 = datetime(2011, 10, 29, 20, 30, 21)
@@ -195,33 +214,96 @@ print(delta)
 print(type(delta))
 print(dt1)
 print(dt1 + delta)
+now = datetime.now()
+print(now)
+print(now + timedelta(hours=10))
+print(now - timedelta(days=1))
+print(now + timedelta(days=2, hours=12))
+print()
+
+
+tz_utc_8 = timezone(timedelta(hours=8))  # 创建时区UTC+8:00
+now = datetime.now()
+print(now)
+dt = now.replace(tzinfo=tz_utc_8)  # 强制设置为UTC+8:00
+print(dt)
+print()
+
+
+# 拿到UTC时间，并强制设置时区为UTC+0:00:
+utc_dt = datetime.utcnow().replace(tzinfo=timezone.utc)
+print(utc_dt)
+# astimezone()将转换时区为北京时间:
+bj_dt = utc_dt.astimezone(timezone(timedelta(hours=8)))
+print(bj_dt)
+# astimezone()将转换时区为东京时间:
+tokyo_dt = utc_dt.astimezone(timezone(timedelta(hours=9)))
+print(tokyo_dt)
+# astimezone()将bj_dt转换时区为东京时间:
+tokyo_dt2 = bj_dt.astimezone(timezone(timedelta(hours=9)))
+print(tokyo_dt2)
 ```
 
 输出：
 
 ```
+2020-05-15 10:57:53.732067
+<class 'datetime.datetime'>
+2020-05-15 10:57:53.732067
+
 29
 30
 2011-10-29
 20:30:21
-10/29/2011 20:30
 2011-10-29 20:30:21
 
+1319891421.0
+2015-04-19 12:20:00
+None
+2015-04-19 04:20:00
+None
+
 2009-10-31 00:00:00
-2020-05-14 23:07:48
-2020-05-14 23:07:48.859925
+None
+2015-06-01 18:19:59
+Fri, May 15 10:57
+2020-05-15 10:57:53
+2020-05-15 10:57:53.732067
+05/15/2020 10:57
 
 17 days, 1:59:39
 <class 'datetime.timedelta'>
 2011-10-29 20:30:21
 2011-11-15 22:30:00
+2020-05-15 10:57:53.739033
+2020-05-15 20:57:53.739033
+2020-05-14 10:57:53.739033
+2020-05-17 22:57:53.739033
+
+2020-05-15 10:57:53.739033
+2020-05-15 10:57:53.739033+08:00
+
+2020-05-15 02:57:53.739033+00:00
+2020-05-15 10:57:53.739033+08:00
+2020-05-15 11:57:53.739033+09:00
+2020-05-15 11:57:53.739033+09:00
 ```
 
 说明:
 
-- datetime.datetime是不可变的，所以 `dt.replace(minute=0, second=0)` 是新创建了一个 object。
-- 两个不同的 datetime object能产生一个 datetime.timedelta类型：
+
+- 在计算机中，时间实际上是用数字表示的。我们把1970年1月1日 00:00:00 UTC+00:00时区的时刻称为 epoch time，记为0（1970年以前的时间timestamp为负数），当前时间就是相对于epoch time的秒数，称为timestamp。
+- timestamp 的值与时区毫无关系，因为 timestamp 一旦确定，其 UTC 时间就确定了，转换到任意时区的时间也是完全确定的，这就是为什么计算机存储的当前时间是以 timestamp 表示的，因为全球各地的计算机在任意时刻的 timestamp 都是完全相同的（假定时间已校准）。
+- 注意到timestamp是一个浮点数，它没有时区的概念，而在转化为 datetime 时，是考虑时区的。
+  - `datetime.fromtimestamp(t)` 是在 timestamp 和本地时间做转换。本地时间是指当前操作系统设定的时区。例如北京时区是东8区，则本地时间：`2015-04-19 12:20:00` 就是UTC+8:00 时区的时间：`2015-04-19 12:20:00 UTC+8:00` ，而此刻的格林威治标准时间与北京时间差了8小时，也就是UTC+0:00时区的时间应该是：`2015-04-19 04:20:00 UTC+0:00`
+  - `datetime.utcfromtimestamp(t)` 可以直接将时间戳转为 UTC+0:00 标准时区时间 `2015-04-19 04:20:00 UTC+0:00`。
+  - 转换后的 datetime 的时区属性 `tzinfo` 仍是 None。（为什么呢？为什么没有把信息附加进来。）
+- 使用 `strptime` 转换后的 datetime 的时区属性 `tzinfo` 也是 None。
+- `now.replace(tzinfo=tz_utc_8)` 可以强制设置时区属性，最好不要这样设定。
+- 可以先通过 `utcnow()` 拿到当前的UTC时间，然后用 `astimezone` 转换为任意时区的时间。
+- `datetime.datetime` 是不可变的，所以 `dt.replace(minute=0, second=0)` 是新创建了一个 object。
 - `time.time()` 来作为时间戳只能精确到秒。`datetime.datetime.now()` 可以精确到毫秒。
+- 注意：`datetime` 表示的时间需要时区信息才能确定一个特定的时间，否则只能视为本地时间。如果要存储 datetime，最佳方法是将其转换为 `timestamp` 再存储，因为 timestamp 的值与时区完全无关。
 
 ## dateutil
 
