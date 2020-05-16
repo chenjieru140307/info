@@ -475,9 +475,9 @@ o &amp; = &amp; i[k]\textrm{<op>}o\quad k=1\ldots N
 \end{align*}" >
 </center>
 
-where <img class="math" src="/static/images/math/137b9dbfb34222eb310323c419e882e97eb6b129.svg" alt="N+1"> is the number of elements in the input, <img class="math" src="/static/images/math/df0deb143e5ac127f00bd248ee8001ecae572adc.svg" alt="i"> , <img class="math" src="/static/images/math/21736df275793e73d4849d98709ef561b459defd.svg" alt="o">
- is the output, and <img class="math" src="/static/images/math/6b6d71dcc07452a6db6acf5f6dde7d53781bae3e.svg" alt="i[k]"> is the <img class="math" src="/static/images/math/8f5de1b6661c461a93905c27156ce62278c865f0.svg" alt="k^{\textrm{th}}">
- element of <img class="math" src="/static/images/math/df0deb143e5ac127f00bd248ee8001ecae572adc.svg" alt="i"> along the selected axis.
+where <img class="math" src="/static/images/math/.svg" alt="N+1"> is the number of elements in the input, <img class="math" src="/static/images/math/.svg" alt="i"> , <img class="math" src="/static/images/math/.svg" alt="o">
+ is the output, and <img class="math" src="/static/images/math/.svg" alt="i[k]"> is the <img class="math" src="/static/images/math/.svg" alt="k^{\textrm{th}}">
+ element of <img class="math" src="/static/images/math/.svg" alt="i"> along the selected axis.
 This basic operations is repeated for arrays with greater than 1
 dimension so that the reduction takes place for every 1-D sub-array
 along the selected axis. An iterator with the selected dimension
@@ -505,7 +505,7 @@ o[k] &amp; = &amp; i[k]\textrm{<op>}o[k-1]\quad k=1\ldots N.
 </center>
 
 The output has the same shape as the input and each 1-D loop operates
-over <img class="math" src="/static/images/math/f4170ed8938b79490d8923857962695514a8e4cb.svg" alt="N"> elements when the shape in the selected axis is <img class="math" src="/static/images/math/137b9dbfb34222eb310323c419e882e97eb6b129.svg" alt="N+1">.
+over <img class="math" src="/static/images/math/f4170ed8938b79490d8923857962695514a8e4cb.svg" alt="N"> elements when the shape in the selected axis is <img class="math" src="/static/images/math/.svg" alt="N+1">.
 Again, buffered loops take care to copy and cast the data before
 calling the underlying 1-D computational loop.
 

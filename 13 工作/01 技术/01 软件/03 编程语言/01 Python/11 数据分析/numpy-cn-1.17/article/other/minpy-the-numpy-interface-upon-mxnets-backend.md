@@ -66,13 +66,19 @@ import minpy.numpy as np
 
 ## 打印和调试
 
-![调试和打印变量](/static/images/article/other-minipy-p1.png)
+<p align="center">
+  <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/ALELmSJKbF4F.png?imageslim">
+</p>
+
 
 在符号编程中，需要在print语句之前的控制依赖性，否则打印操作符将不会出现在关键依赖路径上，因此不会被执行。相比之下，MinPy简直就是NumPy原生，就像Python的hello world一样简单。
 
 ## 数据相关分支
 
-![数据相关分支](/static/images/article/other-minipy-p2.png)
+<p align="center">
+  <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/HPQysYBXY69X.png?imageslim">
+</p>
+
 
 在符号编程中，每个分支中都需要 ``lambda`` 表达式，以便在运行时缓慢地展开数据流图，这可能非常令人费解。同样，MinPy是NumPy，你可以随心所欲地使用if语句。
 
@@ -132,7 +138,10 @@ y = np.exp(conv(x=x, conv_weight=w))
 
 命令式的接口确实有许多的挑战，特别是它放弃了一些(目前)仅体现在符号编程中的深度优化。然而，MinPy设法保持了合理的性能，特别是在实际计算量很大的情况下。我们的下一个目标是用先进的系统技术恢复性能。
 
-![基准，基准尺度](/static/images/article/benchmark.png)
+<p align="center">
+  <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/9QaLVet7vWcg.png?imageslim">
+</p>
+
 
 ## CS231n – 一个针对新手的完美介绍
 

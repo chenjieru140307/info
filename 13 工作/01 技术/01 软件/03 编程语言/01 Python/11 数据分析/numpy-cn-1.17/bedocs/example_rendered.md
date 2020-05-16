@@ -69,7 +69,7 @@ meta:
 
 可以包括一些数学公式：
 
-![math](/static/images/math/003f271cc4b6ba7e6fb8c6b30c851c95ea8038ba.svg)
+$X\left(e^{j \omega}\right)=x(n) e^{-j \omega n}$
 
 甚至使用像内联的希腊符号。
 

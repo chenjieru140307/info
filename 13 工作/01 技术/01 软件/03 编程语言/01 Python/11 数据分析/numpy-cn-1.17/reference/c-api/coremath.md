@@ -79,43 +79,43 @@ and extended precision are also available by adding the ``f`` and
 ``l`` suffixes respectively.
 
 - ``NPY_E``
-    Base of natural logarithm (<img class="math" src="/static/images/math/78a06cf7a34f39fde71fbba0d5539baae7c72d4e.svg" alt="e">)
+    Base of natural logarithm (<img class="math" src="/static/images/math/.svg" alt="e">)
 
 - ``NPY_LOG2E``
     
-    Logarithm to base 2 of the Euler constant (<img class="math" src="/static/images/math/e923cda98ea82f4bc45289e31e4e87265d9a9eaf.svg" alt="\frac{\ln(e)}{\ln(2)}">)
+    Logarithm to base 2 of the Euler constant (<img class="math" src="/static/images/math/.svg" alt="\frac{\ln(e)}{\ln(2)}">)
 
 - ``NPY_LOG10E``
 
-    Logarithm to base 10 of the Euler constant (<img class="math" src="/static/images/math/bb13edbff6405ccc0dfb4922312b342b1694b12b.svg" alt="\frac{\ln(e)}{\ln(10)}">)
+    Logarithm to base 10 of the Euler constant (<img class="math" src="/static/images/math/.svg" alt="\frac{\ln(e)}{\ln(10)}">)
 
 - ``NPY_LOGE2``
 
-    Natural logarithm of 2 (<img class="math" src="/static/images/math/2adfadeeaf9c0c680c44dbfdc96a59f8ba291497.svg" alt="\ln(2)">)
+    Natural logarithm of 2 (<img class="math" src="/static/images/math/.svg" alt="\ln(2)">)
 
 - ``NPY_LOGE10``
 
-    Natural logarithm of 10 (<img class="math" src="/static/images/math/0e6561edc6f9f429bcfc210ff5b886b5f8164b38.svg" alt="\ln(10)">)
+    Natural logarithm of 10 (<img class="math" src="/static/images/math/.svg" alt="\ln(10)">)
 
 - ``NPY_PI``
 
-    Pi (<img class="math" src="/static/images/math/b7793e4f08d00aca47e272dcdfeb70f933dac222.svg" alt="\pi">)
+    Pi (<img class="math" src="/static/images/math/.svg" alt="\pi">)
 
 - ``NPY_PI_2``
 
-    Pi divided by 2 (<img class="math" src="/static/images/math/8682efc566ec991e274a96086f79643e45fc5cab.svg" alt="\frac{\pi}{2}">)
+    Pi divided by 2 (<img class="math" src="/static/images/math/.svg" alt="\frac{\pi}{2}">)
 
 - ``NPY_PI_4``
 
-    Pi divided by 4 (<img class="math" src="/static/images/math/fb7f188c45278a5bed905995588f97b1e90850d6.svg" alt="\frac{\pi}{4}">)
+    Pi divided by 4 (<img class="math" src="/static/images/math/.svg" alt="\frac{\pi}{4}">)
 
 - ``NPY_1_PI``
 
-    Reciprocal of pi (<img class="math" src="/static/images/math/e7808cd312bbbb9a211ca155411a031b255ba163.svg" alt="\frac{1}{\pi}">)
+    Reciprocal of pi (<img class="math" src="/static/images/math/.svg" alt="\frac{1}{\pi}">)
 
 - ``NPY_2_PI``
 
-    Two times the reciprocal of pi (<img class="math" src="/static/images/math/2a78bc1b3a6081b73d6e6cb9b71963cccc45edf6.svg" alt="\frac{2}{\pi}">)
+    Two times the reciprocal of pi (<img class="math" src="/static/images/math/.svg" alt="\frac{2}{\pi}">)
 
 - ``NPY_EULER``
 

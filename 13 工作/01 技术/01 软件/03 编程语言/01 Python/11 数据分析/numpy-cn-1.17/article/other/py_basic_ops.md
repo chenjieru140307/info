@@ -117,7 +117,10 @@ uint8
 
 检查以下结果：
 
-![roi](/static/images/roi.jpg)
+<p align="center">
+  <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/XatSjNbrvtii.jpg?imageslim">
+</p>
+
 
 ## 拆分和合并图像通道
 
@@ -189,7 +192,10 @@ plt.show()
 
 请参阅下面的结果。（图像与matplotlib一起显示。因此RED和BLUE平面将互换）：
 
-![border](/static/images/border.jpg)
+<p align="center">
+  <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/RGt3M3foXTIE.jpg?imageslim">
+</p>
+
 
 ## 帮助和反馈
 

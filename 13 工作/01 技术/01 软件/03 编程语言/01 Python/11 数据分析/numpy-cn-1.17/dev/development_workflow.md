@@ -343,7 +343,10 @@ git push origin :my-unwanted-branch
 
 点击“管理”按钮，然后将其他任何人作为协作者添加到仓库：
 
-![pull_button](/static/images/pull_button.png)
+<p align="center">
+  <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/yOrmJUJVhadB.png?imageslim">
+</p>
+
 
 现在这些人都能做到：
 

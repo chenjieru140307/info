@@ -85,7 +85,10 @@ git config --global user.name "Your Name Comes Here"
 1. 转到位于[NumPy](https://www.numpy.org/) github上的 [NumPy github](https://github.com/numpy/numpy) 主页。
 1. 点击页面上名为 *fork* 的按钮:
 
-![fork](/static/images/forking_button.png)
+<p align="center">
+        <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/4urPQCXLeKt6.png?imageslim">
+</p>
+
 
 稍等片刻后，您应该就能在你自己的主页上找到你自己的 [NumPy](https://www.numpy.org/) 分叉副本。
 

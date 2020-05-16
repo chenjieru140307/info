@@ -180,7 +180,7 @@ from skimage import io, transform
 
 First, let’s load the image, pre-process it using standard skimage python library. Note that this preprocessing is the standard practice of processing data for training/testing neural networks.
 
-```
+```py
 # load the image
 img_in = io.imread("./_static/img/cat.jpg")
 

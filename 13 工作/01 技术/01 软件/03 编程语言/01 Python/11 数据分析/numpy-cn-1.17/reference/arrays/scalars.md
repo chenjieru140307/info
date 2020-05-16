@@ -13,7 +13,10 @@ Python只定义了一种特定数据类（只有一种整数类型，一种浮�
 而如果 *val* 是灵活的itemsize数组类型之一（``string``、``unicode``、``void``），
 则 ``isinstance(val，np.Flexible)`` 将返回 ``True``。
 
-![dtype-hierarchy](/static/images/dtype-hierarchy.png)
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/9cXOw4VK10In.png?imageslim">
+</p>
+
 
 **图**：表示数组数据类型的类型对象的层次结构。
 未示出两种整数类型``intp``、``uintp``它们仅指向保存平台指针的整数类型。

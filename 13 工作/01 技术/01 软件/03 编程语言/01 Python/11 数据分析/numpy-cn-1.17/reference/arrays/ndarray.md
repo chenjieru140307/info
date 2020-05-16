@@ -80,7 +80,7 @@ array([[1, 9, 3],
 对象可以适应任何 *跨步索引方案* 。在跨步方案中，N维索引 <img class="math" src="/static/images/math/edb5f8b6064d0edc2bc57a1714249e0eae1a33e3.svg" alt="(n_0, n_1, ..., n_{N-1})"/> 对应于偏移量（以字节为单位）：
 
 <center>
-<img src="/static/images/math/1388948b609ce9a1d9ae0380d361628d6b385812.svg" alt="n_{\mathrm{offset}} = \sum_{k=0}^{N-1} s_k n_k"/>
+<img src="/static/images/math/.svg" alt="n_{\mathrm{offset}} = \sum_{k=0}^{N-1} s_k n_k"/>
 </center>
 
 从与数组关联的内存块的开头。

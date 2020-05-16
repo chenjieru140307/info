@@ -90,7 +90,7 @@ The phase spectrum is obtained by ``np.angle(A)``.
 The inverse DFT is defined as
 
 <center>
-<img src="/static/images/math/25d7a89b77473363cb4da8b11ca853073f63729f.svg" alt="a_m = \frac{1}{n}\sum_{k=0}^{n-1}A_k\exp\left\{2\pi i{mk\over n}\right\}
+<img src="/static/images/math/.svg" alt="a_m = \frac{1}{n}\sum_{k=0}^{n-1}A_k\exp\left\{2\pi i{mk\over n}\right\}
 \qquad m = 0,\ldots,n-1.">
 </center>
 

@@ -10,10 +10,6 @@ meta:
 
 ## 前言
 
-人们有时会说，与C++这种低级语言相比，Python以运行速度为代价改善了开发时间和效率。幸运的是，有一些方法可以在不牺牲易用性的情况下加速Python中的操作运行时。适用于快速数值运算的一个选项是NumPy，它当之无愧地将自己称为使用Python进行科学计算的基本软件包。
-
-当然，很少有人将50微秒（百万分之五十秒）的东西归类为“慢”。然而，计算机可能会有所不同。运行50微秒（50微秒）的运行时属于微执行领域，可以松散地定义为运行时间在1微秒和1毫秒之间的运算。
-
 为什么速度很重要？微观性能值得监控的原因是运行时的小差异会随着重复的函数调用而放大：增量50μs的开销，重复超过100万次函数调用，转换为50秒的增量运行时间。
 
 在计算方面，实际上有三个概念为NumPy提供了强大的功能：
@@ -22,172 +18,112 @@ meta:
 - 广播
 - 索引
 
-在本教程中，你将逐步了解**如何利用矢量化和广播**，以便你可以充分使用NumPy。虽然你在这里将使用一些索引，但NumPy的完整索引原理图(它扩展了Python的[切片语法]((https://docs.python.org/3/reference/expressions.html?highlight=slice#slicings)))是它们自己的工具。如果你想了解有关[NumPy索引](/reference/array_objects/indexing.html)的更多信息，请喝点咖啡，然后前往NumPy文档中的索引部分。
 
-## 进入状态：介绍NumPy数组
 
-NumPy的基本对象是它的ndarray（或numpy.array），这是一个n维数组，它也以某种形式出现在面向数组的语言中，如Fortran 90、R和MATLAB，以及以前的 APL 和 J。
+举例：
 
-让我们从形成一个包含36个元素的三维数组开始：
+- 一个True和False的一维向量，计算序列中从 False 到 True 的个数。
+
 
 ```python
->>> import numpy as np
+import numpy as np
 
->>> arr = np.arange(36).reshape(3, 4, 3)
->>> arr
-array([[[ 0,  1,  2],
-        [ 3,  4,  5],
-        [ 6,  7,  8],
-        [ 9, 10, 11]],
+np.random.seed(444)
+arr = np.random.choice([False, True], size=100000)
+print(arr)
 
-       [[12, 13, 14],
-        [15, 16, 17],
-        [18, 19, 20],
-        [21, 22, 23]],
+# 方法1
+def count_transitions(x) -> int:
+    count = 0
+    for i, j in zip(x[:-1], x[1:]):
+        if j and not i:
+            count += 1
+    return count
+print(count_transitions(arr))
 
-       [[24, 25, 26],
-        [27, 28, 29],
-        [30, 31, 32],
-        [33, 34, 35]]])
+# 方法2
+print(np.count_nonzero(arr[:-1] < arr[1:]))
 ```
 
-在二维中描绘高维数组可能会比较困难。考虑数组形状的一种直观方法是简单地“从左到右读取它”。arr 是一个3乘4乘3的数组：
+输出：
 
-```python
->>> arr.shape
-(3, 4, 3)
-```
-
-在视觉上，arr可以被认为是三个4x3网格（或矩形棱镜）的容器，看起来像这样：
-
-![NumPy三维数组](/static/images/article/arr3d.7442cd4e11c6.jpg)
-
-更高维度的数组可能更难以用图像表达出来，但它们仍将遵循这种“数组内的数组”模式。
-
-你在哪里可以看到超过两个维度的数据？
-
-- [面板数据](https://en.wikipedia.org/wiki/Panel_data)可以用三维表示。跟踪个体群组（群体）随时间变化的数据可以被构造为（受访者，日期，属性）。 1979年[全国青年纵向调查（iq调查）](https://www.nlsinfo.org/content/cohorts/nlsy79)对27岁以上的12,686名受访者进行了调查。假设每个人每年有大约500个直接询问或派生的数据点，这些数据将具有形状（12686,27,500），总共177,604,000个数据点。
-- 用于多幅图像的彩色图像数据通常存储在四个维度中。每个图像是一个三维数组(高度、宽度、通道)，通道通常是红色、绿色和蓝色(RGB)值。然后，图像的集合就是(图像数、高度、宽度、通道)。1，000张256x256 RGB图像将具有形状(1000，256，256，3)。(扩展的表示是RGBA，其中A-alpha-表示不透明的级别。)。
-
-有关高维数据的真实示例的更多详细信息，请参阅FrançoisChollet[使用Python进行深度学习](https://realpython.com/asins/1617294438/)的第2章。
-
-## 什么是矢量化？
-
-矢量化是NumPy中的一种强大功能，可以将操作表达为在整个数组上而不是在各个元素上发生。以下是Wes McKinney的简明定义：
-
-> 这种用数组表达式替换显式循环的做法通常称为向量化。通常，矢量化数组操作通常比其纯Python等价物快一个或两个（或更多）数量级，在任何类型的数值计算中都具有最大的影响。[查看源码](https://www.safaribooksonline.com/library/view/python-for-data/9781449323592/ch04.html)
-
-在Python中循环数组或任何数据结构时，会涉及很多开销。 NumPy中的向量化操作将内部循环委托给高度优化的C和Fortran函数，从而实现更清晰，更快速的Python代码。
-
-### 计数: 简单的如：1, 2, 3…
-
-作为示例，考虑一个True和False的一维向量，你要为其计算序列中“False to True”转换的数量：
-
-```python
->>> np.random.seed(444)
-
->>> x = np.random.choice([False, True], size=100000)
->>> x
-array([ True, False,  True, ...,  True, False,  True])
-```
-
-使用Python for循环，一种方法是成对地评估序列中每个元素的[真值](https://docs.python.org/3/library/stdtypes.html#truth-value-testing)以及紧随其后的元素：
-
-```python
->>> def count_transitions(x) -> int:
-...     count = 0
-...     for i, j in zip(x[:-1], x[1:]):
-...         if j and not i:
-...             count += 1
-...     return count
-...
->>> count_transitions(x)
+```txt
+[ True False  True ...  True False  True]
+24984
 24984
 ```
 
-在矢量化形式中，没有明确的for循环或直接引用各个元素：
 
-```python
->>> np.count_nonzero(x[:-1] < x[1:])
-24984
-```
 
-这两个等效函数在性能方面有何比较？ 在这种特殊情况下，向量化的NumPy调用胜出约70倍：
 
-```python
->>> from timeit import timeit
->>> setup = 'from __main__ import count_transitions, x; import numpy as np'
->>> num = 1000
->>> t1 = timeit('count_transitions(x)', setup=setup, number=num)
->>> t2 = timeit('np.count_nonzero(x[:-1] < x[1:])', setup=setup, number=num)
->>> print('Speed difference: {:0.1f}x'.format(t1 / t2))
-Speed difference: 71.0x
-```
-
-**技术细节**: 另一个术语是[矢量处理器](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/what-is-vectorization/)，它与计算机的硬件有关。 当我在这里谈论矢量化时，我指的是用数组表达式替换显式for循环的概念，在这种情况下，可以使用低级语言在内部计算。
 
 ### 买低，卖高
 
-这是另一个激发你胃口的例子。考虑以下经典技术面试问题：
+举例：
 
-> 假定一只股票的历史价格是一个序列，假设你只允许进行一次购买和一次出售，那么可以获得的最大利润是多少？例如，假设价格=(20，18，14，17，20，21，15)，最大利润将是7，从14买到21卖。
+- 一只股票的历史价格是一个序列，假设你只允许进行一次购买和一次出售，那么可以获得的最大利润是多少？
+- 假设价格=(20，18，14，17，20，21，15)，最大利润将是7，从14买到21卖。
 
-(对所有金融界人士说：不，卖空是不允许的。)
+解答：
 
-存在具有n平方[时间复杂度]((https://en.wikipedia.org/wiki/Time_complexity))的解决方案，其包括采用两个价格的每个组合，其中第二价格“在第一个之后”并且确定最大差异。
-
-然而，还有一个O(n)解决方案，它包括迭代序列一次，找出每个价格和运行最小值之间的差异。 它是这样的：
-
-```python
->>> def profit(prices):
-...     max_px = 0
-...     min_px = prices[0]
-...     for px in prices[1:]:
-...         min_px = min(min_px, px)
-...         max_px = max(px - min_px, max_px)
-...     return max_px
-
->>> prices = (20, 18, 14, 17, 20, 21, 15)
->>> profit(prices)
-7
-```
-
-这可以用NumPy实现吗？行!没问题。但首先，让我们构建一个准现实的例子：
+- 可以迭代序列一次，找出每个价格和运行最小值之间的差异。
 
 ```python
+import numpy as np
+
+np.random.seed(444)
+arr = np.random.choice([False, True], size=100000)
+print(arr)
+
+
+def profit(prices):
+    max_px = 0
+    min_px = prices[0]
+    for px in prices[1:]:
+        min_px = min(min_px, px)
+        max_px = max(px - min_px, max_px)
+    return max_px
+
+
+prices = (20, 18, 14, 17, 20, 21, 15)
+profit(prices)
+
 # Create mostly NaN array with a few 'turning points' (local min/max).
->>> prices = np.full(100, fill_value=np.nan)
->>> prices[[0, 25, 60, -1]] = [80., 30., 75., 50.]
+prices = np.full(100, fill_value=np.nan)
+prices[[0, 25, 60, -1]] = [80., 30., 75., 50.]
 
 # Linearly interpolate the missing values and add some noise.
->>> x = np.arange(len(prices))
->>> is_valid = ~np.isnan(prices)
->>> prices = np.interp(x=x, xp=x[is_valid], fp=prices[is_valid])
->>> prices += np.random.randn(len(prices)) * 2
-```
+x = np.arange(len(prices))
+is_valid = ~np.isnan(prices)
+prices = np.interp(x=x, xp=x[is_valid], fp=prices[is_valid])
+prices += np.random.randn(len(prices)) * 2
 
-下面是[matplotlib](https://realpython.com/python-matplotlib-guide/)的示例。俗话说：买低(绿)，卖高(红)：
 
-```python
->>> import matplotlib.pyplot as plt
+
+import matplotlib.pyplot as plt
 
 # Warning! This isn't a fully correct solution, but it works for now.
 # If the absolute min came after the absolute max, you'd have trouble.
->>> mn = np.argmin(prices)
->>> mx = mn + np.argmax(prices[mn:])
->>> kwargs = {'markersize': 12, 'linestyle': ''}
+mn = np.argmin(prices)
+mx = mn + np.argmax(prices[mn:])
+kwargs = {'markersize': 12, 'linestyle': ''}
 
->>> fig, ax = plt.subplots()
->>> ax.plot(prices)
->>> ax.set_title('Price History')
->>> ax.set_xlabel('Time')
->>> ax.set_ylabel('Price')
->>> ax.plot(mn, prices[mn], color='green', **kwargs)
->>> ax.plot(mx, prices[mx], color='red', **kwargs)
+fig, ax = plt.subplots()
+ax.plot(prices)
+ax.set_title('Price History')
+ax.set_xlabel('Time')
+ax.set_ylabel('Price')
+ax.plot(mn, prices[mn], color='green', **kwargs)
+ax.plot(mx, prices[mx], color='red', **kwargs)
+plt.show()
 ```
 
-![以序列形式显示股票价格历史的图解](/static/images/article/prices.664958f44799.png)
 
+<p align="center">
+       <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/IwtjPEq5tivp.png?imageslim">
+</p>
+
+                    
 NumPy实现是什么样的？ 虽然没有np.cummin() “直接”，但NumPy的[通用函数（ufuncs）](/reference/ufuncs/index.html)都有一个accumulate()方法，它的名字暗示了：
 
 ```python
@@ -322,7 +258,10 @@ array([[-0.9325,  3.6446],
 
 下面是一个减去列意义的示例，其中较小的数组被“拉伸”，以便从较大的数组的每一行中减去它：
 
-![NumPy数组广播](/static/images/article/broadcasting.084a0e28dea8.jpg)
+<p align="center">
+       <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/XwEDI9tJY2Ws.jpg?imageslim">
+</p>
+
 
 **技术细节**：较小的数组或标量不是按字面意义上在内存中展开的：重复的是计算本身。
 
@@ -496,13 +435,21 @@ array([2.    , 1.6667])
 >>> ax.scatter(*tri.T, color='b',  s=70)
 ```
 
-![三角形的图像](/static/images/article/tri.521228ffdca0.png)
+<p align="center">
+       <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/nA1M9VtvKLGq.png?imageslim">
+</p>
+
 
 许多[聚类算法](http://scikit-learn.org/stable/modules/clustering.html)利用点集合的欧几里德距离，或者指向原点，或者相对于它们的质心。
 
 在笛卡尔坐标下，p点和q点之间的欧几里德距离是：
 
-![点之间欧氏距离的计算公式](/static/images/article/euclid.ffdfd280d315.png)
+![点之间欧氏距离的计算公式](/static/
+
+<p align="center">
+       <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/kgChC2G1c9BJ.png?imageslim">
+</p>
+
 
 [[查看源码](https://en.wikipedia.org/wiki/Euclidean_distance#Definition)]
 
@@ -602,7 +549,12 @@ array([0, 0, 0, 0, 0, 1, 1, 1, 1, 1])
 >>> ax.set_title('One K-Means Iteration: Predicted Classes')
 ```
 
-![预测类颜色映射](/static/images/article/classes.cdaa3e38d62f.png)
+预测类颜色映射：
+
+<p align="center">
+       <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/ogcwu482LvuQ.png?imageslim">
+</p>
+
 
 ### 摊还（分期）表
 
@@ -633,7 +585,12 @@ NumPy预装了一些[财务函数](/reference/routines/financial.html)，与[Exc
 
 接下来，你需要计算每月的余额，包括支付前和付款后的余额，可以定义为[原始余额的未来价值减去年金(支付流)的未来价值](http://financeformulas.net/Remaining_Balance_Formula.html)，使用折扣因子d：
 
-![原始余额未来价值计算的财务公式图](/static/images/article/fv.7346eb669ac7.png)
+![原始余额未来价值计算的财务公式图](/
+
+<p align="center">
+       <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/c7woxWPmjim4.png?imageslim">
+</p>
+
 
 从功能上看，如下所示：
 
@@ -699,7 +656,9 @@ True
 >>> ax.grid(False)
 ```
 
-![列克星敦号航空母舰的图像](/static/images/article/lex.77b7efabdb0c.png)
+<p align="center">
+       <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/nTRI0O7zkM1w.png?imageslim">
+</p>
 
 为了简单起见，图像是以灰度加载的，结果是一个由64位浮点数组成的2d数组，而不是一个三维mxnx4rgba数组，更低的值表示暗点：
 
@@ -751,7 +710,10 @@ array([[0.8078, 0.7961, 0.7804],
 >>> ax.grid(False)
 ```
 
-![莱克星顿号航空母舰的模糊图像](/static/images/article/lexblur.0f886a01be97.png)
+<p align="center">
+       <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/c7DLKWKdQNhH.png?imageslim">
+</p>
+
 
 有了这个循环，你就会执行很多Python调用。
 

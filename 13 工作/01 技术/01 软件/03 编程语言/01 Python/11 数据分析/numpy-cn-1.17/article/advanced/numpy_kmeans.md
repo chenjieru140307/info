@@ -18,7 +18,10 @@ meta:
 
 我们以一个二维的例子来说明下聚类的目的。如下图左所示，假设我们的n个样本点分布在图中所示的二维空间。从数据点的大致形状可以看出它们大致聚为三个cluster，其中两个紧凑一些，剩下那个松散一些。我们的目的是为这些数据分组，以便能区分出属于不同的簇的数据，如果按照分组给它们标上不同的颜色，就是像下图右边的图那样：
 
-![聚类对比图](/static/images/article/20131226190225921.png)
+<p align="center">
+	<img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/HkD5X59gtozf.png?imageslim">
+</p>
+
 
 如果人可以看到像上图那样的数据分布，就可以轻松进行聚类。但我们怎么教会计算机按照我们的思维去做同样的事情呢？这里就介绍个集简单和经典于一身的k-means算法。
 
@@ -26,7 +29,10 @@ k-means算法是一种很常见的聚类算法，它的基本思想是：通过�
 
 k-means算法的基础是最小误差平方和准则。其代价函数是：
 
-![代价函数](/static/images/article/20131226190316156.png)
+<p align="center">
+	<img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/aMvtqRn8hw6G.png?imageslim">
+</p>
+
 
 上式中，μc(i)表示第i个聚类的均值。我们希望代价函数最小，直观的来说，各类内的样本越相似，其与该类均值间的误差平方越小，对所有类所得到的误差平方求和，即可验证分为k类时，各聚类是否是最优的。
 
@@ -35,13 +41,22 @@ k-means算法的基础是最小误差平方和准则。其代价函数是：
 1. 随机选取 k个聚类质心点
 1. 重复下面过程直到收敛
     - 对于每一个样例 i，计算其应该属于的类：
-        ![计算其应该属于的类](/static/images/article/20131226191250687.png)
+        <p align="center">
+			<img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/iPfmDo0kX17g.png?imageslim">
+		</p>
+		
     - 对于每一个类 j，重新计算该类的质心：
-        ![重新计算质心](/static/images/article/20131226191306718.png)
+        <p align="center">
+			<img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/BdVUENnzAq6N.png?imageslim">
+		</p>
+		
 
 下图展示了对n个样本点进行K-means聚类的效果，这里k取2。
 
-![聚类效果](/static/images/article/20131226191321406.png)
+<p align="center">
+	<img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/Bmiv4uGAmEEI.png?imageslim">
+</p>
+
 
 其伪代码如下：
 
@@ -278,7 +293,10 @@ showCluster(dataSet, k, centroids, clusterAssment)
 
 运行的前后结果对比：
 
-![结果对比](/static/images/article/20131226191526187.png)
+<p align="center">
+	<img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/wT9HXwu8Uu0G.png?imageslim">
+</p>
+
 
 不同的类用不同的颜色来表示，其中的大菱形是对应类的均值质心点。
 
@@ -288,15 +306,25 @@ k-means算法比较简单，但也有几个比较大的缺点：
 
 - （1）k值的选择是用户指定的，不同的k得到的结果会有挺大的不同，如下图所示，左边是k=3的结果，这个就太稀疏了，蓝色的那个簇其实是可以再划分成两个簇的。而右图是k=5的结果，可以看到红色菱形和蓝色菱形这两个簇应该是可以合并成一个簇的：
 
-![不同结果](/static/images/article/20131226191547703.png)
+<p align="center">
+	<img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/BzR17Mcy58b7.png?imageslim">
+</p>
+
 
 - （2）对k个初始质心的选择比较敏感，容易陷入局部最小值。例如，我们上面的算法运行的时候，有可能会得到不同的结果，如下面这两种情况。K-means也是收敛了，只是收敛到了局部最小值：
 
-![局部最优解](/static/images/article/20131226191601093.png)
+<p align="center">
+	<img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/KeQtJXMhSrHz.png?imageslim">
+</p>
+
 
 - （3）存在局限性，如下面这种非球状的数据分布就搞不定了：
 
-![非球状的数据分布](/static/images/article/20131226191615171.png)
+非球状的数据分布 
+<p align="center">
+	<img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/0vvAtyp1GpO9.png?imageslim">
+</p>
+
 
 - （4）数据库比较大的时候，收敛会比较慢。
 

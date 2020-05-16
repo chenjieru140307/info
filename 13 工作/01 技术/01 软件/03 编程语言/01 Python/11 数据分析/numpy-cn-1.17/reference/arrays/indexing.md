@@ -30,10 +30,10 @@
 对象，但不是整数数组或其他嵌入序列。
 
 使用N个整数进行索引的最简单情况返回表示相应项的[数组标量](scalars.html)。
-与Python一样，所有索引都是从零开始的：对于第i个索引 <img class="math" src="/static/images/math/4fbb0705523f8fdd2c3c5f55e4f8c4a9a46f18a6.svg" alt="n_i">，
-有效范围为 <img class="math" src="/static/images/math/e2ed5018d325d2eed8f60b87169eef062d34e19e.svg" alt="0 \le n_i < d_i">，
-其中 <img class="math" src="/static/images/math/93f9b5333c1aa73b70b1a61bf3bfbb88be44ecf2.svg" alt="d_i"> 是数组形状的第i个元素。
-负索引被解释为从数组的末尾开始计数(即，如果 <img class="math" src="/static/images/math/c51e6b77da6dcf80b0afd223631451edab2ffcba.svg" alt="n_i < 0"> ，则表示 <img class="math" src="/static/images/math/d3f3fd2a242879a858674e0a3983f119d6265236.svg" alt="n_i + d_i">)。
+与Python一样，所有索引都是从零开始的：对于第i个索引 <img class="math" src="/static/images/math/.svg" alt="n_i">，
+有效范围为 <img class="math" src="/static/images/math/.svg" alt="0 \le n_i < d_i">，
+其中 <img class="math" src="/static/images/math/.svg" alt="d_i"> 是数组形状的第i个元素。
+负索引被解释为从数组的末尾开始计数(即，如果 <img class="math" src="/static/images/math/.svg" alt="n_i < 0"> ，则表示 <img class="math" src="/static/images/math/.svg" alt="n_i + d_i">)。
 
 基本切片生成的所有数组始终
 是原始数组的[视图](https://numpy.org/devdocs/glossary.html#term-view)。

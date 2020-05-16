@@ -13,7 +13,10 @@ NumPy提供了一个N维数组类型，即[ndarray](ndarray.html)，
 其类型是在NumPy中构建的[数组标量类型](scalars.html)之一。
 数组标量允许容易地操纵更复杂的数据排列。
 
-![threefundamental](/static/images/threefundamental.png)
+<p align="center">
+  <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/AW2vteYsyUrz.png?imageslim">
+</p>
+
 
 **图**的概念表现了用于描述数组中数据的三个基本对象之间的关系：1）ndarray本身，2）描述数组中单个固定大小元素布局的数据类型对象，3）访问数组的单个元素时返回的数组标量Python对象。
 

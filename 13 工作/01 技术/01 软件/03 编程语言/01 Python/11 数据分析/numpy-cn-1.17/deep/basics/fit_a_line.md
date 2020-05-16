@@ -23,7 +23,14 @@ meta:
 
 ## 背景介绍
 
-给定一个大小为\$n\$的数据集 <img src="/static/images/math/math_0001.png" style="height: 20px"> 其中 \$x_{i1}, \ldots, x_{id}\$ 是第\$i\$个样本\$d\$个属性上的取值，
+给定一个大小为\$n\$的数据集
+
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200516/n1UjYiVdB8xE.png?imageslim">
+</p>
+
+
+其中 \$x_{i1}, \ldots, x_{id}\$ 是第\$i\$个样本\$d\$个属性上的取值，
 \$y_i\$是该样本待预测的目标。线性回归模型假设目标\$y_i\$可以被属性间的线性组合描述，即
 
 <p align="center">
