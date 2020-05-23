@@ -315,7 +315,7 @@
 
 - *CLASS*`torch.nn.``ReLU6`(*inplace=False*)[[SOURCE\]](https://pytorch.org/docs/stable/_modules/torch/nn/modules/activation.html#ReLU6)
 
-  Applies the element-wise function:\text{ReLU6}(x) = \min(\max(0,x), 6)ReLU6(x)=min(max(0,x),6)Parameters**inplace** – can optionally do the operation in-place. Default: `False`Shape:Input: (N, *)(N,∗) where * means, any number of additional dimensionsOutput: (N, *)(N,∗), same shape as the input![_images/ReLU6.png](https://pytorch.org/docs/stable/_images/ReLU6.png)Examples:`>>> m = nn.ReLU6() >>> input = torch.randn(2) >>> output = m(input) `
+  Applies the element-wise function:\text{ReLU6}(x) = \min(\max(0,x), 6)ReLU6(x)=min(max(0,x),6)Parameters**inplace** – can optionally do the operation in-place. Default: `False`Shape:Input: (N, *)(N,∗) where * means, any number of additional dimensionsOutput: (N, *)(N,∗), same shape as the input![_images/ReLU6.png](http://images.iterate.site/blog/image/20200523/nbAEWoePDqwC.png?imageslim)Examples:`>>> m = nn.ReLU6() >>> input = torch.randn(2) >>> output = m(input) `
 
 ### RReLU
 

@@ -2,6 +2,13 @@
 
 ## ISO七层模型中表示层和会话层功能是什么？
 
+ISOOSI七层网络模型：
+
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200523/W5Vq5kMIzcDH.png?imageslim">
+</p>
+
+
 - 表示层：图像、视频编码解，数据加密。
 - 会话层：建立会话，如session认证、断点续传。
 

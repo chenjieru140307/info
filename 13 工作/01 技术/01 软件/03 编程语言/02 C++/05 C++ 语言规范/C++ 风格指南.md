@@ -1,78 +1,12 @@
----
-title: C++ 风格指南
-toc: true
-date: 2018-06-11 08:14:50
----
+# C++ 风格指南
 
-# 相关
 
 
+[Google 开源项目风格指南](http://zh-google-styleguide.readthedocs.io/en/latest/contents/)
 
 
+GoogleCppStyleGuide：
 
-
-  1. [Google 开源项目风格指南](http://zh-google-styleguide.readthedocs.io/en/latest/contents/)
-
-
-
-
-## 可以补充进来的
-
-
-
-
-
-
-  * aaa
-
-
-
-
-# MOTIVE
-
-
-
-
-
-
-  * aaa
-
-
-
-
-
-* * *
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-
-
-
-
-
-# COMMENT
+<p align="center">
+  <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200523/5qFx1kIbBntH.png?imageslim">
+</p>
