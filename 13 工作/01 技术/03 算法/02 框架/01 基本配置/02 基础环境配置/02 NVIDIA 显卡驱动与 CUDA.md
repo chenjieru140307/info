@@ -1,17 +1,16 @@
+# NVIDIA 显卡驱动与 CUDA
 
-# Tensorflow 与 CUDA 和 cuDNN 之间的关系
-
-## 首先，明确几个概念
-
-
-### NVIDIA的显卡驱动程序和CUDA
 
 NVIDIA的显卡驱动程序和CUDA完全是两个不同的概念。
 
-- CUDA是NVIDIA推出的用于自家GPU的并行计算框架，也就是说CUDA只能在NVIDIA的GPU上运行，而且只有当要解决的计算问题是可以大量并行计算的时候才能发挥CUDA的作用。CUDA的本质是一个工具包（ToolKit）。
+- NVIDIA 的显卡驱动
+  - 显卡驱动是驱动显卡进行运行的。
+- CUDA
+  - CUDA 是 NVIDIA推出的用于自家GPU的并行计算框架，也就是说CUDA 只能在 NVIDIA 的 GPU 上运行。
+  - CUDA的本质是一个工具包（ToolKit）。
 
 
-显卡驱动的安装：
+## 安装显卡驱动
 
 当我们使用一台电脑的时候默认的已经安装了NVIDIA的显卡驱动，因为没有显卡驱动根本用不了显卡嘛，但是这个时候我们是没有CUDA可以用的，我们可以更新我们的驱动，更新链接为：
 
@@ -54,35 +53,6 @@ CUPTI，即CUDA Profiling Tools Interface (CUPTI)。在CUDA分析工具接口（
 使用这些API，您可以开发分析工具，深入了解CUDA应用程序的CPU和GPU行为。CUPTI作为CUDA支持的所有平台上的动态库提供。请参阅CUPTI文档。
 
 
-## 然后我们看看 Tensorflow 与 CUDA 和 cuDNN 的对应关系
-
-### 对应表格
-
-相应的网址为：
-
-https://www.tensorflow.org/install/source#common_installation_problems
-
-https://www.tensorflow.org/install/source_windows
-
-版本	Python 版本	编译器	编译工具	cuDNN	CUDA
-tensorflow_gpu-2.0.0-alpha0	2.7、3.3-3.6	GCC 4.8	Bazel 0.19.2	7.4.1以及更高版本	CUDA 10.0 (需要 410.x 或更高版本)
-tensorflow_gpu-1.13.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.19.2	7.4	10.0
-tensorflow_gpu-1.12.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.15.0	7	9
-tensorflow_gpu-1.11.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.15.0	7	9
-tensorflow_gpu-1.10.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.15.0	7	9
-tensorflow_gpu-1.9.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.11.0	7	9
-tensorflow_gpu-1.8.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.10.0	7	9
-tensorflow_gpu-1.7.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.9.0	7	9
-tensorflow_gpu-1.6.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.9.0	7	9
-tensorflow_gpu-1.5.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.8.0	7	9
-tensorflow_gpu-1.4.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.5.4	6	8
-tensorflow_gpu-1.3.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.4.5	6	8
-tensorflow_gpu-1.2.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.4.5	5.1	8
-tensorflow_gpu-1.1.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.4.2	5.1	8
-tensorflow_gpu-1.0.0	2.7、3.3-3.6	GCC 4.8	Bazel 0.4.2	5.1	8
-
-
-现在NVIDIA的显卡驱动程序已经更新到 10.1版本，最新的支持CUDA 10.1版本的cuDNN为7.5.0
 
 ### CUDA的命名规则
 
@@ -370,8 +340,3 @@ GeForce GTX 480M	2.0
 GeForce 710M	2.1
 GeForce 410M	2.1
 
-
-
-# 相关
-
-- [tensorflow各个版本的CUDA以及Cudnn版本对应关系](https://blog.csdn.net/qq_27825451/article/details/89082978)
