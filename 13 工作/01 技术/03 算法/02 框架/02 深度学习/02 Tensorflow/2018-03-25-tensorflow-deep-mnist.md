@@ -1,32 +1,8 @@
----
-title: 2018-03-25-tensorflow-deep-mnist
-toc: true
-date: 2018-06-26 20:19:28
----
-
-
-
-在 [tensorflow MNIST 入门](http://106.15.37.116/2018/03/25/tensorflow-mnist-easy/) 的基础上，使用神经网络来提高准确率
-
-手册上的关于使用 tensorflow 实现深度神经网络的教程。
-
-
-# 要点：
-
-
-
 
 ## 1.介绍：
 
 
-TensorFlow 是一个善于大规模数值计算的强大库件。它的一个强项就是训练并实现深度神经网络 (deep neural networks) 。在本小节中，我们将会学习 TensorFlow 模型构建的基本方法，并以此构建一个深度卷积 MNIST 分类器。
-
-在 [tensorflow MNIST 入门](http://106.15.37.116/2018/03/25/tensorflow-mnist-easy/) 的基础上构建多层卷积神经网络模型。
-
-在 MNIST 上只有 91% 正确率，实在太糟糕。在这个小节里，我们用一个稍微复杂
-的模型：卷积神经网络来改善效果。这会达到大概 99.2% 的准确率。虽然不是最高，但
-是还是比较让人满意。
-
+卷积神经网络处理 mnist
 
 ## 2.权重初始化 Weight Initialization
 
@@ -266,13 +242,3 @@ TensorFlow 在卷积和池化上有很强的灵活性。我们怎么处理边界
             print('test accuracy %g' % test_accuracy)
 
 
-
-
-
-# COMMENT：
-
-
-**还是有很多的问题没有解决，要弄明白**
-
-
-# 相关：
