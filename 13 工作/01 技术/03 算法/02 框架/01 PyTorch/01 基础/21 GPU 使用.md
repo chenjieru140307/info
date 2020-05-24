@@ -178,6 +178,16 @@ Outside: input size torch.Size([10, 5]) output_size torch.Size([10, 2])
 
 
 
+
+经过 DataParallel 之后，创建的模型中的 key 的名称比指定的名称多了 model. 这个开头， 也就是说：
+
+the model is nested in the module of DataParallel。
+
+这时，保存的模型在加载的时候，使用 `model.module.state_dict()` 而不是 `model.state_dict()` 。
+
+
+
 补充：
 
 - 这个里面是一个 multi-gpu 的例子，要补充进来。[MULTI-GPU EXAMPLES](https://pytorch.org/tutorials/beginner/former_torchies/parallelism_tutorial.html)
+- 分布式的配置和应用也要补充进来。
