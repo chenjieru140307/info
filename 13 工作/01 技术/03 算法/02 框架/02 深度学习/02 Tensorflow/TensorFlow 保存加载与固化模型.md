@@ -14,9 +14,8 @@
 
 ##### 利用 saver 保存模型
 
-``
 
-```
+```py
 #模型保存在.meta文件，变量保存在 checkpoint 文件
 model_save_path = "./model/model_save"
 saver = tf.train.Saver()

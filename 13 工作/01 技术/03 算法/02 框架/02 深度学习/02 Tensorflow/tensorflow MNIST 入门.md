@@ -1,33 +1,4 @@
 
----
-author: evo
-comments: true
-date: 2018-03-25 05:02:21+00:00
-layout: post
-link: http://106.15.37.116/2018/03/25/tensorflow-mnist-easy/
-slug: tensorflow-mnist-easy
-title:
-wordpress_id: 818
-categories:
-- 机器学习相关工具
-tags:
-- '@want_to_know'
-- Tensorflow
----
-
-<!-- more -->
-
-
-# 缘由：
-
-
-看了下 tensorflow 手册，感觉对于 MNIST 这个例子讲的非常透彻，而且各种变化，因此对这个进行总结标记下。
-
-
-# 要点：
-
-
-
 
 ## 1.一些说明
 
@@ -35,30 +6,17 @@ tags:
 MNIST 是一个入门级的计算机视觉数据集，它包含各种手写数字图片：
 
 
-<p align="center">
-    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180727/57GgcK9b6D.png?imageslim">
-</p>
+```py
+import tensorflow as tf
+from tensorflow.examples.tutorials.mnist import input_data
 
-它也包含每一张图片对应的标签，告诉我们这个是数字几．比如，上面这四张图片的标签分别是 5,0,4,1
-
-这次我们将训练一个机器学习模型用于预测图片里面的数字．主要是介绍下如何使用 TensorFlow 。
-
-先从一个简单的数学模型开始，它叫做 Softmax Regression ．
-
-MNIST 数据集的官网是 [Yann LeCun’s website](http://yann.lecun.com/exdb/mnist/) ．在这里，我们提供了一份 python 源
-代码用于自动下载和安装这个数据集．你可以下载这段代码，然后用下面的代码导入到
-你的项目里面，也可以直接复制粘贴到你的代码文件里面．
-
-
-    import tensorflow as tf
-    from tensorflow.examples.tutorials.mnist import input_data
-
-    # 如果没有数据包，这一行会从网上下载对应的数据包
-    mnist = input_data.read_data_sets('MNIST_data/', one_hot=True)
-    print(type(mnist))
-    print(type(mnist.train))
-    print(type(mnist.test))
-    print(type(mnist.validation))
+# 如果没有数据包，这一行会从网上下载对应的数据包
+mnist = input_data.read_data_sets('MNIST_data/', one_hot=True)
+print(type(mnist))
+print(type(mnist.train))
+print(type(mnist.test))
+print(type(mnist.validation))
+```
 
 
 输出：
@@ -302,24 +260,3 @@ _print sess.run(accuracy, feed_dict={x: mnist.test.images, y_: mnist.test.labels
 
 比结果更重要的是，我们从这个模型中学习到的设计思想．不过，如果你仍然对这里的结果有点失望，可以查看下个教程，在那里你将学到如何用 FensorFlow 构建更加复杂的模型以获得更好的性能！
 
-
-# 完整代码如下：
-
-
-**后续补充**
-
-
-# COMMENT：
-
-
-**还是又很多东西不明白，不明确的，要补充下**
-
-
-# 相关：
-
-
-
-
-
-
-  1. tensorflow中文手册

@@ -26,7 +26,7 @@ CUDA_VISIBLE_DEVICES=1 python my_script.py
 
 CUDA_VISIBLE_DEVICES 参数说明：
 
-```
+```py
 Environment Variable Syntax      Results
 
 CUDA_VISIBLE_DEVICES=1           Only device 1 will be seen
@@ -131,15 +131,3 @@ sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 日志信息若包含 GPU 信息，就是使用了 GPU。
 
 当然，我们也可以在跑模型的时候通过 `nvidia-smi` 命令来查看 GPU 的内存使用量。
-
-
-
-
-
-# 相关
-
-
-- [TensorFlow显存设置](https://theqihao.github.io/2017/08/03/TensorFlow%E6%98%BE%E5%AD%98%E8%AE%BE%E7%BD%AE/) 这个还没补充进来
-- [（原）tensorflow中使用指定的 GPU 及 GPU 显存](https://www.cnblogs.com/darkknightzh/p/6591923.html)
-- [确定自己的 TensorFlow 是 CPU 还是 GPU 的版本](https://blog.csdn.net/Zlase/article/details/79261348)
-- [检测 tensorflow 是否使用 gpu 进行计算](https://blog.csdn.net/castle_cc/article/details/78389082)

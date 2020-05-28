@@ -1,6 +1,10 @@
 
-# LightGBM 安装
+# LightGBM
 
+
+## 可以补充进来的
+
+- [LightGBM 中文文档](https://lightgbm.apachecn.org/#/)  这个挺好的。
 
 ## 在 Windows 下的安装
 
