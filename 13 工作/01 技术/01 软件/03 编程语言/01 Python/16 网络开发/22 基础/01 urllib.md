@@ -129,3 +129,117 @@ with opener.open('http://www.example.com/login.html') as f:
 ### 小结
 
 urllib提供的功能就是利用程序去执行各种HTTP请求。如果要模拟浏览器完成特定功能，需要把请求伪装成浏览器。伪装的方法是先监控浏览器发出的请求，再根据浏览器的请求头来伪装，`User-Agent`头就是用来标识浏览器的。
+
+
+## 抓取整个网站
+
+```py
+# 网页url采集爬虫，给定网址，以及存储文件，将该网页内全部网址采集下，可指定文件存储方式
+import requests, time
+from lxml import etree
+from urllib import parse
+
+"""
+    url:给定的url
+    save_file_name:为url存储文件
+"""
+
+OLD_URL = 'http://www.research.pku.edu.cn'
+level = 2;  # 递归层级，广度优先
+
+
+def Redirect(url):
+    try:
+        res = requests.get(url, timeout=10)
+        url = res.url
+    except Exception as e:
+        print("4", e)
+        time.sleep(1)
+    return url
+
+
+def requests_for_url(url, save_file_name, file_model, features):
+    global OLD_URL
+    headers = {
+        'pragma': "no-cache",
+        'accept-encoding': "gzip, deflate, br",
+        'accept-language': "zh-CN,zh;q=0.8",
+        'upgrade-insecure-requests': "1",
+        'user-agent': "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36",
+        'accept': "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+        'cache-control': "no-cache",
+        'connection': "keep-alive",
+    }
+    try:
+        response = requests.request("GET", url, headers=headers)
+        selector = etree.HTML(response.text, parser=etree.HTMLParser(encoding='utf-8'))
+    except Exception as e:
+        print("页面加载失败", e)
+
+    return_set = set()
+    with open(save_file_name, file_model,encoding='utf-8') as f:
+        try:
+            context = selector.xpath('//a/@href')
+            for i in context:
+                try:
+                    print("-------------" + i)
+                    print(type(i))
+
+                    if i[:10] == "javascript":  # javascript跳转
+                        continue
+                    elif i[0] == "/":  # 相对路径跳转
+                        # print i
+                        # i = OLD_URL + i
+                        i = parse.urljoin(url, i)  # 通过parse组装相对路径为绝对路径
+                    elif i[0:4] == "http":  # 如果是完整的URL
+                        i = i
+                    elif i[0] == ".":  # 如果是有层级的相对路径
+                        i = parse.urljoin(url, i)  # 通过parse组装相对路径为绝对路径
+                    elif i[0] != ".":  # 如果是没有层级的相对路径
+                        if url[-1] != "/":  # 如果不是“/”结尾
+                            if url[8:].rfind("/") != -1:  # 如果连接中包含“/”
+                                i = url[:url.rfind("/") + 1] + i  # 截取掉最后一个“/"之后字符串
+                            else:
+                                i = url + "/" + i
+                        else:
+                            i = url + i
+                    if features in i:  # 不符合特征值，舍弃
+                        f.write(i)
+                        f.write("\n")
+                        return_set.add(i)
+                        # print(len(return_set))
+                        print(len(return_set), i)
+                except Exception as e:
+                    print("1", e)
+        except Exception as e:
+            print("2", e)
+    return return_set
+
+
+def Recursion_GETurl(return_set, features):
+    global level
+    level -= 1
+    print("目前递归层级：" + str(level))
+    if level < 0:
+        return
+    else:
+        return_all = set()
+        for value in return_set:
+            # print(value)
+            http = "http://"
+            if http in value:
+                return_set2 = requests_for_url(value, save_file_name, "a", features)
+                return_all = return_all | return_set2  # 合并SET()集
+        Recursion_GETurl(return_all, features)
+
+
+if __name__ == '__main__':
+    # 网页url采集爬虫，给定网址，以及存储文件，将该网页内全部网址采集下，可指定文件存储方式
+    url = "http://www.huaxiaozhuan.com/"
+    features = "com"  # 特征值，URL不包含该字段的，舍弃。二级域名的情况下，应该定义为一级域名
+    save_file_name = "url.txt"
+    return_set = requests_for_url(url, save_file_name, "a", features)  # “a”:追加
+    Recursion_GETurl(return_set, features)
+    # 对url.txt进行数据去重
+    print("终于爬完了，辛苦，伙计！")
+```

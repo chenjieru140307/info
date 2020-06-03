@@ -133,8 +133,3 @@ $$
 
 高维情况依然可以用牛顿迭代求解，但是问题是 Hessian 矩阵引入的复杂性，使得牛顿迭代求解的难度大大增加，但是已经有了解决这个问题的办法就是 Quasi-Newton method，不再直接计算 hessian 矩阵，而是每一步的时候使用梯度向量更新 hessian 矩阵的近似。
 
-
-# 相关
-
-- [Jacobian矩阵和 Hessian 矩阵](http://jacoxu.com/jacobian%E7%9F%A9%E9%98%B5%E5%92%8Chessian%E7%9F%A9%E9%98%B5/)
-
