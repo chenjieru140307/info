@@ -1,17 +1,17 @@
 
 
-# 手写数字识别系统
+# 手写数字识别
 
 
-# 项目要求
+## 项目要求
 
 
 构造一个能识别数字 0 到 9 的基于 KNN 分类器的手写数字识别系统。
 
-要识别的数字是存储在文本文件中的具有相同的色彩和大小：宽高是 32 像素 * 32 像素的黑白图像。
+要识别的数字是存储在文本文件中的具有相同的色彩和大小：宽高是 32 像素 - 32 像素的黑白图像。
 
 
-# 项目数据
+## 数据
 
 
 链接：https://pan.baidu.com/s/1wc1ooDPns0Ciy4CiMkmcmQ 密码：uz3c
@@ -19,11 +19,8 @@
 其中：
 
 
-
-
-  * 目录 trainingDigits 中包含了大约 2000 个样本，也即每个数字大约有 200 个样本；
-
-  * 目录 testDigits 中包含了大约 900 个样本。
+- 目录 trainingDigits 中包含了大约 2000 个样本，也即每个数字大约有 200 个样本；
+- 目录 testDigits 中包含了大约 900 个样本。
 
 
 每个样本都是以 txt 文档的形式存放的，类似如下：
@@ -36,9 +33,7 @@
 
 
 
-# 整体代码如下
-
-
+## 实现
 
 
 ```python
@@ -55,7 +50,7 @@ def get_img_data(filename):
     for i in range(32):
         line_str = fr.readline()
         for j in range(32):
-            img_data[0, 32 * i + j] = int(line_str[j])  # 因为是 11101110 这样的，所以可以这样分
+            img_data[0, 32 - i + j] = int(line_str[j])  # 因为是 11101110 这样的，所以可以这样分
     return img_data
 
 
@@ -65,9 +60,9 @@ def knn_classify(inX, data_set, labels, k):
     # 求出这个 inX 这个样本于 data_set中的样本之间的距离
     row_num = data_set.shape[0]  # 行数
     diff_mat = np.tile(inX, (row_num, 1)) - data_set  # 差值
-    sq_diff_mat = diff_mat ** 2  # 平方
+    sq_diff_mat = diff_mat *- 2  # 平方
     sq_distances = sq_diff_mat.sum(axis=1)  # 每一行的差值平方之和
-    distances = sq_distances ** 0.5  # 开方
+    distances = sq_distances *- 0.5  # 开方
 
     # 排序
     sorted_dist_indicies = distances.argsort()  # 返回的是数组里面从小到大的索引值
@@ -129,7 +124,7 @@ if __name__ == "__main__":
     print("the total error rate is: %f" % (error_count / float(num_test)))
 ```
 
-这个运算还是需要一会的，结果如下：
+输出：
 
 
 ```
@@ -138,11 +133,6 @@ the total error rate is: 0.010571
 ```
 
 
-可见，knn的聚类还是很厉害的，错误率很低。**不知道对于复杂的任务来说什么效果？**
+说明：
 
-
-
-# 相关
-
-1. [第 2 章 k-近邻算法](http://ml.apachecn.org/mlia/knn/)
-2. 《机器学习实战》
+- 可见，knn的聚类还是很厉害的，错误率很低。
