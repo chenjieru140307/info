@@ -1,22 +1,36 @@
 
-# 可以补充进来的
-
-- 这个 SMO 完全没看懂。要找一些资料来更详细的看下。
-
-
 
 
 # SMO 算法
 
-SMO（Sequential Minimal Optimization）算法
+SMO Sequential Minimal Optimization
+
+缘由：
+
+- 对于 SVM 中，通过拉格朗日乘子法转化得到的对偶问题：
+
+$$
+\begin{aligned}
+\max_{\boldsymbol{\alpha}} & \sum_{i=1}^m\alpha_i - \frac{1}{2}\sum_{i = 1}^m\sum_{j=1}^m\alpha_i \alpha_j y_iy_j\boldsymbol{x}_i^T\boldsymbol{x}_j \\
+s.t. & \sum_{i=1}^m \alpha_i y_i =0 \\
+& \alpha_i \geq 0 \quad i=1,2,\dots ,m
+\end{aligned}\tag{6.11}
+$$
+
+- 如何进行求解呢？
+  - 不难发现，这是一个二次规划问题，可使用通用的二次规划算法来求解。
+  - 然而，该问题的规模正比于训练样本数，这会在实际任务中造成很大的开销。
+  - 为了避开这个障碍，人们通过利用问题本身的特性，提出了很多高效算法。
+    - SMO (Sequential Minimal Optimization)是其中一个著名的代表。
 
 
-那么，如何求解式 (6.11) 呢？不难发现，这是一个二次规划问题，可使用通用的二次规划算法来求解。然而，该问题的规模正比于训练样本数，这会在实际任务中造成很大的开销。为了避开这个障碍，人们通过利用问题本身的特性，提出了很多高效算法，SMO (Sequential Minimal Optimization)是其中一个著名的代表。<span style="color:red;">之前在 sklearn 的案例中有看到 SMO 这个吗？</span>
+SMO 算法：
 
-SMO的基本思路是先固定 $\alpha_i$ 之外的所有参数，然后求 $\alpha_i$ 上的极值。由于存在约束 $\sum_{i=1}^{m} \alpha_{i} y_{i}=0$ ，若固定 $\alpha_i$ 之外的其他变量，则 $\alpha_i$ 可由其他变量导出。 于是，SMO 每次选择两个变量 $\alpha_i$ 和 $\alpha_j$ ，并固定其他参数。这样，在参数初始化后，SMO不断执行如下两个步骤直至收敛：
-
-- 选取一对需更新的变量 $\alpha_i$ 和 $\alpha_j$ 。
-- 固定 $\alpha_i$ 和 $\alpha_j$ 以外的参数，求解式(6.11)获得更新后的 $\alpha_i$ 和 $\alpha_j$。
+- 基本思路是先固定 $\alpha_i$ 之外的所有参数，然后求 $\alpha_i$ 上的极值。
+- 由于存在约束 $\sum_{i=1}^{m} \alpha_{i} y_{i}=0$ ，若固定 $\alpha_i$ 之外的其他变量，则 $\alpha_i$ 可由其他变量导出。 于是，SMO 每次选择两个变量 $\alpha_i$ 和 $\alpha_j$ ，并固定其他参数。
+- 这样，在参数初始化后，SMO不断执行如下两个步骤直至收敛：
+    - 选取一对需更新的变量 $\alpha_i$ 和 $\alpha_j$ 。
+    - 固定 $\alpha_i$ 和 $\alpha_j$ 以外的参数，求解上面的对偶问题，获得更新后的 $\alpha_i$ 和 $\alpha_j$。
 
 注意到只需选取的 $\alpha_i$ 和 $\alpha_j$ 中有一个不满足 KKT 条件(6.13)，目标函数就会在迭代后减小。直观来看，KKT条件违背的程度越大，则变量更新后可能导致的目标函数值减幅越大。
 
