@@ -1,40 +1,37 @@
----
-title: 2.01 核化线性降维 KPCA
-toc: true
-date: 2018-08-12 20:04:01
----
-# 可以补充进来的
-
 
 # 核化线性降维 KPCA
 
 
-线性降维方法假设从高维空间到低维空间的函数映射是线性的。
+缘由：
 
-然而，在不少现实任务中，可能需要非线性映射才能找到恰当的低维嵌入。
+- 线性降维方法假设从高维空间到低维空间的函数映射是线性的。
+- 然而，在不少现实任务中，可能需要非线性映射才能找到恰当的低维嵌入。
 
-下图给出了一个例子，样本点从二维空间中的矩形区域采样后以 S 形曲面嵌入到三维空 间，若直接使用线性降维方法对三维空间观察到的样本点进行降维，则将丢失原本的低维结构。为了对“原本采样的”低维空间与降维后的低维空间加以区别，我们称前者为“本真”(intrinsic)低维空间。
+举例：
+
+- 下图中，样本点从二维空间中的矩形区域采样后以 S 形曲面嵌入到三维空间，若直接使用线性降维方法对三维空间观察到的样本点进行降维，则将丢失原本的低维结构。
+  - 为了对 “原本采样的” 低维空间与降维后的低维空间加以区别，我们称前者为“本真”(intrinsic)低维空间。
 
 
 <p align="center">
-    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/180629/LmGdkc27L7.png?imageslim">
+    <img width="80%" height="70%" src="http://images.iterate.site/blog/image/180629/LmGdkc27L7.png?imageslim">
 </p>
 
 
-非线性降维的一种常用方法，是基于核技巧对线性降维方法进行“核化” (kernelized)。
+非线性降维：
 
-下面我们以核主成分分析(Kernelized PCA，简称 KPCA) 为例来进行演示。
+- 常用方法，是基于核技巧对线性降维方法进行“核化” (kernelized)。
+  - 核主成分分析(Kernelized PCA，简称 KPCA)
 
-## 核主成分分析 KPCA
+核主成分分析 KPCA
 
-假定我们将在高维特征空间中把数据投影到由 $\mathbf{W}$ 确定的超平面上，即 PCA 欲求解
+- 假定我们将在高维特征空间中把数据投影到由 $\mathbf{W}$ 确定的超平面上，即 PCA 欲求解
 
-$$
-\left(\sum_{i=1}^{m} z_{i} z_{i}^{\mathrm{T}}\right) \mathbf{W}=\lambda \mathbf{W}\tag{10.19}
-$$
+    $$
+    \left(\sum_{i=1}^{m} z_{i} z_{i}^{\mathrm{T}}\right) \mathbf{W}=\lambda \mathbf{W}\tag{10.19}
+    $$
 
-
-其中 $\boldsymbol{z}_{i}$ 是样本点 $\boldsymbol{x}_{i}$ 在高维特征空间中的像。易知
+- 其中 $\boldsymbol{z}_{i}$ 是样本点 $\boldsymbol{x}_{i}$ 在高维特征空间中的像。易知
 
 $$
 \begin{aligned} \mathbf{W} &=\frac{1}{\lambda}\left(\sum_{i=1}^{m} z_{i} z_{i}^{\mathrm{T}}\right) \mathbf{W}=\sum_{i=1}^{m} z_{i} \frac{z_{i}^{\mathrm{T}} \mathbf{W}}{\lambda} \\ &=\sum_{i=1}^{m} \boldsymbol{z}_{i} \boldsymbol{\alpha}_{i} \end{aligned}\tag{10.20}
@@ -85,6 +82,42 @@ $$
 
 
 
-# 相关
 
-- 《机器学习》周志华
+
+
+
+
+
+
+缘由：
+
+- PCA 算法前提是假设存在一个线性超平面，进而投影。
+- 那如果数据不是线性的呢？该怎么办？
+
+KPCA：
+
+- 数据集从 $n$ 维映射到线性可分的高维 $N >n$，然后再从 $N$ 维降维到一个低维度 $n'(n'<n<N)$ 。
+
+过程：
+
+- 假设高维空间数据由 $n​$ 维空间的数据通过映射 $\phi​$ 产生。
+- $n$ 维空间的特征分解为：
+
+$$
+\sum^m_{i=1} x^{(i)} \left( x^{(i)} \right)^T W = \lambda W
+$$
+
+- 其映射为：
+
+$$
+\sum^m_{i=1} \phi \left( x^{(i)} \right) \phi \left( x^{(i)} \right)^T W = \lambda W
+$$
+
+- ​通过在高维空间进行协方差矩阵的特征值分解，然后用和 PCA 一样的方法进行降维。
+
+
+注意：
+
+- 由于 KPCA 需要核函数的运算，因此它的计算量要比 PCA 大很多。
+
+
