@@ -1,14 +1,10 @@
 
-# numpy 对简单神经网络的实现
+# 使用 numpy 实现简单神经网络
 
-## 使用 numpy 实现双层神经网络 并对随机数据进行拟合
+使用 numpy 实现双层神经网络 并对随机数据进行拟合
 
-Before introducing PyTorch, we will first implement the network using numpy.
-
-Numpy provides an n-dimensional array object, and many functions for manipulating these arrays. Numpy is a generic framework for scientific computing; it does not know anything about computation graphs, or deep learning, or gradients. However we can easily use numpy to fit a two-layer network to random data by manually implementing the forward and backward passes through the network using numpy operations:
 
 ```py
-# -*- coding: utf-8 -*-
 import numpy as np
 
 # N is batch size; D_in is input dimension;
@@ -65,14 +61,3 @@ for t in range(500):
 499 2.6330866798532966e-06
 ```
 
-<span style="color:red;">哇塞！震惊了，原来这就是使用 numpy 实现的双层神经网络的拟合，厉害呀！赞！！</span>
-
-
-Numpy is a great framework, but it cannot utilize GPUs to accelerate its numerical computations. For modern deep neural networks, GPUs often provide speedups of [50x or greater](https://github.com/jcjohnson/cnn-benchmarks), so unfortunately numpy won’t be enough for modern deep learning.
-
-
-
-
-# 相关
-
-- [pytorch-handbook](https://github.com/zergtant/pytorch-handbook)
