@@ -1,29 +1,9 @@
 
-关于利用卷积神经网络作为视觉系统的模型是否有生物学理论支持，目前仍然存在许多质疑之声。本文作者通过多年在计算神经领域的经验，以问答的形式详细阐述了CNN与神经科学的种种关联。
+CNN与神经科学的种种关联。
 
 
 
-作者 | Grace Lindsay
-
-编译 | 专知
-
-参与 | Mandy, Yingying, Xiaowen
-
-
-
-**添加微信：MLAPython**
-
-**（姓名-单位-方向）**
-
-**即可加入机器学习交流群**
-
-
-
-**Deep Convolutional Neural Networks as Models of the Visual System: Q&A**
-
-
-
-就像我最近写的博客一样，我之所以会写这篇文章，是因为最近在twitter上的一个讨论【1】，特别是关于如何将深度卷积神经网络(CNN)的组件与大脑关联起来。然而，这里的大多数想法都是我一直在思考并谈论的东西。作为一个使用CNNs作为视觉系统模型的人，我经常(在研究会谈和其他对话中)必须为这个选择列出动机和支持。这在一定程度上是因为它们(在某些方面)是神经科学的新事物，同时也是因为人们对它们持怀疑的态度。在神经科学中，计算模型通常会出现松弛，这在很大程度上(但不完全)来自于那些不使用（或不构建）它们的人;计算模型经常被描绘成太不切实际或不实用。在这种氛围中，你会对深度学习/人工智能的过度炒作(以及它所获得的金钱利益)产生一种普遍的厌恶感，你会得到一个一些人非常讨厌的模型。
+关于如何将深度卷积神经网络(CNN)的组件与大脑关联起来。然而，这里的大多数想法都是我一直在思考并谈论的东西。作为一个使用CNNs作为视觉系统模型的人，我经常(在研究会谈和其他对话中)必须为这个选择列出动机和支持。这在一定程度上是因为它们(在某些方面)是神经科学的新事物，同时也是因为人们对它们持怀疑的态度。在神经科学中，计算模型通常会出现松弛，这在很大程度上(但不完全)来自于那些不使用（或不构建）它们的人;计算模型经常被描绘成太不切实际或不实用。在这种氛围中，你会对深度学习/人工智能的过度炒作(以及它所获得的金钱利益)产生一种普遍的厌恶感，你会得到一个一些人非常讨厌的模型。
 
 
 
@@ -50,8 +30,9 @@ CNNs的特殊之处在于神经元之间的连接方式。在前馈神经网络�
 在卷积(和非线性)之后，通常会做一些其他的计算。一种可能的计算方法(虽然在现代高性能的CNNs中不再流行)是交叉特征归一化（cross-feature normalization）。在这里，在某一个feature map中的某个特定空间位置的激活值，被其他feature map中相同位置的激活值除。一个更常见的操作是池化（pooling）。在这里，每个二维特征图网格的一个小空间区域的最大活动被用来表示该区域，这缩小了特征映射的大小。这组操作(convolution+nonlin[—->normalization]—>pooling)被统称为一个“层（layer）”。网络的体系结构是由层的数量和与之相关的各种参数的选择(例如，卷积滤波器的大小等)来定义的。
 
 
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/AefvpgiaIPw2c6Qofn4kdhck4wqePWlJ796MmvtqKsPpNic98XsdPSkMk5V7FgubdhcKTxMOTWrEPFCLZQOyMOQg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200624/gOFiwfjU00yi.png?imageslim">
+</p>
 
 
 
@@ -87,8 +68,9 @@ CNNs的特殊之处在于神经元之间的连接方式。在前馈神经网络�
 
 
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/AefvpgiaIPw2c6Qofn4kdhck4wqePWlJ7YOGbGico3KsGbhqYwTZnXOTqvnciacTQsicO3RFAkq0FpRzO9HKWXsM8Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200624/RsiOzf8g4WcF.png?imageslim">
+</p>
 
 
 
@@ -129,7 +111,10 @@ CNNs的特殊之处在于神经元之间的连接方式。在前馈神经网络�
 
 
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/AefvpgiaIPw2c6Qofn4kdhck4wqePWlJ7qSpqTZZlIvsD1nFUNINzdD4XWsFeGZLIC2ia5dVjSkdZzcj1xdibthXQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200624/IeTzzfCOrvsN.png?imageslim">
+</p>
+
 
 通过这两种方法，在对象识别，CNNs的优化优于其他模型。此外，第三层的网络更好地预测了V4细胞的活动，而第四层(和最终的)层更好地预测了IT细胞。这表明了模型层和大脑区域之间的一种对应关系。
 
@@ -143,7 +128,10 @@ CNNs的特殊之处在于神经元之间的连接方式。在前馈神经网络�
 
 
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/AefvpgiaIPw2c6Qofn4kdhck4wqePWlJ7Zfy3Qrm61785XuuZUUnGEaJa6cgzW4tcRvc7v4XMKfaPmMBMFyVvBA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200624/JcWxhbql3LFD.png?imageslim">
+</p>
+
 
 
 
@@ -167,7 +155,10 @@ CNNs的特殊之处在于神经元之间的连接方式。在前馈神经网络�
 
 
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/AefvpgiaIPw2c6Qofn4kdhck4wqePWlJ7AhoWZcK0jVxIib127UwKdakFVd3WvsxHN6Bru4liaCH46vX9l3Cy2OFQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200624/EesQJH5hJnYu.png?imageslim">
+</p>
+
 
 图：视觉层次结构的特征
 
@@ -181,7 +172,10 @@ CNNs的特殊之处在于神经元之间的连接方式。在前馈神经网络�
 
 
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/AefvpgiaIPw2c6Qofn4kdhck4wqePWlJ7WAC3e5alqhp5VEpYXF8bic6y0cbtrmpLuiaZc1U6RDgCGcqfSLkURAdg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200624/YSpRToGMWK51.png?imageslim">
+</p>
+
 
 图：网络在不同层次上学习的特性的可视化
 
@@ -198,8 +192,9 @@ CNNs的特殊之处在于神经元之间的连接方式。在前馈神经网络�
 由视觉系统产生的一系列神经表示可以被CNNs复制，这表明他们正在进行相同的“untangling”【24】过程。也就是说，两个系统都接受不同对象类别的表示，它们在图像/视网膜层次上是不可分割的，并且创建了允许线性可分性的表示。
 
 
-
-![img](https://mmbiz.qpic.cn/mmbiz_png/AefvpgiaIPw2c6Qofn4kdhck4wqePWlJ7Ev7Eq95BGic6TGNcZsUbd1oprS8raicSQRbedZwcSNwsaGOC4ictzFTFA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200624/YWAGCGLdHW6W.png?imageslim">
+</p>
 
  图：不同CNN层和脑区域的表示之间的相关性，from Cichy et al.
 
@@ -255,7 +250,10 @@ CNNs的特殊之处在于神经元之间的连接方式。在前馈神经网络�
 
 
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/AefvpgiaIPw2c6Qofn4kdhck4wqePWlJ7lJTA1oewZEm4HEzJtjPHd5672eKtQwyG6ClOACSicLRYYmw1OJgSDzA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200624/oVDotxFatsGF.png?imageslim">
+</p>
+
 
  图：将CNN与大脑区域和处理相关联
 
@@ -339,7 +337,10 @@ CNN的哪些层对应于哪些脑区域呢？早期的工作使用的模型只�
 
 Spoerer et al.（2017），受生物学启发，展示了如何增加横向和反馈连接，使模型更好地识别闭塞和嘈杂的物体。
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/AefvpgiaIPw2c6Qofn4kdhck4wqePWlJ7Znhf5av7XxRTwGLbS0PvN29dCSI1bCNBQUhIM9TcKDZ7NUXRVYIiaPA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200624/HSXy1mgBnPmo.png?imageslim">
+</p>
+
 
 Costa et al.（2017）实施了使用生物激励组件的长短期记忆网络。当人工神经网络中加入递归时，经常使用LSTM，因此确定它们的功能如何在生物学上实现是非常有用的。
 
@@ -361,7 +362,10 @@ Costa et al.（2017）实施了使用生物激励组件的长短期记忆网络�
 
 
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/AefvpgiaIPw2c6Qofn4kdhck4wqePWlJ78u2WUsPjaHlJ96hhXbN6Ug7hKM0ugKtf5EkbM7lrYwNtNq7iaQO6nmA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<p align="center">
+    <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200624/SNQyngh98Crr.png?imageslim">
+</p>
+
 
 
 
@@ -429,8 +433,3 @@ Costa et al.（2017）实施了使用生物激励组件的长短期记忆网络�
 
 总而言之，我会说不是一个不错的数字，因为从2014年左右开始，这其中的大部分事情才真正开始。
 
-
-# 相关
-
-- [2019校招面试必备，15个CNN关键回答集锦【必收藏】](https://mp.weixin.qq.com/s?__biz=MzIxODM4MjA5MA==&mid=2247487091&idx=2&sn=a76a8f363bebdefaa3218d680bb651f1&chksm=97ea2416a09dad0081675a93d3fa3c28d1af554a8bfeb7a4ca487bc0b76e5e13989534740fc3&mpshare=1&scene=1&srcid=0814TSXjyCpThX4r6dy3ob4l#rd)
-- https://neurdiness.wordpress.com/2018/05/17/deep-convolutional-neural-networks-as-models-of-the-visual-system-qa/
