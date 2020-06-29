@@ -87,6 +87,15 @@ timeout = 6000
   index-url = https://mirrors.aliyun.com/pypi/simple
 ```
 
+```txt
+pip install -i https://pypi.douban.com/simple module # 使用豆瓣源
+pip install -i http://mirrors.aliyun.com/pypi/simple/ module # 阿里云
+pip install -i https://pypi.mirrors.ustc.edu.cn/simple/ module # 中国科技大学
+pip install -i http://pypi.douban.com/simple/ module # 豆瓣(douban)
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ module # 清华大学
+pip install -i http://pypi.mirrors.ustc.edu.cn/simple/ module # 中国科学技术大学
+```
+
 
 
 ## requirements.txt 文件使用
