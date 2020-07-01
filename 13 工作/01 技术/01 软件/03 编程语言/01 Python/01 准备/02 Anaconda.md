@@ -6,6 +6,22 @@
 - [Anaconda 镜像 清华](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)
 
 
+
+# Anaconda 环境安装
+
+镜像文件的下载：
+
+地址：
+
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/
+
+在 ubuntu 中可以这么下载：
+
+```
+wget https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+```
+
+
 ## 环境操作
 
 指令：
@@ -129,3 +145,48 @@ Intel MKL FATAL ERROR: Cannot load mkl_intel_thread.dll.
 - [Intel MKL FATAL ERROR: Cannot load mkl_intel_thread.dll. ](https://intellij-support.jetbrains.com/hc/en-us/community/posts/360000365510-Intel-MKL-FATAL-ERROR-Cannot-load-mkl-intel-thread-dll-)
 - [Anaconda Intel MKL FATAL ERROR when running scripts in 2017.3 and no py.test suites found in project](https://youtrack.jetbrains.com/issue/PY-27466)
  project](https://youtrack.jetbrains.com/issue/PY-27466)
+
+
+
+
+
+
+## Anaconda 换源
+
+这个还是必须要知道的。因为使用默认的国外的源速度有的时候非常的慢，因此还是会经常要配置国内的源的：
+
+不错的源有两个：中科大的和清华的：
+
+添加中科大的源：
+
+```
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+```
+
+添加清华的源：（清华的源有的时候不是很稳定，有的快，有的慢）
+
+```
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+```
+
+当用户第一次运行 `conda config` 命令时，将会在用户的家目录创建一个 `.condarc` 配置文件，一般会在 windows：`C:\users\username\`，linux：`/home/username/` 下生成。
+
+在这个配置文件中可以修改删除或者添加想要的源：
+
+比如我现在的 `.condarc` 文件内容是这样的：
+
+```
+channels:
+  - https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - defaults
+show_channel_urls: true
+```
+
+defaults 是官方默认的源，当 conda 在寻找安装包的时候，应该是从上到下查找源的。<span style="color:red;">这个不确定</span>
+
