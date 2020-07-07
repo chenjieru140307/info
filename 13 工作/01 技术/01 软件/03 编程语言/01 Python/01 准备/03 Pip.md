@@ -98,6 +98,37 @@ pip install -i http://pypi.mirrors.ustc.edu.cn/simple/ module # 中国科学技�
 
 
 
+## 镜像源使用
+
+
+我们要使用这些镜像源的时候，一般有两种方法：
+
+- 临时使用：
+  - 只要在平时的pip安装中加入 -i 和源的url
+  - `pip install -i https://pypi.mirrors.ustc.edu.cn/simple/ pyspider`
+    - 这样就会从华中科技大学的镜像去安装pyspider库
+- 永久使用：
+  - 以win10为例
+    - 右键电脑开始菜单，点击 “文件资源管理器” 在弹出的窗口地址粘贴 %APPDATA%
+      <p align="center">
+        <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200703/UYOPBR9GnPrE.png?imageslim">
+      </p>
+    - 然后按回车，会跳转到如下页面：
+      <p align="center">
+        <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200703/PzXIlCpJ9VBc.png?imageslim">
+      </p>
+    - 在该目录下新建一个 pip 文件夹，然后在 pip 文件夹中新建一个 pip.ini 文件，如下图所示 ：
+      <p align="center">
+        <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200703/K0ivxLTk8rgd.png?imageslim">
+      </p>
+    - 打开pip.ini文件，粘贴入以下内容：`[global]index-url = https://pypi.tuna.tsinghua.edu.cn/simple/[install]trusted-host=pypi.tuna.tsinghua.edu.cn` 然后保存
+    - 当我们需要使用pip安装Python库时
+      <p align="center">
+        <img width="70%" height="70%" src="http://images.iterate.site/blog/image/20200703/wASN0sdpzJce.png?imageslim">
+      </p>
+    - 可以看到，它是从清华镜像进行查找内容
+
+
 ## requirements.txt 文件使用
 
 

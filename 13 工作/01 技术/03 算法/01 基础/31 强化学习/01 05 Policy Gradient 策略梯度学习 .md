@@ -1,9 +1,7 @@
-# 策略梯度学习
+# 策略梯度学习 Policy Gradient
 
 - Policy Gradient
 - Actor Critic
-- AlphaGo Zero 
-- Continuous Mountain Car代码实战
 
 
 Q-learnging 的问题：
@@ -253,3 +251,37 @@ Actor-critic：
         \\=&\mathbb{E}_{\pi_{\theta}}\left[\nabla_{\theta} \log \pi_{\theta}(s, a) Q_{w}(s, a)\right]
         \end{aligned}
         $$
+
+  - Policy Gradient with a baseline
+    - 我们知道：
+      - Actor: 策略(policy)网络，选择下一个动作 
+      - Critic: 评估 $Q(s,a)$ 的近似值， 相当于策略评估
+    - 现在，我们考虑，如果 $Q_w(s,a)$ 是任意一个 函数 $B(s)$，而且，函数 $B(s)$ 与我们的策略没有关系，那么，策略梯度可以写为：
+      $$
+      \begin{aligned}
+      \mathbb{E}\left[\nabla_{\theta} \log \pi_{\theta}(s, a) B(s)\right] &=\sum_{s \in \mathcal{S}} d^{\pi_{\theta}} \sum_{a \in \mathcal{A}} \pi_{\theta}(s, a) \frac{\nabla_{\theta} \pi_{\theta}(s, a)}{\pi_{\theta}(s, a)} B(s) \\
+      &=\sum_{s \in \mathcal{S}} d^{\pi_{\theta}} B(s) \nabla_{\theta} \sum_{a \in \mathcal{A}} \pi_{\theta}(s, a) \\
+      &=0
+      \end{aligned}
+      $$
+    - 说明：
+      - 第一行左边：我们使用 B(s) 代替了 Q_w(s,a) ，这个 Q 其实是 $\pi$ 的函数
+      - 第一行右边：如果 $B(s)$ 跟 $\pi$ 没有关系，那么可以将 $B(s)$ 放在一边，将 期望 展开为 $\sum_{s \in \mathcal{S}} d^{\pi_{\theta}} \sum_{a \in \mathcal{A}} \pi_{\theta}(s, a)$，即 所有的 s,a 的概率分布的求和。然后，由于 $d(\log_x)=\frac{dx}{x}$，所以，可以将 $\nabla_{\theta} \log \pi_{\theta}(s, a)$ 写成 $\frac{\nabla_{\theta} \pi_{\theta}(s, a)}{\pi_{\theta}(s, a)}$。
+      - 第二行，由于 B(s) 与 策略无关，所以，可以拿到 $\sum_{a \in \mathcal{A}}$ 外面。
+      - 第三行，由于 $\sum_{a \in \mathcal{A}} \pi_{\theta}(s, a)$ 是一个常数，所以 常数对 $\theta$ 求导为 0，所以，等于 0。
+    - 这个式子为 0 说明了：
+      - 如果我们在原来的 $\mathbb{E}_{\pi_{\theta}}\left[\nabla_{\theta} \log \pi_{\theta}(s, a) Q^{\pi_{\theta}}(s, a) \right]$ 的 Q 上，加上或者减去一个函数，如果这个函数与 $\pi_\theta$ 无关，那么，对于 这个式子的值没有影响。
+    - 即：
+      - 假设 $V(s)$ 与 策略 $\pi_\theta$ 无关，而：
+        $$A^{\pi_{\theta}}(s, a) =Q^{\pi_{\theta}}(s, a)-V(s)$$
+      - 那么：
+        $$
+        \begin{aligned}
+        \nabla_{\theta} J(\theta)=&\mathbb{E}_{\pi_{\theta}}\left[\nabla_{\theta} \log \pi_{\theta}(s, a) Q^{\pi_{\theta}}(s, a) \right]
+        \\=&\mathbb{E}_{\pi_{\theta}}\left[\nabla_{\theta} \log \pi_{\theta}(s, a) A^{\pi_{\theta}}(s, a)\right]
+        \end{aligned}
+        $$
+    - 使用：
+      - 如果，我们给 $Q$ 减去 1500，比如它原来的是 1500，1600 等等，那么，这个 $Q$ 值就变的比较小，这会使得 $\nabla_{\theta} J(\theta)$ 更加稳定。（是这样吗？为什么会更加稳定？）
+
+
