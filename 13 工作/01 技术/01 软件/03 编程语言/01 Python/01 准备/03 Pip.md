@@ -81,10 +81,13 @@ pip install <包名> -i https://mirrors.aliyun.com/pypi/simple
 在unix和macos，配置文件为：`$HOME/.pip/pip.conf`
 在windows上，配置文件为：`%HOME%\pip\pip.ini`
 
+
+这个是可以使用的：
+
 ```conf
 [global]
 timeout = 6000
-  index-url = https://mirrors.aliyun.com/pypi/simple
+index-url = https://mirrors.aliyun.com/pypi/simple
 ```
 
 ```txt
